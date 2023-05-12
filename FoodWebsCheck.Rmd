@@ -1,0 +1,64 @@
+---
+title: "Check consistency"
+author: "L.A.S."
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+## Setup
+
+```{r setup, eval=T,echo=FALSE }
+#load(".RData")
+require(igraph)
+require(stringr)
+require(devtools)
+if( require(meweasmo) == FALSE)
+  install_github("lsaravia/meweasmo")
+if( require(multiweb) == FALSE)
+  install_github("lsaravia/multiweb")
+require(tidyverse)
+
+
+```
+
+# Check Weddell Sea
+
+```{r WeddellSea, eval=F,echo=F,message=T,warning=T}
+ 
+#
+dtot <- read_csv("Data/WeddellSea_links.csv")
+
+# Check valid names 
+#
+#
+require(taxize)
+dfn <- unique(dtot$consumer)
+con_names <- gnr_resolve(dfn, best_match_only = TRUE, canonical=TRUE)
+# Species not found
+anti_join(data.frame(user_supplied_name=dfn),con_names)
+# 1 Cadulus dalli antarcticum
+
+dfn <- unique(dtot$resource)
+res_names <- gnr_resolve(dfn, best_match_only = TRUE, canonical=TRUE)
+anti_join(data.frame(user_supplied_name=dfn),res_names)
+# 1             Phytodetritus
+# 2                  Sediment
+# 3         Silicioflagellata
+# 4 Cadulus dalli antarcticum
+gM <- graph_from_edgelist(as.matrix(dtot), directed  = T)
+
+# Basal species
+#
+basal_sp <- (V(gM)[ (degree(gM,mode="in")==0) ])$name
+
+# CLasificación completa
+clasall <- classification(basal_sp, db = 'itis') # 24 not found
+
+# Solamente clase
+class <- tax_name(basal_sp, get = "class", db = "itis")
+class %>% count(is.na(class))                                # 27 NA
+
+## class = Bacillariophyceae
+
+```
