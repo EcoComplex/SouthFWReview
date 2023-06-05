@@ -46,6 +46,7 @@ anti_join(data.frame(user_supplied_name=dfn),res_names)
 # 2                  Sediment
 # 3         Silicioflagellata
 # 4 Cadulus dalli antarcticum
+
 gM <- graph_from_edgelist(as.matrix(dtot), directed  = T)
 
 # Basal species
@@ -53,12 +54,44 @@ gM <- graph_from_edgelist(as.matrix(dtot), directed  = T)
 basal_sp <- (V(gM)[ (degree(gM,mode="in")==0) ])$name
 
 # CLasificación completa
-clasall <- classification(basal_sp, db = 'itis') # 24 not found
+# clasall <- classification(basal_sp, db = 'itis') # 24 not found
 
 # Solamente clase
 class <- tax_name(basal_sp, get = "class", db = "itis")
 class %>% count(is.na(class))                                # 27 NA
+class <- class%>% mutate(genera= stringr::word(query)) %>% rename( species = query ) %>% select(genera,species,class)
+# write_tsv(class,"Data/WeddellSea_basal.dat")
 
-## class = Bacillariophyceae
+# Genera tabla genero clase para reemplazar el nombre de la especie por la clase solo en el caso de Bacillariophyceae
+#
+gencla <- class %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Bacillariophyceae")
+#
+gencla <- add_case(gencla, genera="Nitzschia", class="Bacillariophyceae" )
+gencla
+sapply( 1:nrow(dtot), function(i) {
+  res_gen <- stringr::word(dtot$resource[i]) 
+  rep_cla <- gencla %>% filter(genera == res_gen) 
+  if(nrow(rep_cla)==1)
+    dtot$resource[i] <<- rep_cla$class
+})
 
+#
+collapsed_w <- dtot %>% distinct()
+gM <- graph_from_edgelist(as.matrix(collapsed_w), directed  = T)
+
+# Basal species
+#
+new_basal_sp <- (V(gM)[ (degree(gM,mode="in")==0) ])$name
+new_basal_sp
+#
+#        Dictyocha     Chrysophyceae --> phytoplankton == silicioflagellata 
+#      Phaeocystis  Prymnesiophyceae --> phytoplankton
+#      
+#   Alcyonium antarcticum  --> Coral not basal
+#   Silicioflagellata     --> ??? Chrysophyceae? 
+# 
+
+
+calc_topological_indices(gM)
+write_csv(collapsed_w,"Data/Weddell_collapsed_links.csv")
 ```
