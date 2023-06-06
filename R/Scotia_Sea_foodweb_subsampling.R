@@ -64,7 +64,7 @@ colnames(scotia_tax_list)<-c("species", "genus", "family", "order", "class", "ph
 #head(scotia_tax_list)
 #unique(scotia_tax_list$order)
 
-#
+#Collapse basal species, code from Leo
 ss_fw<-read_csv("Data/SouthernScotia_FoodWeb.csv")
 head(ss_fw)
 dim(ss_fw)
@@ -79,8 +79,15 @@ res_names <- gnr_resolve(dfn_ss2, best_match_only = TRUE, canonical=TRUE)
 anti_join(data.frame(user_supplied_name=dfn_ss2),res_names)
 
 # pairwise interaction list for the Southern Scotia Sea food web
-gM <- graph_from_edgelist(as.matrix(ss_fw), directed  = T)
+gM_ss <- graph_from_edgelist(as.matrix(ss_fw), directed  = T)
 
+# identify basal species
+basal_sp_ss <- (V(gM)[ (degree(gM_ss,mode="in")==0) ])$name
+
+# Solamente clase
+class <- tax_name(basal_sp_ss, get = "class", db = "itis")
+class %>% count(is.na(class_ss))                                # 27 NA
+class <- class%>% mutate(genera= stringr::word(query)) %>% rename( species = query ) %>% select(genera,species,class)
 
 
 
