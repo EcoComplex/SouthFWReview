@@ -1,0 +1,228 @@
+"","db","query","genus","family","order","class","phylum"
+"1","itis","Acantharea",NA,NA,NA,NA,NA
+"2","itis","Acanthephyra pelagica","Acanthephyra","Acanthephyridae","Decapoda","Malacostraca","Arthropoda"
+"3","itis","Aetideus","Aetideus","Aetideidae","Calanoida","Maxillopoda","Arthropoda"
+"4","itis","Alacia belgicae","Alacia","Halocyprididae","Halocyprida","Ostracoda","Arthropoda"
+"5","itis","Alacia hettacra","Alacia","Halocyprididae","Halocyprida","Ostracoda","Arthropoda"
+"6","itis","Alluroteuthis antarcticus","Alluroteuthis","Neoteuthidae","Teuthida","Cephalopoda","Mollusca"
+"7","itis","Aloricate ciliates",NA,NA,NA,NA,NA
+"8","itis","Amphidinium","Amphidinium","Gymnodiniaceae","Gymnodiniales","Dinophyceae",NA
+"9","itis","Amphisolenia","Amphisolenia","Amphisoleniaceae","Dinophysiales","Dinophyceae",NA
+"10","itis","Antarctomysis maxima","Antarctomysis","Mysidae","Mysida","Malacostraca","Arthropoda"
+"11","itis","Appendicularia",NA,NA,NA,"Appendicularia","Chordata"
+"12","itis","Arctozenus risso","Arctozenus","Paralepididae","Aulopiformes","Teleostei","Chordata"
+"13","itis","Atolla wyvillei","Atolla","Atollidae","Coronatae","Scyphozoa","Cnidaria"
+"14","itis","Austrinoecia isocheira",NA,NA,NA,NA,NA
+"15","itis","Bacteria",NA,NA,NA,NA,"Bacteria"
+"16","itis","Bathylagus antarcticus","Bathylagus","Bathylagidae","Osmeriformes","Teleostei","Chordata"
+"17","itis","Bathyteuthis abyssicola","Bathyteuthis","Bathyteuthidae","Teuthida","Cephalopoda","Mollusca"
+"18","itis","Batoteuthis skolops","Batoteuthis","Batoteuthidae","Teuthida","Cephalopoda","Mollusca"
+"19","itis","Benthalbella elongata","Benthalbella","Scopelarchidae","Aulopiformes","Teleostei","Chordata"
+"20","itis","Benthalbella macropinna","Benthalbella","Scopelarchidae","Aulopiformes","Teleostei","Chordata"
+"21","itis","Beroe","Beroe","Beroidae","Beroida","Nuda","Ctenophora"
+"22","itis","Boroecia antipoda","Boroecia","Halocyprididae","Halocyprida","Ostracoda","Arthropoda"
+"23","itis","Borostomias antarcticus","Borostomias","Stomiidae","Stomiiformes","Teleostei","Chordata"
+"24","itis","Brachioteuthis linkovskyi",NA,NA,NA,NA,NA
+"25","itis","Brachioteuthis picta","Brachioteuthis","Brachioteuthidae","Teuthida","Cephalopoda","Mollusca"
+"26","itis","Calanoides acutus","Calanoides","Calanidae","Calanoida","Maxillopoda","Arthropoda"
+"27","itis","Calanus australis","Scottocalanus","Scolecitrichidae","Calanoida","Maxillopoda","Arthropoda"
+"28","itis","Calanus propinquus","Calanus","Calanidae","Calanoida","Maxillopoda","Arthropoda"
+"29","itis","Calanus simillimus","Calanus","Calanidae","Calanoida","Maxillopoda","Arthropoda"
+"30","itis","Callianira","Callianira","Mertensiidae","Cydippida","Tentaculata","Ctenophora"
+"31","itis","Calycopsis borchgrevinki","Calycopsis","Bythotiaridae","Anthoathecatae","Hydrozoa","Cnidaria"
+"32","itis","Candacia","Candacia","Candaciidae","Calanoida","Maxillopoda","Arthropoda"
+"33","itis","Ceratium","Ceratium","Ceratiaceae","Gonyaulacales","Dinophyceae",NA
+"34","itis","Chaetoceros","Chaetoceros","Chaetocerotaceae","Chaetocerotales","Bacillariophyceae",NA
+"35","itis","Chiroteuthis veranyi","Chiroteuthis","Chiroteuthidae","Teuthida","Cephalopoda","Mollusca"
+"36","itis","Clausocalanus ingens",NA,NA,NA,NA,NA
+"37","itis","Clausocalanus laticeps","Clausocalanus","Clausocalanidae","Calanoida","Maxillopoda","Arthropoda"
+"38","itis","Clio piatkowskii",NA,NA,NA,NA,NA
+"39","itis","Clio pyramidata","Clio","Cavoliniidae","Thecosomata","Gastropoda","Mollusca"
+"40","itis","Clione limacina","Clione","Clionidae","Gymnosomata","Gastropoda","Mollusca"
+"41","itis","Coccolitophorida",NA,NA,NA,NA,NA
+"42","itis","Codonellopsis","Codonellopsis","Codonellopsidae","Oligotrichida","Ciliatea","Ciliophora"
+"43","itis","Conchoecilla chuni","Conchoecilla","Halocyprididae","Halocyprida","Ostracoda","Arthropoda"
+"44","itis","Conchoecissa symmetrica","Conchoecissa","Halocyprididae","Halocyprida","Ostracoda","Arthropoda"
+"45","itis","Corethron","Corethron","Corethraceae","Corethrales","Bacillariophyceae",NA
+"46","itis","Corycaeus","Corycaeus","Corycaeidae","Poecilostomatoida","Maxillopoda","Arthropoda"
+"47","itis","Crossota brunnea","Crossota","Rhopalonematidae","Trachymedusae","Hydrozoa","Cnidaria"
+"48","itis","Ctenocalanus citer","Ctenocalanus","Clausocalanidae","Calanoida","Maxillopoda","Arthropoda"
+"49","itis","Cyclothone","Cyclothone","Gonostomatidae","Stomiiformes","Teleostei","Chordata"
+"50","itis","Cyllopus lucasii","Cyllopus","Cyllopodidae","Amphipoda","Malacostraca","Arthropoda"
+"51","itis","Cyllopus magellanicus","Cyllopus","Cyllopodidae","Amphipoda","Malacostraca","Arthropoda"
+"52","itis","Cymatocylis",NA,NA,NA,NA,NA
+"53","itis","Cynomacrurus piriei","Cynomacrurus","Macrouridae","Gadiformes","Teleostei","Chordata"
+"54","itis","Cyphocaris faurei","Cyphocaris","Cyphocarididae","Amphipoda","Malacostraca","Arthropoda"
+"55","itis","Cyphocaris richardi","Cyphocaris","Cyphocarididae","Amphipoda","Malacostraca","Arthropoda"
+"56","itis","Dactyliosolen","Dactyliosolen","Rhizosoleniaceae","Rhizosoleniales","Bacillariophyceae",NA
+"57","itis","Desmonema glaciale",NA,NA,NA,NA,NA
+"58","itis","Detritus",NA,NA,NA,NA,NA
+"59","itis","Dimophyes arctica","Dimophyes","Diphyidae","Siphonophorae","Hydrozoa","Cnidaria"
+"60","itis","Dinophysis","Dinophysis","Dinophysiaceae","Dinophysiales","Dinophyceae",NA
+"61","itis","Diphyes antarctica","Diphyes","Diphyidae","Siphonophorae","Hydrozoa","Cnidaria"
+"62","itis","Dissostichus eleginoides","Dissostichus","Nototheniidae","Perciformes","Teleostei","Chordata"
+"63","itis","Drepanopus forcipatus",NA,NA,NA,NA,NA
+"64","itis","Drepanopus pectinatus","Drepanopus","Clausocalanidae","Calanoida","Maxillopoda","Arthropoda"
+"65","itis","Dictyochophyceae",NA,NA,NA,NA,NA
+"66","itis","Electrona antarctica","Electrona","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"67","itis","Electrona carlsbergi","Electrona","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"68","itis","Electrona subaspera","Electrona","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"69","itis","Eucampia","Eucampia","Hemiaulaceae","Hemiaulales","Bacillariophyceae",NA
+"70","itis","Euchirella rostrata","Euchirella","Aetideidae","Calanoida","Maxillopoda","Arthropoda"
+"71","itis","Euchirella rostromagna","Euchirella","Aetideidae","Calanoida","Maxillopoda","Arthropoda"
+"72","itis","Eudoxoides spiralis","Eudoxoides","Diphyidae","Siphonophorae","Hydrozoa","Cnidaria"
+"73","itis","Eukrohnia hamata","Eukrohnia","Eukrohniidae","Phragmophora","Sagittoidea","Chaetognatha"
+"74","itis","Euphausia crystallorophias","Euphausia","Euphausiidae","Euphausiacea","Malacostraca","Arthropoda"
+"75","itis","Euphausia frigida","Euphausia","Euphausiidae","Euphausiacea","Malacostraca","Arthropoda"
+"76","itis","Euphausia superba","Euphausia","Euphausiidae","Euphausiacea","Malacostraca","Arthropoda"
+"77","itis","Euphausia triacantha","Euphausia","Euphausiidae","Euphausiacea","Malacostraca","Arthropoda"
+"78","itis","Euphausia vallentini","Euphausia","Euphausiidae","Euphausiacea","Malacostraca","Arthropoda"
+"79","itis","Eurythenes obesus","Eurythenes","Lysianassidae","Amphipoda","Malacostraca","Arthropoda"
+"80","itis","Eusiroides stenopleura","Eusiroides","Eusiridae","Amphipoda","Malacostraca","Arthropoda"
+"81","itis","Eusirus antarcticus","Eusirus","Eusiridae","Amphipoda","Malacostraca","Arthropoda"
+"82","itis","Eusirus microps","Eusirus","Eusiridae","Amphipoda","Malacostraca","Arthropoda"
+"83","itis","Eusirus perdentatus","Eusirus","Eusiridae","Amphipoda","Malacostraca","Arthropoda"
+"84","itis","Filippovia knipovitchi",NA,NA,NA,NA,NA
+"85","itis","Foraminifera",NA,NA,NA,NA,NA
+"86","itis","Fragilariopsis","Fragilariopsis","Bacillariaceae","Bacillariales","Bacillariophyceae",NA
+"87","itis","Gaetanus tenuispinus","Gaetanus","Aetideidae","Calanoida","Maxillopoda","Arthropoda"
+"88","itis","Galiteuthis glacialis","Galiteuthis","Cranchiidae","Teuthida","Cephalopoda","Mollusca"
+"89","itis","Gennadas kempi","Gennadas","Benthesicymidae","Decapoda","Malacostraca","Arthropoda"
+"90","itis","Gigantocypris muelleri","Gigantocypris","Cypridinidae","Myodocopida","Ostracoda","Arthropoda"
+"91","itis","Gilia reticulata","Gilia","Diphyidae","Siphonophorae","Hydrozoa","Cnidaria"
+"92","itis","Neognathophausia gigas","Neognathophausia","Gnathophausiidae","Lophogastrida","Malacostraca","Arthropoda"
+"93","itis","Gonatus antarcticus","Gonatus","Gonatidae","Teuthida","Cephalopoda","Mollusca"
+"94","itis","Grammatophora","Grammatophora","Striatellaceae","Striatellales","Bacillariophyceae",NA
+"95","itis","Gymnoscopelus bolini","Gymnoscopelus","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"96","itis","Gymnoscopelus braueri","Gymnoscopelus","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"97","itis","Gymnoscopelus fraseri","Gymnoscopelus","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"98","itis","Gymnoscopelus hintonoides","Gymnoscopelus","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"99","itis","Gymnoscopelus nicholsi","Gymnoscopelus","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"100","itis","Gymnoscopelus opisthopterus","Gymnoscopelus","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"101","itis","Gymnoscopelus piabilis","Gymnoscopelus","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"102","itis","Halicreas minimum","Halicreas","Halicreatidae","Trachymedusae","Hydrozoa","Cnidaria"
+"103","itis","Haloptilus ocellatus","Haloptilus","Augaptilidae","Calanoida","Maxillopoda","Arthropoda"
+"104","itis","Hemiaulus","Hemiaulus","Hemiaulaceae","Hemiaulales","Bacillariophyceae",NA
+"105","itis","Heterorhabdus austrinus","Heterorhabdus","Heterorhabdidae","Calanoida","Maxillopoda","Arthropoda"
+"106","itis","Hippopodiidae",NA,"Hippopodiidae","Siphonophorae","Hydrozoa","Cnidaria"
+"107","itis","Histioteuthis eltaninae","Histioteuthis","Histioteuthidae","Teuthida","Cephalopoda","Mollusca"
+"108","itis","Hyperia macrocephala","Hyperia","Hyperiidae","Amphipoda","Malacostraca","Arthropoda"
+"109","itis","Hyperiella antarctica","Hyperiella","Hyperiidae","Amphipoda","Malacostraca","Arthropoda"
+"110","itis","Hyperiella dilatata","Hyperiella","Hyperiidae","Amphipoda","Malacostraca","Arthropoda"
+"111","itis","Ihlea racovitzai","Ihlea","Salpidae","Salpida","Thaliacea","Chordata"
+"112","itis","Kondakovia longimana","Kondakovia","Onychoteuthidae","Teuthida","Cephalopoda","Mollusca"
+"113","itis","Krefftichthys anderssoni","Krefftichthys","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"114","itis","Laackmanniella",NA,NA,NA,NA,NA
+"115","itis","Lampanyctus","Lampanyctus","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"116","itis","Lanceola","Lanceola","Lanceolidae","Amphipoda","Malacostraca","Arthropoda"
+"117","itis","Limacina helicina","Limacina","Limacinidae","Thecosomata","Gastropoda","Mollusca"
+"118","itis","Limacina retroversa","Limacina","Limacinidae","Thecosomata","Gastropoda","Mollusca"
+"119","itis","Lucicutia","Lucicutia","Lucicutiidae","Calanoida","Maxillopoda","Arthropoda"
+"120","itis","Marrus antarcticus","Marrus","Agalmatidae","Siphonophorae","Hydrozoa","Cnidaria"
+"121","itis","Martialia hyadesi","Martialia","Ommastrephidae","Teuthida","Cephalopoda","Mollusca"
+"122","itis","Mastigoteuthis","Mastigoteuthis","Mastigoteuthidae","Teuthida","Cephalopoda","Mollusca"
+"123","itis","Megalocranchia","Megalocranchia","Cranchiidae","Teuthida","Cephalopoda","Mollusca"
+"124","itis","Melanostigma gelatinosum","Melanostigma","Zoarcidae","Perciformes","Teleostei","Chordata"
+"125","itis","Melosira","Melosira","Melosiraceae","Melosirales","Bacillariophyceae",NA
+"126","itis","Mesonychoteuthis hamiltoni","Mesonychoteuthis","Cranchiidae","Teuthida","Cephalopoda","Mollusca"
+"127","itis","Metaconchoecia skogsbergi","Metaconchoecia","Halocyprididae","Halocyprida","Ostracoda","Arthropoda"
+"128","itis","Metridia curticauda","Metridia","Metridinidae","Calanoida","Maxillopoda","Arthropoda"
+"129","itis","Metridia gerlachei","Metridia","Metridinidae","Calanoida","Maxillopoda","Arthropoda"
+"130","itis","Metridia lucens","Metridia","Metridinidae","Calanoida","Maxillopoda","Arthropoda"
+"131","itis","Microcalanus pygmaeus","Microcalanus","Clausocalanidae","Calanoida","Maxillopoda","Arthropoda"
+"132","itis","Microsetella norvegica","Microsetella","Ectinosomatidae","Harpacticoida","Maxillopoda","Arthropoda"
+"133","itis","Muggiaea bargmannae","Muggiaea","Diphyidae","Siphonophorae","Hydrozoa","Cnidaria"
+"134","itis","Nannobrachium achirus","Nannobrachium","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"135","itis","Nansenia antarctica","Nansenia","Microstomatidae","Osmeriformes","Teleostei","Chordata"
+"136","itis","Nematocarcinus lanceopes","Nematocarcinus","Nematocarcinidae","Decapoda","Malacostraca","Arthropoda"
+"137","itis","Neocalanus tonsus","Neocalanus","Calanidae","Calanoida","Maxillopoda","Arthropoda"
+"138","itis","Nitzschia","Nitzschia","Bacillariaceae","Bacillariales","Bacillariophyceae",NA
+"139","itis","Notolepis coatsi","Notolepis","Paralepididae","Aulopiformes","Teleostei","Chordata"
+"140","itis","Notoscopelus resplendens","Notoscopelus","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"141","itis","Obtusoecia antarctica","Obtusoecia","Halocyprididae","Halocyprida","Ostracoda","Arthropoda"
+"142","itis","Oithona frigida","Oithona","Oithonidae","Cyclopoida","Maxillopoda","Arthropoda"
+"143","itis","Oithona similis","Oithona","Oithonidae","Cyclopoida","Maxillopoda","Arthropoda"
+"144","itis","Oncaea curvata","Oncaea","Oncaeidae","Poecilostomatoida","Maxillopoda","Arthropoda"
+"145","itis","Oncaea parila","Oncaea","Oncaeidae","Poecilostomatoida","Maxillopoda","Arthropoda"
+"146","itis","Oncaea prolata","Oncaea","Oncaeidae","Poecilostomatoida","Maxillopoda","Arthropoda"
+"147","itis","Onykia ingens",NA,NA,NA,NA,NA
+"148","itis","Pandea rubra","Pandea","Pandeidae","Anthoathecatae","Hydrozoa","Cnidaria"
+"149","itis","Pantachogon haeckeli","Pantachogon","Rhopalonematidae","Trachymedusae","Hydrozoa","Cnidaria"
+"150","itis","Paradiplospinus gracilis","Paradiplospinus","Gempylidae","Perciformes","Teleostei","Chordata"
+"151","itis","Paraeuchaeta antarctica","Paraeuchaeta","Euchaetidae","Calanoida","Maxillopoda","Arthropoda"
+"152","itis","Paraeuchaeta barbata","Paraeuchaeta","Euchaetidae","Calanoida","Maxillopoda","Arthropoda"
+"153","itis","Paraeuchaeta biloba","Paraeuchaeta","Euchaetidae","Calanoida","Maxillopoda","Arthropoda"
+"154","itis","Paraeuchaeta rasa",NA,NA,NA,NA,NA
+"155","itis","Parandania boecki","Parandania","Stegocephalidae","Amphipoda","Malacostraca","Arthropoda"
+"156","itis","Paraphyllina ransoni","Paraphyllina","Paraphyllinidae","Coronatae","Scyphozoa","Cnidaria"
+"157","itis","Pasiphaea scotiae","Pasiphaea","Pasiphaeidae","Decapoda","Malacostraca","Arthropoda"
+"158","itis","Pelagobia longicirrata","Pelagobia","Lopadorrhynchidae","Phyllodocida","Polychaeta","Annelida"
+"159","itis","Peridinium","Peridinium","Peridiniaceae","Peridiniales","Dinophyceae",NA
+"160","itis","Periphylla periphylla","Periphylla","Periphyllidae","Coronatae","Scyphozoa","Cnidaria"
+"161","itis","Petalidium foliaceum","Petalidium","Petalidiumidae","Decapoda","Malacostraca","Arthropoda"
+"162","itis","Phaeocystis","Phaeocystis","Phaeocystaceae","Prymnesiales","Prymnesiophyceae",NA
+"163","itis","Phronima sedentaria","Phronima","Phronimidae","Amphipoda","Malacostraca","Arthropoda"
+"164","itis","Plagiotropus",NA,NA,NA,NA,NA
+"165","itis","Pleuragramma antarcticum","Pleuragramma","Nototheniidae","Perciformes","Teleostei","Chordata"
+"166","itis","Pleurobrachia","Pleurobrachia","Pleurobrachiidae","Cydippida","Tentaculata","Ctenophora"
+"167","itis","Pleuromamma abdominalis","Pleuromamma","Metridinidae","Calanoida","Maxillopoda","Arthropoda"
+"168","itis","Pleuromamma antarctica",NA,NA,NA,NA,NA
+"169","itis","Pleuromamma robusta","Pleuromamma","Metridinidae","Calanoida","Maxillopoda","Arthropoda"
+"170","itis","Pleurosigma","Pleurosigma","Pleurosigmataceae","Naviculales","Bacillariophyceae",NA
+"171","itis","Podocopida",NA,NA,"Podocopida","Ostracoda","Arthropoda"
+"172","itis","Poromitra crassiceps","Poromitra","Melamphaidae","Stephanoberyciformes","Teleostei","Chordata"
+"173","itis","Porosira","Porosira","Thalassiosiraceae","Thalassiosirales","Bacillariophyceae",NA
+"174","itis","Primno macropa","Primno","Phrosinidae","Amphipoda","Malacostraca","Arthropoda"
+"175","itis","Prorocentrum","Prorocentrum","Prorocentraceae","Prorocentrales","Dinophyceae",NA
+"176","itis","Protomyctophum andriashevi","Protomyctophum","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"177","itis","Protomyctophum bolini","Protomyctophum","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"178","itis","Protomyctophum choriodon","Protomyctophum","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"179","itis","Protomyctophum luciferum","Protomyctophum","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"180","itis","Protomyctophum parallelum","Protomyctophum","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"181","itis","Protomyctophum tenisoni","Protomyctophum","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"182","itis","Pseudoamallothrix cenotelis",NA,NA,NA,NA,NA
+"183","itis","Pseudoconchoecia serrulata","Pseudoconchoecia","Halocyprididae","Halocyprida","Ostracoda","Arthropoda"
+"184","itis","Pseudo-nitzschia","Pseudo-nitzschia","Bacillariaceae","Bacillariales","Bacillariophyceae",NA
+"185","itis","Psychroteuthis glacialis","Psychroteuthis","Psychroteuthidae","Teuthida","Cephalopoda","Mollusca"
+"186","itis","Ptychodiscus","Ptychodiscus","Ptychodiscaceae","Ptychodiscales","Dinophyceae",NA
+"187","itis","Pyrostephos vanhoeffeni",NA,NA,NA,NA,NA
+"188","itis","Racovitzanus antarcticus","Racovitzanus","Scolecitrichidae","Calanoida","Maxillopoda","Arthropoda"
+"189","itis","Rhabdonella","Rhabdonella","Rhabdonellidae","Oligotrichida","Ciliatea","Ciliophora"
+"190","itis","Rhincalanus gigas","Rhincalanus","Rhincalanidae","Calanoida","Maxillopoda","Arthropoda"
+"191","itis","Rhizosolenia","Rhizosolenia","Rhizosoleniaceae","Rhizosoleniales","Bacillariophyceae",NA
+"192","itis","Rhynchonereella bongraini",NA,NA,NA,NA,NA
+"193","itis","Rosacea plicata","Rosacea","Prayidae","Siphonophorae","Hydrozoa","Cnidaria"
+"194","itis","Rotundoecia teretivalvata",NA,NA,NA,NA,NA
+"195","itis","Sagitta gazellae",NA,NA,NA,NA,NA
+"196","itis","Sagitta marri","Sagitta","Sagittidae","Aphragmophora","Sagittoidea","Chaetognatha"
+"197","itis","Salpa thompsoni","Salpa","Salpidae","Salpida","Thaliacea","Chordata"
+"198","itis","Scaphocalanus australis",NA,NA,NA,NA,NA
+"199","itis","Scaphocalanus farrani",NA,NA,NA,NA,NA
+"200","itis","Scaphocalanus vervoorti",NA,NA,NA,NA,NA
+"201","itis","Scina","Scina","Scinidae","Amphipoda","Malacostraca","Arthropoda"
+"202","itis","Scolecithricella minor","Scolecithricella","Scolecitrichidae","Calanoida","Maxillopoda","Arthropoda"
+"203","itis","Sergestes","Sergestes","Sergestidae","Decapoda","Malacostraca","Arthropoda"
+"204","itis","Slosarczykovia circumantarctica",NA,NA,NA,NA,NA
+"205","itis","Solmundella bitentaculata","Solmundella","Aeginidae","Narcomedusae","Hydrozoa","Cnidaria"
+"206","itis","Spinocalanus abyssalis","Spinocalanus","Spinocalanidae","Calanoida","Maxillopoda","Arthropoda"
+"207","itis","Spongiobranchaea australis","Spongiobranchaea","Pneumodermatidae","Gymnosomata","Gastropoda","Mollusca"
+"208","itis","Stenosemella","Stenosemella","Codonellopsidae","Oligotrichida","Ciliatea","Ciliophora"
+"209","itis","Stephanopyxis","Stephanopyxis","Stephanopyxidaceae","Melosirales","Bacillariophyceae",NA
+"210","itis","Stoloteuthis leucoptera","Stoloteuthis","Sepiolidae","Sepiolida","Cephalopoda","Mollusca"
+"211","itis","Stomias gracilis","Stomias","Stomiidae","Stomiiformes","Teleostei","Chordata"
+"212","itis","Stygiomedusa gigantea","Stygiomedusa","Ulmaridae","Semaeostomeae","Scyphozoa","Cnidaria"
+"213","itis","Subeucalanus longiceps",NA,NA,NA,NA,NA
+"214","itis","Symbolophorus boops","Symbolophorus","Myctophidae","Myctophiformes","Teleostei","Chordata"
+"215","itis","Thalassionema","Thalassionema","Thalassionemataceae","Thalassionematales","Bacillariophyceae",NA
+"216","itis","Thalassiosira","Thalassiosira","Thalassiosiraceae","Thalassiosirales","Bacillariophyceae",NA
+"217","itis","Thalassiothrix","Thalassiothrix","Thalassionemataceae","Thalassionematales","Bacillariophyceae",NA
+"218","itis","Themisto gaudichaudii","Themisto","Hyperiidae","Amphipoda","Malacostraca","Arthropoda"
+"219","itis","Thysanoessa macrura","Thysanoessa","Euphausiidae","Euphausiacea","Malacostraca","Arthropoda"
+"220","itis","Thysanoessa vicina","Thysanoessa","Euphausiidae","Euphausiacea","Malacostraca","Arthropoda"
+"221","itis","Tintinnopsis","Tintinnopsis","Codonellidae","Oligotrichida","Ciliatea","Ciliophora"
+"222","itis","Tomopteris planktonis",NA,NA,NA,NA,NA
+"223","itis","Tomopteris septentrionalis","Tomopteris","Tomopteridae","Phyllodocida","Polychaeta","Annelida"
+"224","itis","Triconia antarctica",NA,NA,NA,NA,NA
+"225","itis","Vanadis","Vanadis","Alciopidae","Phyllodocida","Polychaeta","Annelida"
+"226","itis","Vibilia antarctica","Vibilia","Vibiliidae","Amphipoda","Malacostraca","Arthropoda"
+"227","itis","Zanclonia weldoni","Zanclonia","Pandeidae","Anthoathecatae","Hydrozoa","Cnidaria"
