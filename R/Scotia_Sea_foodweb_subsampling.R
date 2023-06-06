@@ -65,16 +65,16 @@ colnames(scotia_tax_list)<-c("species", "genus", "family", "order", "class", "ph
 #unique(scotia_tax_list$order)
 
 #Collapse basal species, code from Leo
-ss_fw<-read_csv("Data/SouthernScotia_FoodWeb.csv")
+ss_fw<-read_csv("Data/SouthernScotia_top.csv")
+ss_fw<-ss_fw[,-1]
 head(ss_fw)
 dim(ss_fw)
-dfn_ss <- unique(dtot$consumer)
+dfn_ss <- unique(ss_fw$consumer)
 con_names_ss <- gnr_resolve(dfn_ss, best_match_only = TRUE, canonical=TRUE)
 # Species not found
 anti_join(data.frame(user_supplied_name=dfn_ss),con_names_ss)
 
-
-dfn_ss2 <- unique(dtot$resource)
+dfn_ss2 <- unique(ss_fw$resource)
 res_names <- gnr_resolve(dfn_ss2, best_match_only = TRUE, canonical=TRUE)
 anti_join(data.frame(user_supplied_name=dfn_ss2),res_names)
 
@@ -82,12 +82,132 @@ anti_join(data.frame(user_supplied_name=dfn_ss2),res_names)
 gM_ss <- graph_from_edgelist(as.matrix(ss_fw), directed  = T)
 
 # identify basal species
-basal_sp_ss <- (V(gM)[ (degree(gM_ss,mode="in")==0) ])$name
-
+basal_sp_ss <- (V(gM_ss)[(degree(gM_ss,mode="in")==0) ])$name
+basal_sp_ss
 # Solamente clase
 class <- tax_name(basal_sp_ss, get = "class", db = "itis")
-class %>% count(is.na(class_ss))                                # 27 NA
+class %>% count(is.na(class))                                # 27 NA
 class <- class%>% mutate(genera= stringr::word(query)) %>% rename( species = query ) %>% select(genera,species,class)
+write_tsv(class,"Data/SoutherScotia_basal.dat")
+
+class<-read_tsv("Data/SoutherScotia_basal.dat")
+class2 <- class[-c(3,9,18),]#remove detritus, bacteria, and maxillopoda
+class2  <- class2 %>% 
+  mutate(class = case_when(class %in% c("Prymnesiophyceae",NA) ~ "Phytoplankton_other",TRUE ~ class))
+#class2[which(is.na(class2$class)),3]<-"Phytoplankton_other" #assign phytoplankton other to phytoplankton with NAs
+#class2[which(class2$class=="Prymnesiophyceae"),3]<-"Phytoplankton_other"
+class2 %>% filter(!is.na(class)) %>%  distinct(genera,class)
+
+# Genera tabla genero clase para reemplazar el nombre de la especie por la clase solo en el caso de Bacillariophyceae
+#
+gencla <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Bacillariophyceae")
+gencla_dino <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Dinophyceae")
+gencla_other <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Phytoplankton_other")
+#
+gencla <- add_case(gencla, genera="Nitzschia", class="Bacillariophyceae" )
+gencla
+sapply( 1:nrow(ss_fw), function(i) {
+  #i<-5969
+  res_gen <- stringr::word(ss_fw$resource[i]) 
+  
+  rep_cla <- gencla %>% filter(genera == res_gen) 
+  if(nrow(rep_cla)==1)
+    ss_fw$resource[i] <<- rep_cla$class
+  
+  rep_cla_dino <- gencla_dino %>% filter(genera == res_gen) 
+  if(nrow(rep_cla_dino)==1)
+    ss_fw$resource[i] <<- rep_cla_dino$class
+  
+  rep_cla_other <- gencla_other %>% filter(genera == res_gen) 
+  if(nrow(rep_cla_other)==1)
+    ss_fw$resource[i] <<- rep_cla_other$class
+})
+
+unique(ss_fw$resource)
+
+collapsed_ss_fw <- ss_fw %>% distinct()
+dim(collapsed_ss_fw)
+gM_ss <- graph_from_edgelist(as.matrix(collapsed_ss_fw), directed  = T)
+
+
+#check the basal species
+basal_sp_ss <- (V(gM_ss)[ (degree(gM_ss,mode="in")==0) ])$name
+basal_sp_ss
+
+write_csv(collapsed_ss_fw,"Data/Southern_Scotia_collapsed_basal_top.csv")
+
+###############
+
+#Collapse basal species, code from Leo
+ns_fw<-read_csv("Data/NorthernScotia_top.csv")
+ns_fw<-ns_fw[,-1]
+head(ns_fw)
+dim(ns_fw)
+dfn_ns <- unique(dtot$consumer)
+con_names_ss <- gnr_resolve(dfn_ss, best_match_only = TRUE, canonical=TRUE)
+# Species not found
+anti_join(data.frame(user_supplied_name=dfn_ss),con_names_ss)
+
+
+dfn_ns2 <- unique(ns_fw$resource)
+res_names <- gnr_resolve(dfn_ns2, best_match_only = TRUE, canonical=TRUE)
+anti_join(data.frame(user_supplied_name=dfn_ns2),res_names)
+
+# pairwise interaction list for the Southern Scotia Sea food web
+gM_ns <- graph_from_edgelist(as.matrix(ns_fw), directed  = T)
+
+# identify basal species
+basal_sp_ns <- (V(gM_ns)[ (degree(gM_ns,mode="in")==0) ])$name
+basal_sp_ns
+# Solamente clase
+class <- tax_name(basal_sp_ns, get = "class", db = "itis")
+class %>% count(is.na(class))                                # 27 NA
+class <- class%>% mutate(genera= stringr::word(query)) %>% rename( species = query ) %>% select(genera,species,class)
+
+class<-read_tsv("Data/NorthernScotia_basal.dat")
+class2 <- class[-c(3,9,18),]#remove detritus, bacteria, and maxillopoda
+class2[which(is.na(class2$class)),3]<-"Phytoplankton_other" #assign phytoplankton other to phytoplankton with NAs
+class2[which(class2$class=="Prymnesiophyceae"),3]<-"Phytoplankton_other"
+class2 %>% filter(!is.na(class)) %>%  distinct(genera,class)
+
+# Genera tabla genero clase para reemplazar el nombre de la especie por la clase solo en el caso de Bacillariophyceae
+#
+gencla <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Bacillariophyceae")
+gencla_dino <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Dinophyceae")
+gencla_other <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Phytoplankton_other")
+#
+gencla <- add_case(gencla, genera="Nitzschia", class="Bacillariophyceae" )
+gencla
+sapply( 1:nrow(ss_fw), function(i) {
+  #i<-5969
+  res_gen <- stringr::word(ss_fw$resource[i]) 
+  
+  rep_cla <- gencla %>% filter(genera == res_gen) 
+  if(nrow(rep_cla)==1)
+    ss_fw$resource[i] <<- rep_cla$class
+  
+  rep_cla_dino <- gencla_dino %>% filter(genera == res_gen) 
+  if(nrow(rep_cla_dino)==1)
+    ss_fw$resource[i] <<- rep_cla_dino$class
+  
+  rep_cla_other <- gencla_other %>% filter(genera == res_gen) 
+  if(nrow(rep_cla_other)==1)
+    ss_fw$resource[i] <<- rep_cla_other$class
+})
+
+unique(ss_fw$resource)
+
+collapsed_ss_fw <- ss_fw %>% distinct()
+dim(collapsed_ss_fw)
+gM_ss <- graph_from_edgelist(as.matrix(collapsed_ss_fw), directed  = T)
+
+
+#check the basal species
+basal_sp_ss <- (V(gM_ss)[ (degree(gM_ss,mode="in")==0) ])$name
+basal_sp_ss
+
+write_csv(collapsed_ss_fw,"Data/Southern_Scotia_collapsed_basal_top.csv")
+
 
 
 
