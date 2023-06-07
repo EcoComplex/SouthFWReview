@@ -1,5 +1,7 @@
-###Scotia Sea food web###
+###Scotia Sea food webs###
 
+# Susanne Kortsch
+# 07.06.2023
 
 #Scotia nodes info
 #metaweb_nodes.csv
@@ -50,17 +52,20 @@ NS_FW<-plA2
 head(NS_FW)
 write.csv(NS_FW, "Data/NorthernScotia_FoodWeb.csv", row.names=F)
 
+##################################################################################
 
 #Extract taxonmic information for species
 
 library("taxize")
 library("tidyverse")
+library("igraph")
+
 #scotia_tax<-tax_name(nodes_Scotia$node, db = "itis", get = c("genus", "family", "order", "class", "phylum"))
 
 #Scotia Sea taxonmic info 
-scotia_tax_list<-read_csv("Data/scotia_taxonomic_list.csv")
-scotia_tax_list<-scotia_tax_list[, -c(1,2)]
-colnames(scotia_tax_list)<-c("species", "genus", "family", "order", "class", "phylum")
+#scotia_tax_list<-read_csv("Data/scotia_taxonomic_list.csv")
+#scotia_tax_list<-scotia_tax_list[, -c(1,2)]
+#colnames(scotia_tax_list)<-c("species", "genus", "family", "order", "class", "phylum")
 #head(scotia_tax_list)
 #unique(scotia_tax_list$order)
 
@@ -84,16 +89,19 @@ gM_ss <- graph_from_edgelist(as.matrix(ss_fw), directed  = T)
 # identify basal species
 basal_sp_ss <- (V(gM_ss)[(degree(gM_ss,mode="in")==0) ])$name
 basal_sp_ss
+
 # Solamente clase
-class <- tax_name(basal_sp_ss, get = "class", db = "itis")
-class %>% count(is.na(class))                                # 27 NA
-class <- class%>% mutate(genera= stringr::word(query)) %>% rename( species = query ) %>% select(genera,species,class)
-write_tsv(class,"Data/SoutherScotia_basal.dat")
+#class <- tax_name(basal_sp_ss, get = "class", db = "itis")
+#class %>% count(is.na(class))                                # 27 NA
+#class <- class%>% mutate(genera= stringr::word(query)) %>% rename( species = query ) %>% select(genera,species,class)
+#write_tsv(class,"Data/SoutherScotia_basal.dat")
 
 class<-read_tsv("Data/SoutherScotia_basal.dat")
-class2 <- class[-c(3,9,18),]#remove detritus, bacteria, and maxillopoda
+class2 <- class[-c(3,9,18),]#remove detritus, bacteria, and maxillopoda nodes
+#NOTE! MAXILLOPODA IS MISSING RESOURCE ITEMS!
+#rename some plankton species to other for aggregation
 class2  <- class2 %>% 
-  mutate(class = case_when(class %in% c("Prymnesiophyceae",NA) ~ "Phytoplankton_other",TRUE ~ class))
+mutate(class = case_when(class %in% c("Prymnesiophyceae",NA) ~ "Phytoplankton_other",TRUE ~ class))
 #class2[which(is.na(class2$class)),3]<-"Phytoplankton_other" #assign phytoplankton other to phytoplankton with NAs
 #class2[which(class2$class=="Prymnesiophyceae"),3]<-"Phytoplankton_other"
 class2 %>% filter(!is.na(class)) %>%  distinct(genera,class)
@@ -101,41 +109,46 @@ class2 %>% filter(!is.na(class)) %>%  distinct(genera,class)
 # Genera tabla genero clase para reemplazar el nombre de la especie por la clase solo en el caso de Bacillariophyceae
 #
 gencla <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Bacillariophyceae")
+#gencla <- add_case(gencla, genera="Nitzschia", class="Bacillariophyceae" )
+gencla
 gencla_dino <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Dinophyceae")
 gencla_other <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Phytoplankton_other")
-#
-gencla <- add_case(gencla, genera="Nitzschia", class="Bacillariophyceae" )
-gencla
-sapply( 1:nrow(ss_fw), function(i) {
-  #i<-5969
-  res_gen <- stringr::word(ss_fw$resource[i]) 
+
+ss_fw2<-ss_fw
+#change names of resource species that need to be aggregated
+sapply( 1:nrow(ss_fw2), function(i) {
+  #i<-3389
+  res_gen <- stringr::word(ss_fw2$resource[i]) 
   
   rep_cla <- gencla %>% filter(genera == res_gen) 
   if(nrow(rep_cla)==1)
-    ss_fw$resource[i] <<- rep_cla$class
+    ss_fw2$resource[i] <<- rep_cla$class
   
   rep_cla_dino <- gencla_dino %>% filter(genera == res_gen) 
   if(nrow(rep_cla_dino)==1)
-    ss_fw$resource[i] <<- rep_cla_dino$class
+    ss_fw2$resource[i] <<- rep_cla_dino$class
   
   rep_cla_other <- gencla_other %>% filter(genera == res_gen) 
   if(nrow(rep_cla_other)==1)
-    ss_fw$resource[i] <<- rep_cla_other$class
+    ss_fw2$resource[i] <<- rep_cla_other$class
 })
 
-unique(ss_fw$resource)
+unique(ss_fw2$resource)
 
-collapsed_ss_fw <- ss_fw %>% distinct()
+collapsed_ss_fw <- ss_fw2 %>% distinct()
 dim(collapsed_ss_fw)
-gM_ss <- graph_from_edgelist(as.matrix(collapsed_ss_fw), directed  = T)
+gM_ss2 <- graph_from_edgelist(as.matrix(collapsed_ss_fw), directed  = T)
 
 
 #check the basal species
-basal_sp_ss <- (V(gM_ss)[ (degree(gM_ss,mode="in")==0) ])$name
-basal_sp_ss
+basal_sp_ss2 <- (V(gM_ss2)[ (degree(gM_ss2,mode="in")==0) ])$name
+basal_sp_ss2
 
-write_csv(collapsed_ss_fw,"Data/Southern_Scotia_collapsed_basal_top.csv")
 
+write_csv(collapsed_ss_fw,"Data/Southern_Scotia_top_collapsed_basal.csv")
+
+#
+meta_fw<-read_csv("Data/metaweb_links.csv")
 ###############
 
 #Collapse basal species, code from Leo
@@ -173,11 +186,12 @@ class2 %>% filter(!is.na(class)) %>%  distinct(genera,class)
 # Genera tabla genero clase para reemplazar el nombre de la especie por la clase solo en el caso de Bacillariophyceae
 #
 gencla <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Bacillariophyceae")
+#gencla <- add_case(gencla, genera="Nitzschia", class="Bacillariophyceae" )
+#gencla
 gencla_dino <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Dinophyceae")
 gencla_other <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Phytoplankton_other")
 #
-gencla <- add_case(gencla, genera="Nitzschia", class="Bacillariophyceae" )
-gencla
+
 sapply( 1:nrow(ss_fw), function(i) {
   #i<-5969
   res_gen <- stringr::word(ss_fw$resource[i]) 
