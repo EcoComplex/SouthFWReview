@@ -226,35 +226,35 @@ gencla_dino <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>% 
 gencla_other <- class2 %>% filter(!is.na(class)) %>%  distinct(genera,class) %>%  filter(class=="Phytoplankton_other")
 #
 
-sapply( 1:nrow(ss_fw), function(i) {
+sapply( 1:nrow(ns_fw), function(i) {
   #i<-5969
-  res_gen <- stringr::word(ss_fw$resource[i]) 
+  res_gen <- stringr::word(ns_fw$resource[i]) 
   
   rep_cla <- gencla %>% filter(genera == res_gen) 
   if(nrow(rep_cla)==1)
-    ss_fw$resource[i] <<- rep_cla$class
+    ns_fw$resource[i] <<- rep_cla$class
   
   rep_cla_dino <- gencla_dino %>% filter(genera == res_gen) 
   if(nrow(rep_cla_dino)==1)
-    ss_fw$resource[i] <<- rep_cla_dino$class
+    ns_fw$resource[i] <<- rep_cla_dino$class
   
   rep_cla_other <- gencla_other %>% filter(genera == res_gen) 
   if(nrow(rep_cla_other)==1)
-    ss_fw$resource[i] <<- rep_cla_other$class
+    ns_fw$resource[i] <<- rep_cla_other$class
 })
 
-unique(ss_fw$resource)
+unique(ns_fw$resource)
 
-collapsed_ss_fw <- ss_fw %>% distinct()
-dim(collapsed_ss_fw)
-gM_ss <- graph_from_edgelist(as.matrix(collapsed_ss_fw), directed  = T)
+collapsed_ns_fw <- ns_fw %>% distinct()
+dim(collapsed_ns_fw)
+gM_ns <- graph_from_edgelist(as.matrix(collapsed_ns_fw), directed  = T)
 
 
 #check the basal species
-basal_sp_ss <- (V(gM_ss)[ (degree(gM_ss,mode="in")==0) ])$name
-basal_sp_ss
+basal_sp_ns <- (V(gM_ns)[ (degree(gM_ns,mode="in")==0) ])$name
+basal_sp_ns
 
-write_csv(collapsed_ss_fw,"Data/Southern_Scotia_collapsed_basal_top.csv")
+write_csv(collapsed_ns_fw,"Data/Northern_Scotia_collapsed_basal_top.csv")
 
 
 
