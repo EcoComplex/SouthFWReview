@@ -156,7 +156,7 @@ ns_fw<-read_csv("Data/NorthernScotia_top.csv")
 ns_fw<-ns_fw[,-1]
 head(ns_fw)
 dim(ns_fw)
-dfn_ns <- unique(dtot$consumer)
+dfn_ns <- unique(ns_fw$consumer)
 con_names_ss <- gnr_resolve(dfn_ss, best_match_only = TRUE, canonical=TRUE)
 # Species not found
 anti_join(data.frame(user_supplied_name=dfn_ss),con_names_ss)
