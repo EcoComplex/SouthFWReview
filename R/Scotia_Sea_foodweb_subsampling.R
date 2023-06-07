@@ -3,6 +3,7 @@
 # Susanne Kortsch
 # 07.06.2023
 
+### Make the Southern and Northern Scotian Sea food webs
 #Scotia nodes info
 #metaweb_nodes.csv
 nodes_Scotia<-read.csv("Data/metaweb_nodes.csv", sep=",")
@@ -54,6 +55,9 @@ write.csv(NS_FW, "Data/NorthernScotia_FoodWeb.csv", row.names=F)
 
 ##################################################################################
 
+### Collapse the basal species into few phytoplankton nodes
+# code from Leo
+
 #Extract taxonmic information for species
 
 library("taxize")
@@ -98,7 +102,20 @@ basal_sp_ss
 
 class<-read_tsv("Data/SoutherScotia_basal.dat")
 class2 <- class[-c(3,9,18),]#remove detritus, bacteria, and maxillopoda nodes
-#NOTE! MAXILLOPODA IS MISSING RESOURCE ITEMS!
+
+#NOTE! Oncaea parila MAXILLOPODA IS MISSING RESOURCE ITEMS!
+#metaweb 
+#add Oncaea links from GENUS
+links_scotia<-read.csv("Data/metaweb_links.csv", sep=",")
+head(links_scotia)
+#Genus
+Oncacea_meta_con<-links_scotia[c(which(links_scotia$consumer=="Oncaea prolata"),which(links_scotia$consumer=="Oncaea curvata")),]
+Oncacea_meta_con[,2]<-"Oncaea parila"
+#duplicated(Oncacea_meta_con)
+#Oncacea_meta$resource%in%collapsed_ss_fw$resource
+
+ss_fw<-rbind(ss_fw, Oncacea_meta_con)
+
 #rename some plankton species to other for aggregation
 class2  <- class2 %>% 
 mutate(class = case_when(class %in% c("Prymnesiophyceae",NA) ~ "Phytoplankton_other",TRUE ~ class))
@@ -139,16 +156,14 @@ collapsed_ss_fw <- ss_fw2 %>% distinct()
 dim(collapsed_ss_fw)
 gM_ss2 <- graph_from_edgelist(as.matrix(collapsed_ss_fw), directed  = T)
 
-
 #check the basal species
 basal_sp_ss2 <- (V(gM_ss2)[ (degree(gM_ss2,mode="in")==0) ])$name
 basal_sp_ss2
 
-
 write_csv(collapsed_ss_fw,"Data/Southern_Scotia_top_collapsed_basal.csv")
+#collapsed_ss_fw<-read_csv("Data/Southern_Scotia_top_collapsed_basal.csv")
 
-#
-meta_fw<-read_csv("Data/metaweb_links.csv")
+
 ###############
 
 #Collapse basal species, code from Leo
@@ -156,15 +171,16 @@ ns_fw<-read_csv("Data/NorthernScotia_top.csv")
 ns_fw<-ns_fw[,-1]
 head(ns_fw)
 dim(ns_fw)
+
+#check names
 dfn_ns <- unique(ns_fw$consumer)
-con_names_ss <- gnr_resolve(dfn_ss, best_match_only = TRUE, canonical=TRUE)
+con_names <- gnr_resolve(dfn_ns, best_match_only = TRUE, canonical=TRUE)
 # Species not found
-anti_join(data.frame(user_supplied_name=dfn_ss),con_names_ss)
+anti_join(data.frame(user_supplied_name=dfn_ns),con_names)
 
-
-dfn_ns2 <- unique(ns_fw$resource)
-res_names <- gnr_resolve(dfn_ns2, best_match_only = TRUE, canonical=TRUE)
-anti_join(data.frame(user_supplied_name=dfn_ns2),res_names)
+dfn_ns <- unique(ns_fw$resource)
+res_names <- gnr_resolve(dfn_ns, best_match_only = TRUE, canonical=TRUE)
+anti_join(data.frame(user_supplied_name=dfn_ns),res_names)
 
 # pairwise interaction list for the Southern Scotia Sea food web
 gM_ns <- graph_from_edgelist(as.matrix(ns_fw), directed  = T)
@@ -172,13 +188,31 @@ gM_ns <- graph_from_edgelist(as.matrix(ns_fw), directed  = T)
 # identify basal species
 basal_sp_ns <- (V(gM_ns)[ (degree(gM_ns,mode="in")==0) ])$name
 basal_sp_ns
+
+#NOTE! Oncaea parila MAXILLOPODA IS MISSING RESOURCE ITEMS!
+#add Oncaea links from GENUS from the metaweb
+links_scotia<-read.csv("Data/metaweb_links.csv", sep=",")
+head(links_scotia)
+#Genus
+Oncacea_meta_con<-links_scotia[c(which(links_scotia$consumer=="Oncaea prolata"),which(links_scotia$consumer=="Oncaea curvata")),]
+Oncacea_meta_con[,2]<-"Oncaea parila"
+#duplicated(Oncacea_meta_con)
+#Oncacea_meta$resource%in%collapsed_ss_fw$resource
+
+ns_fw<-rbind(ns_fw, Oncacea_meta_con)
+
+# identify basal species
+basal_sp_ns <- (V(gM_ns)[ (degree(gM_ns,mode="in")==0) ])$name
+basal_sp_ns
+
 # Solamente clase
 class <- tax_name(basal_sp_ns, get = "class", db = "itis")
 class %>% count(is.na(class))                                # 27 NA
 class <- class%>% mutate(genera= stringr::word(query)) %>% rename( species = query ) %>% select(genera,species,class)
+#write_tsv(class,"Data/NorthernScotia_basal.dat")
 
 class<-read_tsv("Data/NorthernScotia_basal.dat")
-class2 <- class[-c(3,9,18),]#remove detritus, bacteria, and maxillopoda
+class2 <- class[-c(3,9),]#remove detritus, bacteria
 class2[which(is.na(class2$class)),3]<-"Phytoplankton_other" #assign phytoplankton other to phytoplankton with NAs
 class2[which(class2$class=="Prymnesiophyceae"),3]<-"Phytoplankton_other"
 class2 %>% filter(!is.na(class)) %>%  distinct(genera,class)
