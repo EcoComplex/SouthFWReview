@@ -11,8 +11,8 @@ library(multiweb)
 nscotia_old <- read.csv("Data/NorthernScotia_FoodWeb.csv", header = T)
 sscotia_old <- read.csv("Data/SouthernScotia_FoodWeb.csv", header = T)
 # Standardized
-nscotia_std <- read.csv("Data/NorthernScotia_top.csv", header = T, colClasses = c("NULL",NA,NA))
-sscotia_std <- read.csv("Data/SouthernScotia_top.csv", header = T, colClasses = c("NULL",NA,NA))
+nscotia_std <- read.csv("Data/Northern_Scotia_collapsed_basal_top.csv", header = T)
+sscotia_std <- read.csv("Data/Southern_Scotia_collapsed_basal_top.csv", header = T)
 
 # Igraph objects
 nscotia_old_g <- graph_from_data_frame(nscotia_old, directed = T)
