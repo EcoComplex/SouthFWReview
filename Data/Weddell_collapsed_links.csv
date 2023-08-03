@@ -18,26 +18,18 @@ Bacillariophyceae,Neogloboquadriana pachyderma
 Phytodetritus,Neogloboquadriana pachyderma
 Sediment,Neogloboquadriana pachyderma
 Bacillariophyceae,Euphausia crystallorophias
-Dictyocha speculum,Euphausia crystallorophias
-Phaeocystis antarctica,Euphausia crystallorophias
-Silicioflagellata,Euphausia crystallorophias
+Phytoplankton_other,Euphausia crystallorophias
 Bodo saltans,Euphausia crystallorophias
 Bacillariophyceae,Euphausia frigida
-Dictyocha speculum,Euphausia frigida
-Phaeocystis antarctica,Euphausia frigida
-Silicioflagellata,Euphausia frigida
+Phytoplankton_other,Euphausia frigida
 Bodo saltans,Euphausia frigida
 Neogloboquadriana pachyderma,Euphausia frigida
 Bacillariophyceae,Thysanoessa macrura
-Dictyocha speculum,Thysanoessa macrura
-Phaeocystis antarctica,Thysanoessa macrura
-Silicioflagellata,Thysanoessa macrura
+Phytoplankton_other,Thysanoessa macrura
 Bodo saltans,Thysanoessa macrura
 Neogloboquadriana pachyderma,Thysanoessa macrura
 Bacillariophyceae,Euphausia superba
-Dictyocha speculum,Euphausia superba
-Phaeocystis antarctica,Euphausia superba
-Silicioflagellata,Euphausia superba
+Phytoplankton_other,Euphausia superba
 Bodo saltans,Euphausia superba
 Neogloboquadriana pachyderma,Euphausia superba
 Bacillariophyceae,Ampelisca richardsoni
@@ -409,9 +401,7 @@ Polymastia isidis,Epimeriella walkeri
 Anoxycalyx joubini,Epimeriella walkeri
 Phytodetritus,Epimeriella walkeri
 Bacillariophyceae,Cyllopus lucasii
-Dictyocha speculum,Cyllopus lucasii
-Phaeocystis antarctica,Cyllopus lucasii
-Silicioflagellata,Cyllopus lucasii
+Phytoplankton_other,Cyllopus lucasii
 Bodo saltans,Cyllopus lucasii
 Alacia hettacra,Cyllopus lucasii
 Alacia belgicae,Cyllopus lucasii
@@ -419,9 +409,7 @@ Metaconchoecia isocheira,Cyllopus lucasii
 Boroecia antipoda,Cyllopus lucasii
 Pelagobia longicirrata,Cyllopus lucasii
 Bacillariophyceae,Hyperiella dilatata
-Dictyocha speculum,Hyperiella dilatata
-Phaeocystis antarctica,Hyperiella dilatata
-Silicioflagellata,Hyperiella dilatata
+Phytoplankton_other,Hyperiella dilatata
 Bodo saltans,Hyperiella dilatata
 Alacia hettacra,Vibilia antarctica
 Alacia belgicae,Vibilia antarctica
@@ -681,9 +669,7 @@ Polymastia invaginata,Melphidippa antarctica
 Polymastia isidis,Melphidippa antarctica
 Anoxycalyx joubini,Melphidippa antarctica
 Bacillariophyceae,Oediceroides emarginatus
-Dictyocha speculum,Oediceroides emarginatus
-Phaeocystis antarctica,Oediceroides emarginatus
-Silicioflagellata,Oediceroides emarginatus
+Phytoplankton_other,Oediceroides emarginatus
 Bodo saltans,Oediceroides emarginatus
 Ampelisca richardsoni,Oediceroides emarginatus
 Alexandrella mixta,Oediceroides emarginatus
@@ -697,9 +683,7 @@ Haplocheira plumosa,Oediceroides emarginatus
 Oradarea edentata,Oediceroides emarginatus
 Djerboa furcipes,Oediceroides emarginatus
 Bacillariophyceae,Oediceroides calmani
-Dictyocha speculum,Oediceroides calmani
-Phaeocystis antarctica,Oediceroides calmani
-Silicioflagellata,Oediceroides calmani
+Phytoplankton_other,Oediceroides calmani
 Bodo saltans,Oediceroides calmani
 Ampelisca richardsoni,Oediceroides calmani
 Alexandrella mixta,Oediceroides calmani
@@ -1202,20 +1186,14 @@ Polymastia invaginata,Heterophoxus videns
 Polymastia isidis,Heterophoxus videns
 Anoxycalyx joubini,Heterophoxus videns
 Bacillariophyceae,Haplocheira plumosa
-Dictyocha speculum,Haplocheira plumosa
-Phaeocystis antarctica,Haplocheira plumosa
-Silicioflagellata,Haplocheira plumosa
+Phytoplankton_other,Haplocheira plumosa
 Bodo saltans,Haplocheira plumosa
 Phytodetritus,Haplocheira plumosa
 Bacillariophyceae,Oradarea edentata
-Dictyocha speculum,Oradarea edentata
-Phaeocystis antarctica,Oradarea edentata
-Silicioflagellata,Oradarea edentata
+Phytoplankton_other,Oradarea edentata
 Bodo saltans,Oradarea edentata
 Bacillariophyceae,Djerboa furcipes
-Dictyocha speculum,Djerboa furcipes
-Phaeocystis antarctica,Djerboa furcipes
-Silicioflagellata,Djerboa furcipes
+Phytoplankton_other,Djerboa furcipes
 Bodo saltans,Djerboa furcipes
 Bacillariophyceae,Rhachotropis antarctica
 Ampelisca richardsoni,Rhachotropis antarctica
@@ -1368,9 +1346,7 @@ Polymastia invaginata,Notocrangon antarcticus
 Polymastia isidis,Notocrangon antarcticus
 Anoxycalyx joubini,Notocrangon antarcticus
 Bacillariophyceae,Chorismus antarcticus
-Dictyocha speculum,Chorismus antarcticus
-Phaeocystis antarctica,Chorismus antarcticus
-Silicioflagellata,Chorismus antarcticus
+Phytoplankton_other,Chorismus antarcticus
 Bodo saltans,Chorismus antarcticus
 Cassidulinoides parkerianus,Chorismus antarcticus
 Cibicides refulgens,Chorismus antarcticus
@@ -1470,9 +1446,7 @@ Polymastia invaginata,Chorismus antarcticus
 Polymastia isidis,Chorismus antarcticus
 Anoxycalyx joubini,Chorismus antarcticus
 Bacillariophyceae,Nematocarcinus lanceopes
-Dictyocha speculum,Nematocarcinus lanceopes
-Phaeocystis antarctica,Nematocarcinus lanceopes
-Silicioflagellata,Nematocarcinus lanceopes
+Phytoplankton_other,Nematocarcinus lanceopes
 Bodo saltans,Nematocarcinus lanceopes
 Alacia hettacra,Nematocarcinus lanceopes
 Alacia belgicae,Nematocarcinus lanceopes
@@ -1480,30 +1454,20 @@ Metaconchoecia isocheira,Nematocarcinus lanceopes
 Boroecia antipoda,Nematocarcinus lanceopes
 Pelagobia longicirrata,Nematocarcinus lanceopes
 Bacillariophyceae,Rhincalanus gigas
-Dictyocha speculum,Rhincalanus gigas
-Phaeocystis antarctica,Rhincalanus gigas
-Silicioflagellata,Rhincalanus gigas
+Phytoplankton_other,Rhincalanus gigas
 Bodo saltans,Rhincalanus gigas
 Bacillariophyceae,Calanus propinquus
-Dictyocha speculum,Calanus propinquus
-Phaeocystis antarctica,Calanus propinquus
-Silicioflagellata,Calanus propinquus
+Phytoplankton_other,Calanus propinquus
 Bodo saltans,Calanus propinquus
 Bacillariophyceae,Calanoides acutus
-Dictyocha speculum,Calanoides acutus
-Phaeocystis antarctica,Calanoides acutus
-Silicioflagellata,Calanoides acutus
+Phytoplankton_other,Calanoides acutus
 Bodo saltans,Calanoides acutus
 Pelagobia longicirrata,Calanoides acutus
 Bacillariophyceae,Metridia gerlachei
-Dictyocha speculum,Metridia gerlachei
-Phaeocystis antarctica,Metridia gerlachei
-Silicioflagellata,Metridia gerlachei
+Phytoplankton_other,Metridia gerlachei
 Bodo saltans,Metridia gerlachei
 Bacillariophyceae,Paraeuchaeta antarctica
-Dictyocha speculum,Paraeuchaeta antarctica
-Phaeocystis antarctica,Paraeuchaeta antarctica
-Silicioflagellata,Paraeuchaeta antarctica
+Phytoplankton_other,Paraeuchaeta antarctica
 Bodo saltans,Paraeuchaeta antarctica
 Pelagobia longicirrata,Paraeuchaeta antarctica
 Bacillariophyceae,Eucopia australis
@@ -1762,27 +1726,19 @@ Pelagobia longicirrata,Conchoecia hettacra
 Phytodetritus,Conchoecia hettacra
 Sediment,Conchoecia hettacra
 Bacillariophyceae,Alacia hettacra
-Dictyocha speculum,Alacia hettacra
-Phaeocystis antarctica,Alacia hettacra
-Silicioflagellata,Alacia hettacra
+Phytoplankton_other,Alacia hettacra
 Bodo saltans,Alacia hettacra
 Phytodetritus,Alacia hettacra
 Bacillariophyceae,Alacia belgicae
-Dictyocha speculum,Alacia belgicae
-Phaeocystis antarctica,Alacia belgicae
-Silicioflagellata,Alacia belgicae
+Phytoplankton_other,Alacia belgicae
 Bodo saltans,Alacia belgicae
 Phytodetritus,Alacia belgicae
 Bacillariophyceae,Metaconchoecia isocheira
-Dictyocha speculum,Metaconchoecia isocheira
-Phaeocystis antarctica,Metaconchoecia isocheira
-Silicioflagellata,Metaconchoecia isocheira
+Phytoplankton_other,Metaconchoecia isocheira
 Bodo saltans,Metaconchoecia isocheira
 Phytodetritus,Metaconchoecia isocheira
 Bacillariophyceae,Boroecia antipoda
-Dictyocha speculum,Boroecia antipoda
-Phaeocystis antarctica,Boroecia antipoda
-Silicioflagellata,Boroecia antipoda
+Phytoplankton_other,Boroecia antipoda
 Bodo saltans,Boroecia antipoda
 Phytodetritus,Boroecia antipoda
 Bacillariophyceae,Conchoecia antipoda
@@ -3489,9 +3445,7 @@ Bostrychopora dentata,Ophionotus victoriae
 Phytodetritus,Ophionotus victoriae
 Sediment,Ophionotus victoriae
 Bacillariophyceae,Ophioceres incipiens
-Dictyocha speculum,Ophioceres incipiens
-Phaeocystis antarctica,Ophioceres incipiens
-Silicioflagellata,Ophioceres incipiens
+Phytoplankton_other,Ophioceres incipiens
 Bodo saltans,Ophioceres incipiens
 Cassidulinoides parkerianus,Ophioceres incipiens
 Cibicides refulgens,Ophioceres incipiens
@@ -3562,9 +3516,7 @@ Anoxycalyx joubini,Ophioceres incipiens
 Phytodetritus,Ophioceres incipiens
 Sediment,Ophioceres incipiens
 Bacillariophyceae,Ophiurolepis brevirima
-Dictyocha speculum,Ophiurolepis brevirima
-Phaeocystis antarctica,Ophiurolepis brevirima
-Silicioflagellata,Ophiurolepis brevirima
+Phytoplankton_other,Ophiurolepis brevirima
 Bodo saltans,Ophiurolepis brevirima
 Cassidulinoides parkerianus,Ophiurolepis brevirima
 Cibicides refulgens,Ophiurolepis brevirima
@@ -3668,9 +3620,7 @@ Bostrychopora dentata,Ophiurolepis brevirima
 Phytodetritus,Ophiurolepis brevirima
 Sediment,Ophiurolepis brevirima
 Bacillariophyceae,Ophiurolepis gelida
-Dictyocha speculum,Ophiurolepis gelida
-Phaeocystis antarctica,Ophiurolepis gelida
-Silicioflagellata,Ophiurolepis gelida
+Phytoplankton_other,Ophiurolepis gelida
 Bodo saltans,Ophiurolepis gelida
 Cassidulinoides parkerianus,Ophiurolepis gelida
 Cibicides refulgens,Ophiurolepis gelida
@@ -3981,9 +3931,7 @@ Globocassidulina crassa,Ophiacantha antarctica
 Lenticulina antarctica,Ophiacantha antarctica
 Neogloboquadriana pachyderma,Ophiacantha antarctica
 Bacillariophyceae,Astrotoma agassizii
-Dictyocha speculum,Astrotoma agassizii
-Phaeocystis antarctica,Astrotoma agassizii
-Silicioflagellata,Astrotoma agassizii
+Phytoplankton_other,Astrotoma agassizii
 Bodo saltans,Astrotoma agassizii
 Cassidulinoides parkerianus,Astrotoma agassizii
 Cibicides refulgens,Astrotoma agassizii
@@ -4684,9 +4632,7 @@ Phytodetritus,Echinopsolus acanthocola
 Phytodetritus,Ekmocucumis turqueti turqueti
 Phytodetritus,Taeniogyrus contortus
 Bacillariophyceae,Silicularia rosea
-Dictyocha speculum,Silicularia rosea
-Phaeocystis antarctica,Silicularia rosea
-Silicioflagellata,Silicularia rosea
+Phytoplankton_other,Silicularia rosea
 Bodo saltans,Silicularia rosea
 Alacia hettacra,Silicularia rosea
 Alacia belgicae,Silicularia rosea
@@ -5560,23 +5506,17 @@ Phytodetritus,Pyura discoveryi
 Phytodetritus,Pyura setosa
 Phytodetritus,Pyura tunicata
 Bacillariophyceae,Salpa thompsoni
-Dictyocha speculum,Salpa thompsoni
-Phaeocystis antarctica,Salpa thompsoni
-Silicioflagellata,Salpa thompsoni
+Phytoplankton_other,Salpa thompsoni
 Bodo saltans,Salpa thompsoni
 Lenticulina antarctica,Salpa thompsoni
 Neogloboquadriana pachyderma,Salpa thompsoni
 Pelagobia longicirrata,Salpa thompsoni
 Phytodetritus,Salpa thompsoni
 Bacillariophyceae,Salpa gerlachei
-Dictyocha speculum,Salpa gerlachei
-Phaeocystis antarctica,Salpa gerlachei
-Silicioflagellata,Salpa gerlachei
+Phytoplankton_other,Salpa gerlachei
 Bodo saltans,Salpa gerlachei
 Bacillariophyceae,Ihlea racovitzai
-Dictyocha speculum,Ihlea racovitzai
-Phaeocystis antarctica,Ihlea racovitzai
-Silicioflagellata,Ihlea racovitzai
+Phytoplankton_other,Ihlea racovitzai
 Bodo saltans,Ihlea racovitzai
 Iphimediella  cyclogena,Artedidraco orianae
 Natatolana obtusata,Artedidraco orianae
@@ -11342,3 +11282,4 @@ Gymnoscopelus opisthopterus,Tursiops truncatus
 Gymnoscopelus nicholsi,Tursiops truncatus
 Protomyctophum bolini,Tursiops truncatus
 Champsocephalus gunnari,Tursiops truncatus
+Phytodetritus,Alcyonium antarcticum

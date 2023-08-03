@@ -27,11 +27,11 @@ require(tidyverse)
 ```{r WeddellSea, eval=F,echo=F,message=T,warning=T}
  
 #
-dtot <- read_csv("Data/WeddellSea_links.csv")
+dtot <- read_csv("Data/WeddellSea_links_original.csv")
 
 # Check valid names 
 #
-#
+# Predators
 require(taxize)
 dfn <- unique(dtot$consumer)
 con_names <- gnr_resolve(dfn, best_match_only = TRUE, canonical=TRUE)
@@ -39,6 +39,12 @@ con_names <- gnr_resolve(dfn, best_match_only = TRUE, canonical=TRUE)
 anti_join(data.frame(user_supplied_name=dfn),con_names)
 # 1 Cadulus dalli antarcticum
 
+# CLasificación completa
+clasall <- classification(dfn, db = 'itis') #
+
+
+# Preys
+#
 dfn <- unique(dtot$resource)
 res_names <- gnr_resolve(dfn, best_match_only = TRUE, canonical=TRUE)
 anti_join(data.frame(user_supplied_name=dfn),res_names)
@@ -53,6 +59,8 @@ gM <- graph_from_edgelist(as.matrix(dtot), directed  = T)
 #
 basal_sp <- (V(gM)[ (degree(gM,mode="in")==0) ])$name
 basal_sp
+
+
 
 # CLasificación completa
 # clasall <- classification(basal_sp, db = 'itis') # 24 not found
@@ -120,5 +128,5 @@ new_basal_sp
 # 
 
 calc_topological_indices(gM)
-write_csv(collapsed_w,"Data/Weddell_collapsed_links_2.csv")
+write_csv(collapsed_w,"Data/Weddell_collapsed_links.csv")
 ```
