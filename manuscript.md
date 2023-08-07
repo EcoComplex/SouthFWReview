@@ -70,7 +70,8 @@ Beagle Channel
 Burdwood Bank
 Potter Cove
 Scotia Sea
-Weddell Sea
+
+* Weddell Sea: Located between 74 and 78ºS, the high Antarctic Weddell Sea shelf spans approximately 450 km from East to West (see Figure 1). The water depth in this area ranges from 200 to 500 meters, with shallower regions being covered by continental ice that forms the coastline along the eastern and southern parts of the Weddell Sea. Within this shelf area, there exists a complex three-dimensional benthic habitat characterized by substantial benthic biomasses and an intermediate to high diversity when compared to benthic boreal communities [@Dayton1990; @Teixido2002].
 
 Table. Complexity and structure of the marine food webs considered in the present review.
 
@@ -101,7 +102,7 @@ Text and case-study diagram
 
 ### Weddell Sea (Antarctica)
 
-Located between 74 and 78ºS, the high Antarctic Weddell Sea shelf spans approximately 450 km from East to West (see Figure 1). The water depth in this area ranges from 200 to 500 meters, with shallower regions being covered by continental ice that forms the coastline along the eastern and southern parts of the Weddell Sea. Within this shelf area, there exists a complex three-dimensional benthic habitat characterized by substantial benthic biomasses and an intermediate to high diversity when compared to benthic boreal communities [@Dayton1990; @Teixido2002].
+
 
 In this region there are several stressors already triggered by climate change, ice shelf collapses, increases in iceberg scouring, reductions in sea ice spatial and temporal extent, acidification and warming [@Isla2023; @Gutt2015]. Currently there are no krill fishery activities and exploratory fishing for Antarctic toothfish (Dissostichus mawsoni) [@Teschke2021].
 
