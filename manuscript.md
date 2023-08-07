@@ -4,7 +4,7 @@ output:
     latex_engine: xelatex
     keep_tex: true
     
-bibliography: JAE_review.bib  
+bibliography: JAE_Review.bib  
 csl: journal-of-animal-ecology.csl
 
 documentclass: article
@@ -50,6 +50,15 @@ header-includes:
 
 ## Abstract
 
+1. Ecological networks are increasingly used as conceptual frameworks for understanding ecological community structure, identifying key species, and for ecosystem management and biodiversity conservation.
+
+2. Here we propose to review the response of trophic interaction networks, hereafter food webs, to multiple stressors in six marine ecosystems along a latitudinal gradient in the Southern Hemisphere: San Jorge Gulf (45-47°S, 65-68°W), Beagle Channel (54°S, 68°W), Burdwood Bank (54°S, 59°W), Scotia Sea (57°S, 50°W), Potter Cove (62°S, 58°W, Antarctica), and Weddell Sea (74-78°S, 30°W, Antarctica). The food webs for the chosen systems are highly resolved, meaning that the overwhelming majority of nodes are resolved to genus or species level. These locations include temperate to Antarctic ecosystems exposed to both anthropogenic (fisheries, pollution) and environmental (temperature increase) impacts.
+
+3. Our primary objectives are to: 1) describe and compare the food webs in terms of network properties of complexity, structure, potential stability; 2) show how these properties could be impacted due to the ongoing anthropogenic and/or environmental stressors; 3) identify key species and its characteristics (i.e. trophic position) for the stability of the food web; and 4) give suggestions on which data and analyses are needed to gain insights into ecosystem functioning and perturbation response.
+
+4. This review will show the advantages of applying a network approach to better understand marine ecosystems of the Southern Hemisphere. Overall, this paper will make progress towards gaining a comprehensive knowledge to predict the responses of complex marine systems to anthropogenic and environmental changes.
+
+
 ## From species’ stressors to food web effects
   
   Arguments to support the conceptual diagram (Figure).
@@ -89,7 +98,8 @@ Text and case-study diagram
 
 ### Weddell Sea (Antarctica)
 
-Text and case-study diagram
+In this region there are several stressors already triggered by climate change, ice shelf collapses, increases in iceberg scouring, reductions in sea ice spatial and temporal extent, acidification and warming [@Isla2023; @Gutt2015]. 
+
 
 ## Potential impacts on a latitudinal gradient in the Southwest Atlantic Ocean
   
