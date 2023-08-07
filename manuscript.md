@@ -23,14 +23,14 @@ header-includes:
 
 
 
- Tomas I. Marina^3,4^, Leonardo A. Saravia^3,4^, Fernando Momo ^1,2^
+ Tomas I. Marina^1^, Leonardo A. Saravia^1,2^, Fernando Momo ^3,4^
 
- ^1^ Departamento de Ciencias Básicas, Universidad Nacional de Luján
- (Argentina), 
- ^2^ Instituto de Ecología y Desarrollo Sustentable (UNLu -- CONICET), 
- ^3^ Instituto de Ciencias Polares, Universidad Nacional de
- Tierra del Fuego (Argentina) 
- ^4^ Centro Austral de Investigaciones Científicas (CADIC-CONICET), Ushuaia, Argentina.
+ ^1^ Centro Austral de Investigaciones Científicas (CADIC-CONICET), Ushuaia, Argentina
+ ^2^ Instituto de Ciencias Polares, Ambiente y Recursos Naturales, Universidad Nacional de Tierra del Fuego, Argentina
+ ^3^ Departamento de Ciencias Básicas, Universidad Nacional de Luján, Argentina
+ ^4^ Instituto de Ecología y Desarrollo Sustentable (UNLu -- CONICET)
+  
+
 
  Corresponding author:
 
@@ -39,14 +39,11 @@ header-includes:
 
  Centro Austral de Investigaciones Científicas (CADIC-CONICET)
 
- Bernardo Houssay 200  
- 
- (9410) Ushuaia, Argentina
+ Bernardo Houssay 200 (9410) Ushuaia, Argentina
  
 
  **Author contributions**: TIM and LAS originally formulated the idea, TIM, LAS, FM
- developed the methodology, TIM, LAS, FM analyzed the data and
- wrote the manuscript.
+ developed the methodology, TIM, LAS, FM analyzed the data and wrote the manuscript.
 
 ## Abstract
 
@@ -61,13 +58,19 @@ header-includes:
 
 ## From species’ stressors to food web effects
   
-  Arguments to support the conceptual diagram (Figure).
+Arguments to support the conceptual diagram (Figure).
 
-  Figure. Conceptual diagram: from species’ stressors to food web effects.
+Figure. Conceptual diagram: from species’ stressors to food web effects.
 
 ## The structure of marine food webs in the Southwest Atlantic Ocean
-  
-Describe the state-of-art for the six food webs considered in this study.
+
+Describe the state-of-art for the six food webs considered in this study. Start with a brief description of the area.
+San Jorge Gulf
+Beagle Channel
+Burdwood Bank
+Potter Cove
+Scotia Sea
+Weddell Sea
 
 Table. Complexity and structure of the marine food webs considered in the present review.
 
@@ -77,7 +80,7 @@ Table. Complexity and structure of the marine food webs considered in the presen
   
 In independent subsections, describe the stressors reported for each study area.
   
-Table. Environmental and anthropogenic stressors reported for the study areas: San  Jorge Gulf, Beagle Channel, Burdwood Bank, Potter Cove, Scotia Sea and Weddell Sea.
+Table. Environmental and anthropogenic stressors reported for the study areas: San Jorge Gulf, Beagle Channel, Burdwood Bank, Potter Cove, Scotia Sea and Weddell Sea.
 
 
 ### San Jorge Gulf
