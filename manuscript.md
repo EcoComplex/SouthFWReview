@@ -104,7 +104,20 @@ Text and case-study diagram
 
 
 
-In this region there are several stressors already triggered by climate change, ice shelf collapses, increases in iceberg scouring, reductions in sea ice spatial and temporal extent, acidification and warming [@Isla2023; @Gutt2015]. Currently there are no krill fishery activities and exploratory fishing for Antarctic toothfish (Dissostichus mawsoni) [@Teschke2021].
+In this region there are several stressors already triggered by climate change, 1) ice shelf collapses, 2) increases in iceberg scouring, 3) reductions in sea ice spatial and temporal extent, 4) acidification and warming [@Isla2023; @Gutt2015]. Currently there are no krill fishery activities and exploratory fishing for Antarctic toothfish (Dissostichus mawsoni) [@Teschke2021]. 
+
+<!-- phytoplankton --> 
+
+Primary production by phytoplankton is expected to increase in the short-term in response to increased light availability due to sea ice loss and ice shelf collapse [@Dinniman2023]. This can lead to increased phytoplankton biomass and organic matter flux to the seafloor, fueling benthic recolonization [@Sane2012]. However, community composition changes are likely, as warmer more stratified conditions favor small flagellates over diatoms, reducing energy transfer to higher trophic levels. Ocean acidification may counteract any productivity increases by negatively impacting key phytoplankton groups like foraminifera and flagellates [@Hancock2020], reducing carbon export [@Moy2009;@Deppeler2020]. While primary production may increase transiently [@Dinniman2023; @Lin2011], changes in community structure toward smaller cells, reduced carbon export, and altered energy transfer to higher trophic levels are more certain [@Mendes2018; @Pauli2021]. The net effect on phytoplankton biomass is unclear as some stressors like sea ice loss tend to increase production, while others like acidification tend to decrease it. However, ecological impacts through altered community structure and reduced carbon export to the benthos are likely.
+
+<!-- Krill --> 
+For instance, crucial habitats for krill recruitment may be severely impacted, leading to compromised hatching success [@Kawaguchi2013]
+
+<!-- Antarctic krill, Euphausia superba, have a high resilience to elevated CO 2 when exposed over an entire year. These and other studies suggest that some invertebrates may be able to adapt over time to ocean acidification conditions and produce more resilient offspring, but further long-term studies are needed to fully explore this intergenerational adaptive capacity (Peck, 2018). [@Hancock2020] -->
+
+<!-- Multiple stressors: The Southern Ocean and nearshore Antarctic waters are also warming, sea-ice is predicted to decline, winds are strengthening, upwelling and nutrient availability is changing, mixed layer depths are shallowing, and the ocean fronts are moving southward (Deppeler & Davidson, 2017; Stark, Raymond, Deppeler, & Morrison, 2019). These stressors interact, resulting in additive, synergistic, or antagonistic effects on organisms (Boyd, Brown, Schrum, & Krishnakumar, 2015).
+[@Hancock2020] --> 
+
 
 
 ## Potential impacts on a latitudinal gradient in the Southwest Atlantic Ocean
