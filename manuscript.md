@@ -99,7 +99,7 @@ Text and case-study diagram
 ### Burdwood Bank
 Text and case-study diagram
 
-### Potter Cove (Antarctica)
+### Potter Cove (Antarctica)Kawaguchi2009
 Text and case-study diagram
 
 ### Scotia Sea
@@ -117,9 +117,10 @@ In this region there are several stressors already triggered by climate change, 
 Primary production by phytoplankton is expected to increase in the short-term in response to increased light availability due to sea ice loss and ice shelf collapse [@Dinniman2023]. This can lead to increased phytoplankton biomass and organic matter flux to the seafloor, fueling benthic recolonization [@Sane2012]. However, community composition changes are likely, as warmer more stratified conditions favor small flagellates over diatoms, reducing energy transfer to higher trophic levels. Ocean acidification may counteract any productivity increases by negatively impacting key phytoplankton groups like foraminifera and flagellates [@Hancock2020], reducing carbon export [@Moy2009;@Deppeler2020]. While primary production may increase transiently [@Dinniman2023; @Lin2011], changes in community structure toward smaller cells, reduced carbon export, and altered energy transfer to higher trophic levels are more certain [@Mendes2018; @Pauli2021]. The net effect on phytoplankton biomass is unclear as some stressors like sea ice loss tend to increase production, while others like acidification tend to decrease it. However, ecological impacts through altered community structure and reduced carbon export to the benthos are likely.
 
 <!-- Krill --> 
-For instance, crucial habitats for krill recruitment may be severely impacted, leading to compromised hatching success [@Kawaguchi2013]
+It has been suggested that the krill (Euphausia superba) population in the South Atlantic has already declined as a result of productivity changes caused by the decline in sea ice [@Atkinson2004]. Declining sea ice cover further allows increased access to krill by predators [@Kawaguchi2009]. Some studies suggest that crucial habitats for krill  recruitment may be severely impacted by ocean acidification, with reductions of up to 60–70% in the Weddell Sea [@Kawaguchi2013]. Beside, some studies suggest that krill has a high resilience to elevated CO2 when exposed over an entire year [@Hancock2020], but multiple stressors are suggested to have synergistic effects on krill populations [@Kawaguchi2013].
 
-<!-- Antarctic krill, Euphausia superba, have a high resilience to elevated CO 2 when exposed over an entire year. These and other studies suggest that some invertebrates may be able to adapt over time to ocean acidification conditions and produce more resilient offspring, but further long-term studies are needed to fully explore this intergenerational adaptive capacity (Peck, 2018). [@Hancock2020] -->
+Declining krill abundances could lead to decreased carbon flux, because its fecal pellets account for the majority of exported carbon [@Pauli2021]. This adds to the previously mentioned effect of phytoplankton on the carbon flux, thus the impact on benthos will likely be important.
+
 
 <!-- Multiple stressors: The Southern Ocean and nearshore Antarctic waters are also warming, sea-ice is predicted to decline, winds are strengthening, upwelling and nutrient availability is changing, mixed layer depths are shallowing, and the ocean fronts are moving southward (Deppeler & Davidson, 2017; Stark, Raymond, Deppeler, & Morrison, 2019). These stressors interact, resulting in additive, synergistic, or antagonistic effects on organisms (Boyd, Brown, Schrum, & Krishnakumar, 2015).
 [@Hancock2020] --> 
