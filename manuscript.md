@@ -23,11 +23,11 @@ header-includes:
 
 
 
- Tomas I. Marina^1^, Leonardo A. Saravia^1,2^, Fernando Momo ^3,4^
+ Tomás I. Marina^1^, Leonardo A. Saravia^1,2^, Fernando Momo ^3,4^
 
- ^1^ Centro Austral de Investigaciones Científicas (CADIC-CONICET), Ushuaia, Argentina
- ^2^ Instituto de Ciencias Polares, Ambiente y Recursos Naturales, Universidad Nacional de Tierra del Fuego, Argentina
- ^3^ Departamento de Ciencias Básicas, Universidad Nacional de Luján, Argentina
+ ^1^ Centro Austral de Investigaciones Científicas (CADIC-CONICET), Ushuaia, Argentina;
+ ^2^ Instituto de Ciencias Polares, Ambiente y Recursos Naturales, Universidad Nacional de Tierra del Fuego, Argentina;
+ ^3^ Departamento de Ciencias Básicas, Universidad Nacional de Luján, Argentina;
  ^4^ Instituto de Ecología y Desarrollo Sustentable (UNLu -- CONICET)
   
 
@@ -35,11 +35,9 @@ header-includes:
  Corresponding author:
 
  Dr. Leonardo A. Saravia  <lasaravia@untdf.edu.ar>
- Dr. Tomas I. Marina <tomasimarina@gmail.com>
+ Dr. Tomás I. Marina <tomasimarina@gmail.com>
 
- Centro Austral de Investigaciones Científicas (CADIC-CONICET)
-
- Bernardo Houssay 200 (9410) Ushuaia, Argentina
+ Centro Austral de Investigaciones Científicas (CADIC-CONICET), Bernardo Houssay 200 (9410) Ushuaia, Argentina
  
 
  **Author contributions**: TIM and LAS originally formulated the idea, TIM, LAS, FM
@@ -65,13 +63,21 @@ Figure. Conceptual diagram: from species’ stressors to food web effects.
 ## The structure of marine food webs in the Southwest Atlantic Ocean
 
 Describe the state-of-art for the six food webs considered in this study. Start with a brief description of the area.
-San Jorge Gulf
-Beagle Channel
-Burdwood Bank
-Potter Cove
-Scotia Sea
+* San Jorge Gulf
 
-* Weddell Sea: Located between 74 and 78ºS, the high Antarctic Weddell Sea shelf spans approximately 450 km from East to West (see Figure 1). The water depth in this area ranges from 200 to 500 meters, with shallower regions being covered by continental ice that forms the coastline along the eastern and southern parts of the Weddell Sea. Within this shelf area, there exists a complex three-dimensional benthic habitat characterized by substantial benthic biomasses and an intermediate to high diversity when compared to benthic boreal communities [@Dayton1990; @Teixido2002].
+* Beagle Channel
+
+* Burdwood Bank
+
+The MPAs Namuncurá - Burdwood Bank I and II, created by National Laws 26.875 in 2013 and 27.490 in 2017, comprise a shallow submarine plateau called Burdwood Bank (BB) and a deep slope that reaches 4000 m in depth, N-BB I and N-BB II, respectively [@AdministraciondeParquesNacionales2022; @Tombesi2020] (Figure 1). They are located 150 km east of Isla de los Estados and 200 km south of Malvinas/Falkland Islands. The MPA N-BB I comprises nearly 28,900 km2 circumscribed by the 200 m isobath, between ~54º–55ºS and ~56º–62ºW, with a slight slope extended nearly 370 km east–west. Physical features in the BB are fairly stable, with salinity averaging 34 all year round and temperature ranging between 4 and 8ºC [@Acha2004; @Piola2009]. The BB is surrounded by steep flanks of up to 4000 m depth through which strong currents circulate [@Matano2019]. The N-BB II includes such a deep slope, protecting about 32,000 km2 (~55º-56ºS, ~58º-62ºW). Intense upwelling and mixing occur in relation with the slope, entraining deep nutrient-rich waters into the photic layer [@Piola2009; @Matano2019] and resulting in a fairly homogeneous water column both spatially and temporally [@Glorioso1995; @Matano2019].
+
+* Potter Cove
+
+* Scotia Sea
+
+* Weddell Sea
+
+Located between 74 and 78ºS, the high Antarctic Weddell Sea shelf spans approximately 450 km from East to West (Figure 1). The water depth in this area ranges from 200 to 500 meters, with shallower regions being covered by continental ice that forms the coastline along the eastern and southern parts of the Weddell Sea. Within this shelf area, there exists a complex three-dimensional benthic habitat characterized by substantial benthic biomasses and an intermediate to high diversity when compared to benthic boreal communities [@Dayton1990; @Teixido2002].
 
 Table. Complexity and structure of the marine food webs considered in the present review.
 
