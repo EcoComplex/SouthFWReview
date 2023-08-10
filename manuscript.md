@@ -109,7 +109,8 @@ In recent years, licenses for seismic studies and exploration of hydrocarbon res
 
 Environmental stressors:
 
-### Potter Cove (Antarctica)Kawaguchi2009
+### Potter Cove (Antarctica)
+
 Text and case-study diagram
 
 ### Scotia Sea
@@ -131,6 +132,10 @@ It has been suggested that the krill (Euphausia superba) population in the South
 
 Declining krill abundances could lead to decreased carbon flux, because its fecal pellets account for the majority of exported carbon [@Pauli2021]. This adds to the previously mentioned effect of phytoplankton on the carbon flux, thus the impact on benthos will likely be important.
 
+<!-- Benthos -->
+
+The current warming at the sea surface coincides with an ongoing warming of the water column concentrated within the Antarctic Circumpolar Current at depths ranging from 700 m to 1100 m [@Gille2002]. This observed warming trend resulted in an increase of nearly 0.2°C between 1950 and 1980, which is faster than the average warming rate of the global ocean and comparable to the atmospheric warming in the Southern Ocean. Similar warming patterns were also observed in the deep water column of the Weddell Sea during the 1970s to 1990s [@Robertson2002]. These temperature changes have significant implications for macrobenthic communities that thrive on the continental shelf. These communities are particularly vulnerable because their animal components are mostly sessile and have adapted to cold (<0°C) and stable environmental conditions [@Isla2023]. Due to their location at the southern border of the Southern Ocean, these communities are unable to escape or migrate to colder environments. Their survival depends on their limited genetic plasticity to cope with environmental stress until sufficient genetic adaptations can be achieved [@Peck2018].
+
 
 <!-- Multiple stressors: The Southern Ocean and nearshore Antarctic waters are also warming, sea-ice is predicted to decline, winds are strengthening, upwelling and nutrient availability is changing, mixed layer depths are shallowing, and the ocean fronts are moving southward (Deppeler & Davidson, 2017; Stark, Raymond, Deppeler, & Morrison, 2019). These stressors interact, resulting in additive, synergistic, or antagonistic effects on organisms (Boyd, Brown, Schrum, & Krishnakumar, 2015).
 [@Hancock2020] --> 
@@ -142,3 +147,5 @@ Declining krill abundances could lead to decreased carbon flux, because its feca
 Describe how the stressors reported for each area could interact and/or affect other areas, driving changes at a regional scale.
 
 ## Gaps and future perspectives
+
+
