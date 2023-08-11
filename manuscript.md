@@ -134,12 +134,23 @@ Declining krill abundances could lead to decreased carbon flux, because its feca
 
 <!-- Benthos -->
 
-The current warming at the sea surface coincides with an ongoing warming of the water column concentrated within the Antarctic Circumpolar Current at depths ranging from 700 m to 1100 m [@Gille2002]. This observed warming trend resulted in an increase of nearly 0.2°C between 1950 and 1980, which is faster than the average warming rate of the global ocean and comparable to the atmospheric warming in the Southern Ocean. Similar warming patterns were also observed in the deep water column of the Weddell Sea during the 1970s to 1990s [@Robertson2002]. These temperature changes have significant implications for macrobenthic communities that thrive on the continental shelf. These communities are particularly vulnerable because their animal components are mostly sessile and have adapted to cold (<0°C) and stable environmental conditions [@Isla2023]. Due to their location at the southern border of the Southern Ocean, these communities are unable to escape or migrate to colder environments. Their survival depends on their limited genetic plasticity to cope with environmental stress until sufficient genetic adaptations can be achieved [@Peck2018].
+The current warming at the sea surface coincides with an ongoing warming of the water column concentrated within the Antarctic Circumpolar Current at depths ranging from 700 m to 1100 m [@Gille2002]. This observed warming trend resulted in an increase of nearly 0.2°C between 1950 and 1980, which is faster than the average warming rate of the global ocean and comparable to the atmospheric warming in the Southern Ocean. Similar warming patterns were also observed in the deep water column of the Weddell Sea during the 1970s to 1990s [@Robertson2002]. These temperature changes have significant implications for macrobenthic communities that thrive on the continental shelf. These communities are particularly vulnerable because their animal components are mostly sessile and have adapted to cold (<0°C) and stable environmental conditions [@Isla2023]. Due to their location at the southern border of the Southern Ocean, these communities are unable to escape or migrate to colder environments. Their survival depends on their limited genetic plasticity to cope with environmental stress until sufficient genetic adaptations can be achieved [@Peck2018; @Pineda-Metz2020].
 
-One of the key factors that contributes to the high biodiversity in benthic communities is the devastation caused by iceberg scouring, which is considered one of the most significant disturbances affecting large ecosystems [@Gutt2001]. Iceberg scouring has a profound impact on the benthic environment, even at depths of 600 m, as it violently disturbs the upper layers (several meters) of the seabed. This process completely removes the benthic macrofauna from the seafloor, creating a patchy disturbance and distribution pattern that occurs approximately once every 200 square meters over the Antarctic continental shelf [@Gutt1996; @Gutt2001a]. Predicted global warming is expected to increase the frequency of iceberg groundings [@Smale2008a], leading to substantial disruption of this environment [@Gutt1996; @Smale2008].
+One of the key factors that contributes to the high biodiversity in benthic communities is the devastation caused by iceberg scouring, which is considered one of the most significant disturbances affecting large ecosystems [@Gutt2001]. Iceberg scouring has a profound impact on the benthic environment, even at depths of 600 m, as it violently disturbs the upper layers (several meters) of the seabed. This process completely removes the benthic macrofauna from the seafloor, creating a patchy disturbance and distribution pattern that occurs approximately once every 200 square meters over the Antarctic continental shelf [@Gutt1996; @Gutt2001a]. Predicted global warming is expected to increase the frequency of iceberg groundings [@Smale2008a], leading to substantial disruption of this environment [@Gutt1996; @Smale2008]. Given all this effects and the lack of information @Gutt2015 expects that tipping points could to play an important role.
+
+
+<!-- Fish --> 
+
+A southward movement of Southern Ocean frontal systems is expected to cause southward shifts in the distributions of myctophid fish species, given their strong association with fronts, probably increasing their density in the Weddel Sea shelf [@Constable2014] 
+
+
+
+
 
 <!-- Multiple stressors: The Southern Ocean and nearshore Antarctic waters are also warming, sea-ice is predicted to decline, winds are strengthening, upwelling and nutrient availability is changing, mixed layer depths are shallowing, and the ocean fronts are moving southward (Deppeler & Davidson, 2017; Stark, Raymond, Deppeler, & Morrison, 2019). These stressors interact, resulting in additive, synergistic, or antagonistic effects on organisms (Boyd, Brown, Schrum, & Krishnakumar, 2015).
-[@Hancock2020] --> 
+[@Hancock2020] 
+
+Climate change is likely to cause early breakout of seasonal sea ice in parts of Antarctica, which will dramatically increase the amount of light reaching shallow seabed. This is predicted to result in ecological regime shifts, in which invertebrate-dominated communities are replaced by macroalgal beds [@Clark2015].-->
 
 
 
