@@ -49,3 +49,8 @@ po/*~
 rsconnect/
 
 *.html
+
+# Output dir 
+/Output
+# Dropbox files
+.DS_Store
