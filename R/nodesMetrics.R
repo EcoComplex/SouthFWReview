@@ -10,15 +10,20 @@ food.web.csv <- c("BeagleChannel_links_original.csv",
 
 library(igraph)
 library(multiweb)
+library(NetIndices)
 links <- list()
 dir.create("Output")
 for (i in 1:length(food.web.csv)){
   links[[i]] <- read.csv2 (paste("Data/",food.web.csv[i],sep=""), header = TRUE, sep = ",")
   #Compute node metrics
   fwgraph <- graph_from_data_frame(links[[i]], directed = T)
+  adjMat <- get.adjacency(fwgraph,sparse=F)
+  # nodesMetrics <- cbind.data.frame(data.frame(degree = degree(fwgraph)),
+  #                                  TrophInd(adjMat),
+  #                                  trophiclevels(fwgraph),
+  #                                  data.frame(omnivory = Level.omnivory(fwgraph)))
   nodesMetrics <- cbind.data.frame(data.frame(degree = degree(fwgraph)),
-                                   trophiclevels(fwgraph),
-                                   data.frame(omnivory = Level.omnivory(fwgraph)))
+                                   TrophInd(adjMat))
   nodesMetrics <- cbind.data.frame(data.frame(Nodes = rownames(nodesMetrics)),
                                    nodesMetrics)
   indexSorted <- sort(nodesMetrics$degree,decreasing = TRUE, index.return = TRUE)                     
