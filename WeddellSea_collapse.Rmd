@@ -140,52 +140,81 @@ collapsed_w <- read_csv("Data/Weddell_collapsed_links.csv")
 
 
 ```{r, WeddellSeaFullClass, eval=F,echo=F,message=T,warning=T}
+require(tidyverse)
+require(igraph)
+#
+# Auxiliary functions
+#
+source("R/functions.R")
 
+#
+# Food-web data 
 #
 dtot <- read_csv("Data/WeddellSea_links_original.csv")
 
-# Check valid names 
+if( file.exists("Data/WeddellSea_clasification.rds")) {
+  
+  classall_df <- readRDS("Data/WeddellSea_clasification.rds")
+  
+} else {
+    
+  # Read complete clasification from Taxonomic databases
+  #
+  require(taxize)
+  dfn <- unique(dtot$consumer)
+  dfn <- c(dfn, unique(dtot$resource))
+  dfn <- unique(dfn)
+  
+  # CLasificación completa
+  
+  clasall <- classification(dfn, db = 'gbif') #
+  
+  class_list <- class_to_df(clasall)
+  
+  classall_df <- class_list[[1]]
+  
+  #
+  # Search in worms records Not found in gbif
+  #
+  
+  dfn <- class_list[[2]]$Taxon
+  
+  
+  clasall <- classification(dfn, db = 'worms') #
+  
+  class_list <- class_to_df(clasall)
+  
+  tmp_df <- class_list[[1]]
+  names(tmp_df) <- tolower(names(tmp_df))
+  names(tmp_df)[1] <- "Taxon"
+  dfn <- class_list[[2]]$Taxon
+  names(classall_df)
+  classall_df <- bind_rows(classall_df,tmp_df)
+  saveRDS(classall_df,file="Data/WeddellSea_clasification.rds")
+}
+
+
+# Search in any field of the df
 #
-# Predators
-require(taxize)
-dfn <- unique(dtot$consumer)
-dfn <- c(dfn, unique(dtot$resource))
-dfn <- unique(dfn)
-
-# CLasificación completa
-
-clasall <- classification(dfn, db = 'gbif') #
-
-class_list <- class_to_df(clasall)
-
-classall_df <- class_list[[1]]
-
-#
-# Search in worms records Not found in gbif
-#
-
-dfn <- class_list[[2]]$Taxon
-
-
-clasall <- classification(dfn, db = 'worms') #
-
-class_list <- class_to_df(clasall)
-
-tmp_df <- class_list[[1]]
-names(tmp_df) <- tolower(names(tmp_df))
-names(tmp_df)[1] <- "Taxon"
-dfn <- class_list[[2]]$Taxon
-names(classall_df)
-classall_df <- bind_rows(classall_df,tmp_df)
-saveRDS(classall_df,file="Data/WeddellSea_clasification.rds")
-
-
 search_value <- "foram"
 result <- classall_df %>% filter(if_any(kingdom:suborder, ~grepl(search_value, .,ignore.case=TRUE)))
 
+
+# Replace the species nodes contained in `result` to the value of the field result$class 
+# to obtain the degree of the collapsed node
+#
 search_value <- "Hexactinellida"
 result <- classall_df %>% filter(if_any(kingdom:suborder, ~grepl(search_value, .,ignore.case=TRUE)))
+dtot1 <- replace_nodes(dtot, result, "class")
+collapsed_w <- dtot1 %>% distinct()
+gM <- graph_from_edgelist(as.matrix(collapsed_w), directed  = T)
 
+degree(gM)[search_value]
+
+
+# Replace the species nodes contained in `result` to the value of the field result$class 
+# to obtain the degree of the collapsed node
+#
 search_value <- "Bacillariophyceae"
 result <- classall_df %>% filter(if_any(kingdom:suborder, ~grepl(search_value, .,ignore.case=TRUE)))
 
@@ -201,6 +230,8 @@ tl <- TrophInd(a)
 tl[rownames(tl)=="Pleuragramma antarcticum",]
 tl[rownames(tl)=="Pygoscelis adeliae",]
 trophiclevels(gM)
+
+
 search_value <- "Chromista"
 result <- classall_df %>% filter(if_any(kingdom:suborder, ~grepl(search_value, .,ignore.case=TRUE)))
 
