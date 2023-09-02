@@ -53,44 +53,37 @@ header-includes:
 
 4. This review will show the advantages of applying a network approach to better understand marine ecosystems of the Southern Hemisphere. Overall, this paper will make progress towards gaining a comprehensive knowledge to predict the responses of complex marine systems to anthropogenic and environmental changes.
 
+## Introduction
 
-## From species’ stressors to food web effects
+Ecological networks are increasingly used as conceptual frameworks for understanding ecological community structure, identifying key species, and for ecosystem management and biodiversity conservation [@Thompson2012]. Recently, there has been an upsurge in interest regarding how communities might respond to environmental and anthropogenic changes, applying a network approach [@Montoya2009; @Tylianakis2017]. This is particularly crucial in marine ecosystems where changes are of unprecedented magnitudes [@Gutt2015; @Turner2020; @Galvan2022].
+In this review, we focus on the actual and potential changes in prey-predator networks, hereafter food webs, driven by reported stressors in selected marine ecosystems along a latitudinal gradient in the Southern Hemisphere (45 - 78ºS). We only considered those cases where highly-resolved food webs, describing the ecosystem’s diversity of species and trophic interactions, were published. Then, we included the following ecosystems: San Jorge Gulf (45 - 47ºS, 65-68ºW), Beagle Channel (~54ºS, 68ºW), Burdwood Bank (~54ºS, 59ºW), Scotia Sea (48 - 58ºS, 50ºW), Potter Cove (62ºS, 58ºW, Antarctica), and Weddell Sea (74 - 78ºS, 30ºW, Antarctica). These locations include temperate to Antarctic ecosystems exposed to both environmental (sea warming, glacial retreat) and anthropogenic (fishery, pollution) stressors.
+The aim of this review is threefold: 1) describe the complexity and structure of the above-mentioned marine food webs from a network perspective; 2) identify the ongoing environmental and anthropogenic stressors for each marine ecosystem containing the food webs; and 3) elaborate hypotheses on how the identified stressors might affect food web features (e.g. energy flow, stability), combining information on node- and network-level properties. Finally, we give suggestions on which data and analyses are needed to gain insights into the stressors’ effects on food web properties in the southwest Atlantic - Antarctic region.
 
-The propagation of stressor-induced perturbations across food webs is significantly influenced by species interactions and cascading effects. One way to consider which are the species that more sensitive to these perturbations is the degree, which quantifies the number of connections a species has, provides a robust prediction of species importance and correlates with other indices that include indirect interactions [@Jordan2006]. There are various definitions for keystone species, and network position alone may not be the sole determinant. Considering abundance or biomass is also crucial as suggested by simulation studies [@Zhang2016b].
-
-The impacts of stressors can vary in direction and magnitude as they move through the food web, due to differences in timescales and interacting species [@Jackson2021]. One approach to measure the effects of changes in species populations on the remaining species in a food web is the method of the inverse Jacobian matrix, which requires the knowledge of interaction strengths [@Montoya2009]. Using this approach it was found that the magnitude of net effects is negatively correlated with the  degree (sum of predator and prey links) of the perturbed species in most analyzed food webs. Species with few connections have stronger net effects on other species within food webs compared to highly connected species. Highly connected species may possess compensatory mechanisms, such as enhanced apparent competition, that regulate their biomass and mitigate the impacts of disturbances [@Montoya2009]. Similarly, studies by [@Zhao2016] have shown that the extinction of highly connected species in food webs, which have many feeding interactions, may not necessarily pose the greatest threat to biodiversity loss. Instead, the strength of feeding links and the prevalence of indirect interactions have a stronger influence on food web stability. Both quantitative fluxes and species dispersing their effects across many links are important considerations in biodiversity conservation. The potential for highly connected species to act as keystone species may have been overestimated in previous studies.
-
-Recent studies suggest that significant apex predators [@Woodward2010;@OGorman2009] and marine mammals would exhibit high susceptibility to stressors and an inclination toward experiencing synergistic impacts . This susceptibility was largely attributed to their role in food chains as primary predators, as well as their involvement in omnivory and exploitative competition interactions. Predators species were predicted to either benefit synergistically from stressor effects by occupying trophic positions as mesopredators in omnivory interactions, or to display insensitivity to stressors due to their trophic role as resources in exploitative competition interactions [@Beauchesne2021], this suggest that the trophic level of a species could be important to anticipate the impact of stressors.
-
-But also the species' vulnerability to stressor effects might arise solely from indirect exposure. The number of stressors influencing a species does not necessarily correlate with higher sensitivity. For instance @Beauchesne2021 showed that despite stressors impacting shrimp in terms of mortality, physiology, and behavior, its trophic sensitivity was low. On the other hand, marine mammals and seabirds that were not directly affected by stressors were markedly susceptible to the indirect repercussions of stressors and nonadditive effects.
-
-
-Arguments to support the conceptual diagram (Figure).
-
-Figure. Conceptual diagram: from species’ stressors to food web effects.
 
 ## The structure of marine food webs in the Southwest Atlantic Ocean
 
-Describe the state-of-art for the six food webs considered in this study. Start with a brief description of the area.
-* San Jorge Gulf
+Together the southwest and the Atlantic sector of the Southern Ocean comprise one of the most biologically productive regions of the world ocean [@Acha2004; @Whitehouse2008; @Ballerini2014; @Latorre2023]. The referred region extends from San Jorge Gulf (45ºS) in the Patagonian shelf to the Weddell Sea (78ºS) in the Southern Ocean, and covers a well-connected oceanic latitudinal gradient [@Matano2010; @Steele2010].
+Throughout this latitudinal gradient, many investigations have been carried out addressing the trophic ecology of focal species or particular prey-predator relationships of interest [@Vinuesa2007; @Sailley2013; @Pasotti2015; @Riccialdelli2017; @Riccialdelli2020; @Saunders2019]. In this context, few works have considered the complexity of the ecosystem in terms of species and prey-predator interactions [@Jacob2011; @Marina2018; @Funes2022; @Lopez-Lopez2022; @Rodriguez2022; @Marina2023]. Neglecting this complexity might lead to a misunderstanding of the structure and functioning of the food web, and ultimately reduce the ability to predict ecosystem responses to perturbations [@Montoya2009; @Woodward2010].
+In the last decades, the application of a network perspective has emerged as a powerful tool to tackle the complexity of ecosystems facilitating a better understanding of the structure and functioning of empirical marine food webs [@Belgrano2005; @Thompson2012; @DAlelio2016]. Few studies of this type cover a latitudinal gradient in marine ecosystems, with some cases for  the Global North [@Kortsch2019; @Frelat2022; @Pecuchet2022], but none for the Global South or Southern Hemisphere. In this section, we review for the first time the state-of-the-art structure of complex marine food webs in a Southwest Atlantic - Antarctic latitudinal gradient, considering the following marine ecosystems: San Jorge Gulf (45 - 47ºS), Burdwood Bank (~ 54ºS), Beagle Channel (54ºS), Scotia Sea (48 - 58ºS), Potter Cove (62ºS, Antarctica) and Weddell Sea (74 - 78ºS, Antarctica) (Figure 1).
 
-* Beagle Channel
+Figure 1. Map showing the study areas that comprise the Southwest Atlantic - Antarctic latitudinal gradient.
 
-* Burdwood Bank
+### San Jorge Gulf
 
-The MPAs Namuncurá - Burdwood Bank I and II, created by National Laws 26.875 in 2013 and 27.490 in 2017, comprise a shallow submarine plateau called Burdwood Bank (BB) and a deep slope that reaches 4000 m in depth, N-BB I and N-BB II, respectively [@AdministraciondeParquesNacionales2022; @Tombesi2020] (Figure 1). The MPA N-BB I comprises nearly 28,900 km2 circumscribed by the 200 m isobath, between ~54º–55ºS and ~56º–62ºW, with a slight slope extended nearly 370 km east–west. Physical features in the BB are fairly stable, with salinity averaging 34 all year round and temperature ranging between 4 and 8ºC [@Acha2004; @Piola2009]. The BB is surrounded by steep flanks of up to 4000 m depth, which are protectd by the MPA N-BB II (32,000 km2; ~55º-56ºS, ~58º-62ºW). Intense upwelling and mixing occur in relation with the slope, entraining deep nutrient-rich waters into the photic layer [@Piola2009; @Matano2019] and resulting in a fairly homogeneous water column both spatially and temporally [@Glorioso1995; @Matano2019].
+### Burdwood Bank
 
-* Potter Cove
+### Beagle Channel
 
-* Scotia Sea
+### Potter Cove (Antarctica)
 
-* Weddell Sea
+### Scotia Sea
 
-Located between 74 and 78ºS, the high Antarctic Weddell Sea shelf spans approximately 450 km from East to West [@Jacob2011]. The water depth in this area ranges from 200 to 500 meters, with shallower regions being covered by continental ice that forms the coastline along the eastern and southern parts of the Weddell Sea. Within this shelf area, there exists a complex three-dimensional benthic habitat characterized by substantial benthic biomasses and an intermediate to high diversity when compared to benthic boreal communities [@Dayton1990; @Teixido2002]. The Weddell Sea food web exhibits a high level of network complexity, featuring the greatest number of trophic species and predator-prey interactions among the analyzed food webs. Its connectivity and other topological metrics are intermediate, as shown in Table 1. Recently, the interaction strengths of this food web were estimated, revealing the presence of numerous weak and few strong interactions, which is consistent with findings in other complex food webs. Notably, this asymmetric distribution of interaction strength is likely to promote community persistence. Furthermore, there is evidence suggesting that species with more food web linkages (i.e., higher degree) tend to have higher interaction strength, thus reinforcing their central role [@Marina2023].
+### Weddell Sea (Antarctica)
 
-Table. Complexity and structure of the marine food webs considered in the present review.
+Located between 74 and 78ºS, the high Antarctic Weddell Sea shelf spans approximately 450 km from East to West [@Jacob2011]. The water depth in this area ranges from 200 to 500 meters, with shallower regions being covered by continental ice that forms the coastline along the eastern and southern parts of the Weddell Sea. Within this shelf area, there exists a complex three-dimensional benthic habitat characterized by substantial benthic biomasses and an intermediate to high diversity when compared to benthic boreal communities [@Dayton1990; @Teixido2002]. The Weddell Sea food web exhibits a high level of network complexity, featuring the greatest number of trophic species and predator-prey interactions among the analyzed food webs. Its connectivity and other topological metrics are intermediate, as shown in Table 1. Recently, the interaction strengths of this food web were estimated, revealing the presence of numerous weak and few strong interactions, which is consistent with findings in other complex food webs. Notably, this asymmetric distribution of interaction strength is likely to promote community persistence. Furthermore, there is evidence suggesting that species with more food web linkages (i.e., higher degree) tend to have higher interaction strength, thus reinforcing their central role [@Marina2023]
 
-### Key species for structure and stability
+Table 1. Complexity and structure of the marine food webs considered in the present review. mean TL: mean trophic level.
+
 
 ## Environmental and anthropogenic stressors in the Southwest Atlantic Ocean
   
@@ -169,10 +162,32 @@ The works that describe the possible effects of stressors in this food web are f
 Climate change is likely to cause early breakout of seasonal sea ice in parts of Antarctica, which will dramatically increase the amount of light reaching shallow seabed. This is predicted to result in ecological regime shifts, in which invertebrate-dominated communities are replaced by macroalgal beds [@Clark2015].-->
 
 
+## From species’ stressors to food web effects
+
+The propagation of stressor-induced perturbations across food webs is significantly influenced by species interactions and cascading effects. One way to consider which are the species that more sensitive to these perturbations is the degree, which quantifies the number of connections a species has, provides a robust prediction of species importance and correlates with other indices that include indirect interactions [@Jordan2006]. There are various definitions for keystone species, and network position alone may not be the sole determinant. Considering abundance or biomass is also crucial as suggested by simulation studies [@Zhang2016b].
+
+The impacts of stressors can vary in direction and magnitude as they move through the food web, due to differences in timescales and interacting species [@Jackson2021]. One approach to measure the effects of changes in species populations on the remaining species in a food web is the method of the inverse Jacobian matrix, which requires the knowledge of interaction strengths [@Montoya2009]. Using this approach it was found that the magnitude of net effects is negatively correlated with the  degree (sum of predator and prey links) of the perturbed species in most analyzed food webs. Species with few connections have stronger net effects on other species within food webs compared to highly connected species. Highly connected species may possess compensatory mechanisms, such as enhanced apparent competition, that regulate their biomass and mitigate the impacts of disturbances [@Montoya2009]. Similarly, studies by [@Zhao2016] have shown that the extinction of highly connected species in food webs, which have many feeding interactions, may not necessarily pose the greatest threat to biodiversity loss. Instead, the strength of feeding links and the prevalence of indirect interactions have a stronger influence on food web stability. Both quantitative fluxes and species dispersing their effects across many links are important considerations in biodiversity conservation. The potential for highly connected species to act as keystone species may have been overestimated in previous studies.
+
+Recent studies suggest that significant apex predators [@Woodward2010; @OGorman2009] and marine mammals would exhibit high susceptibility to stressors and an inclination toward experiencing synergistic impacts . This susceptibility was largely attributed to their role in food chains as primary predators, as well as their involvement in omnivory and exploitative competition interactions. Predators species were predicted to either benefit synergistically from stressor effects by occupying trophic positions as mesopredators in omnivory interactions, or to display insensitivity to stressors due to their trophic role as resources in exploitative competition interactions [@Beauchesne2021], this suggest that the trophic level of a species could be important to anticipate the impact of stressors.
+
+But also the species' vulnerability to stressor effects might arise solely from indirect exposure. The number of stressors influencing a species does not necessarily correlate with higher sensitivity. For instance @Beauchesne2021 showed that despite stressors impacting shrimp in terms of mortality, physiology, and behavior, its trophic sensitivity was low. On the other hand, marine mammals and seabirds that were not directly affected by stressors were markedly susceptible to the indirect repercussions of stressors and nonadditive effects.
+
+
+Figure 2. Conceptual diagram: from species’ stressors to food web effects.
+
+Table 3. Node and network-level properties used to build hypotheses on the stressors’ effects.
+
+### Effects on empirical food webs
+
+Hypothesize on the stressors’ effects for each food web, considering: a) type of stressor, b) network-level properties, and c) node-level properties.
+
 
 ## Potential impacts on a latitudinal gradient in the Southwest Atlantic Ocean
   
 Describe how the stressors reported for each area could interact and/or affect other areas, driving changes at a regional scale.
+Guidelines:
+Description of ocean connectivity between Antarctic, subAntarctic & southern Patagonian Shelf (San Jorge Gulf)
+Transport of stressors (plastics, mercury, invasive species) among areas
 
 ## Gaps and future perspectives
 
