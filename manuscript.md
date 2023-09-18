@@ -81,8 +81,30 @@ Figure 1. Map showing the study areas that comprise the Southwest Atlantic - Ant
 
 Located between 74 and 78ºS, the high Antarctic Weddell Sea shelf spans approximately 450 km from East to West [@Jacob2011]. The water depth in this area ranges from 200 to 500 meters, with shallower regions being covered by continental ice that forms the coastline along the eastern and southern parts of the Weddell Sea. Within this shelf area, there exists a complex three-dimensional benthic habitat characterized by substantial benthic biomasses and an intermediate to high diversity when compared to benthic boreal communities [@Dayton1990; @Teixido2002]. The Weddell Sea food web exhibits a high level of network complexity, featuring the greatest number of trophic species and predator-prey interactions among the analyzed food webs. Its connectivity and other topological metrics are intermediate, as shown in Table 1. Recently, the interaction strengths of this food web were estimated, revealing the presence of numerous weak and few strong interactions, which is consistent with findings in other complex food webs. Notably, this asymmetric distribution of interaction strength is likely to promote community persistence. Furthermore, there is evidence suggesting that species with more food web linkages (i.e., higher degree) tend to have higher interaction strength, thus reinforcing their central role [@Marina2023]
 
+\footnotesize
+
+--------------------- ----------- ----------- ----------------- ----------------- ------------- -------------- -------------------------------
+**Food web**           **Nodes**   **Links**   **Connectance**   **Path length**   **mean TL**   **Omnivory**   **Reference**
+--------------------- ----------- ----------- ----------------- ----------------- ------------- -------------- -------------------------------
+San Jorge Gulf        165         1015        0.04              2.17              3.02          0.63           [@Funes2022]
+
+Beagle Channel        145         1115        0.05              2.12              2.37          0.55           [@Rodriguez2022]
+
+Burdwood Bank         379         1788        0.01              2.99              2.52          0.49           Marina et al. in rev.
+
+Potter Cove           110         649         0.05              2.33              2.22          0.46           [@Marina2018; @Rodriguez2022]
+
+N Scotia Sea          218         10008       0.21              1.87              3.29          0.73           [@Lopez-Lopez2022]
+
+S Scotia Sea          192         7241        0.20              1.90              3.21          0.71           [@Lopez-Lopez2022]
+
+Weddell Sea           490         16041       0.07              2.19              2.62          0.51           [@Jacob2011]
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Table 1. Complexity and structure of the marine food webs considered in the present review. mean TL: mean trophic level.
 
+\normalsize
 
 ## Environmental and anthropogenic stressors in the Southwest Atlantic - Antarctic region
   
