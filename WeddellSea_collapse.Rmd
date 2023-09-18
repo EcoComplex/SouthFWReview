@@ -19,6 +19,7 @@ if( require(multiweb) == FALSE)
   install_github("lsaravia/multiweb")
 require(tidyverse)
 
+source("R/functions.R")
 
 ```
 
@@ -240,3 +241,31 @@ search_value <- "Dictyocha"
 result <- classall_df %>% filter(if_any(kingdom:suborder, ~grepl(search_value, .,ignore.case=TRUE)))
 ```
 
+# Check Proportion of Stable Webs based on @Gross2009
+
+```{r}
+fwn <- c("BeagleChannel_links_original.csv",
+                  "BurdwoodBank_links_original.csv",
+                  "GulfSanJorge_links_original.csv",
+                  "NorthernScotia_links_original.csv",
+                  "SouthernScotia_links_original.csv",
+                  "WeddellSea_links_original.csv")
+fwn <- file.path("Data",fwn)
+fw <- multiweb::readNetwork(fwn)
+
+df_fw <- calc_topological_indices(fw)
+
+df_fw <- df_fw %>% mutate(PSW=calculate_psw(Connectance,Size)$PSW)
+
+
+ggplot(df_fw, aes(x = Connectance*Size, y = log(PSW))) +
+  geom_point() +
+  labs(x = "C * N", y = "PSW") +
+  theme_classic()
+
+node_to_remove <- "Euphausia superba"
+node_index <- which(V(fw[[6]])$name == node_to_remove)
+  food_web <- delete.vertices(fw[[6]], node_index)
+calc_topological_indices(list(food_web,fw[[6]])) %>% mutate(PSW=calculate_psw(Connectance,Size)$PSW)
+
+```

@@ -49,3 +49,19 @@ replace_nodes <- function(dtot,result,field){
   })
   return(dtot)
 }
+
+# Define a function to calculate PSW
+# the proportion of stable webs based on
+# @Gross2009
+calculate_psw <- function(C, N) {
+  a <- 0.2090
+  b <- -7.025
+  c_param <- 3.138
+  x <- log10(C * N)
+  psw <- 10^(b * x^c_param - a)
+
+    
+  df <- tibble(C = C, N = N, PSW = psw)
+  return(df)
+}
+
