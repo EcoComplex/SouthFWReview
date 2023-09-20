@@ -86,19 +86,19 @@ Located between 74 and 78ºS, the high Antarctic Weddell Sea shelf spans approxi
 --------------------- ----------- ----------- ----------------- ----------------- ------------- -------------- -------------------------------
 **Food web**           **Nodes**   **Links**   **Connectance**   **Path length**   **mean TL**   **Omnivory**   **Reference**
 --------------------- ----------- ----------- ----------------- ----------------- ------------- -------------- -------------------------------
-San Jorge Gulf        165         1015        0.04              2.17              3.02          0.63           [@Funes2022]
+San Jorge Gulf        165         1015        0.04              2.17              3.02          0.63           @Funes2022
 
-Beagle Channel        145         1115        0.05              2.12              2.37          0.55           [@Rodriguez2022]
+Beagle Channel        145         1115        0.05              2.12              2.37          0.55           @Rodriguez2022
 
 Burdwood Bank         379         1788        0.01              2.99              2.52          0.49           Marina et al. in rev.
 
-Potter Cove           110         649         0.05              2.33              2.22          0.46           [@Marina2018; @Rodriguez2022]
+Potter Cove           110         649         0.05              2.33              2.22          0.46           @Marina2018; @Rodriguez2022
 
-N Scotia Sea          218         10008       0.21              1.87              3.29          0.73           [@Lopez-Lopez2022]
+N Scotia Sea          218         10008       0.21              1.87              3.29          0.73           @Lopez-Lopez2022
 
-S Scotia Sea          192         7241        0.20              1.90              3.21          0.71           [@Lopez-Lopez2022]
+S Scotia Sea          192         7241        0.20              1.90              3.21          0.71           @Lopez-Lopez2022
 
-Weddell Sea           490         16041       0.07              2.19              2.62          0.51           [@Jacob2011]
+Weddell Sea           490         16041       0.07              2.19              2.62          0.51           @Jacob2011
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -108,7 +108,7 @@ Table 1. Complexity and structure of the marine food webs considered in the pres
 
 ## Environmental and anthropogenic stressors in the Southwest Atlantic - Antarctic region
   
-A stressor is any natural or anthropogenic variable that causes a quantifiable change, irrespective of its direction (increase or decrease), in a biological response [@Cote2016; @Orr2020]. In the light of this, the southwest Atlantic - Antarctic marine biota has been and is subjected to a variety of stressors (e.g. sea warming, glacial retreat, ice changes, acidification, species invasion, fishery, and contaminants). Although it is known that in these ecosystems more than one stressor acts at a given time (e.g. warming and fishery; acidification and contaminants) [@Gutt2015; @Gutt2021], to date stressor assessments have been performed individually. Moreover, the potential for interactive (synergy or antagonism) and additive effects of two or more stressors [@Crain2008; @Cote2016; @Nogues2016] are almost unknown for the region [@Rowlands2021].
+A stressor is any natural or anthropogenic variable that causes a quantifiable change, irrespective of its direction (increase or decrease), in a biological response [@Cote2016; @Orr2020]. In the light of this, the southwest Atlantic - Antarctic marine biota has been and is subjected to a variety of stressors (e.g. sea warming, glacial retreat, ice changes, acidification, species invasion, fishery, and contaminants). Although it is known that in these ecosystems more than one stressor acts at a given time (e.g. warming and fishery; acidification and contaminants) [@Gutt2015; @Gutt2021], to date stressor assessments have been performed individually. Moreover, the potential for interactive (synergy or antagonism) and additive effects of two or more stressors [@Crain2008; @Cote2016] are almost unknown for the region [@Rowlands2021].
 In the following subsections, we describe the reported environmental and anthropogenic stressors, and the species and parameters affected for the marine ecosystems that contain the food webs considered in this review. To summarize this information, we considered: type of stressor, species and parameter affected, and locality (Table 2).
 
 \scriptsize
