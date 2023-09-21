@@ -101,8 +101,7 @@ S Scotia Sea          192         7241        0.20              1.90            
 Weddell Sea           490         16041       0.07              2.19              2.62          0.51           @Jacob2011
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-
-Table 1. Complexity and structure of the marine food webs considered in the present review. mean TL: mean trophic level.
+Table: Complexity and structure of the marine food webs considered in the present review. mean TL: mean trophic level.
 
 \normalsize
 
@@ -111,6 +110,8 @@ Table 1. Complexity and structure of the marine food webs considered in the pres
 A stressor is any natural or anthropogenic variable that causes a quantifiable change, irrespective of its direction (increase or decrease), in a biological response [@Cote2016; @Orr2020]. In the light of this, the southwest Atlantic - Antarctic marine biota has been and is subjected to a variety of stressors (e.g. sea warming, glacial retreat, ice changes, acidification, species invasion, fishery, and contaminants). Although it is known that in these ecosystems more than one stressor acts at a given time (e.g. warming and fishery; acidification and contaminants) [@Gutt2015; @Gutt2021], to date stressor assessments have been performed individually. Moreover, the potential for interactive (synergy or antagonism) and additive effects of two or more stressors [@Crain2008; @Cote2016] are almost unknown for the region [@Rowlands2021].
 In the following subsections, we describe the reported environmental and anthropogenic stressors, and the species and parameters affected for the marine ecosystems that contain the food webs considered in this review. To summarize this information, we considered: type of stressor, species and parameter affected, and locality (Table 2).
 
+\newpage
+\blandscape
 \scriptsize
 
 **Study area**                  **Stressor**                                             **Species affected**                                                                                                                                                                                                          **Parameter affected**      **Locality**                                                  **Reference**
@@ -146,7 +147,6 @@ In the following subsections, we describe the reported environmental and anthrop
                                 Sea warming                                              Phytoplankton                                                                                                                                                                                                                 Metabolism, biomass         In situ                                                       @Antoni2020; @Latorre2023
                                 Sea warming                                              Zooplankton                                                                                                                                                                                                                   Metabolism, biomass, diet   In situ                                                       @Garcia2016; @Garcia2019
                                 Sea warming                                              Fish                                                                                                                                                                                                                          Metabolism                  In situ, elsewhere                                            @Strobel2013; @Souza2018; @Saravia2021
-                                Microplastics                                            Fish                                                                                                                                                                                                                          Metabolism                  Elsewhere                                                     @Descalzo2023
 **Weddell Sea (Antarctica)**                                                                                                                                                                                                                                                                                                                                                                                     
                                 Iceberg scouring                                         Macrobentos                                                                                                                                                                                                                   Biomass                     In situ                                                       @Isla2023; @Gutt2015; @Smale2008a; @Gutt1996
                                 Iceberg scouring                                         Hexactinellida sponges                                                                                                                                                                                                        Biomass                     In situ                                                       @Gutt2001; @Pineda-Metz2020; @Gutt2001a; @Gutt2003
@@ -159,10 +159,9 @@ In the following subsections, we describe the reported environmental and anthrop
                                 Sea ice extent                                           Megaptera novaeangliae                                                                                                                                                                                                        Metabolism                  Elsewhere                                                     @Pallin2023
                                 Sea ice extent                                           Aptenodytes forsteri                                                                                                                                                                                                          Metabolism                  Elsewhere                                                     @Orgeira2021
 
-Table 2. Environmental and anthropogenic stressors reported for the study areas: San Jorge Gulf, Beagle Channel, Burdwood Bank, Potter Cove, Scotia Sea and Weddell Sea.
-Stressor categories: sea warming; glacial retreat; sediment in water column; iceberg scouring; sea ice extent; ocean acidification; ocean acidification + plastics; microplastics; mercury; urban pollution; fishery; alien species. These categories include all stressors reported for the reviewed region.
-The species affected were considered at the node level, where a node represents a trophic species (i.e. biological species or group of taxa sharing the same prey and predators) that interacts with other species in a food web framework. In such a node level we included organism and population levels of organization. Categories for the parameters affected: metabolism; biomass; distribution; diet (see text for explanation). Locality indicates whether the stressor was reported for species inhabiting the study area (‘In situ’) or was interpolated from another area (‘Elsewhere’).
+Table: Environmental and anthropogenic stressors reported for the study areas: San Jorge Gulf, Beagle Channel, Burdwood Bank, Potter Cove, Scotia Sea and Weddell Sea. Stressor categories: sea warming; glacial retreat; sediment in water column; iceberg scouring; sea ice extent; ocean acidification; ocean acidification + plastics; microplastics; mercury; urban pollution; fishery; alien species. These categories include all stressors reported for the reviewed region. The species affected were considered at the node level, where a node represents a trophic species (i.e. biological species or group of taxa sharing the same prey and predators) that interacts with other species in a food web framework. In such a node level we included organism and population levels of organization. Categories for the parameters affected: metabolism; biomass; distribution; diet (see text for explanation). Locality indicates whether the stressor was reported for species inhabiting the study area (‘In situ’) or was interpolated from another area (‘Elsewhere’).
 
+\elandscape
 \normalsize
 
 ### San Jorge Gulf
@@ -256,11 +255,69 @@ Recent studies suggest that significant apex predators [@Woodward2010; @OGorman2
 But also the species' vulnerability to stressor effects might arise solely from indirect exposure. The number of stressors influencing a species does not necessarily correlate with higher sensitivity. For instance @Beauchesne2021 showed that despite stressors impacting shrimp in terms of mortality, physiology, and behavior, its trophic sensitivity was low. On the other hand, marine mammals and seabirds that were not directly affected by stressors were markedly susceptible to the indirect repercussions of stressors and nonadditive effects.
 
 
-Figure 2. Conceptual diagram: from species’ stressors to food web effects. See text for explanation.
+![Figure 2. Conceptual diagram: from species’ stressors to food web effects. See text for explanation.](Figures/Figure2_StressorDiagram.png){width="6.27in"
+height="3.528in"}
 
-Table 3. Node and network-level properties used to build hypotheses on the stressors’ effects.
+
+
+\scriptsize
+
+----------------------------------------------------------------------------------------------------------
+**Property**         **Definition**              **Relevance for stressor effects**        **Reference**
+-------------------- --------------------------- ----------------------------------------- ---------------
+*Node-level*
+
+Degre                Number of feeding           Perturbations to high-degree species      @Dunne2002a; 
+                     interactions in which       may have more significant effects on      @Jordan2007
+                     the species participates    the food web robustness to perturbations 
+                     as prey and/or predator.    than low-degree species.
+
+Trophic position     Place in the food web       Perturbations on basal resources,         @Williams2000; 
+                     relative to the basal       intermediate species and top predators    @Thompson2007
+                     resources that support      are expected to have large effects on the 
+                     the community. Classifies   rest of their communities if ecosystem 
+                     species in: basal,          control is bottom-up, wasp-waist or 
+                     intermediate and top.       top-down, respectively.
+
+Omnivory             Consumer resource use       High-omnivore species (generalists)       @Thompson2007
+                     across trophic levels.      are more flexible than low-omnivore
+                                                 species to diet changes.
+
+Relative abundance   Species' density in         Perturbations on abundant (dominant)      @Nilsson2016a
+                     proportion to the other     species are expected to have large 
+                     species of the food web.    effects on the stability and energy 
+                                                 flux of the food and ecosystem, 
+                                                 respectively.
+
+*Network-level*
+
+Conectance           Proportion of actual        Estimator of community sensitivity to     @Dunne2002
+                     interactions among          stressors. High connectance gives 
+                     possible ones.              resistance and resilience to the 
+                                                 food web.
+
+Path length          Average distance,           Short distances enhance rapid and         @Albert2002
+                     accounted by the number     broad propagation of perturbations.
+                     of interactions, between 
+                     any pair of species.
+
+Mean TL              Average of all species'     Influences the magnitude and efficiency   @Duffy2007; 
+                     trophic position contained  of trophic transfer. A higher mean food   @Olivier2019
+                     in the food web.            chain length reflects increased energy 
+                                                 availability and productivity.
+
+Omnivory             Proportion of species that  It provides trophic flexibility to an     @Kratina2012
+                     feed at different trophic   ecosystem. Reduces probability of 
+                     levels.                     trophic cascades.
+----------------------------------------------------------------------------------------------------------
+
+Table: Table 3. Node and network-level properties used to build hypotheses on the stressors’ effects.
+
+\normalsize
 
 ### Stressor effects on empirical food webs in a southwest Atlantic - Antarctic gradient
+
+
 
 
 ## Gaps and future perspectives
