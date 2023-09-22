@@ -90,7 +90,7 @@ San Jorge Gulf        165         1015        0.04              2.17            
 
 Beagle Channel        145         1115        0.05              2.12              2.37          0.55           @Rodriguez2022
 
-Burdwood Bank         379         1788        0.01              2.99              2.52          0.49           Marina et al. in rev.
+Burdwood Bank         379         1788        0.01              2.99              2.52          0.49           @Marinainrev
 
 Potter Cove           110         649         0.05              2.33              2.22          0.46           @Marina2018; @Rodriguez2022
 
