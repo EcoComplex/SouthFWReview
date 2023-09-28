@@ -65,7 +65,10 @@ Together the southwest and the Atlantic sector of the Southern Ocean comprise on
 Throughout this latitudinal gradient, many investigations have been carried out addressing the trophic ecology of focal species or particular prey-predator relationships of interest [@Vinuesa2007; @Sailley2013; @Pasotti2015; @Riccialdelli2017; @Riccialdelli2020; @Saunders2019]. In this context, few works have considered the complexity of the ecosystem in terms of species and prey-predator interactions [@Jacob2011; @Marina2018; @Funes2022; @Lopez-Lopez2022; @Rodriguez2022; @Marina2023]. Neglecting this complexity might lead to a misunderstanding of the structure and functioning of the food web, and ultimately reduce the ability to predict ecosystem responses to perturbations [@Montoya2009; @Woodward2010].
 In the last decades, the application of a network perspective has emerged as a powerful tool to tackle the complexity of ecosystems facilitating a better understanding of the structure and functioning of empirical marine food webs [@Belgrano2005; @Thompson2012; @DAlelio2016]. Few studies of this type cover a latitudinal gradient in marine ecosystems, with some cases for  the Global North [@Kortsch2019; @Frelat2022; @Pecuchet2022], but none for the Global South or Southern Hemisphere. In this section, we review for the first time the state-of-the-art structure of complex marine food webs in a Southwest Atlantic - Antarctic latitudinal gradient, considering the following marine ecosystems: San Jorge Gulf (45 - 47ºS), Burdwood Bank (~ 54ºS), Beagle Channel (54ºS), Scotia Sea (48 - 58ºS), Potter Cove (62ºS, Antarctica) and Weddell Sea (74 - 78ºS, Antarctica) (Figure 1).
 
-Figure 1. Map showing the study areas that comprise the Southwest Atlantic - Antarctic latitudinal gradient.
+![Map showing the study areas that comprise the Southwest Atlantic - Antarctic latitudinal gradient.](Figures/Map-01.jpg){width="6.27in"
+height="3.528in"}
+
+
 
 ### San Jorge Gulf
 

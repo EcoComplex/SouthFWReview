@@ -212,6 +212,11 @@ gM <- graph_from_edgelist(as.matrix(collapsed_w), directed  = T)
 
 degree(gM)[search_value]
 
+require(NetIndices)
+a <- get.adjacency(gM,sparse=F)
+tl <- TrophInd(a)
+tl[rownames(tl)==search_value,]
+
 
 # Replace the species nodes contained in `result` to the value of the field result$class 
 # to obtain the degree of the collapsed node
@@ -236,8 +241,28 @@ trophiclevels(gM)
 search_value <- "Chromista"
 result <- classall_df %>% filter(if_any(kingdom:suborder, ~grepl(search_value, .,ignore.case=TRUE)))
 
+search_value <- "Foraminifera"
+result <- classall_df %>% filter(if_any(kingdom:suborder, ~grepl(search_value, .,ignore.case=TRUE)))
+dtot1 <- replace_nodes(dtot, result, "phylum")
+collapsed_w <- dtot1 %>% distinct()
+gM <- graph_from_edgelist(as.matrix(collapsed_w), directed  = T)
+degree(gM)[search_value]
 
-search_value <- "Dictyocha"
+a <- get.adjacency(gM,sparse=F)
+tl <- TrophInd(a)
+tl[rownames(tl)==search_value,]
+
+
+search_value <- "Dictyocha" # Sillicoflagelados
+result <- classall_df %>% filter(if_any(kingdom:suborder, ~grepl(search_value, .,ignore.case=TRUE)))
+degree(gM)[result$Taxon]
+tl[rownames(tl)==result$Taxon,]
+
+search_value <- "Silico" # Sillicoflagelados
+result <- classall_df %>% filter(if_any(kingdom:suborder, ~grepl(search_value, .,ignore.case=TRUE)))
+degree(gM)[result$Taxon]
+
+search_value <- "Cryptophy" # Cryptophyta -------------> NO HAY
 result <- classall_df %>% filter(if_any(kingdom:suborder, ~grepl(search_value, .,ignore.case=TRUE)))
 ```
 
