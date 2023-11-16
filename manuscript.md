@@ -23,15 +23,11 @@ header-includes:
 
 ## Abstract
 
-1. Ecological networks are increasingly used as conceptual frameworks for understanding ecological community structure, identifying key species, and for ecosystem management and biodiversity conservation. Hence, there is a growing interest in understanding how ecological networks respond to environmental and anthropogenic stressors along geographical gradients.
-
-2. We review for the first time the state-of-the-art knowledge on stressor responses of marine food webs along the southwest Atlantic to Antarctic gradient (45 - 78ºS), considering the following study areas: San Jorge Gulf, Beagle Channel, Burdwood Bank, Scotia Sea, Potter Cove (Antarctica) and Weddell Sea (Antarctica). The aim of this review is threefold: 1) describe the complexity and structure of marine food webs along the southwest Atlantic to Antarctic axis from a network perspective; 2) identify the ongoing environmental and anthropogenic stressors for each marine ecosystem containing the food webs; and 3) summarize reported  food web changes and develop hypotheses on how the identified stressors affect food web features.
-
-3. Environmental and anthropogenic stressor effects in the study areas have been mostly assessed individually and at the node (species) level, with one exception: the effect of fisheries in the San Jorge Gulf food web. To address the most plausible stressors effects on the selected food webs, we built hypotheses for each study area considering the following: a) stressor(s), b) parameter(s) affected, c) node-level properties of the affected species, and d) network-level properties of the food web.
-
-4. The most common stressor reported along the gradient is global warming, except for Beagle Channel and Burdwood Bank, which are more influenced by the introduction of an alien species and fisheries, respectively. We provide particular hypotheses on how warming might impact food webs.
-
-5. We demonstrate the advantages of applying a network approach to better understand and predict the effect of stressors in marine ecosystems of the Southern Hemisphere.
+Ecological networks offer valuable insights into community structure, key species identification, and ecosystem management for biodiversity conservation. Understanding how these networks react to environmental and anthropogenic stressors, especially along geographical gradients, is of increasing interest.
+This review presents a pioneering analysis of stressor responses in marine food webs from the southwest Atlantic to the Antarctic (45 - 78ºS), encompassing areas such as San Jorge Gulf, Beagle Channel, Burdwood Bank, Scotia Sea, Potter Cove, and the Weddell Sea in Antarctica. Our objectives are to: 1) describe the structure of marine food webs along this axis using a network approach; 2) identify predominant environmental and anthropogenic stressors affecting each ecosystem; and 3) summarize observed food web changes and hypothesize on stressor impacts.
+Our collaborative team, comprising regional experts and global authorities on high-latitude marine food webs and stressor effects, ensures a comprehensive and credible literature review. We assessed the effects of stressors primarily at the species level, with notable exceptions like fisheries in San Jorge Gulf.
+Hypotheses for each study area were formulated considering: a) stressors; b) impacted parameters; c) node-level species properties; and d) network-level food web properties. Global warming emerges as the most common stressor across the gradient, except in the Beagle Channel and Burdwood Bank, where alien species introduction and fisheries are more influential, respectively. We offer specific hypotheses on how warming may affect food webs.
+Our findings highlight the benefits of a network approach in understanding and predicting stressor effects in Southern Hemisphere marine ecosystems. This approach provides a holistic understanding of ecological networks, enhances our ability to identify key species and interactions, and offers insights for ecosystem management and conservation in the face of various stressors.
 
 Keywords: anthropogenic stressors, environmental stressors, food webs, latitudinal gradient, Southern Hemisphere
 
@@ -349,6 +345,11 @@ Analyzing the impact of multiple stressors through observational studies is chal
 ## Conclusions
 
 We have reviewed the main environmental and anthropogenic stressors acting in six different areas along a large-scale latitudinal gradient, from temperate Atlantic to cold Antarctic ecosystems. Using a theoretical framework that combines species and food web level data, we suggest how warming effects may impact food web structure and functioning. These qualitative predictions are intended to serve as the basis for future studies in marine ecosystems of the Southern Hemisphere that aim at quantifying the magnitude of these stressors and how they are affecting quantitative food web properties, such as energy fluxes and stability. There is an urgent need to assess these changes using a holistic and quantitative framework where the magnitude of stressors and species interactions are taken into account.
+
+
+## Acknowledgements
+
+This review is a product of the project “¿Cuáles son los efectos de los cambios ambientales antropogénicos en las interacciones tróficas de las comunidades de los ecosistemas marinos en el gradiente latitudinal Atlántico Sudoccidental - Antártida?”, funded by Consejo Nacional de Investigaciones Científicas (CONICET, code PIP 2022-2024 #0907).
 
 
 ## References
