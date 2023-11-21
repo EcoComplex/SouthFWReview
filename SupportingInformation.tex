@@ -1,0 +1,933 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[vmargin=1in,hmargin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{pdflscape,booktabs}
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Supplementary Material for `The response of trophic interaction networks to multiple stressors in a marine latitudinal gradient of the Southern Hemisphere'},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Supplementary Material for `The response of trophic interaction
+networks to multiple stressors in a marine latitudinal gradient of the
+Southern Hemisphere'}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+Table S1. Node-level properties for species being impacted by
+environmental and/or anthropogenic stressors (see Table 2 in the article
+for details) in six study areas along the southwest Atlantic to
+Antarctic gradient (45 - 78ºS). Degree: total number of interactions;
+relative abundance: high (+++), medium (+), low (-), unknown (?).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1809}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.2340}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1383}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1277}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1383}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1596}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Food web}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Node / trophic species}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Degree}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Trophic level}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Omnivory level}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Relative abundance}
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Beagle Channel} & & & & & \\
+& \emph{Eleginops maclovinus} & 42 & 3.11 & 0.752 & ? \\
+& \emph{Patagonotothen tessellata} & 35 & 3.29 & 0.721 & ++ \\
+& \emph{Paralomis granulosa} & 26 & 3.28 & 0.277 & ? \\
+& \emph{Patagonotothen cornucola} & 23 & 3.23 & 0.495 & +++ \\
+& \emph{Nacella magellanica} & 22 & 2.46 & 0.397 & ? \\
+& \emph{Mytilus edulis chilensis} & 21 & 2.42 & 0.368 & ? \\
+& \emph{Sprattus fuegensis} & 17 & 3.05 & 0.422 & ++++ \\
+& \emph{Harpagifer bispinis} & 15 & 3.51 & 0.145 & ? \\
+& \emph{Paranotothenia magellanica} & 14 & 3.42 & 0.450 & +++ \\
+& \emph{Odontesthes nigricans} & 11 & 3.50 & 0.428 & ? \\
+& \emph{Patagonotothen sima} & 7 & 3.44 & 0.115 & ++ \\
+& \emph{Grimothea gregaria} & 71 & 2.41 & 0.434 & ++ \\
+\textbf{Burdwood Bank} & & & & & \\
+& \emph{Sprattus fuegensis} & 42 & 3.45 & 0.688 & ++ \\
+& \emph{Patagonotothen ramsayi} & 68 & 3.48 & 0.492 & +++ \\
+& \emph{Cottoperca trigloides} & 20 & 4.16 & 0.742 & ++ \\
+& \emph{Dissostichus eleginoides} & 49 & 4.01 & 0.797 & + \\
+& \emph{Dorytheuthis gahi} & 38 & 3.45 & 0.896 & ? \\
+& \emph{Henricia obesa} & 5 & 2.19 & 0.160 & ? \\
+& \emph{Odontaster penicillatus} & 7 & 2.94 & 0.148 & ? \\
+& \emph{Patagonotothen guntheri} & 63 & 3.39 & 0.390 & ++ \\
+& \emph{Coelorinchus fasciatus} & 16 & 3.48 & 0.446 & ++ \\
+& \emph{Coelorinchus marinii} & 8 & 3.32 & 0.658 & + \\
+& \emph{Macrourus carinatus} & 17 & 4.13 & 0.455 & +++ \\
+& \emph{Macrourus holotrachys} & 16 & 3.79 & 0.528 & +++ \\
+& \emph{Tedania sp} & 2 & 2.00 & 0.000 & +++ \\
+& \emph{Fusitriton magellanicus} & 8 & 3.11 & 0.017 & ++ \\
+& \emph{Adelomelon ancilla} & 5 & 3.46 & 0.220 & + \\
+& \emph{Zygochlamys patagonica} & 18 & 2.28 & 0.250 & ++ \\
+& \emph{Hiatella sp} & 7 & 2.00 & 0.000 & ? \\
+& \emph{Eurypodius latreillii} & 2 & 3.00 & 0.000 & + \\
+& \emph{Sympagurus dimorphus} & 4 & 2.00 & 0.000 & ? \\
+& \emph{Grimothea gregaria} & 32 & 2.50 & 0.250 & ? \\
+& \emph{Libidoclaea granaria} & 7 & 2.00 & 0.000 & ? \\
+& \emph{Alcyonium antarcticum} & 5 & 2.00 & 0.000 & ? \\
+& \emph{Convexella magelhaenica} & 14 & 2.70 & 0.410 & ? \\
+& \emph{Anthoptilum grandiflorum} & 9 & 2.78 & 0.395 & ? \\
+& \emph{Primnoella scotiae} & 13 & 2.78 & 0.395 & ? \\
+& \emph{Primnoisis antarctica} & 14 & 2.64 & 0.413 & ? \\
+& \emph{Actinostola crassicornis} & 7 & 2.83 & 0.138 & + \\
+& \emph{Brachiopoda spp} & 24 & 2.00 & 0.000 & ? \\
+& \emph{Acodontaster sp} & 2 & 2.00 & 0.000 & ? \\
+& \emph{Anasterias antarctica} & 2 & 3.57 & 0.000 & ++ \\
+& \emph{Ceramaster patagonicus} & 4 & 3.53 & 0.096 & ? \\
+& \emph{Henricia obesa} & 5 & 2.20 & 0.160 & ? \\
+& \emph{Cosmasterias lurida} & 12 & 3.24 & 0.418 & ? \\
+& \emph{Glabraster antarctica} & 4 & 2.00 & 0.000 & - \\
+& \emph{Pteraster affinis} & 3 & 3.00 & 0.000 & ? \\
+& \emph{Perknaster sp} & 2 & 3.08 & 0.000 & ? \\
+& \emph{Ctenodiscus australis} & 2 & 2.00 & 0.000 & ? \\
+& \emph{Odontaster sp} & 12 & 2.98 & 0.279 & ? \\
+& \emph{Gorgonocephalus chilensis} & 4 & 3.59 & 0.009 & ? \\
+& \emph{Ophiacantha vivipara} & 7 & 3.44 & 0.052 & ? \\
+& \emph{Pseudechinus magellanicus} & 9 & 2.50 & 0.250 & ? \\
+& \emph{Sterechinus agassizii} & 6 & 3.19 & 0.009 & ? \\
+& \emph{Austrocidaris canaliculata} & 7 & 3.17 & 0.028 & - \\
+& \emph{Chaetopterus antarcticus} & 1 & 2.00 & 0.000 & - \\
+& \emph{Cnemidocarpa spp} & 12 & 2.10 & 0.090 & ? \\
+& \emph{Daption capense} & 11 & 3.55 & 0.510 & ? \\
+& \emph{Thalassarche melanophris} & 22 & 3.83 & 0.983 & ? \\
+& \emph{Macronectes giganteus} & 7 & 3.93 & 0.903 & ? \\
+& \emph{Thalassarche chrysostoma} & 16 & 4.06 & 0.906 & ? \\
+& \emph{Diomedea epomophora} & 6 & 3.97 & 1.022 & ? \\
+& \emph{Macronectes halli} & 6 & 4.00 & 1.017 & ? \\
+& \emph{Procellaria aequinoctialis} & 8 & 4.06 & 0.782 & ? \\
+\textbf{Scotia Sea, North \& South} & & & & & \\
+& \emph{Euphausia superba} & 146 & 3.12 & 0.928 & +++ \\
+& \emph{Dissostichus eleginoides} & 29 & 5.99 & 0.249 & +++ \\
+& \emph{Krefftichthys anderssoni} & 157 & 4.50 & 1.010 & ++ \\
+& \emph{Protomyctophum bolini} & 135 & 4.09 & 0.773 & + \\
+& \emph{Electrona antarctica} & 192 & 4.50 & 1.000 & +++ \\
+& \emph{Gymnoscopelus nicholsi} & 134 & 4.07 & 0.781 & - \\
+& \emph{Gymnoscopelus braueri} & 185 & 4.53 & 0.978 & ++ \\
+& \emph{Limacina retroversa} & 35 & 2.00 & 0.000 & +++ \\
+\textbf{Potter Cove (Antarctica)} & & & & & \\
+& Benthic Diatomea & 36 & 1.00 & 0.000 & - \\
+& Copepoda & 27 & 2.60 & 0.720 & - \\
+& Phytoplankton & 23 & 1.00 & 0.000 & - \\
+& Zooplankton & 17 & 2.80 & 0.640 & - \\
+& Porifera & 18 & 2.00 & 8.043 & - \\
+& \emph{Euphausia superba} & 17 & 3.42 & 0.734 & + \\
+& Salpidae & 13 & 3.28 & 1.198 & - \\
+& Ascidiacea & 9 & 2.45 & 0.607 & +++ \\
+& \emph{Malacobelemnon daytoni} & 2 & 2.90 & 0.810 & + \\
+Macroalgae & \emph{Palmaria decipiens} & 11 & 1.00 & 0.000 & + \\
+& \emph{Gigartina skottsbergii} & 8 & 1.00 & 0.000 & + \\
+& \emph{Desmarestia menziesii} & 7 & 1.00 & 0.000 & +++ \\
+& \emph{Desmarestia anceps} & 6 & 1.00 & 0.000 & +++ \\
+& \emph{Desmarestia antarctica} & 6 & 1.00 & 0.000 & + \\
+& \emph{Iridaea cordata} & 6 & 1.00 & 0.000 & + \\
+& \emph{Plocamium cartilagineum} & 6 & 1.00 & 0.000 & - \\
+& \emph{Myriogramme manginii} & 4 & 1.00 & 0.000 & - \\
+& \emph{Adenocystis utricularis} & 3 & 1.00 & 0.000 & + \\
+& \emph{Georgiella confluens} & 3 & 1.00 & 0.000 & - \\
+& \emph{Ascoseira mirabilis} & 2 & 1.00 & 0.000 & + \\
+& \emph{Phaeurus antarcticus} & 2 & 1.00 & 0.000 & - \\
+& \emph{Curdiea racovitzae} & 2 & 1.00 & 0.000 & - \\
+& \emph{Callophyllis atrosanguinea} & 1 & 1.00 & 0.000 & - \\
+& \emph{Neuroglossum delesseriae} & 1 & 1.00 & 0.000 & - \\
+& \emph{Pantoneura plocamioides} & 1 & 1.00 & 0.000 & - \\
+& \emph{Picconiella plumosa} & 1 & 1.00 & 0.000 & - \\
+\textbf{Weddell Sea (Antarctica)} & & & & & \\
+& \emph{Pleuragramma antarcticum} & 69 & 3.58 & 0.440 & +++ \\
+& \emph{Chionodraco myersi} & 37 & 4.09 & 0.356 & ++ \\
+& \emph{Pagetopsis maculatus} & 37 & 4.09 & 0.356 & + \\
+& \emph{Gymnoscopelus braueri} & 62 & 3.53 & 0.274 & ? \\
+& \emph{Dissostichus mawsoni} & 87 & 4.12 & 0.560 & ? \\
+& Bacillariophyceae & 81 & 1.00 & 0.000 & +++ \\
+& Silicoflagellates & 30 & 1.00 & 0.000 & ++ \\
+& Foraminifera & 93 & 2.00 & 0.000 & ++ \\
+& \emph{Euphausia superba} & 163 & 2.27 & 0.385 & +++ \\
+& \emph{Salpa thompsoni} & 108 & 2.28 & 0.347 & ++ \\
+& \emph{Leptonychotes weddellii} & 59 & 4.86 & 0.204 & ? \\
+& \emph{Lobodon carcinophagus} & 28 & 4.24 & 0.553 & +++ \\
+& \emph{Hydrurga leptonyx} & 67 & 4.72 & 0.346 & ? \\
+& \emph{Arctocephalus gazella} & 61 & 4.67 & 0.331 & ? \\
+& \emph{Thalassoica antarctica} & 19 & 4.32 & 0.429 & +++ \\
+& \emph{Pagodroma nivea} & 11 & 4.21 & 0.209 & ++ \\
+& \emph{Sterna paradisaea} & 7 & 4.04 & 0.347 & ++ \\
+& \emph{Aptenodytes forsteri} & 53 & 4.78 & 0.211 & ++ \\
+& \emph{Pygoscelis adeliae} & 7 & 3.78 & 0.282 & +++ \\
+& \emph{Megaptera novaeangliae} & 4 & 3.26 & 0.014 & ? \\
+& Hexactinellida & 49 & 2.00 & 0.000 & +++ \\
+\textbf{San Jorge Gulf} & & & & & \\
+& The species of the San Jorge Gulf are not listed because the number of
+stressed species reported is too high. At a functional group level of
+resolution, the main impacted groups are: macroinvertebrates, fish, and
+seabirds. & & & & \\
+\end{longtable}
+
+\newpage
+\begin{landscape}
+\scriptsize
+
+Table S2. Environmental and anthropogenic stressors reported for the
+study areas: San Jorge Gulf, Beagle Channel, Burdwood Bank, Scotia Sea
+(North and South), Potter Cove, and Weddell Sea. Stressor categories:
+sea warming; glacial retreat; sediment in the water column; iceberg
+scouring; sea ice extent; ocean acidification; ocean acidification +
+plastics; microplastics; mercury; urban \& industrial pollution;
+fishery; alien species. The species affected were considered at the node
+level, whereas effects were considered at the organism and population
+levels. Categories of affected parameters and variables: metabolism;
+biomass; distribution; diet (see text for explanation). ``Locality''
+indicates whether a stressor for a given species was reported for the
+study area (`In situ') or in another area (`Elsewhere').
+
+\begin{longtable}{ L{2.1cm} L{2.5cm} L{4cm} L{2.5cm} L{2cm} L{3cm} }
+\hline
+\textbf{Study area} & \textbf{Stressor} & \textbf{Species affected} & \textbf{Parameter affected} & \textbf{Locality} & \textbf{Reference} \\
+\hline
+\endhead
+\endfoot
+\hline
+\endlastfoot
+
+\textbf{San Jorge Gulf} & & & & & \\
+& Sea warming & Fish assemblage \& its prey & Distribution & In situ &
+Galván et al. (2022) \\
+& Fishery & Demersal fish community & Biomass & In situ & Galván et al.
+(2022) \\
+& Fishery & Macroinvertebrates, fishes and seabirds & Diet & In situ &
+González-Zevallos \& Yorio (2006); González-Zevallos \& Yorio (2011);
+Yorio, González-Zevallos, Gatto, Biagioni, \& Castillo (2017) \\
+& Alien species & Fish assemblage \& its prey & Distribution & In situ &
+Galván et al. (2022); J. Ciancio, Beauchamp, \& Pascual (2010) \\
+& Urban \& industrial pollution & Seabirds \& benthic assemblage &
+Biomass & Elsewhere & Moore \& Dwyer (1974); Buskey, White, \& Esbaugh
+(2016) \\
+\textbf{Beagle Channel} & & & & & \\
+& Urban \& industrial pollution & Macroalgae; Mytilus edulis chilensis,
+Patagonotothen tessellata & Metabolism & In situ & Giarratano \& Amin
+(2010); Ferreira, Lo Nostro, Fernández, \& Genovese (2021); Kaminsky et
+al. (in prep.) \\
+& Mercury & Phytoplankton, Zooplankton, \emph{Grimothea gregaria} &
+Metabolism & In situ & Fioramonti, Ribeiro Guevara, Becker, \&
+Riccialdelli (2022) \\
+& Microplastics & Mytilus edulis chilensis, Nacella magellanica &
+Metabolism & In situ & Analía F. Pérez et al. (2020); Ojeda et al.
+(2021) \\
+& Alien species: Chinook salmon Oncorhynchus tshawytscha &
+Patagonotothen tessellata, Sprattus fuegensis & Diet/Biomass & In situ
+(the presence), Elsewhere (changes in prey biomass) & Fernández,
+Ciancio, Ceballos, Riva-Rossi, \& Pascual (2010); J. E. Ciancio,
+Pascual, Botto, Frere, \& Iribarne (2008) \\
+\textbf{Burdwood Bank} & & & & & \\
+& Mercury & Dissostichus eleginoides, Sprattus fuegensis, Patagonotothen
+ramsayi, Cottoperca trigloides (fishes) \& squids & Metabolism & In situ
+& Fioramonti et al. (2022) \\
+& Microplastics & Henricia obesa \& Odontaster penicillatus (sea stars);
+Patagonotothen guntheri \& P. ramsayi (fishes) & Metabolism & In situ &
+Cossi et al. (2021); A. F. Pérez et al. (2021) \\
+& Fishery & Target: Dissostichus eleginoides. Bycatch: Macrourus sp.,
+Coelorinchus sp. (fishes), Daption capense, Thalassarche melanophris,
+Macronectes giganteus, T. chrysostoma, Diomedea epomophora (seabirds),
+30+ spp macrobenthos & Biomass & Elsewhere & Gaitán \& Marí (2016);
+Martínez, Wöhler, Troccoli, Di Marco, \& Maydana (2022); Administración
+de Parques Nacionales (2022); Tamini et al. (2023) \\
+& Fishery & Thalassarche melanophris, Macronectes giganteus, Daption
+capense, Diomedea epomophora, M. halli, Procellaria aequinoctialis
+(seabirds) & Diet & Elsewhere & Tamini et al. (2023) \\
+\textbf{Scotia Sea, North \& South} & & & & & \\
+& Mercury & Krefftichthys anderssoni, Protomyctophum bolini, Electrona
+antarctica, Gymnoscopelus nicholsi, Gymnoscopelus braueri, Dissostichus
+eleginoides & Metabolism & In situ & Seco et al. (2021) \\
+& Ocean acidification + plastics & Euphausia superba, Limacina
+retroversa (Pteropoda) & Metabolism & In situ & Rowlands et al. (2021);
+Manno, Peck, Corsi, \& Bergami (2022) \\
+& Sea warming & Euphausia superba & Metabolism & In situ & Murphy et al.
+(2007); Perry et al. (2020) \\
+& Sea warming & Euphausia superba & Distribution & In situ & Atkinson et
+al. (2019) \\
+& Fishery & Euphausia superba & Biomass & In situ & Trathan et al.
+(2021) \\
+\textbf{Potter Cove (Antarctica)} & & & & & \\
+& Sediment in water column & Microphytobenthos, macroalgae, benthic
+filter feeders (ascidians), pelagic filter feeders (krill, salps) &
+Metabolism & In situ & Sahade et al. (2015); D. Deregibus et al. (2016);
+Fuentes et al. (2016); Hoffmann et al. (2019) \\
+& Sea ice extent & Krill & Biomass & Elsewhere & Flores et al. (2012) \\
+& Sea ice extent & Benthic community (macroalgae, invertebrates) &
+Metabolism & Elsewhere & Clark et al. (2013); Campana et al. (2018) \\
+& Glacial retreat & Benthic community (macroalgae, invertebrates) &
+Biomass & In situ & Quartino, Deregibus, Campana, Latorre, \& Momo
+(2013); Lagger, Servetto, Torre, \& Sahade (2017); Lagger et al.
+(2018) \\
+& Iceberg scouring & Benthic community & Biomass & In situ & D.
+Deregibus, Quartino, Zacher, Campana, \& Barnes (2017); Dolores
+Deregibus et al. (2023) \\
+& Sea warming & Phytoplankton & Metabolism, biomass & In situ & Antoni
+et al. (2020); Latorre et al. (2023) \\
+& Sea warming & Zooplankton & Metabolism, biomass, diet & In situ &
+Garcia et al. (2016); Garcia et al. (2019) \\
+& Sea warming & Fish & Metabolism & In situ, elsewhere & Strobel, Leo,
+Pörtner, \& Mark (2013); Souza et al. (2018); Saravia et al. (2021) \\
+\textbf{Weddell Sea (Antarctica)} & & & & & \\
+& Iceberg scouring & Macrobentos & Biomass & In situ & Isla (2023);
+Julian Gutt et al. (2015); Smale, Brown, Barnes, Fraser, \& Clarke
+(2008); J. Gutt, Starmans, \& Dieckmann (1996) \\
+& Iceberg scouring & Hexactinellida sponges & Biomass & In situ & Julian
+Gutt \& Starmans (2001); Pineda-Metz, Gerdes, \& Richter (2020); Julian
+Gutt (2001); Julian Gutt \& Piepenburg (2003) \\
+& Ocean acidification & Primary producers / krill / foraminifera /
+flagellates & Metabolism & Elsewhere & Deppeler et al. (2020); Isla
+(2023); Julian Gutt et al. (2015); Moy, Howard, Bray, \& Trull (2009) \\
+& Ocean acidification & Euphausia superba, Pleuragramma antarcticum &
+Metabolism & In situ & So Kawaguchi et al. (2010); S. Kawaguchi et al.
+(2013); Piñones \& Fedorov (2016); Mintenbeck et al. (2012) \\
+& Sea warming & Large (diatoms) \& small (cryptophytes) phytoplankton,
+zooplankton (salps) & Metabolism & Elsewhere & Isla (2023); Julian Gutt
+et al. (2015); Trebilco, Melbourne-Thomas, \& Constable (2020) \\
+& Sea warming & Euphausia superba, Nototheniid fishes, Pleuragramma
+antarcticum & Metabolism & In situ & Meyer et al. (2017); Hill,
+Phillips, \& Atkinson (2013); Mintenbeck et al. (2012); Constable et al.
+(2014); Mintenbeck et al. (2012) \\
+& Sea ice extent & Phytoplankton, Lobodon carcinophaga, Hydrurga
+leptonyx, Leptonychotes weddellii, Ommataphoca rossii, Mirounga leonina,
+Arctocephalus gazella & Metabolism & In situ & Pineda-Metz et al.
+(2020); Wege, Salas, \& LaRue (2021); Siniff, Garrott, Rotella, Fraser,
+\& Ainley (2008) \\
+& Sea ice extent & Euphausia superba, Pleuragramma antarcticum,
+Pagodroma nivea, Thalassoica antarctica, Pygoscelis adeliae & Metabolism
+& In situ & Orgeira, Alvarez, \& Salvó (2021); Braithwaite, Meeuwig,
+Letessier, Jenner, \& Brierley (2015); Hill et al. (2013); Mintenbeck et
+al. (2012) \\
+& Sea ice extent & Megaptera novaeangliae & Metabolism & Elsewhere &
+Pallin et al. (2023) \\
+& Sea ice extent & Aptenodytes forsteri & Metabolism & Elsewhere &
+Orgeira et al. (2021) \\
+\end{longtable}
+
+\end{landscape}
+
+\normalsize
+
+\subsection*{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-APN2022}
+Administración de Parques Nacionales. (2022). {Plan de gestión AMP
+Namuncurá Banco Burdwood}. {Dirección Nacional de Áreas Marinas
+Protegidas (DNAMP), Argentina}.
+
+\bibitem[\citeproctext]{ref-Antoni2020}
+Antoni, J. S., Almandoz, G. O., Ferrario, M. E., Hernando, M. P.,
+Varela, D. E., Rozema, P. D., \ldots{} Schloss, I. R. (2020). Response
+of a natural {Antarctic} phytoplankton assemblage to changes in
+temperature and salinity. \emph{Journal of Experimental Marine Biology
+and Ecology}, \emph{532}, 151444.
+doi:\href{https://doi.org/10.1016/j.jembe.2020.151444}{10.1016/j.jembe.2020.151444}
+
+\bibitem[\citeproctext]{ref-Atkinson2019}
+Atkinson, A., Hill, S. L., Pakhomov, E. A., Siegel, V., Reiss, C. S.,
+Loeb, V. J., \ldots{} Sailley, S. F. (2019). Krill ({Euphausia} superba)
+distribution contracts southward during rapid regional warming.
+\emph{Nature Climate Change}, \emph{9}(2), 142--147.
+doi:\href{https://doi.org/10.1038/s41558-018-0370-z}{10.1038/s41558-018-0370-z}
+
+\bibitem[\citeproctext]{ref-Braithwaite2015}
+Braithwaite, J. E., Meeuwig, J. J., Letessier, T. B., Jenner, K. C. S.,
+\& Brierley, A. S. (2015). From sea ice to blubber: Linking whale
+condition to krill abundance using historical whaling records.
+\emph{Polar Biology}, \emph{38}(8), 1195--1202.
+doi:\href{https://doi.org/10.1007/s00300-015-1685-0}{10.1007/s00300-015-1685-0}
+
+\bibitem[\citeproctext]{ref-Buskey2016}
+Buskey, E. J., White, H. K., \& Esbaugh, A. J. (2016). Impact of {Oil
+Spills} on {Marine Life} in the {Gulf} of {Mexico}: {EFFECTS ON
+PLANKTON}, {NEKTON}, {AND DEEP-SEA BENTHOS}. \emph{Oceanography},
+\emph{29}(3), 174--181. Retrieved from
+\url{https://www.jstor.org/stable/24862719}
+
+\bibitem[\citeproctext]{ref-Campana2018}
+Campana, G. L., Zacher, K., Deregibus, D., Momo, F. R., Wiencke, C., \&
+Quartino, M. L. (2018). Succession of {Antarctic} benthic algae ({Potter
+Cove}, {South Shetland Islands}): Structural patterns and glacial impact
+over a four-year period. \emph{Polar Biology}, \emph{41}(2), 377--396.
+doi:\href{https://doi.org/10.1007/s00300-017-2197-x}{10.1007/s00300-017-2197-x}
+
+\bibitem[\citeproctext]{ref-Ciancio2008}
+Ciancio, J. E., Pascual, M. A., Botto, F., Frere, E., \& Iribarne, O.
+(2008). Trophic relationships of exotic anadromous salmonids in the
+southern {Patagonian Shelf} as inferred from stable isotopes.
+\emph{Limnology and Oceanography}, \emph{53}(2), 788--798.
+doi:\href{https://doi.org/10.4319/lo.2008.53.2.0788}{10.4319/lo.2008.53.2.0788}
+
+\bibitem[\citeproctext]{ref-Ciancio2010}
+Ciancio, J., Beauchamp, D. A., \& Pascual, M. (2010). Marine effect of
+introduced salmonids: {Prey} consumption by exotic steelhead and
+anadromous brown trout in the {Patagonian Continental Shelf}.
+\emph{Limnology and Oceanography}, \emph{55}(5), 2181--2192.
+doi:\href{https://doi.org/10.4319/lo.2010.55.5.2181}{10.4319/lo.2010.55.5.2181}
+
+\bibitem[\citeproctext]{ref-Clark2013}
+Clark, G. F., Stark, J. S., Johnston, E. L., Runcie, J. W., Goldsworthy,
+P. M., Raymond, B., \& Riddle, M. J. (2013). Light-driven tipping points
+in polar ecosystems. \emph{Global Change Biology}, \emph{19}(12),
+3749--3761.
+doi:\href{https://doi.org/10.1111/gcb.12337}{10.1111/gcb.12337}
+
+\bibitem[\citeproctext]{ref-Constable2014}
+Constable, A. J., Melbourne-Thomas, J., Corney, S. P., Arrigo, K. R.,
+Barbraud, C., Barnes, D. K. A., \ldots{} Ziegler, P. (2014). Climate
+change and {Southern Ocean} ecosystems {I}: How changes in physical
+habitats directly affect marine biota. \emph{Global Change Biology},
+\emph{20}(10), 3004--3025.
+doi:\href{https://doi.org/10.1111/gcb.12623}{10.1111/gcb.12623}
+
+\bibitem[\citeproctext]{ref-Cossi2021}
+Cossi, P. F., Ojeda, M., Chiesa, I. L., Rimondino, G. N., Fraysse, C.,
+Calcagno, J., \& Pérez, A. F. (2021). First evidence of microplastics in
+the {Marine Protected Area Namuncurá} at {Burdwood Bank}, {Argentina}: A
+study on {Henricia} obesa and {Odontaster} penicillatus
+({Echinodermata}: {Asteroidea}). \emph{Polar Biology}, \emph{44}(12),
+2277--2287.
+doi:\href{https://doi.org/10.1007/s00300-021-02959-5}{10.1007/s00300-021-02959-5}
+
+\bibitem[\citeproctext]{ref-Deppeler2020}
+Deppeler, S., Schulz, K. G., Hancock, A., Pascoe, P., McKinlay, J., \&
+Davidson, A. (2020). Ocean acidification reduces growth and grazing
+impact of {Antarctic} heterotrophic nanoflagellates.
+\emph{Biogeosciences}, \emph{17}(16), 4153--4171.
+doi:\href{https://doi.org/10.5194/bg-17-4153-2020}{10.5194/bg-17-4153-2020}
+
+\bibitem[\citeproctext]{ref-Deregibus2023}
+Deregibus, Dolores, Campana, G. L., Neder, C., Barnes, D. K. A., Zacher,
+K., Piscicelli, J. M., \ldots{} Quartino, M. L. (2023). Potential
+macroalgal expansion and blue carbon gains with northern {Antarctic
+Peninsula} glacial retreat. \emph{Marine Environmental Research},
+\emph{189}, 106056.
+doi:\href{https://doi.org/10.1016/j.marenvres.2023.106056}{10.1016/j.marenvres.2023.106056}
+
+\bibitem[\citeproctext]{ref-Deregibus2016}
+Deregibus, D., Quartino, M. L., Campana, G. L., Momo, F. R., Wiencke,
+C., \& Zacher, K. (2016). Photosynthetic light requirements and vertical
+distribution of macroalgae in newly ice-free areas in {Potter Cove},
+{South Shetland Islands}, {Antarctica}. \emph{Polar Biology},
+\emph{39}(1), 153--166.
+doi:\href{https://doi.org/10.1007/s00300-015-1679-y}{10.1007/s00300-015-1679-y}
+
+\bibitem[\citeproctext]{ref-Deregibus2017}
+Deregibus, D., Quartino, M. L., Zacher, K., Campana, G. L., \& Barnes,
+D. K. A. (2017). Understanding the link between sea ice, ice scour and
+{Antarctic} benthic biodiversity\textendash the need for cross-station
+and international collaboration. \emph{Polar Record}, \emph{53}(2),
+143--152.
+doi:\href{https://doi.org/10.1017/S0032247416000875}{10.1017/S0032247416000875}
+
+\bibitem[\citeproctext]{ref-Fernandez2010}
+Fernández, D. A., Ciancio, J., Ceballos, S. G., Riva-Rossi, C., \&
+Pascual, M. A. (2010). Chinook salmon ({Oncorhynchus} tshawytscha,
+{Walbaum} 1792) in the {Beagle Channel}, {Tierra} del {Fuego}: The onset
+of an invasion. \emph{Biological Invasions}, \emph{12}(9), 2991--2997.
+doi:\href{https://doi.org/10.1007/s10530-010-9731-x}{10.1007/s10530-010-9731-x}
+
+\bibitem[\citeproctext]{ref-Ferreira2021}
+Ferreira, M. F., Lo Nostro, F. L., Fernández, D. A., \& Genovese, G.
+(2021). Endocrine disruption in the sub {Antarctic} fish
+{Patagonotothen} tessellata ({Perciformes}, {Notothenidae}) from {Beagle
+Channel} associated to anthropogenic impact. \emph{Marine Environmental
+Research}, \emph{171}, 105478.
+doi:\href{https://doi.org/10.1016/j.marenvres.2021.105478}{10.1016/j.marenvres.2021.105478}
+
+\bibitem[\citeproctext]{ref-Fioramonti2022}
+Fioramonti, N. E., Ribeiro Guevara, S., Becker, Y. A., \& Riccialdelli,
+L. (2022). Mercury transfer in coastal and oceanic food webs from the
+{Southwest Atlantic Ocean}. \emph{Marine Pollution Bulletin},
+\emph{175}, 113365.
+doi:\href{https://doi.org/10.1016/j.marpolbul.2022.113365}{10.1016/j.marpolbul.2022.113365}
+
+\bibitem[\citeproctext]{ref-Flores2012}
+Flores, H., Atkinson, A., Kawaguchi, S., Krafft, B., Milinevsky, G.,
+Nicol, S., \ldots{} Werner, T. (2012). Impact of climate change on
+{Antarctic} krill. \emph{Marine Ecology Progress Series}, \emph{458},
+1--19. doi:\href{https://doi.org/10.3354/meps09831}{10.3354/meps09831}
+
+\bibitem[\citeproctext]{ref-Fuentes2016}
+Fuentes, V., Alurralde, G., Meyer, B., Aguirre, G. E., Canepa, A.,
+Wölfl, A.-C., \ldots{} Schloss, I. R. (2016). Glacial melting: An
+overlooked threat to {Antarctic} krill. \emph{Scientific Reports},
+\emph{6}(1), 27234.
+doi:\href{https://doi.org/10.1038/srep27234}{10.1038/srep27234}
+
+\bibitem[\citeproctext]{ref-Gaitan2016}
+Gaitán, E., \& Marí, N. (2016). {Análisis de las comunidades bentónicas
+asociadas a capturas de la flota comercial dirigida a Macruronus
+magellanicus}. {Instituto Nacional de Investigación y Desarrollo
+Pesquero (INIDEP)}.
+
+\bibitem[\citeproctext]{ref-Galvan2022}
+Galván, D. E., Bovcon, N. D., Cochia, P. D., González, R. A., Lattuca,
+M. E., Reinaldo, M. O., \ldots{} Svendsen, G. M. (2022). Changes in the
+{Specific} and {Biogeographic Composition} of {Coastal Fish Assemblages}
+in {Patagonia}, {Driven} by {Climate Change}, {Fishing}, and {Invasion}
+by {Alien Species}. In E. W. Helbling, M. A. Narvarte, R. A. González,
+\& V. E. Villafañe (Eds.), \emph{Global {Change} in {Atlantic Coastal
+Patagonian Ecosystems}: {A Journey Through Time}} (pp. 205--231).
+{Cham}: {Springer International Publishing}.
+doi:\href{https://doi.org/10.1007/978-3-030-86676-1_9}{10.1007/978-3-030-86676-1\_9}
+
+\bibitem[\citeproctext]{ref-Garcia2019}
+Garcia, M. D., Fernández Severini, M. D., Spetter, C., López Abbate, M.
+C., Tartara, M. N., Nahuelhual, E. G., \ldots{} Hoffmeyer, M. S. (2019).
+Effects of glacier melting on the planktonic communities of two
+{Antarctic} coastal areas ({Potter Cove} and {Hope Bay}) in summer.
+\emph{Regional Studies in Marine Science}, \emph{30}, 100731.
+doi:\href{https://doi.org/10.1016/j.rsma.2019.100731}{10.1016/j.rsma.2019.100731}
+
+\bibitem[\citeproctext]{ref-Garcia2016}
+Garcia, M. D., Hoffmeyer, M. S., Abbate, M. C. L., Barría De Cao, M. S.,
+Pettigrosso, R. E., Almandoz, G. O., \ldots{} Schloss, I. R. (2016).
+Micro- and mesozooplankton responses during two contrasting summers in a
+coastal {Antarctic} environment. \emph{Polar Biology}, \emph{39}(1),
+123--137.
+doi:\href{https://doi.org/10.1007/s00300-015-1678-z}{10.1007/s00300-015-1678-z}
+
+\bibitem[\citeproctext]{ref-Giarratano2010}
+Giarratano, E., \& Amin, O. A. (2010). Heavy metals monitoring in the
+southernmost mussel farm of the world ({Beagle Channel}, {Argentina}).
+\emph{Ecotoxicology and Environmental Safety}, \emph{73}(6), 1378--1384.
+doi:\href{https://doi.org/10.1016/j.ecoenv.2010.06.023}{10.1016/j.ecoenv.2010.06.023}
+
+\bibitem[\citeproctext]{ref-Gonzalez-Zevallos2006}
+González-Zevallos, D., \& Yorio, P. (2006). Seabird use of discards and
+incidental captures at the {Argentine} hake trawl fishery in the {Golfo
+San Jorge}, {Argentina}. \emph{Marine Ecology Progress Series},
+\emph{316}, 175--183.
+doi:\href{https://doi.org/10.3354/meps316175}{10.3354/meps316175}
+
+\bibitem[\citeproctext]{ref-Gonzalez-Zevallos2011}
+González-Zevallos, D., \& Yorio, P. (2011). Consumption of discards and
+interactions between {Black-browed Albatrosses} ({Thalassarche}
+melanophrys) and {Kelp Gulls} ({Larus} dominicanus) at trawl fisheries
+in {Golfo San Jorge}, {Argentina}. \emph{Journal of Ornithology},
+\emph{152}(4), 827--838.
+doi:\href{https://doi.org/10.1007/s10336-011-0657-6}{10.1007/s10336-011-0657-6}
+
+\bibitem[\citeproctext]{ref-Gutt2001a}
+Gutt, Julian. (2001). On the direct impact of ice on marine benthic
+communities, a review. \emph{Polar Biology}, \emph{24}(8), 553--564.
+doi:\href{https://doi.org/10.1007/s003000100262}{10.1007/s003000100262}
+
+\bibitem[\citeproctext]{ref-Gutt2015}
+Gutt, Julian, Bertler, N., Bracegirdle, T. J., Buschmann, A., Comiso,
+J., Hosie, G., \ldots{} Xavier, J. C. (2015). The {Southern Ocean}
+ecosystem under multiple climate change stresses - an integrated
+circumpolar assessment. \emph{Global Change Biology}, \emph{21}(4),
+1434--1453.
+doi:\href{https://doi.org/10.1111/gcb.12794}{10.1111/gcb.12794}
+
+\bibitem[\citeproctext]{ref-Gutt2003}
+Gutt, Julian, \& Piepenburg, D. (2003). Scale-dependent impact on
+diversity of {Antarctic} benthos caused by grounding of icebergs.
+\emph{Marine Ecology Progress Series}, \emph{253}, 77--83.
+doi:\href{https://doi.org/10.3354/meps253077}{10.3354/meps253077}
+
+\bibitem[\citeproctext]{ref-Gutt2001}
+Gutt, Julian, \& Starmans, A. (2001). Quantification of iceberg impact
+and benthic recolonisation patterns in the {Weddell Sea} ({Antarctica}).
+\emph{Polar Biology}, \emph{24}(8), 615--619.
+doi:\href{https://doi.org/10.1007/s003000100263}{10.1007/s003000100263}
+
+\bibitem[\citeproctext]{ref-Gutt1996}
+Gutt, J., Starmans, A., \& Dieckmann, G. (1996). Impact of iceberg
+scouring on polar benthic habitats. \emph{Marine Ecology Progress
+Series}, \emph{137}, 311--316.
+doi:\href{https://doi.org/10.3354/meps137311}{10.3354/meps137311}
+
+\bibitem[\citeproctext]{ref-Hill2013}
+Hill, S. L., Phillips, T., \& Atkinson, A. (2013). Potential {Climate
+Change Effects} on the {Habitat} of {Antarctic Krill} in the {Weddell
+Quadrant} of the {Southern Ocean}. \emph{PLOS ONE}, \emph{8}(8), e72246.
+doi:\href{https://doi.org/10.1371/journal.pone.0072246}{10.1371/journal.pone.0072246}
+
+\bibitem[\citeproctext]{ref-Hoffmann2019}
+Hoffmann, R., Al-Handal, A. Y., Wulff, A., Deregibus, D., Zacher, K.,
+Quartino, M. L., \ldots{} Braeckman, U. (2019). Implications of {Glacial
+Melt-Related Processes} on the {Potential Primary Production} of a
+{Microphytobenthic Community} in {Potter Cove} ({Antarctica}).
+\emph{Frontiers in Marine Science}, \emph{6}, 655.
+doi:\href{https://doi.org/10.3389/fmars.2019.00655}{10.3389/fmars.2019.00655}
+
+\bibitem[\citeproctext]{ref-Isla2023}
+Isla, E. (2023). Animal\textendash{{Energy Relationships}} in a
+{Changing Ocean}: {The Case} of {Continental Shelf Macrobenthic
+Communities} on the {Weddell Sea} and the {Vicinity} of the {Antarctic
+Peninsula}. \emph{Biology}, \emph{12}(5), 659.
+doi:\href{https://doi.org/10.3390/biology12050659}{10.3390/biology12050659}
+
+\bibitem[\citeproctext]{ref-Kaminskyinprep}
+Kaminsky, J., Bagur, M., Boraso, A., Schloss, I. R., Buschmann, A. H.,
+\& Quartino, M. L. (in prep.). Kelp recruitment declines in a
+sub-{Antarctic} ecosystem with high sediment inputs and changes in the
+understory algae.
+
+\bibitem[\citeproctext]{ref-Kawaguchi2013}
+Kawaguchi, S., Ishida, A., King, R., Raymond, B., Waller, N., Constable,
+A., \ldots{} Ishimatsu, A. (2013). Risk maps for {Antarctic} krill under
+projected {Southern Ocean} acidification. \emph{Nature Climate Change},
+\emph{3}(9), 843--847.
+doi:\href{https://doi.org/10.1038/nclimate1937}{10.1038/nclimate1937}
+
+\bibitem[\citeproctext]{ref-Kawaguchi2010}
+Kawaguchi, So, Kurihara, H., King, R., Hale, L., Berli, T., Robinson, J.
+P., \ldots{} Ishimatsu, A. (2010). Will krill fare well under {Southern
+Ocean} acidification? \emph{Biology Letters}, \emph{7}(2), 288--291.
+doi:\href{https://doi.org/10.1098/rsbl.2010.0777}{10.1098/rsbl.2010.0777}
+
+\bibitem[\citeproctext]{ref-Lagger2018}
+Lagger, C., Nime, M., Torre, L., Servetto, N., Tatián, M., \& Sahade, R.
+(2018). Climate change, glacier retreat and a new ice-free island offer
+new insights on {Antarctic} benthic responses. \emph{Ecography},
+\emph{41}(4), 579--591.
+doi:\href{https://doi.org/10.1111/ecog.03018}{10.1111/ecog.03018}
+
+\bibitem[\citeproctext]{ref-Lagger2017}
+Lagger, C., Servetto, N., Torre, L., \& Sahade, R. (2017). Benthic
+colonization in newly ice-free soft-bottom areas in an {Antarctic}
+fjord. \emph{PLOS ONE}, \emph{12}(11), e0186756.
+doi:\href{https://doi.org/10.1371/journal.pone.0186756}{10.1371/journal.pone.0186756}
+
+\bibitem[\citeproctext]{ref-Latorre2023}
+Latorre, M. P., Iachetti, C. M., Schloss, I. R., Antoni, J., Malits, A.,
+De La Rosa, F., \ldots{} Hernando, M. (2023). Summer heatwaves affect
+coastal {Antarctic} plankton metabolism and community structure.
+\emph{Journal of Experimental Marine Biology and Ecology}, \emph{567},
+151926.
+doi:\href{https://doi.org/10.1016/j.jembe.2023.151926}{10.1016/j.jembe.2023.151926}
+
+\bibitem[\citeproctext]{ref-Manno2022}
+Manno, C., Peck, V. L., Corsi, I., \& Bergami, E. (2022). Under
+pressure: {Nanoplastics} as a further stressor for sub-{Antarctic}
+pteropods already tackling ocean acidification. \emph{Marine Pollution
+Bulletin}, \emph{174}, 113176.
+doi:\href{https://doi.org/10.1016/j.marpolbul.2021.113176}{10.1016/j.marpolbul.2021.113176}
+
+\bibitem[\citeproctext]{ref-Martinez2022}
+Martínez, P. A., Wöhler, O. C., Troccoli, G. H., Di Marco, E., \&
+Maydana, L. (2022). \emph{{Descripción de las capturas incidentales de
+granaderos presentes en los lances dirigidos a merluza negra en la
+pesquería argentina de arrastre: período 2010-2019.}} {Instituto
+Nacional de Investigación y Desarrollo Pesquero (INIDEP)}.
+
+\bibitem[\citeproctext]{ref-Meyer2017}
+Meyer, B., Freier, U., Grimm, V., Groeneveld, J., Hunt, B. P. V.,
+Kerwath, S., \ldots{} Yilmaz, N. I. (2017). The winter pack-ice zone
+provides a sheltered but food-poor habitat for larval {Antarctic} krill.
+\emph{Nature Ecology \& Evolution}, \emph{1}(12), 1853--1861.
+doi:\href{https://doi.org/10.1038/s41559-017-0368-3}{10.1038/s41559-017-0368-3}
+
+\bibitem[\citeproctext]{ref-Mintenbeck2012}
+Mintenbeck, K., Barrera-Oro, E. R., Brey, T., Jacob, U., Knust, R.,
+Mark, F. C., \ldots{} Arntz, W. E. (2012). Impact of {Climate Change} on
+{Fishes} in {Complex Antarctic Ecosystems}. In U. Jacob \& G. Woodward
+(Eds.), \emph{Advances in {Ecological Research}} (Vol. 46, pp.
+361--426). {Burlington}: {Academic Press}.
+doi:\href{https://doi.org/10.1016/B978-0-12-396992-7.00006-X}{10.1016/B978-0-12-396992-7.00006-X}
+
+\bibitem[\citeproctext]{ref-Moore1974}
+Moore, S. F., \& Dwyer, R. L. (1974). Effects of oil on marine
+organisms: {A} critical assessment of published data. \emph{Water
+Research}, \emph{8}(10), 819--827.
+doi:\href{https://doi.org/10.1016/0043-1354(74)90028-1}{10.1016/0043-1354(74)90028-1}
+
+\bibitem[\citeproctext]{ref-Moy2009}
+Moy, A. D., Howard, W. R., Bray, S. G., \& Trull, T. W. (2009). Reduced
+calcification in modern {Southern Ocean} planktonic foraminifera.
+\emph{Nature Geoscience}, \emph{2}(4), 276--280.
+doi:\href{https://doi.org/10.1038/ngeo460}{10.1038/ngeo460}
+
+\bibitem[\citeproctext]{ref-Murphy2007}
+Murphy, E. J., Trathan, P. N., Watkins, J. L., Reid, K., Meredith, M.
+P., Forcada, J., \ldots{} Rothery, P. (2007). Climatically driven
+fluctuations in {Southern Ocean} ecosystems. \emph{Proceedings of the
+Royal Society B: Biological Sciences}, \emph{274}(1629), 3057--3067.
+doi:\href{https://doi.org/10.1098/rspb.2007.1180}{10.1098/rspb.2007.1180}
+
+\bibitem[\citeproctext]{ref-Ojeda2021}
+Ojeda, M., Cossi, P. F., Rimondino, G. N., Chiesa, I. L., Boy, C. C., \&
+Pérez, A. F. (2021). Microplastics pollution in the intertidal limpet,
+{Nacella} magellanica, from {Beagle Channel} ({Argentina}).
+\emph{Science of The Total Environment}, \emph{795}, 148866.
+doi:\href{https://doi.org/10.1016/j.scitotenv.2021.148866}{10.1016/j.scitotenv.2021.148866}
+
+\bibitem[\citeproctext]{ref-Orgeira2021}
+Orgeira, J. L., Alvarez, F., \& Salvó, C. S. (2021). The same pathway to
+the {Weddell Sea} birdlife, after 65 years: Similarities in the species
+composition, richness and abundances. \emph{Czech Polar Reports},
+\emph{11}(2), 291--304.
+doi:\href{https://doi.org/10.5817/CPR2021-2-20}{10.5817/CPR2021-2-20}
+
+\bibitem[\citeproctext]{ref-Pallin2023}
+Pallin, L. J., Kellar, N. M., Steel, D., Botero-Acosta, N., Baker, C.
+S., Conroy, J. A., \ldots{} Friedlaender, A. S. (2023). A surplus no
+more? {Variation} in krill availability impacts reproductive rates of
+{Antarctic} baleen whales. \emph{Global Change Biology}, \emph{29}(8),
+2108--2121.
+doi:\href{https://doi.org/10.1111/gcb.16559}{10.1111/gcb.16559}
+
+\bibitem[\citeproctext]{ref-Perez2021}
+Pérez, A. F., Ojeda, M., Cossi, P. F., Rimondino, G. N., Chiesa, I. L.,
+Fraysse, C., \& Calcagno, J. (2021). {Microplásticos en organismos
+marinos de altas latitudes}. In \emph{{I Jornadas de la Red Científica
+Argentina para el estudio de los plásticos y sus impactos en el ambiente
+(SEPIA)}}.
+
+\bibitem[\citeproctext]{ref-Perez2020}
+Pérez, Analía F., Ojeda, M., Rimondino, G. N., Chiesa, I. L., Di Mauro,
+R., Boy, C. C., \& Calcagno, J. A. (2020). First report of microplastics
+presence in the mussel {Mytilus} chilensis from {Ushuaia Bay} ({Beagle
+Channel}, {Tierra} del {Fuego}, {Argentina}). \emph{Marine Pollution
+Bulletin}, \emph{161}, 111753.
+doi:\href{https://doi.org/10.1016/j.marpolbul.2020.111753}{10.1016/j.marpolbul.2020.111753}
+
+\bibitem[\citeproctext]{ref-Perry2020}
+Perry, F. A., Kawaguchi, S., Atkinson, A., Sailley, S. F., Tarling, G.
+A., Mayor, D. J., \ldots{} Cooper, A. (2020).
+Temperature\textendash{{Induced Hatch Failure}} and {Nauplii
+Malformation} in {Antarctic Krill}. \emph{Frontiers in Marine Science},
+\emph{7}.
+
+\bibitem[\citeproctext]{ref-Pineda-Metz2020}
+Pineda-Metz, S. E. A., Gerdes, D., \& Richter, C. (2020). Benthic fauna
+declined on a whitening {Antarctic} continental shelf. \emph{Nature
+Communications}, \emph{11}(1), 2226.
+doi:\href{https://doi.org/10.1038/s41467-020-16093-z}{10.1038/s41467-020-16093-z}
+
+\bibitem[\citeproctext]{ref-Pinones2016}
+Piñones, A., \& Fedorov, A. V. (2016). Projected changes of {Antarctic}
+krill habitat by the end of the 21st century. \emph{Geophysical Research
+Letters}, \emph{43}(16), 8580--8589.
+doi:\href{https://doi.org/10.1002/2016GL069656}{10.1002/2016GL069656}
+
+\bibitem[\citeproctext]{ref-Quartino2013}
+Quartino, M. L., Deregibus, D., Campana, G. L., Latorre, G. E. J., \&
+Momo, F. R. (2013). Evidence of {Macroalgal Colonization} on {Newly
+Ice-Free Areas} following {Glacial Retreat} in {Potter Cove} ({South
+Shetland Islands}), {Antarctica}. \emph{PLoS ONE}, \emph{8}(3), e58223.
+doi:\href{https://doi.org/10.1371/journal.pone.0058223}{10.1371/journal.pone.0058223}
+
+\bibitem[\citeproctext]{ref-Rowlands2021}
+Rowlands, E., Galloway, T., Cole, M., Lewis, C., Peck, V., Thorpe, S.,
+\& Manno, C. (2021). The {Effects} of {Combined Ocean Acidification} and
+{Nanoplastic Exposures} on the {Embryonic Development} of {Antarctic
+Krill}. \emph{Frontiers in Marine Science}, \emph{8}.
+
+\bibitem[\citeproctext]{ref-Sahade2015}
+Sahade, R., Lagger, C., Torre, L., Momo, F., Monien, P., Schloss, I.,
+\ldots{} Abele, D. (2015). Climate change and glacier retreat drive
+shifts in an {Antarctic} benthic ecosystem. \emph{Science Advances},
+\emph{1}(10), e1500050.
+doi:\href{https://doi.org/10.1126/sciadv.1500050}{10.1126/sciadv.1500050}
+
+\bibitem[\citeproctext]{ref-Saravia2021}
+Saravia, J., Paschke, K., Oyarzún-Salazar, R., Cheng, C.-H. C., Navarro,
+J. M., \& Vargas-Chacoff, L. (2021). Effects of warming rates on
+physiological and molecular components of response to {CTMax} heat
+stress in the {Antarctic} fish {Harpagifer} antarcticus. \emph{Journal
+of Thermal Biology}, \emph{99}, 103021.
+doi:\href{https://doi.org/10.1016/j.jtherbio.2021.103021}{10.1016/j.jtherbio.2021.103021}
+
+\bibitem[\citeproctext]{ref-Seco2021}
+Seco, J., Aparício, S., Brierley, A. S., Bustamante, P., Ceia, F. R.,
+Coelho, J. P., \ldots{} Xavier, J. C. (2021). Mercury biomagnification
+in a {Southern Ocean} food web. \emph{Environmental Pollution},
+\emph{275}, 116620.
+doi:\href{https://doi.org/10.1016/j.envpol.2021.116620}{10.1016/j.envpol.2021.116620}
+
+\bibitem[\citeproctext]{ref-Siniff2008}
+Siniff, D. B., Garrott, R. A., Rotella, J. J., Fraser, W. R., \& Ainley,
+D. G. (2008). Opinion: {Projecting} the effects of environmental change
+on {Antarctic} seals. \emph{Antarctic Science}, \emph{20}(5), 425--435.
+doi:\href{https://doi.org/10.1017/S0954102008001351}{10.1017/S0954102008001351}
+
+\bibitem[\citeproctext]{ref-Smale2008a}
+Smale, D. A., Brown, K. M., Barnes, D. K. A., Fraser, K. P. P., \&
+Clarke, A. (2008). Ice {Scour Disturbance} in {Antarctic Waters}.
+\emph{Science}, \emph{321}(5887), 371--371.
+doi:\href{https://doi.org/10.1126/science.1158647}{10.1126/science.1158647}
+
+\bibitem[\citeproctext]{ref-Souza2018}
+Souza, M. R. D. P. de, Herrerias, T., Zaleski, T., Forgati, M.,
+Kandalski, P. K., Machado, C., \ldots{} Donatti, L. (2018). Heat stress
+in the heart and muscle of the {Antarctic} fishes {Notothenia} rossii
+and {Notothenia} coriiceps: {Carbohydrate} metabolism and antioxidant
+defence. \emph{Biochimie}, \emph{146}, 43--55.
+doi:\href{https://doi.org/10.1016/j.biochi.2017.11.010}{10.1016/j.biochi.2017.11.010}
+
+\bibitem[\citeproctext]{ref-Strobel2013}
+Strobel, A., Leo, E., Pörtner, H. O., \& Mark, F. C. (2013). Elevated
+temperature and {PCO2} shift metabolic pathways in differentially
+oxidative tissues of {Notothenia} rossii. \emph{Comparative Biochemistry
+and Physiology Part B: Biochemistry and Molecular Biology},
+\emph{166}(1), 48--57.
+doi:\href{https://doi.org/10.1016/j.cbpb.2013.06.006}{10.1016/j.cbpb.2013.06.006}
+
+\bibitem[\citeproctext]{ref-Tamini2023}
+Tamini, L. L., Dellacasa, R. F., Chavez, L. N., Marinao, C. J., Góngora,
+M. E., Crawford, R., \& Frere, E. (2023). Bird scaring lines reduce
+seabird mortality in mid-water and bottom trawlers in {Argentina}.
+\emph{ICES Journal of Marine Science}, fsad109.
+doi:\href{https://doi.org/10.1093/icesjms/fsad109}{10.1093/icesjms/fsad109}
+
+\bibitem[\citeproctext]{ref-Trathan2021}
+Trathan, P. N., Fielding, S., Hollyman, P. R., Murphy, E. J.,
+Warwick-Evans, V., \& Collins, M. A. (2021). Enhancing the ecosystem
+approach for the fishery for {Antarctic} krill within the complex,
+variable, and changing ecosystem at {South Georgia}. \emph{ICES Journal
+of Marine Science}, \emph{78}(6), 2065--2081.
+doi:\href{https://doi.org/10.1093/icesjms/fsab092}{10.1093/icesjms/fsab092}
+
+\bibitem[\citeproctext]{ref-Trebilco2020}
+Trebilco, R., Melbourne-Thomas, J., \& Constable, A. J. (2020). The
+policy relevance of {Southern Ocean} food web structure: {Implications}
+of food web change for fisheries, conservation and carbon sequestration.
+\emph{Marine Policy}, \emph{115}, 103832.
+doi:\href{https://doi.org/10.1016/j.marpol.2020.103832}{10.1016/j.marpol.2020.103832}
+
+\bibitem[\citeproctext]{ref-Wege2021}
+Wege, M., Salas, L., \& LaRue, M. (2021). Ice matters: {Life-history}
+strategies of two {Antarctic} seals dictate climate change eventualities
+in the {Weddell Sea}. \emph{Global Change Biology}, \emph{27}(23),
+6252--6262.
+doi:\href{https://doi.org/10.1111/gcb.15828}{10.1111/gcb.15828}
+
+\bibitem[\citeproctext]{ref-Yorio2017}
+Yorio, P., González-Zevallos, D., Gatto, A., Biagioni, O., \& Castillo,
+J. (2017). Relevance of forage fish in the diet of {Magellanic} penguins
+breeding in northern {Patagonia}, {Argentina}. \emph{Marine Biology
+Research}, \emph{13}(6), 603--617.
+doi:\href{https://doi.org/10.1080/17451000.2016.1273529}{10.1080/17451000.2016.1273529}
+
+\end{CSLReferences}
+
+\end{document}
