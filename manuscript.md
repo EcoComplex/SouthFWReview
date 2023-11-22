@@ -19,6 +19,7 @@ header-includes:
 ---
 
 # The response of trophic interaction networks to multiple stressors in a marine latitudinal gradient of the Southern Hemisphere
+## Running Title: Marine stressors in the Southern Hemisphere
 
 Tomás I. Marina^1^, Leonardo A. Saravia^1,2,\*^, Iara D. Rodriguez^3^,
 Manuela Funes^4^, Georgina Cordone^5^, Santiago R. Doyle^3,6^, Anahí
@@ -276,7 +277,7 @@ Omnivory             Proportion of species that  It provides trophic flexibility
 
 \normalsize
 
-### 4.1 Main stressors effects on food webs in a southwest Atlantic - Antarctic gradient
+### 4.1 Main stressor effects in food webs in a southwest Atlantic - Antarctic gradient
 
 The most common stressor reported along the southwest Atlantic - Antarctic gradient is global warming, except for Beagle Channel and Burdwood Bank, which are more influenced by the introduction of an alien species and fisheries, respectively (section 3, Table 3). The main characteristics of global warming in the region, and the most plausible drivers of change, are: sea warming, glacial retreat, elevated sediment input in the water column, and reduction of the sea ice extent. These drivers act in different ways and magnitudes in the studied locations along the latitudinal gradient. 
 Despite emphasizing global warming in this section, this does not mean that no other stressors act or interact with global warming in the study systems, potentially buffering the overall effect on the food web (e.g. sea warming and fishery in San Jorge Gulf).
