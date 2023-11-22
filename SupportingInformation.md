@@ -14,6 +14,37 @@ header-includes:
 - \newcommand{\blandscape}{\begin{landscape}}
 - \newcommand{\elandscape}{\end{landscape}}
 ---
+Tomás I. Marina^1^, Leonardo A. Saravia^1,2,\*^, Iara D. Rodriguez^3^,
+Manuela Funes^4^, Georgina Cordone^5^, Santiago R. Doyle^3,6^, Anahí
+Silvestro^6^, David E. Galván^5^, Susanne Kortsch^7^ & Fernando
+Momo^3,6^
+
+^1^ Centro Austral de Investigaciones Científicas (CADIC-CONICET),
+Ushuaia, Argentina;
+
+^2^ Instituto de Ciencias Polares, Ambiente y Recursos Naturales,
+Universidad Nacional de Tierra del Fuego (UNTdF), Ushuaia, Argentina;
+
+^3^ Instituto de Ciencias, Universidad Nacional de General Sarmiento
+(UNGS), Los Polvorines, Argentina;
+
+^4^ Instituto de Investigaciones Marinas y Costeras (IIMyC-CONICET), Mar
+del Plata, Argentina;
+
+^5^ Centro Para el Estudio de Sistemas Marinos (CESIMAR-CONICET), Puerto
+Madryn, Argentina;
+
+^6^ Instituto de Ecología y Desarrollo Sustentable
+(INEDES-CONICET-UNLu), Luján, Argentina;
+
+^7^ Tvärminne Zoological Station, University of Helsinki, Hanko,
+Finland.
+
+\* corresponding author: Leonardo A. Saravia. Centro Austral de
+Investigaciones Científicas (CADIC-CONICET), Ushuaia, Argentina.
+lasaravia@untdf.edu.ar
+
+\newpage
 
 Table S1. Node-level properties for species being impacted by
 environmental and/or anthropogenic stressors (see Table 2 in the article
@@ -421,3 +452,5 @@ Categories of affected parameters and variables: metabolism; biomass; distributi
 \elandscape
 
 \normalsize
+
+# References
