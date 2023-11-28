@@ -64,38 +64,28 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-% definitions for citeproc citations
-\NewDocumentCommand\citeproctext{}{}
-\NewDocumentCommand\citeproc{mm}{%
-  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
-\makeatletter
- % allow citations to break across lines
- \let\@cite@ofmt\@firstofone
- % avoid brackets around text for \cite:
- \def\@biblabel#1{}
- \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
-\makeatother
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
 \newlength{\csllabelwidth}
 \setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
- {\begin{list}{}{%
-  \setlength{\itemindent}{0pt}
-  \setlength{\leftmargin}{0pt}
-  \setlength{\parsep}{0pt}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
   % turn on hanging indent if param 1 is 1
   \ifodd #1
-   \setlength{\leftmargin}{\cslhangindent}
-   \setlength{\itemindent}{-1\cslhangindent}
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
   \fi
   % set entry spacing
-  \setlength{\itemsep}{#2\baselineskip}}}
- {\end{list}}
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
 \usepackage{calc}
-\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage{pdflscape,booktabs}
 \newcommand{\blandscape}{\begin{landscape}}
@@ -117,9 +107,14 @@
 
 \begin{document}
 
+\hypertarget{the-response-of-trophic-interaction-networks-to-multiple-stressors-in-a-marine-latitudinal-gradient-of-the-southern-hemisphere}{%
 \section{The response of trophic interaction networks to multiple
 stressors in a marine latitudinal gradient of the Southern
-Hemisphere}\label{the-response-of-trophic-interaction-networks-to-multiple-stressors-in-a-marine-latitudinal-gradient-of-the-southern-hemisphere}
+Hemisphere}\label{the-response-of-trophic-interaction-networks-to-multiple-stressors-in-a-marine-latitudinal-gradient-of-the-southern-hemisphere}}
+
+\hypertarget{running-title-marine-stressors-in-the-southern-hemisphere}{%
+\subsection{Running Title: Marine stressors in the Southern
+Hemisphere}\label{running-title-marine-stressors-in-the-southern-hemisphere}}
 
 \subsection{Running Title: Marine stressors in the Southern
 Hemisphere}\label{running-title-marine-stressors-in-the-southern-hemisphere}
@@ -157,7 +152,8 @@ Helsinki, Hanko, Finland.
 Investigaciones Científicas (CADIC-CONICET), Ushuaia, Argentina.
 \href{mailto:lasaravia@untdf.edu.ar}{\nolinkurl{lasaravia@untdf.edu.ar}}
 
-\subsection{Abstract}\label{abstract}
+\hypertarget{abstract}{%
+\subsection{Abstract}\label{abstract}}
 
 Ecological networks offer valuable insights into community structure,
 key species identification, and ecosystem management for biodiversity
@@ -192,7 +188,8 @@ conservation in the face of various stressors.
 Keywords: anthropogenic stressors, environmental stressors, food webs,
 latitudinal gradient, Southern Hemisphere
 
-\subsection{1. Introduction}\label{introduction}
+\hypertarget{introduction}{%
+\subsection{1. Introduction}\label{introduction}}
 
 The application of a network perspective has emerged as a powerful tool
 to tackle the complexity of species interactions, facilitating a better
@@ -230,9 +227,10 @@ properties. Finally, we suggest which additional data and analyses are
 needed to gain insights into the stressors' effects on food web
 properties in the southwest Atlantic to Antarctic region.
 
+\hypertarget{the-structure-of-marine-food-webs-in-the-southwest-atlantic---antarctic-region}{%
 \subsection{2. The structure of marine food webs in the Southwest
 Atlantic - Antarctic
-region}\label{the-structure-of-marine-food-webs-in-the-southwest-atlantic---antarctic-region}
+region}\label{the-structure-of-marine-food-webs-in-the-southwest-atlantic---antarctic-region}}
 
 Together, the southwest and the Atlantic sector of the Southern Ocean
 comprise one of the most biologically productive regions of the world's
@@ -459,9 +457,10 @@ Weddell Sea & 490 & 16041 & 0.07 & 2.19 & 2.62 & 0.51 & Jacob et al.
 
 \normalsize
 
+\hypertarget{environmental-and-anthropogenic-stressors-in-the-southwest-atlantic---antarctic-region}{%
 \subsection{3. Environmental and anthropogenic stressors in the
 Southwest Atlantic - Antarctic
-region}\label{environmental-and-anthropogenic-stressors-in-the-southwest-atlantic---antarctic-region}
+region}\label{environmental-and-anthropogenic-stressors-in-the-southwest-atlantic---antarctic-region}}
 
 A stressor is any environmental or anthropogenic variable that causes a
 quantifiable change, irrespective of its direction (increase or
@@ -485,7 +484,8 @@ exhaustive list of all stressors affecting species inhabiting each area,
 considering: the type of stressor, species and parameter affected, and
 locality.
 
-\subsubsection{3.1 San Jorge Gulf}\label{san-jorge-gulf}
+\hypertarget{san-jorge-gulf}{%
+\subsubsection{3.1 San Jorge Gulf}\label{san-jorge-gulf}}
 
 San Jorge Gulf experienced several environmental and anthropogenic
 stressors (Table S2). Trawl fisheries discard several species and add
@@ -533,7 +533,8 @@ McDonald, \& Lance, 2000), seals and macroalgae (e.g. Paine et al.
 (1996)), with examples of cascading effects throughout the food web
 (Peterson, 2001).
 
-\subsubsection{3.2 Beagle Channel}\label{beagle-channel}
+\hypertarget{beagle-channel}{%
+\subsubsection{3.2 Beagle Channel}\label{beagle-channel}}
 
 A main anthropogenic stressor in the Beagle Channel is the introduction
 of invasive species (Table S2). Salmonidae were introduced to Tierra del
@@ -590,7 +591,8 @@ del Fuego. Recently, Ushuaia's kelp forests have seen a decrease in
 biodiversity and changes in macroalgae composition due to urban
 pollution (Kaminsky et al., in prep.).
 
-\subsubsection{3.3 Burdwood Bank}\label{burdwood-bank}
+\hypertarget{burdwood-bank}{%
+\subsubsection{3.3 Burdwood Bank}\label{burdwood-bank}}
 
 The stressors reported for the ecosystem of the Marine Protected Areas
 Namuncurá within Burdwood Bank I and II are mostly anthropogenic; there
@@ -661,7 +663,8 @@ oceanographic aspects of the system are lacking. In this sense, there is
 a big question mark about the environmental stressors impact on the
 species and trophic interactions in Burdwood Bank.
 
-\subsubsection{3.4 Scotia Sea}\label{scotia-sea}
+\hypertarget{scotia-sea}{%
+\subsubsection{3.4 Scotia Sea}\label{scotia-sea}}
 
 The Scotia Sea is a vast and heterogenous oceanic region, where
 especially the areas around South Georgia island represents an area of
@@ -716,8 +719,9 @@ with trophic level and are highest in notothenioid and myctophid fishes
 predators must deal with both the stress of reduced prey availability
 and the concurrent rise in mercury exposure (Seco et al., 2021).
 
+\hypertarget{potter-cove-antarctica}{%
 \subsubsection{3.5 Potter Cove
-(Antarctica)}\label{potter-cove-antarctica}
+(Antarctica)}\label{potter-cove-antarctica}}
 
 Regional warming in the last half century has been one of the main
 factors driving changes in Potter Cove (Western Antarctic Peninsula)
@@ -774,8 +778,9 @@ et al., 2016, 2019). In addition, phytoplankton species under these
 warming conditions showed a decrease in metabolic rates and in the
 quality of the fatty acids composition (Latorre et al., 2023).
 
+\hypertarget{weddell-sea-antarctica}{%
 \subsubsection{3.6 Weddell Sea
-(Antarctica)}\label{weddell-sea-antarctica}
+(Antarctica)}\label{weddell-sea-antarctica}}
 
 In the Weddell Sea several stressors have already been triggered by
 global warming effects (Table S2), from which spatial and temporal
@@ -858,8 +863,9 @@ Brown, Barnes, Fraser, \& Clarke, 2008), disrupting the environment (Dan
 A. Smale \& Barnes, 2008). Gutt et al. (2015) expects tipping points are
 significant due to these effects and lack of knowledge.
 
+\hypertarget{from-species-stressors-to-food-web-effects}{%
 \subsection{4. From species' stressors to food web
-effects}\label{from-species-stressors-to-food-web-effects}
+effects}\label{from-species-stressors-to-food-web-effects}}
 
 A major challenge in contemporary ecology lies in predicting the effects
 of stressors on complex multispecies systems, such as food webs. Network
@@ -975,9 +981,11 @@ of trophic cascades. & Kratina, LeCraw, Ingram, \& Anholt (2012) \\
 
 \normalsize
 
+\hypertarget{main-stressor-effects-in-food-webs-in-a-southwest-atlantic---antarctic-gradient}{%
 \subsubsection{4.1 Main stressor effects in food webs in a southwest
 Atlantic - Antarctic
-gradient}\label{main-stressor-effects-in-food-webs-in-a-southwest-atlantic---antarctic-gradient}
+gradient}\label{main-stressor-effects-in-food-webs-in-a-southwest-atlantic---antarctic-gradient}}
+
 
 The most common stressor reported along the southwest Atlantic -
 Antarctic gradient is global warming, except for Beagle Channel and
@@ -1217,8 +1225,9 @@ substrate: hard (HS) or soft (SS)
 
 \normalsize
 
+\hypertarget{gaps-and-future-perspectives}{%
 \subsection{5. Gaps and future
-perspectives}\label{gaps-and-future-perspectives}
+perspectives}\label{gaps-and-future-perspectives}}
 
 In the selected study areas along the southwest Atlantic to Antarctic
 latitudinal gradient, several stressors may directly affect consumers'
@@ -1282,7 +1291,8 @@ using motifs (i.e.~groups of species that, when put together, construct
 whole food webs) to simplify food webs; a methodology that could be
 applied to our food web study cases.
 
-\subsection{Conclusions}\label{conclusions}
+\hypertarget{conclusions}{%
+\subsection{Conclusions}\label{conclusions}}
 
 We have reviewed the main environmental and anthropogenic stressors
 acting in six different areas along a large-scale latitudinal gradient,
@@ -1297,7 +1307,8 @@ and stability. There is an urgent need to assess these changes using a
 holistic and quantitative framework where the magnitude of stressors and
 species interactions are taken into account.
 
-\subsection{Acknowledgements}\label{acknowledgements}
+\hypertarget{acknowledgements}{%
+\subsection{Acknowledgements}\label{acknowledgements}}
 
 This review is a product of the project ``¿Cuáles son los efectos de los
 cambios ambientales antropogénicos en las interacciones tróficas de las
@@ -1305,29 +1316,30 @@ comunidades de los ecosistemas marinos en el gradiente latitudinal
 Atlántico Sudoccidental - Antártida?'', funded by Consejo Nacional de
 Investigaciones Científicas (CONICET, code PIP 2022-2024 \#0907).
 
-\subsection*{References}\label{references}
+\hypertarget{references}{%
+\subsection*{References}\label{references}}
 \addcontentsline{toc}{subsection}{References}
 
-\phantomsection\label{refs}
+\hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-Acha2004}
+\leavevmode\vadjust pre{\hypertarget{ref-Acha2004}{}}%
 Acha, E. M., Mianzan, H. W., Guerrero, R. A., Favero, M., \& Bava, J.
 (2004). Marine fronts at the continental shelves of austral {South
 America}: {Physical} and ecological processes. \emph{Journal of Marine
 Systems}, \emph{44}(1), 83--105.
 doi:\href{https://doi.org/10.1016/j.jmarsys.2003.09.005}{10.1016/j.jmarsys.2003.09.005}
 
-\bibitem[\citeproctext]{ref-APN2022}
+\leavevmode\vadjust pre{\hypertarget{ref-APN2022}{}}%
 Administración de Parques Nacionales. (2022). {Plan de gestión AMP
 Namuncurá Banco Burdwood}. {Dirección Nacional de Áreas Marinas
 Protegidas (DNAMP), Argentina}.
 
-\bibitem[\citeproctext]{ref-Albert2002}
+\leavevmode\vadjust pre{\hypertarget{ref-Albert2002}{}}%
 Albert, R., \& Barabási, A.-L. (2002). Statistical mechanics of complex
 networks. \emph{Reviews of Modern Physics}, \emph{74}(1), 47--97.
 doi:\href{https://doi.org/10.1103/RevModPhys.74.47}{10.1103/RevModPhys.74.47}
 
-\bibitem[\citeproctext]{ref-Allega2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Allega2019}{}}%
 Allega, Lucrecia, Braverman, M. S., Cabreira, A. G., Campodónico, S.,
 Colonello, J. H., Derisio, C. M., \ldots{} Verón, E. M. (2019).
 \emph{{Estado del conocimiento biológico pesquero de los principales
@@ -1335,7 +1347,7 @@ recursos vivos y su ambiente, con relación a la exploración
 hidrocarburífera en la Zona Económica Exclusiva Argentina y
 adyacencias}}. {INIDEP}.
 
-\bibitem[\citeproctext]{ref-Allega2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Allega2020}{}}%
 Allega, L., Braverman, M., Campodónico, S., Carozza, C. R., Cepeda, G.
 D., Colonello, J. H., \ldots{} Verón, E. (2020). \emph{{Estado del
 conocimiento biológico pesquero de los principales recursos vivos y su
@@ -1343,14 +1355,14 @@ ambiente, con relación a la exploración hidrocarburífera en la Zona
 Económica Exclusiva argentina y sus adyacencias}}. {Mar del Plata}:
 {Instituto Nacional de Investigación y Desarrollo Pesquero (INIDEP)}.
 
-\bibitem[\citeproctext]{ref-Anton2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Anton2019}{}}%
 Anton, A., Geraldi, N. R., Lovelock, C. E., Apostolaki, E. T., Bennett,
 S., Cebrian, J., \ldots{} Duarte, C. M. (2019). Global ecological
 impacts of marine exotic species. \emph{Nature Ecology \& Evolution},
 \emph{3}(5), 787--800.
 doi:\href{https://doi.org/10.1038/s41559-019-0851-0}{10.1038/s41559-019-0851-0}
 
-\bibitem[\citeproctext]{ref-Antoni2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Antoni2020}{}}%
 Antoni, J. S., Almandoz, G. O., Ferrario, M. E., Hernando, M. P.,
 Varela, D. E., Rozema, P. D., \ldots{} Schloss, I. R. (2020). Response
 of a natural {Antarctic} phytoplankton assemblage to changes in
@@ -1358,56 +1370,56 @@ temperature and salinity. \emph{Journal of Experimental Marine Biology
 and Ecology}, \emph{532}, 151444.
 doi:\href{https://doi.org/10.1016/j.jembe.2020.151444}{10.1016/j.jembe.2020.151444}
 
-\bibitem[\citeproctext]{ref-Atkinson2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Atkinson2019}{}}%
 Atkinson, A., Hill, S. L., Pakhomov, E. A., Siegel, V., Reiss, C. S.,
 Loeb, V. J., \ldots{} Sailley, S. F. (2019). Krill ({Euphausia} superba)
 distribution contracts southward during rapid regional warming.
 \emph{Nature Climate Change}, \emph{9}(2), 142--147.
 doi:\href{https://doi.org/10.1038/s41558-018-0370-z}{10.1038/s41558-018-0370-z}
 
-\bibitem[\citeproctext]{ref-Atkinson2004}
+\leavevmode\vadjust pre{\hypertarget{ref-Atkinson2004}{}}%
 Atkinson, A., Siegel, V., Pakhomov, E., \& Rothery, P. (2004). Long-term
 decline in krill stock and increase in salps within the {Southern
 Ocean}. \emph{Nature}, \emph{432}(7013), 100--103.
 doi:\href{https://doi.org/10.1038/nature02996}{10.1038/nature02996}
 
-\bibitem[\citeproctext]{ref-Balech2008}
+\leavevmode\vadjust pre{\hypertarget{ref-Balech2008}{}}%
 Balech, E., \& Ehrlich, M. D. (2008). {Esquema biogeográfico del Mar
 Argentino}.
 
-\bibitem[\citeproctext]{ref-Bartley2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Bartley2019}{}}%
 Bartley, T. J., McCann, K. S., Bieg, C., Cazelles, K., Granados, M.,
 Guzzo, M. M., \ldots{} McMeans, B. C. (2019). Food web rewiring in a
 changing world. \emph{Nature Ecology \& Evolution}, \emph{3}(3),
 345--354.
 doi:\href{https://doi.org/10.1038/s41559-018-0772-3}{10.1038/s41559-018-0772-3}
 
-\bibitem[\citeproctext]{ref-Bauer2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Bauer2022}{}}%
 Bauer, B., Berti, E., Ryser, R., Gauzens, B., Hirt, M. R., Rosenbaum,
 B., \ldots{} Brose, U. (2022). Biotic filtering by species' interactions
 constrains food-web variability across spatial and abiotic gradients.
 \emph{Ecology Letters}, \emph{25}(5), 1225--1236.
 doi:\href{https://doi.org/10.1111/ele.13995}{10.1111/ele.13995}
 
-\bibitem[\citeproctext]{ref-Beauchesne2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Beauchesne2021}{}}%
 Beauchesne, D., Cazelles, K., Archambault, P., Dee, L. E., \& Gravel, D.
 (2021). On the sensitivity of food webs to multiple stressors.
 \emph{Ecology Letters}, \emph{24}(10), 2219--2237.
 doi:\href{https://doi.org/10.1111/ele.13841}{10.1111/ele.13841}
 
-\bibitem[\citeproctext]{ref-Belgrano2005}
+\leavevmode\vadjust pre{\hypertarget{ref-Belgrano2005}{}}%
 Belgrano, A., Scharler, S. E. R. C. U. M., Scharler, U. M., Dunne, J.,
 \& Ulanowicz, R. E. (2005). \emph{Aquatic {Food Webs}: {An Ecosystem
 Approach}}. {OUP Oxford}.
 
-\bibitem[\citeproctext]{ref-Belleggia2017}
+\leavevmode\vadjust pre{\hypertarget{ref-Belleggia2017}{}}%
 Belleggia, M., Giberto, D., \& Bremec, C. (2017). Adaptation of diet in
 a changed environment: {Increased} consumption of lobster krill {Munida}
 gregaria ({Fabricius}, 1793) by {Argentine} hake. \emph{Marine Ecology},
 \emph{38}(4), e12445.
 doi:\href{https://doi.org/10.1111/maec.12445}{10.1111/maec.12445}
 
-\bibitem[\citeproctext]{ref-Bovcon2013}
+\leavevmode\vadjust pre{\hypertarget{ref-Bovcon2013}{}}%
 Bovcon, N. D., Góngora, M. E., Marinao, C., \& González-Zevallos, D.
 (2013). Composición de las capturas y descartes generados en la pesca de
 merluza común {Merluccius} hubbsi y langostino patagónico {Pleoticus}
@@ -1416,13 +1428,13 @@ San Jorge}, {Chubut}, {Argentina}. \emph{Revista de Biología Marina y
 Oceanografía}, \emph{48}(2), 303--319.
 doi:\href{https://doi.org/10.4067/S0718-19572013000200010}{10.4067/S0718-19572013000200010}
 
-\bibitem[\citeproctext]{ref-Boyd2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Boyd2015}{}}%
 Boyd, P. W., Lennartz, S. T., Glover, D. M., \& Doney, S. C. (2015).
 Biological ramifications of climate-change-mediated oceanic
 multi-stressors. \emph{Nature Climate Change}, \emph{5}(1), 71--79.
 doi:\href{https://doi.org/10.1038/nclimate2441}{10.1038/nclimate2441}
 
-\bibitem[\citeproctext]{ref-Braeckman2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Braeckman2021}{}}%
 Braeckman, U., Pasotti, F., Hoffmann, R., Vázquez, S., Wulff, A.,
 Schloss, I. R., \ldots{} Vanreusel, A. (2021). Glacial melt disturbance
 shifts community metabolism of an {Antarctic} seafloor ecosystem from
@@ -1430,58 +1442,58 @@ net autotrophy to heterotrophy. \emph{Communications Biology},
 \emph{4}(1), 148.
 doi:\href{https://doi.org/10.1038/s42003-021-01673-6}{10.1038/s42003-021-01673-6}
 
-\bibitem[\citeproctext]{ref-Braithwaite2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Braithwaite2015}{}}%
 Braithwaite, J. E., Meeuwig, J. J., Letessier, T. B., Jenner, K. C. S.,
 \& Brierley, A. S. (2015). From sea ice to blubber: Linking whale
 condition to krill abundance using historical whaling records.
 \emph{Polar Biology}, \emph{38}(8), 1195--1202.
 doi:\href{https://doi.org/10.1007/s00300-015-1685-0}{10.1007/s00300-015-1685-0}
 
-\bibitem[\citeproctext]{ref-Brown2004}
+\leavevmode\vadjust pre{\hypertarget{ref-Brown2004}{}}%
 Brown, J. H., Gillooly, J. F., Allen, A. P., Savage, V. M., \& West, G.
 B. (2004). Toward a {Metabolic Theory} of {Ecology}. \emph{Ecology},
 \emph{85}(7), 1771--1789.
 doi:\href{https://doi.org/10.1890/03-9000}{10.1890/03-9000}
 
-\bibitem[\citeproctext]{ref-Bruder2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Bruder2019}{}}%
 Bruder, A., Frainer, A., Rota, T., \& Primicerio, R. (2019). The
 {Importance} of {Ecological Networks} in {Multiple-Stressor Research}
 and {Management}. \emph{Frontiers in Environmental Science}, \emph{7}.
 
-\bibitem[\citeproctext]{ref-Bruno2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Bruno2023}{}}%
 Bruno, D. O., Riccialdelli, L., Acha, E. M., \& Fernández, D. A. (2023).
 Seasonal variation of autochthonous and allochthonous carbon sources for
 the first levels of the {Beagle Channel} food web. \emph{Journal of
 Marine Systems}, \emph{239}, 103859.
 doi:\href{https://doi.org/10.1016/j.jmarsys.2023.103859}{10.1016/j.jmarsys.2023.103859}
 
-\bibitem[\citeproctext]{ref-Chown2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Chown2022}{}}%
 Chown, S. L., Leihy, R. I., Naish, T. R., Brooks, C. M., Convey, P.,
 Henley, B. J., \ldots{} Grant, S. M. (2022). Antarctic climate change
 and the environment: A decadal synopsis and recommendations for action.
 
-\bibitem[\citeproctext]{ref-Ciancio2008}
+\leavevmode\vadjust pre{\hypertarget{ref-Ciancio2008}{}}%
 Ciancio, J. E., Pascual, M. A., Botto, F., Frere, E., \& Iribarne, O.
 (2008). Trophic relationships of exotic anadromous salmonids in the
 southern {Patagonian Shelf} as inferred from stable isotopes.
 \emph{Limnology and Oceanography}, \emph{53}(2), 788--798.
 doi:\href{https://doi.org/10.4319/lo.2008.53.2.0788}{10.4319/lo.2008.53.2.0788}
 
-\bibitem[\citeproctext]{ref-Cirtwill2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Cirtwill2015}{}}%
 Cirtwill, A. R., Stouffer, D. B., \& Romanuk, T. N. (2015). Latitudinal
 gradients in biotic niche breadth vary across ecosystem types.
 \emph{Proceedings of the Royal Society B: Biological Sciences},
 \emph{282}(1819), 20151589.
 doi:\href{https://doi.org/10.1098/rspb.2015.1589}{10.1098/rspb.2015.1589}
 
-\bibitem[\citeproctext]{ref-Collins2010}
+\leavevmode\vadjust pre{\hypertarget{ref-Collins2010}{}}%
 Collins, M. A., Brickle, P., Brown, J., \& Belchier, M. (2010). Chapter
 {Four} - {The Patagonian Toothfish}: {Biology}, {Ecology} and {Fishery}.
 In M. Lesser (Ed.), \emph{Advances in {Marine Biology}} (Vol. 58, pp.
 227--300). {Academic Press}.
 doi:\href{https://doi.org/10.1016/B978-0-12-381015-1.00004-6}{10.1016/B978-0-12-381015-1.00004-6}
 
-\bibitem[\citeproctext]{ref-Commendatore2012}
+\leavevmode\vadjust pre{\hypertarget{ref-Commendatore2012}{}}%
 Commendatore, M. G., Nievas, M. L., Amin, O., \& Esteves, J. L. (2012).
 Sources and distribution of aliphatic and polyaromatic hydrocarbons in
 coastal sediments from the {Ushuaia Bay} ({Tierra} del {Fuego},
@@ -1489,7 +1501,7 @@ coastal sediments from the {Ushuaia Bay} ({Tierra} del {Fuego},
 \emph{74}, 20--31.
 doi:\href{https://doi.org/10.1016/j.marenvres.2011.11.010}{10.1016/j.marenvres.2011.11.010}
 
-\bibitem[\citeproctext]{ref-Constable2014}
+\leavevmode\vadjust pre{\hypertarget{ref-Constable2014}{}}%
 Constable, A. J., Melbourne-Thomas, J., Corney, S. P., Arrigo, K. R.,
 Barbraud, C., Barnes, D. K. A., \ldots{} Ziegler, P. (2014). Climate
 change and {Southern Ocean} ecosystems {I}: How changes in physical
@@ -1497,14 +1509,14 @@ habitats directly affect marine biota. \emph{Global Change Biology},
 \emph{20}(10), 3004--3025.
 doi:\href{https://doi.org/10.1111/gcb.12623}{10.1111/gcb.12623}
 
-\bibitem[\citeproctext]{ref-Cordone2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Cordone2023}{}}%
 Cordone, G., Galván, D. E., \& Momo, F. R. (2023). Impacts of an
 invasion by green crab {Carcinus} maenas on the intertidal food web of a
 {Patagonian} rocky shore, {Argentina}. \emph{Marine Ecology Progress
 Series}, \emph{713}, 97--115.
 doi:\href{https://doi.org/10.3354/meps14336}{10.3354/meps14336}
 
-\bibitem[\citeproctext]{ref-Cordone2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Cordone2020}{}}%
 Cordone, G., Salinas, V., Marina, T. I., Doyle, S. R., Pasotti, F.,
 Saravia, L. A., \& Momo, F. R. (2020). Green vs brown food web:
 {Effects} of habitat type on multidimensional stability proxies for a
@@ -1512,12 +1524,12 @@ highly-resolved {Antarctic} food web. \emph{Food Webs}, \emph{25},
 e00166.
 doi:\href{https://doi.org/10.1016/j.fooweb.2020.e00166}{10.1016/j.fooweb.2020.e00166}
 
-\bibitem[\citeproctext]{ref-Correa2008}
+\leavevmode\vadjust pre{\hypertarget{ref-Correa2008}{}}%
 Correa, C., \& Gross, M. R. (2008). Chinook salmon invade southern
 {South America}. \emph{Biological Invasions}, \emph{10}(5), 615--639.
 doi:\href{https://doi.org/10.1007/s10530-007-9157-2}{10.1007/s10530-007-9157-2}
 
-\bibitem[\citeproctext]{ref-Cossi2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Cossi2021}{}}%
 Cossi, P. F., Ojeda, M., Chiesa, I. L., Rimondino, G. N., Fraysse, C.,
 Calcagno, J., \& Pérez, A. F. (2021). First evidence of microplastics in
 the {Marine Protected Area Namuncurá} at {Burdwood Bank}, {Argentina}: A
@@ -1526,21 +1538,21 @@ study on {Henricia} obesa and {Odontaster} penicillatus
 2277--2287.
 doi:\href{https://doi.org/10.1007/s00300-021-02959-5}{10.1007/s00300-021-02959-5}
 
-\bibitem[\citeproctext]{ref-Cote2016}
+\leavevmode\vadjust pre{\hypertarget{ref-Cote2016}{}}%
 Côté, I. M., Darling, E. S., \& Brown, C. J. (2016). Interactions among
 ecosystem stressors and their importance in conservation.
 \emph{Proceedings of the Royal Society B: Biological Sciences},
 \emph{283}(1824), 20152592.
 doi:\href{https://doi.org/10.1098/rspb.2015.2592}{10.1098/rspb.2015.2592}
 
-\bibitem[\citeproctext]{ref-deHaro2022}
+\leavevmode\vadjust pre{\hypertarget{ref-deHaro2022}{}}%
 de Haro, J. C., Perez Orsi, H., Cané, S., Di Pangracio, A., Falabella,
 V., \& Sapoznikow, A. (2022). {Informe colaborativo sobre el Estado de
 situación. Riesgos e impactos de la prospección sísmica en el Mar
 Argentino}. {Foro para la Conservación del Mar Patagónico y Áreas de
 Influencia}.
 
-\bibitem[\citeproctext]{ref-Deregibus2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Deregibus2023}{}}%
 Deregibus, Dolores, Campana, G. L., Neder, C., Barnes, D. K. A., Zacher,
 K., Piscicelli, J. M., \ldots{} Quartino, M. L. (2023). Potential
 macroalgal expansion and blue carbon gains with northern {Antarctic
@@ -1548,7 +1560,7 @@ Peninsula} glacial retreat. \emph{Marine Environmental Research},
 \emph{189}, 106056.
 doi:\href{https://doi.org/10.1016/j.marenvres.2023.106056}{10.1016/j.marenvres.2023.106056}
 
-\bibitem[\citeproctext]{ref-Deregibus2017}
+\leavevmode\vadjust pre{\hypertarget{ref-Deregibus2017}{}}%
 Deregibus, D., Quartino, M. L., Zacher, K., Campana, G. L., \& Barnes,
 D. K. A. (2017). Understanding the link between sea ice, ice scour and
 {Antarctic} benthic biodiversity\textendash the need for cross-station
@@ -1556,7 +1568,7 @@ and international collaboration. \emph{Polar Record}, \emph{53}(2),
 143--152.
 doi:\href{https://doi.org/10.1017/S0032247416000875}{10.1017/S0032247416000875}
 
-\bibitem[\citeproctext]{ref-Deregibus2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Deregibus2020}{}}%
 Deregibus, Dolores, Zacher, K., Bartsch, I., Campana, G. L., Momo, F.
 R., Wiencke, C., \ldots{} Quartino, M. L. (2020). Carbon {Balance Under}
 a {Changing Light Environment}. In I. Gómez \& P. Huovinen (Eds.),
@@ -1564,7 +1576,7 @@ a {Changing Light Environment}. In I. Gómez \& P. Huovinen (Eds.),
 Services}} (pp. 173--191). {Cham}: {Springer International Publishing}.
 doi:\href{https://doi.org/10.1007/978-3-030-39448-6_9}{10.1007/978-3-030-39448-6\_9}
 
-\bibitem[\citeproctext]{ref-DiMauro2022}
+\leavevmode\vadjust pre{\hypertarget{ref-DiMauro2022}{}}%
 Di Mauro, R., Castillo, S., Pérez, A., Iachetti, C. M., Silva, L.,
 Tomba, J. P., \& Chiesa, I. L. (2022). Anthropogenic microfibers are
 highly abundant at the {Burdwood Bank} seamount, a protected
@@ -1572,14 +1584,14 @@ sub-{Antarctic} environment in the {Southwestern Atlantic Ocean}.
 \emph{Environmental Pollution}, \emph{306}, 119364.
 doi:\href{https://doi.org/10.1016/j.envpol.2022.119364}{10.1016/j.envpol.2022.119364}
 
-\bibitem[\citeproctext]{ref-Dodino2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Dodino2022}{}}%
 Dodino, S., Riccialdelli, L., Polito, M. J., Pütz, K., Brasso, R. L., \&
 Raya Rey, A. (2022). Mercury exposure driven by geographic and trophic
 factors in {Magellanic} penguins from {Tierra} del {Fuego}. \emph{Marine
 Pollution Bulletin}, \emph{174}, 113184.
 doi:\href{https://doi.org/10.1016/j.marpolbul.2021.113184}{10.1016/j.marpolbul.2021.113184}
 
-\bibitem[\citeproctext]{ref-Duarte2011}
+\leavevmode\vadjust pre{\hypertarget{ref-Duarte2011}{}}%
 Duarte, C. A., Giarratano, E., Amin, O. A., \& Comoglio, L. I. (2011).
 Heavy metal concentrations and biomarkers of oxidative stress in native
 mussels ({Mytilus} edulis chilensis) from {Beagle Channel} coast
@@ -1587,41 +1599,41 @@ mussels ({Mytilus} edulis chilensis) from {Beagle Channel} coast
 \emph{62}(8), 1895--1904.
 doi:\href{https://doi.org/10.1016/j.marpolbul.2011.05.031}{10.1016/j.marpolbul.2011.05.031}
 
-\bibitem[\citeproctext]{ref-Duffy2007}
+\leavevmode\vadjust pre{\hypertarget{ref-Duffy2007}{}}%
 Duffy, J. E., Cardinale, B. J., France, K. E., McIntyre, P. B.,
 Thébault, E., \& Loreau, M. (2007). The functional role of biodiversity
 in ecosystems: Incorporating trophic complexity. \emph{Ecology Letters},
 \emph{10}(6), 522--538.
 doi:\href{https://doi.org/10.1111/j.1461-0248.2007.01037.x}{10.1111/j.1461-0248.2007.01037.x}
 
-\bibitem[\citeproctext]{ref-Dulvy2014}
+\leavevmode\vadjust pre{\hypertarget{ref-Dulvy2014}{}}%
 Dulvy, N. K., Fowler, S. L., Musick, J. A., Cavanagh, R. D., Kyne, P.
 M., Harrison, L. R., \ldots{} White, W. T. (2014). Extinction risk and
 conservation of the world's sharks and rays. \emph{eLife}, \emph{3},
 e00590.
 doi:\href{https://doi.org/10.7554/eLife.00590}{10.7554/eLife.00590}
 
-\bibitem[\citeproctext]{ref-Dunne2002a}
+\leavevmode\vadjust pre{\hypertarget{ref-Dunne2002a}{}}%
 Dunne, J. A., Williams, R. J., \& Martinez, N. D. (2002a). Food-web
 structure and network theory: {The} role of connectance and size.
 \emph{Proceedings of the National Academy of Sciences}, \emph{99}(20),
 12917--12922.
 doi:\href{https://doi.org/10.1073/pnas.192407699}{10.1073/pnas.192407699}
 
-\bibitem[\citeproctext]{ref-Dunne2002}
+\leavevmode\vadjust pre{\hypertarget{ref-Dunne2002}{}}%
 Dunne, J. A., Williams, R. J., \& Martinez, N. D. (2002b). Network
 structure and biodiversity loss in food webs: Robustness increases with
 connectance. \emph{Ecology Letters}, \emph{5}(4), 558--567.
 doi:\href{https://doi.org/10.1046/j.1461-0248.2002.00354.x}{10.1046/j.1461-0248.2002.00354.x}
 
-\bibitem[\citeproctext]{ref-Fernandez2010}
+\leavevmode\vadjust pre{\hypertarget{ref-Fernandez2010}{}}%
 Fernández, D. A., Ciancio, J., Ceballos, S. G., Riva-Rossi, C., \&
 Pascual, M. A. (2010). Chinook salmon ({Oncorhynchus} tshawytscha,
 {Walbaum} 1792) in the {Beagle Channel}, {Tierra} del {Fuego}: The onset
 of an invasion. \emph{Biological Invasions}, \emph{12}(9), 2991--2997.
 doi:\href{https://doi.org/10.1007/s10530-010-9731-x}{10.1007/s10530-010-9731-x}
 
-\bibitem[\citeproctext]{ref-Ferreira2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Ferreira2021}{}}%
 Ferreira, M. F., Lo Nostro, F. L., Fernández, D. A., \& Genovese, G.
 (2021). Endocrine disruption in the sub {Antarctic} fish
 {Patagonotothen} tessellata ({Perciformes}, {Notothenidae}) from {Beagle
@@ -1629,63 +1641,63 @@ Channel} associated to anthropogenic impact. \emph{Marine Environmental
 Research}, \emph{171}, 105478.
 doi:\href{https://doi.org/10.1016/j.marenvres.2021.105478}{10.1016/j.marenvres.2021.105478}
 
-\bibitem[\citeproctext]{ref-Fioramonti2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Fioramonti2022}{}}%
 Fioramonti, N. E., Ribeiro Guevara, S., Becker, Y. A., \& Riccialdelli,
 L. (2022). Mercury transfer in coastal and oceanic food webs from the
 {Southwest Atlantic Ocean}. \emph{Marine Pollution Bulletin},
 \emph{175}, 113365.
 doi:\href{https://doi.org/10.1016/j.marpolbul.2022.113365}{10.1016/j.marpolbul.2022.113365}
 
-\bibitem[\citeproctext]{ref-Flores2012}
+\leavevmode\vadjust pre{\hypertarget{ref-Flores2012}{}}%
 Flores, H., Atkinson, A., Kawaguchi, S., Krafft, B., Milinevsky, G.,
 Nicol, S., \ldots{} Werner, T. (2012). Impact of climate change on
 {Antarctic} krill. \emph{Marine Ecology Progress Series}, \emph{458},
 1--19. doi:\href{https://doi.org/10.3354/meps09831}{10.3354/meps09831}
 
-\bibitem[\citeproctext]{ref-Franco2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Franco2020}{}}%
 Franco, B. C., Combes, V., \& González Carman, V. (2020). Subsurface
 {Ocean Warming Hotspots} and {Potential Impacts} on {Marine Species}:
 {The Southwest South Atlantic Ocean Case Study}. \emph{Frontiers in
 Marine Science}, \emph{7}.
 
-\bibitem[\citeproctext]{ref-Fretwell2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Fretwell2023}{}}%
 Fretwell, P. T., Boutet, A., \& Ratcliffe, N. (2023). Record low 2022
 {Antarctic} sea ice led to catastrophic breeding failure of emperor
 penguins. \emph{Communications Earth \& Environment}, \emph{4}(1), 1--6.
 doi:\href{https://doi.org/10.1038/s43247-023-00927-x}{10.1038/s43247-023-00927-x}
 
-\bibitem[\citeproctext]{ref-Fuentes2016}
+\leavevmode\vadjust pre{\hypertarget{ref-Fuentes2016}{}}%
 Fuentes, V., Alurralde, G., Meyer, B., Aguirre, G. E., Canepa, A.,
 Wölfl, A.-C., \ldots{} Schloss, I. R. (2016). Glacial melting: An
 overlooked threat to {Antarctic} krill. \emph{Scientific Reports},
 \emph{6}(1), 27234.
 doi:\href{https://doi.org/10.1038/srep27234}{10.1038/srep27234}
 
-\bibitem[\citeproctext]{ref-Funes2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Funes2020}{}}%
 Funes, M. (2020, March). \emph{Efectos de la pesca de arrastre sobre la
 estructura trófica del norte del {Golfo San Jorge}} (PhD thesis).
 
-\bibitem[\citeproctext]{ref-Funes2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Funes2019}{}}%
 Funes, M., Marinao, C., \& Galván, D. E. (2019). Does trawl fisheries
 affect the diet of fishes? {A} stable isotope analysis approach*.
 \emph{Isotopes in Environmental and Health Studies}, \emph{55}(4),
 327--343.
 doi:\href{https://doi.org/10.1080/10256016.2019.1626381}{10.1080/10256016.2019.1626381}
 
-\bibitem[\citeproctext]{ref-Funes2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Funes2022}{}}%
 Funes, M., Saravia, L. A., Cordone, G., Iribarne, O. O., \& Galván, D.
 E. (2022). Network analysis suggests changes in food web stability
 produced by bottom trawl fishery in {Patagonia}. \emph{Scientific
 Reports}, \emph{12}(1), 10876.
 doi:\href{https://doi.org/10.1038/s41598-022-14363-y}{10.1038/s41598-022-14363-y}
 
-\bibitem[\citeproctext]{ref-Gaitan2016}
+\leavevmode\vadjust pre{\hypertarget{ref-Gaitan2016}{}}%
 Gaitán, E., \& Marí, N. (2016). {Análisis de las comunidades bentónicas
 asociadas a capturas de la flota comercial dirigida a Macruronus
 magellanicus}. {Instituto Nacional de Investigación y Desarrollo
 Pesquero (INIDEP)}.
 
-\bibitem[\citeproctext]{ref-Galvan2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Galvan2022}{}}%
 Galván, D. E., Bovcon, N. D., Cochia, P. D., González, R. A., Lattuca,
 M. E., Reinaldo, M. O., \ldots{} Svendsen, G. M. (2022). Changes in the
 {Specific} and {Biogeographic Composition} of {Coastal Fish Assemblages}
@@ -1696,7 +1708,7 @@ Patagonian Ecosystems}: {A Journey Through Time}} (pp. 205--231).
 {Cham}: {Springer International Publishing}.
 doi:\href{https://doi.org/10.1007/978-3-030-86676-1_9}{10.1007/978-3-030-86676-1\_9}
 
-\bibitem[\citeproctext]{ref-Garcia2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Garcia2019}{}}%
 Garcia, M. D., Fernández Severini, M. D., Spetter, C., López Abbate, M.
 C., Tartara, M. N., Nahuelhual, E. G., \ldots{} Hoffmeyer, M. S. (2019).
 Effects of glacier melting on the planktonic communities of two
@@ -1704,7 +1716,7 @@ Effects of glacier melting on the planktonic communities of two
 \emph{Regional Studies in Marine Science}, \emph{30}, 100731.
 doi:\href{https://doi.org/10.1016/j.rsma.2019.100731}{10.1016/j.rsma.2019.100731}
 
-\bibitem[\citeproctext]{ref-Garcia2016}
+\leavevmode\vadjust pre{\hypertarget{ref-Garcia2016}{}}%
 Garcia, M. D., Hoffmeyer, M. S., Abbate, M. C. L., Barría De Cao, M. S.,
 Pettigrosso, R. E., Almandoz, G. O., \ldots{} Schloss, I. R. (2016).
 Micro- and mesozooplankton responses during two contrasting summers in a
@@ -1712,34 +1724,34 @@ coastal {Antarctic} environment. \emph{Polar Biology}, \emph{39}(1),
 123--137.
 doi:\href{https://doi.org/10.1007/s00300-015-1678-z}{10.1007/s00300-015-1678-z}
 
-\bibitem[\citeproctext]{ref-Garcia-Borboroglu2008}
+\leavevmode\vadjust pre{\hypertarget{ref-Garcia-Borboroglu2008}{}}%
 García-Borboroglu, P., Boersma, P. D., Reyes, L., \& Skewgar, E. (2008).
 Petroleum {Pollution} and {Penguins}: {Marine Conservation Tools} to
 {Reduce} the {Problem}. In \emph{Marine {Pollution}: {New} research}
 (Hofer, T.N., pp. 339--356). {New York, USA}: {Nova Science Publishers
 Inc.}
 
-\bibitem[\citeproctext]{ref-Gauzens2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Gauzens2023}{}}%
 Gauzens, B., Brose, U., Delmas, E., \& Berti, E. (n.d.). {ATNr}:
 {Allometric Trophic Network} models in {R}. \emph{Methods in Ecology and
 Evolution}, \emph{n/a}(n/a).
 doi:\href{https://doi.org/10.1111/2041-210X.14212}{10.1111/2041-210X.14212}
 
-\bibitem[\citeproctext]{ref-Gellner2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Gellner2023}{}}%
 Gellner, G., McCann, K., \& Hastings, A. (2023). Stable diverse food
 webs become more common when interactions are more biologically
 constrained. \emph{Proceedings of the National Academy of Sciences},
 \emph{120}(31), e2212061120.
 doi:\href{https://doi.org/10.1073/pnas.2212061120}{10.1073/pnas.2212061120}
 
-\bibitem[\citeproctext]{ref-Gil2011}
+\leavevmode\vadjust pre{\hypertarget{ref-Gil2011}{}}%
 Gil, M. N., Torres, A. I., Amin, O., \& Esteves, J. L. (2011).
 Assessment of recent sediment influence in an urban polluted
 subantarctic coastal ecosystem. {Beagle Channel} ({Southern Argentina}).
 \emph{Marine Pollution Bulletin}, \emph{62}(1), 201--207.
 doi:\href{https://doi.org/10.1016/j.marpolbul.2010.10.004}{10.1016/j.marpolbul.2010.10.004}
 
-\bibitem[\citeproctext]{ref-Glembocki2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Glembocki2015}{}}%
 Glembocki, N. G., Williams, G. N., Góngora, M. E., Gagliardini, D. A.,
 \& Orensanz, J. M. (Lobo). (2015). Synoptic oceanography of {San Jorge
 Gulf} ({Argentina}): {A} template for {Patagonian} red shrimp
@@ -1747,20 +1759,20 @@ Gulf} ({Argentina}): {A} template for {Patagonian} red shrimp
 \emph{95}, 22--35.
 doi:\href{https://doi.org/10.1016/j.seares.2014.10.011}{10.1016/j.seares.2014.10.011}
 
-\bibitem[\citeproctext]{ref-Gongora2012}
+\leavevmode\vadjust pre{\hypertarget{ref-Gongora2012}{}}%
 Góngora, M. E., González-Zevallos, D., Pettovello, A., \& Mendía, L.
 (2012). Caracterización de las principales pesquerías del golfo {San
 Jorge Patagonia}, {Argentina}. \emph{Latin American Journal of Aquatic
 Research}, \emph{40}(1), 1--11.
 
-\bibitem[\citeproctext]{ref-Gonzalez-Zevallos2006}
+\leavevmode\vadjust pre{\hypertarget{ref-Gonzalez-Zevallos2006}{}}%
 González-Zevallos, D., \& Yorio, P. (2006). Seabird use of discards and
 incidental captures at the {Argentine} hake trawl fishery in the {Golfo
 San Jorge}, {Argentina}. \emph{Marine Ecology Progress Series},
 \emph{316}, 175--183.
 doi:\href{https://doi.org/10.3354/meps316175}{10.3354/meps316175}
 
-\bibitem[\citeproctext]{ref-Gorini2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Gorini2021}{}}%
 Gorini, F. L., Lukaszewicz, G., \& Giussi, A. R. (2021).
 \emph{{Actualización de la estadística pesquera de peces demersales
 australes en el Atlántico Sudoccidental (período 2008-2020)}} (\{Informe
@@ -1768,59 +1780,59 @@ T\textbackslash\textquotesingle ecnico Oficial\}) (p. 64). {Mar del
 Plata}: {Instituto Nacional de Investigación y Desarrollo Pesquero
 (INIDEP)}.
 
-\bibitem[\citeproctext]{ref-Guihou2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Guihou2020}{}}%
 Guihou, K., Piola, A. R., Palma, E. D., \& Chidichimo, M. P. (2020).
 Dynamical connections between large marine ecosystems of austral {South
 America} based on numerical simulations. \emph{Ocean Science},
 \emph{16}(2), 271--290.
 doi:\href{https://doi.org/10.5194/os-16-271-2020}{10.5194/os-16-271-2020}
 
-\bibitem[\citeproctext]{ref-Gutt2001a}
+\leavevmode\vadjust pre{\hypertarget{ref-Gutt2001a}{}}%
 Gutt, J. (2001). On the direct impact of ice on marine benthic
 communities, a review. \emph{Polar Biology}, \emph{24}(8), 553--564.
 doi:\href{https://doi.org/10.1007/s003000100262}{10.1007/s003000100262}
 
-\bibitem[\citeproctext]{ref-Gutt2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Gutt2015}{}}%
 Gutt, J., Bertler, N., Bracegirdle, T. J., Buschmann, A., Comiso, J.,
 Hosie, G., \ldots{} Xavier, J. C. (2015). The {Southern Ocean} ecosystem
 under multiple climate change stresses - an integrated circumpolar
 assessment. \emph{Global Change Biology}, \emph{21}(4), 1434--1453.
 doi:\href{https://doi.org/10.1111/gcb.12794}{10.1111/gcb.12794}
 
-\bibitem[\citeproctext]{ref-Gutt2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Gutt2021}{}}%
 Gutt, J., Isla, E., Xavier, J. C., Adams, B. J., Ahn, I.-Y., Cheng,
 C.-H. C., \ldots{} Wall, D. H. (2021). Antarctic ecosystems in
 transition \textendash{} life between stresses and opportunities.
 \emph{Biological Reviews}, \emph{96}(3), 798--821.
 doi:\href{https://doi.org/10.1111/brv.12679}{10.1111/brv.12679}
 
-\bibitem[\citeproctext]{ref-Gutt2003}
+\leavevmode\vadjust pre{\hypertarget{ref-Gutt2003}{}}%
 Gutt, J., \& Piepenburg, D. (2003). Scale-dependent impact on diversity
 of {Antarctic} benthos caused by grounding of icebergs. \emph{Marine
 Ecology Progress Series}, \emph{253}, 77--83.
 doi:\href{https://doi.org/10.3354/meps253077}{10.3354/meps253077}
 
-\bibitem[\citeproctext]{ref-Gutt2001}
+\leavevmode\vadjust pre{\hypertarget{ref-Gutt2001}{}}%
 Gutt, J., \& Starmans, A. (2001). Quantification of iceberg impact and
 benthic recolonisation patterns in the {Weddell Sea} ({Antarctica}).
 \emph{Polar Biology}, \emph{24}(8), 615--619.
 doi:\href{https://doi.org/10.1007/s003000100263}{10.1007/s003000100263}
 
-\bibitem[\citeproctext]{ref-Hilborn2017}
+\leavevmode\vadjust pre{\hypertarget{ref-Hilborn2017}{}}%
 Hilborn, R., Amoroso, R. O., Bogazzi, E., Jensen, O. P., Parma, A. M.,
 Szuwalski, C., \& Walters, C. J. (2017). When does fishing forage
 species affect their predators? \emph{Fisheries Research}, \emph{191},
 211--221.
 doi:\href{https://doi.org/10.1016/j.fishres.2017.01.008}{10.1016/j.fishres.2017.01.008}
 
-\bibitem[\citeproctext]{ref-Hindell2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Hindell2020}{}}%
 Hindell, M. A., Reisinger, R. R., Ropert-Coudert, Y., Hückstädt, L. A.,
 Trathan, P. N., Bornemann, H., \ldots{} Raymond, B. (2020). Tracking of
 marine predators to protect {Southern Ocean} ecosystems. \emph{Nature},
 \emph{580}(7801), 87--92.
 doi:\href{https://doi.org/10.1038/s41586-020-2126-y}{10.1038/s41586-020-2126-y}
 
-\bibitem[\citeproctext]{ref-Hoffmann2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Hoffmann2019}{}}%
 Hoffmann, R., Al-Handal, A. Y., Wulff, A., Deregibus, D., Zacher, K.,
 Quartino, M. L., \ldots{} Braeckman, U. (2019). Implications of {Glacial
 Melt-Related Processes} on the {Potential Primary Production} of a
@@ -1828,7 +1840,7 @@ Melt-Related Processes} on the {Potential Primary Production} of a
 \emph{Frontiers in Marine Science}, \emph{6}, 655.
 doi:\href{https://doi.org/10.3389/fmars.2019.00655}{10.3389/fmars.2019.00655}
 
-\bibitem[\citeproctext]{ref-Iken2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Iken2023}{}}%
 Iken, K., Amsler, C. D., Gorman, K. B., Klein, A. G., Galloway, A. W.
 E., Amsler, M. O., \ldots{} McClintock, J. B. (2023). Macroalgal input
 into the coastal food web along a gradient of seasonal sea ice cover
@@ -1836,28 +1848,28 @@ along the {Western Antarctic Peninsula}. \emph{Marine Ecology Progress
 Series}, \emph{718}, 1--22.
 doi:\href{https://doi.org/10.3354/meps14388}{10.3354/meps14388}
 
-\bibitem[\citeproctext]{ref-Irons2000}
+\leavevmode\vadjust pre{\hypertarget{ref-Irons2000}{}}%
 Irons, D. B., Kendall, S. J., Erickson, W. P., McDonald, L. L., \&
 Lance, B. K. (2000). Nine {Years After} the {Exxon Valdez Oil Spill}:
 {Effects} on {Marine Bird Populations} in {Prince William Sound},
 {Alaska}. \emph{The Condor}, \emph{102}(4), 723--737.
 doi:\href{https://doi.org/10.1093/condor/102.4.723}{10.1093/condor/102.4.723}
 
-\bibitem[\citeproctext]{ref-Isla2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Isla2023}{}}%
 Isla, E. (2023). Animal\textendash{{Energy Relationships}} in a
 {Changing Ocean}: {The Case} of {Continental Shelf Macrobenthic
 Communities} on the {Weddell Sea} and the {Vicinity} of the {Antarctic
 Peninsula}. \emph{Biology}, \emph{12}(5), 659.
 doi:\href{https://doi.org/10.3390/biology12050659}{10.3390/biology12050659}
 
-\bibitem[\citeproctext]{ref-Jacob2011}
+\leavevmode\vadjust pre{\hypertarget{ref-Jacob2011}{}}%
 Jacob, U., Thierry, A., Brose, U., Arntz, W. E., Berg, S., Brey, T.,
 \ldots{} Dunne, J. A. (2011). The {Role} of {Body Size} in {Complex Food
 Webs}: {A Cold Case}. In A. Belgrano (Ed.), \emph{Advances in
 {Ecological Research}} (Vol. 45, pp. 181--223). {Academic Press}.
 doi:\href{https://doi.org/10.1016/B978-0-12-386475-8.00005-8}{10.1016/B978-0-12-386475-8.00005-8}
 
-\bibitem[\citeproctext]{ref-Jerosch2018}
+\leavevmode\vadjust pre{\hypertarget{ref-Jerosch2018}{}}%
 Jerosch, K., Pehlke, H., Monien, P., Scharf, F., Weber, L., Kuhn, G.,
 \ldots{} Abele, D. (2018). Benthic meltwater fjord habitats formed by
 rapid glacier recession on {King George Island}, {Antarctica}.
@@ -1865,56 +1877,56 @@ rapid glacier recession on {King George Island}, {Antarctica}.
 Physical and Engineering Sciences}, \emph{376}(2122), 20170178.
 doi:\href{https://doi.org/10.1098/rsta.2017.0178}{10.1098/rsta.2017.0178}
 
-\bibitem[\citeproctext]{ref-Jordan2007}
+\leavevmode\vadjust pre{\hypertarget{ref-Jordan2007}{}}%
 Jordán, F., Benedek, Z., \& Podani, J. (2007). Quantifying positional
 importance in food webs: {A} comparison of centrality indices.
 \emph{Ecological Modelling}, \emph{205}(1), 270--275.
 doi:\href{https://doi.org/10.1016/j.ecolmodel.2007.02.032}{10.1016/j.ecolmodel.2007.02.032}
 
-\bibitem[\citeproctext]{ref-Kaminskyinprep}
+\leavevmode\vadjust pre{\hypertarget{ref-Kaminskyinprep}{}}%
 Kaminsky, J., Bagur, M., Boraso, A., Schloss, I. R., Buschmann, A. H.,
 \& Quartino, M. L. (in prep.). Kelp recruitment declines in a
 sub-{Antarctic} ecosystem with high sediment inputs and changes in the
 understory algae.
 
-\bibitem[\citeproctext]{ref-Kawaguchi2009}
+\leavevmode\vadjust pre{\hypertarget{ref-Kawaguchi2009}{}}%
 Kawaguchi, S., Nicol, S., \& Press, A. (2009). Direct effects of climate
 change on the {Antarctic} krill fishery.
 
-\bibitem[\citeproctext]{ref-Klein2018}
+\leavevmode\vadjust pre{\hypertarget{ref-Klein2018}{}}%
 Klein, E. S., Hill, S. L., Hinke, J. T., Phillips, T., \& Watters, G. M.
 (2018). Impacts of rising sea temperature on krill increase risks for
 predators in the {Scotia Sea}. \emph{PLOS ONE}, \emph{13}(1), e0191011.
 doi:\href{https://doi.org/10.1371/journal.pone.0191011}{10.1371/journal.pone.0191011}
 
-\bibitem[\citeproctext]{ref-Kortsch2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Kortsch2021}{}}%
 Kortsch, S., Frelat, R., Pecuchet, L., Olivier, P., Putnis, I.,
 Bonsdorff, E., \ldots{} Nordström, M. C. (2021). Disentangling temporal
 food web dynamics facilitates understanding of ecosystem functioning.
 \emph{Journal of Animal Ecology}, \emph{90}(5), 1205--1216.
 doi:\href{https://doi.org/10.1111/1365-2656.13447}{10.1111/1365-2656.13447}
 
-\bibitem[\citeproctext]{ref-Kortsch2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Kortsch2019}{}}%
 Kortsch, S., Primicerio, R., Aschan, M., Lind, S., Dolgov, A. V., \&
 Planque, B. (2019). Food-web structure varies along environmental
 gradients in a high-latitude marine ecosystem. \emph{Ecography},
 \emph{42}(2), 295--308.
 doi:\href{https://doi.org/10.1111/ecog.03443}{10.1111/ecog.03443}
 
-\bibitem[\citeproctext]{ref-Kortsch2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Kortsch2015}{}}%
 Kortsch, S., Primicerio, R., Fossheim, M., Dolgov, A. V., \& Aschan, M.
 (2015). Climate change alters the structure of arctic marine food webs
 due to poleward shifts of boreal generalists. \emph{Proceedings of the
 Royal Society B: Biological Sciences}, \emph{282}(1814), 20151546.
 doi:\href{https://doi.org/10.1098/rspb.2015.1546}{10.1098/rspb.2015.1546}
 
-\bibitem[\citeproctext]{ref-Kratina2012}
+\leavevmode\vadjust pre{\hypertarget{ref-Kratina2012}{}}%
 Kratina, P., LeCraw, R. M., Ingram, T., \& Anholt, B. R. (2012).
 Stability and persistence of food webs with omnivory: {Is} there a
 general pattern? \emph{Ecosphere}, \emph{3}(6), art50.
 doi:\href{https://doi.org/10.1890/ES12-00121.1}{10.1890/ES12-00121.1}
 
-\bibitem[\citeproctext]{ref-Latorre2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Latorre2023}{}}%
 Latorre, M. P., Iachetti, C. M., Schloss, I. R., Antoni, J., Malits, A.,
 De La Rosa, F., \ldots{} Hernando, M. (2023). Summer heatwaves affect
 coastal {Antarctic} plankton metabolism and community structure.
@@ -1922,14 +1934,14 @@ coastal {Antarctic} plankton metabolism and community structure.
 151926.
 doi:\href{https://doi.org/10.1016/j.jembe.2023.151926}{10.1016/j.jembe.2023.151926}
 
-\bibitem[\citeproctext]{ref-Lattuca2018}
+\leavevmode\vadjust pre{\hypertarget{ref-Lattuca2018}{}}%
 Lattuca, María Eugenia, Boy, C. C., Vanella, F. A., Barrantes, M. E., \&
 Fernández, D. A. (2018). Thermal responses of three native fishes from
 estuarine areas of the {Beagle Channel}, and their implications for
 climate change. \emph{Hydrobiologia}, \emph{808}(1), 235--249.
 doi:\href{https://doi.org/10.1007/s10750-017-3424-8}{10.1007/s10750-017-3424-8}
 
-\bibitem[\citeproctext]{ref-Lattuca2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Lattuca2023}{}}%
 Lattuca, María E., Vanella, F. A., Malanga, G., Rubel, M. D., Manríquez,
 P. H., Torres, R., \ldots{} Fernández, D. A. (2023). Ocean acidification
 and seasonal temperature extremes combine to impair the thermal
@@ -1937,21 +1949,21 @@ physiology of a sub-{Antarctic} fish. \emph{Science of The Total
 Environment}, \emph{856}, 159284.
 doi:\href{https://doi.org/10.1016/j.scitotenv.2022.159284}{10.1016/j.scitotenv.2022.159284}
 
-\bibitem[\citeproctext]{ref-Lin2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Lin2021}{}}%
 Lin, Y., Moreno, C., Marchetti, A., Ducklow, H., Schofield, O., Delage,
 E., \ldots{} Cassar, N. (2021). Decline in plankton diversity and carbon
 flux with reduced sea ice extent along the {Western Antarctic
 Peninsula}. \emph{Nature Communications}, \emph{12}(1), 4948.
 doi:\href{https://doi.org/10.1038/s41467-021-25235-w}{10.1038/s41467-021-25235-w}
 
-\bibitem[\citeproctext]{ref-Llorca2012}
+\leavevmode\vadjust pre{\hypertarget{ref-Llorca2012}{}}%
 Llorca, M., Farré, M., Tavano, M. S., Alonso, B., Koremblit, G., \&
 Barceló, D. (2012). Fate of a broad spectrum of perfluorinated compounds
 in soils and biota from {Tierra} del {Fuego} and {Antarctica}.
 \emph{Environmental Pollution}, \emph{163}, 158--166.
 doi:\href{https://doi.org/10.1016/j.envpol.2011.10.027}{10.1016/j.envpol.2011.10.027}
 
-\bibitem[\citeproctext]{ref-Lopez-Gappa2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Lopez-Gappa2022}{}}%
 López-Gappa, J. (2022). The {Impact} of {Global Change} on {Marine
 Benthic Invertebrates}. In E. W. Helbling, M. A. Narvarte, R. A.
 González, \& V. E. Villafañe (Eds.), \emph{Global {Change} in {Atlantic
@@ -1959,52 +1971,52 @@ Coastal Patagonian Ecosystems}: {A Journey Through Time}} (pp.
 177--204). {Cham}: {Springer International Publishing}.
 doi:\href{https://doi.org/10.1007/978-3-030-86676-1_8}{10.1007/978-3-030-86676-1\_8}
 
-\bibitem[\citeproctext]{ref-Lopez-Lopez2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Lopez-Lopez2022}{}}%
 López-López, L., Genner, M. J., Tarling, G. A., Saunders, R. A., \&
 O'Gorman, E. J. (2022). Ecological {Networks} in the {Scotia Sea}:
 {Structural Changes Across Latitude} and {Depth}. \emph{Ecosystems},
 \emph{25}(2), 457--470.
 doi:\href{https://doi.org/10.1007/s10021-021-00665-1}{10.1007/s10021-021-00665-1}
 
-\bibitem[\citeproctext]{ref-Marina2018}
+\leavevmode\vadjust pre{\hypertarget{ref-Marina2018}{}}%
 Marina, T. I., Salinas, V., Cordone, G., Campana, G., Moreira, E.,
 Deregibus, D., \ldots{} Momo, F. R. (2018). The {Food Web} of {Potter
 Cove} ({Antarctica}): Complexity, structure and function.
 \emph{Estuarine, Coastal and Shelf Science}, \emph{200}, 141--151.
 doi:\href{https://doi.org/10.1016/j.ecss.2017.10.015}{10.1016/j.ecss.2017.10.015}
 
-\bibitem[\citeproctext]{ref-Marinainrev}
+\leavevmode\vadjust pre{\hypertarget{ref-Marinainrev}{}}%
 Marina, T. I., Schloss, I. R., Lovrich, G. A., Boy, C. C., Bruno, D. O.,
 Capitanio, F. L., \ldots{} Riccialdelli, L. (in rev.). The complex
 network of trophic interactions in a {Subantarctic} oceanic {Marine
 Protected Area}. \emph{Marine Ecology Progress Series}.
 
-\bibitem[\citeproctext]{ref-Martinez2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Martinez2022}{}}%
 Martínez, P. A., Wöhler, O. C., Troccoli, G. H., Di Marco, E., \&
 Maydana, L. (2022). \emph{{Descripción de las capturas incidentales de
 granaderos presentes en los lances dirigidos a merluza negra en la
 pesquería argentina de arrastre: período 2010-2019.}} {Instituto
 Nacional de Investigación y Desarrollo Pesquero (INIDEP)}.
 
-\bibitem[\citeproctext]{ref-Matano2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Matano2019}{}}%
 Matano, Ricardo P., Palma, E. D., \& Combes, V. (2019). The {Burdwood
 Bank Circulation}. \emph{Journal of Geophysical Research: Oceans},
 \emph{124}(10), 6904--6926.
 doi:\href{https://doi.org/10.1029/2019JC015001}{10.1029/2019JC015001}
 
-\bibitem[\citeproctext]{ref-Matano2010}
+\leavevmode\vadjust pre{\hypertarget{ref-Matano2010}{}}%
 Matano, R. P., Palma, E. D., \& Piola, A. R. (2010). The influence of
 the {Brazil} and {Malvinas Currents} on the {Southwestern Atlantic
 Shelf} circulation. \emph{Ocean Science}, \emph{6}(4), 983--995.
 doi:\href{https://doi.org/10.5194/os-6-983-2010}{10.5194/os-6-983-2010}
 
-\bibitem[\citeproctext]{ref-Menge1995}
+\leavevmode\vadjust pre{\hypertarget{ref-Menge1995}{}}%
 Menge, B. A. (1995). Indirect {Effects} in {Marine Rocky Intertidal
 Interaction Webs}: {Patterns} and {Importance}. \emph{Ecological
 Monographs}, \emph{65}(1), 21--74.
 doi:\href{https://doi.org/10.2307/2937158}{10.2307/2937158}
 
-\bibitem[\citeproctext]{ref-Meredith2018}
+\leavevmode\vadjust pre{\hypertarget{ref-Meredith2018}{}}%
 Meredith, M. P., Falk, U., Bers, A. V., Mackensen, A., Schloss, I. R.,
 Ruiz Barlett, E., \ldots{} Abele, D. (2018). Anatomy of a glacial
 meltwater discharge event in an {Antarctic} cove. \emph{Philosophical
@@ -2012,14 +2024,14 @@ Transactions of the Royal Society A: Mathematical, Physical and
 Engineering Sciences}, \emph{376}(2122), 20170163.
 doi:\href{https://doi.org/10.1098/rsta.2017.0163}{10.1098/rsta.2017.0163}
 
-\bibitem[\citeproctext]{ref-Michel2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Michel2019}{}}%
 Michel, L. N., Danis, B., Dubois, P., Eleaume, M., Fournier, J., Gallut,
 C., \ldots{} Lepoint, G. (2019). Increased sea ice cover alters food web
 structure in {East Antarctica}. \emph{Scientific Reports}, \emph{9}(1),
 8062.
 doi:\href{https://doi.org/10.1038/s41598-019-44605-5}{10.1038/s41598-019-44605-5}
 
-\bibitem[\citeproctext]{ref-Mintenbeck2012}
+\leavevmode\vadjust pre{\hypertarget{ref-Mintenbeck2012}{}}%
 Mintenbeck, K., Barrera-Oro, E. R., Brey, T., Jacob, U., Knust, R.,
 Mark, F. C., \ldots{} Arntz, W. E. (2012). Impact of {Climate Change} on
 {Fishes} in {Complex Antarctic Ecosystems}. In U. Jacob \& G. Woodward
@@ -2027,20 +2039,20 @@ Mark, F. C., \ldots{} Arntz, W. E. (2012). Impact of {Climate Change} on
 361--426). {Burlington}: {Academic Press}.
 doi:\href{https://doi.org/10.1016/B978-0-12-396992-7.00006-X}{10.1016/B978-0-12-396992-7.00006-X}
 
-\bibitem[\citeproctext]{ref-Montoya2009}
+\leavevmode\vadjust pre{\hypertarget{ref-Montoya2009}{}}%
 Montoya, JoséM., Woodward, G., Emmerson, M. C., \& Solé, R. V. (2009).
 Press perturbations and indirect effects in real food webs.
 \emph{Ecology}, \emph{90}(9), 2426--2433.
 doi:\href{https://doi.org/10.1890/08-0657.1}{10.1890/08-0657.1}
 
-\bibitem[\citeproctext]{ref-Murphy2007}
+\leavevmode\vadjust pre{\hypertarget{ref-Murphy2007}{}}%
 Murphy, E. J., Trathan, P. N., Watkins, J. L., Reid, K., Meredith, M.
 P., Forcada, J., \ldots{} Rothery, P. (2007). Climatically driven
 fluctuations in {Southern Ocean} ecosystems. \emph{Proceedings of the
 Royal Society B: Biological Sciences}, \emph{274}(1629), 3057--3067.
 doi:\href{https://doi.org/10.1098/rspb.2007.1180}{10.1098/rspb.2007.1180}
 
-\bibitem[\citeproctext]{ref-Murphy2006}
+\leavevmode\vadjust pre{\hypertarget{ref-Murphy2006}{}}%
 Murphy, E. j., Watkins, J. l., Trathan, P. n., Reid, K., Meredith, M.
 p., Thorpe, S. e., \ldots{} Fleming, A. h. (2006). Spatial and temporal
 operation of the {Scotia Sea} ecosystem: A review of large-scale links
@@ -2048,68 +2060,68 @@ in a krill centred food web. \emph{Philosophical Transactions of the
 Royal Society B: Biological Sciences}, \emph{362}(1477), 113--148.
 doi:\href{https://doi.org/10.1098/rstb.2006.1957}{10.1098/rstb.2006.1957}
 
-\bibitem[\citeproctext]{ref-Nardi2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Nardi2019}{}}%
 Nardi, C. F., Fernández, D. A., Vanella, F. A., \& Chalde, T. (2019).
 The expansion of exotic {Chinook} salmon ({Oncorhynchus} tshawytscha) in
 the extreme south of {Patagonia}: An environmental {DNA} approach.
 \emph{Biological Invasions}, \emph{21}(4), 1415--1425.
 doi:\href{https://doi.org/10.1007/s10530-018-1908-8}{10.1007/s10530-018-1908-8}
 
-\bibitem[\citeproctext]{ref-Nilsson2016}
+\leavevmode\vadjust pre{\hypertarget{ref-Nilsson2016}{}}%
 Nilsson, K. A., \& McCann, K. S. (2016). Interaction strength
 revisited\textemdash clarifying the role of energy flux for food web
 stability. \emph{Theoretical Ecology}, \emph{9}(1), 59--71.
 doi:\href{https://doi.org/10.1007/s12080-015-0282-8}{10.1007/s12080-015-0282-8}
 
-\bibitem[\citeproctext]{ref-Nowacek2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Nowacek2015}{}}%
 Nowacek, D. P., Clark, C. W., Mann, D., Miller, P. J., Rosenbaum, H. C.,
 Golden, J. S., \ldots{} Southall, B. L. (2015). Marine seismic surveys
 and ocean noise: Time for coordinated and prudent planning.
 \emph{Frontiers in Ecology and the Environment}, \emph{13}(7), 378--386.
 doi:\href{https://doi.org/10.1890/130286}{10.1890/130286}
 
-\bibitem[\citeproctext]{ref-OGorman2012}
+\leavevmode\vadjust pre{\hypertarget{ref-OGorman2012}{}}%
 O'Gorman, E. J., Fitch, J. E., \& Crowe, T. P. (2012). Multiple
 anthropogenic stressors and the structural properties of food webs.
 \emph{Ecology}, \emph{93}(3), 441--448.
 doi:\href{https://doi.org/10.1890/11-0982.1}{10.1890/11-0982.1}
 
-\bibitem[\citeproctext]{ref-OGorman2019}
+\leavevmode\vadjust pre{\hypertarget{ref-OGorman2019}{}}%
 O'Gorman, E. J., Petchey, O. L., Faulkner, K. J., Gallo, B., Gordon, T.
 A. C., Neto-Cerejeira, J., \ldots{} Woodward, G. (2019). A simple model
 predicts how warming simplifies wild food webs. \emph{Nature Climate
 Change}, \emph{9}(8), 611--616.
 doi:\href{https://doi.org/10.1038/s41558-019-0513-x}{10.1038/s41558-019-0513-x}
 
-\bibitem[\citeproctext]{ref-Ojeda2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Ojeda2021}{}}%
 Ojeda, M., Cossi, P. F., Rimondino, G. N., Chiesa, I. L., Boy, C. C., \&
 Pérez, A. F. (2021). Microplastics pollution in the intertidal limpet,
 {Nacella} magellanica, from {Beagle Channel} ({Argentina}).
 \emph{Science of The Total Environment}, \emph{795}, 148866.
 doi:\href{https://doi.org/10.1016/j.scitotenv.2021.148866}{10.1016/j.scitotenv.2021.148866}
 
-\bibitem[\citeproctext]{ref-Oliver2018}
+\leavevmode\vadjust pre{\hypertarget{ref-Oliver2018}{}}%
 Oliver, E. C. J., Donat, M. G., Burrows, M. T., Moore, P. J., Smale, D.
 A., Alexander, L. V., \ldots{} Wernberg, T. (2018). Longer and more
 frequent marine heatwaves over the past century. \emph{Nature
 Communications}, \emph{9}(1), 1324.
 doi:\href{https://doi.org/10.1038/s41467-018-03732-9}{10.1038/s41467-018-03732-9}
 
-\bibitem[\citeproctext]{ref-Olivier2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Olivier2019}{}}%
 Olivier, P., Frelat, R., Bonsdorff, E., Kortsch, S., Kröncke, I.,
 Möllmann, C., \ldots{} Nordström, M. C. (2019). Exploring the temporal
 variability of a food web using long-term biomonitoring data.
 \emph{Ecography}, \emph{42}(12), 2107--2121.
 doi:\href{https://doi.org/10.1111/ecog.04461}{10.1111/ecog.04461}
 
-\bibitem[\citeproctext]{ref-Orgeira2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Orgeira2021}{}}%
 Orgeira, J. L., Alvarez, F., \& Salvó, C. S. (2021). The same pathway to
 the {Weddell Sea} birdlife, after 65 years: Similarities in the species
 composition, richness and abundances. \emph{Czech Polar Reports},
 \emph{11}(2), 291--304.
 doi:\href{https://doi.org/10.5817/CPR2021-2-20}{10.5817/CPR2021-2-20}
 
-\bibitem[\citeproctext]{ref-Orr2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Orr2020}{}}%
 Orr, J. A., Vinebrooke, R. D., Jackson, M. C., Kroeker, K. J., Kordas,
 R. L., Mantyka-Pringle, C., \ldots{} Piggott, J. J. (2020). Towards a
 unified study of multiple stressors: Divisions and common goals across
@@ -2117,14 +2129,14 @@ research disciplines. \emph{Proceedings of the Royal Society B:
 Biological Sciences}, \emph{287}(1926), 20200421.
 doi:\href{https://doi.org/10.1098/rspb.2020.0421}{10.1098/rspb.2020.0421}
 
-\bibitem[\citeproctext]{ref-Paine1996}
+\leavevmode\vadjust pre{\hypertarget{ref-Paine1996}{}}%
 Paine, R. T., Ruesink, J. L., Sun, A., Soulanille, E. L., Wonham, M. J.,
 Harley, C. D. G., \ldots{} Secord, D. L. (1996). {TROUBLE ON OILED
 WATERS}: {Lessons} from the {\emph{Exxon Valdez}} {Oil Spill}.
 \emph{Annual Review of Ecology and Systematics}, \emph{27}(1), 197--235.
 doi:\href{https://doi.org/10.1146/annurev.ecolsys.27.1.197}{10.1146/annurev.ecolsys.27.1.197}
 
-\bibitem[\citeproctext]{ref-Pallin2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Pallin2023}{}}%
 Pallin, L. J., Kellar, N. M., Steel, D., Botero-Acosta, N., Baker, C.
 S., Conroy, J. A., \ldots{} Friedlaender, A. S. (2023). A surplus no
 more? {Variation} in krill availability impacts reproductive rates of
@@ -2132,18 +2144,18 @@ more? {Variation} in krill availability impacts reproductive rates of
 2108--2121.
 doi:\href{https://doi.org/10.1111/gcb.16559}{10.1111/gcb.16559}
 
-\bibitem[\citeproctext]{ref-Pante2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Pante2023}{}}%
 Pante, E., Simon-Bouhet, B., \& Irisson, J. (2023). Marmap: {Import},
 {Plot} and {Analyze Bathymetric} and {Topographic Data}.
 
-\bibitem[\citeproctext]{ref-Pasotti2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Pasotti2015}{}}%
 Pasotti, F., Saravia, L. A., Troch, M. D., Tarantelli, M. S., Sahade,
 R., \& Vanreusel, A. (2015). Benthic {Trophic Interactions} in an
 {Antarctic Shallow Water Ecosystem Affected} by {Recent Glacier
 Retreat}. \emph{PLOS ONE}, \emph{10}(11), e0141742.
 doi:\href{https://doi.org/10.1371/journal.pone.0141742}{10.1371/journal.pone.0141742}
 
-\bibitem[\citeproctext]{ref-Pasti2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Pasti2021}{}}%
 Pasti, A. T., Bovcon, N. D., Ruibal-Núñez, J., Navoa, X., Jacobi, K. J.,
 \& Galván, D. E. (2021). The diet of {Mustelus} schmitti in areas with
 and without commercial bottom trawling ({Central Patagonia},
@@ -2151,14 +2163,14 @@ and without commercial bottom trawling ({Central Patagonia},
 the {Patagonian} shrimp fishery? \emph{Food Webs}, \emph{29}, e00214.
 doi:\href{https://doi.org/10.1016/j.fooweb.2021.e00214}{10.1016/j.fooweb.2021.e00214}
 
-\bibitem[\citeproctext]{ref-Pauli2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Pauli2021}{}}%
 Pauli, N.-C., Flintrop, C. M., Konrad, C., Pakhomov, E. A., Swoboda, S.,
 Koch, F., \ldots{} Iversen, M. H. (2021). Krill and salp faecal pellets
 contribute equally to the carbon flux at the {Antarctic Peninsula}.
 \emph{Nature Communications}, \emph{12}(1), 7168.
 doi:\href{https://doi.org/10.1038/s41467-021-27436-9}{10.1038/s41467-021-27436-9}
 
-\bibitem[\citeproctext]{ref-Pecuchet2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Pecuchet2022}{}}%
 Pecuchet, L., Jørgensen, L. L., Dolgov, A. V., Eriksen, E., Husson, B.,
 Skern-Mauritzen, M., \& Primicerio, R. (2022). Spatio-temporal turnover
 and drivers of bentho-demersal community and food web structure in a
@@ -2166,14 +2178,14 @@ high-latitude marine ecosystem. \emph{Diversity and Distributions},
 \emph{28}(12), 2503--2520.
 doi:\href{https://doi.org/10.1111/ddi.13580}{10.1111/ddi.13580}
 
-\bibitem[\citeproctext]{ref-Pecuchet2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Pecuchet2020}{}}%
 Pecuchet, L., Lindegren, M., Kortsch, S., Całkiewicz, J., Jurgensone,
 I., Margonski, P., \ldots{} Nordström, M. C. (2020). Spatio-temporal
 dynamics of multi-trophic communities reveal ecosystem-wide functional
 reorganization. \emph{Ecography}, \emph{43}(2), 197--208.
 doi:\href{https://doi.org/10.1111/ecog.04643}{10.1111/ecog.04643}
 
-\bibitem[\citeproctext]{ref-Perez2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Perez2020}{}}%
 Pérez, A. F., Ojeda, M., Rimondino, G. N., Chiesa, I. L., Di Mauro, R.,
 Boy, C. C., \& Calcagno, J. A. (2020). First report of microplastics
 presence in the mussel {Mytilus} chilensis from {Ushuaia Bay} ({Beagle
@@ -2181,47 +2193,47 @@ Channel}, {Tierra} del {Fuego}, {Argentina}). \emph{Marine Pollution
 Bulletin}, \emph{161}, 111753.
 doi:\href{https://doi.org/10.1016/j.marpolbul.2020.111753}{10.1016/j.marpolbul.2020.111753}
 
-\bibitem[\citeproctext]{ref-Perry2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Perry2020}{}}%
 Perry, F. A., Kawaguchi, S., Atkinson, A., Sailley, S. F., Tarling, G.
 A., Mayor, D. J., \ldots{} Cooper, A. (2020).
 Temperature\textendash{{Induced Hatch Failure}} and {Nauplii
 Malformation} in {Antarctic Krill}. \emph{Frontiers in Marine Science},
 \emph{7}.
 
-\bibitem[\citeproctext]{ref-Peterson2001}
+\leavevmode\vadjust pre{\hypertarget{ref-Peterson2001}{}}%
 Peterson, C. H. (2001). The {`{Exxon Valdez}'} oil spill in {Alaska}:
 {Acute}, indirect and chronic effects on the ecosystem. In
 \emph{Advances in {Marine Biology}} (Vol. 39, pp. 1--103). {Academic
 Press}.
 doi:\href{https://doi.org/10.1016/S0065-2881(01)39008-9}{10.1016/S0065-2881(01)39008-9}
 
-\bibitem[\citeproctext]{ref-Pineda-Metz2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Pineda-Metz2020}{}}%
 Pineda-Metz, S. E. A., Gerdes, D., \& Richter, C. (2020). Benthic fauna
 declined on a whitening {Antarctic} continental shelf. \emph{Nature
 Communications}, \emph{11}(1), 2226.
 doi:\href{https://doi.org/10.1038/s41467-020-16093-z}{10.1038/s41467-020-16093-z}
 
-\bibitem[\citeproctext]{ref-Pinkerton2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Pinkerton2021}{}}%
 Pinkerton, M. H., Boyd, P. W., Deppeler, S., Hayward, A., Höfer, J., \&
 Moreau, S. (2021). Evidence for the {Impact} of {Climate Change} on
 {Primary Producers} in the {Southern Ocean}. \emph{Frontiers in Ecology
 and Evolution}, \emph{9}.
 
-\bibitem[\citeproctext]{ref-Poloczanska2013}
+\leavevmode\vadjust pre{\hypertarget{ref-Poloczanska2013}{}}%
 Poloczanska, E. S., Brown, C. J., Sydeman, W. J., Kiessling, W.,
 Schoeman, D. S., Moore, P. J., \ldots{} Richardson, A. J. (2013). Global
 imprint of climate change on marine life. \emph{Nature Climate Change},
 \emph{3}(10), 919--925.
 doi:\href{https://doi.org/10.1038/nclimate1958}{10.1038/nclimate1958}
 
-\bibitem[\citeproctext]{ref-Quartino2008}
+\leavevmode\vadjust pre{\hypertarget{ref-Quartino2008}{}}%
 Quartino, M. L., \& Boraso de Zaixso, A. L. (2008). Summer macroalgal
 biomass in {Potter Cove}, {South Shetland Islands}, {Antarctica}: Its
 production and flux to the ecosystem. \emph{Polar Biology},
 \emph{31}(3), 281--294.
 doi:\href{https://doi.org/10.1007/s00300-007-0356-1}{10.1007/s00300-007-0356-1}
 
-\bibitem[\citeproctext]{ref-Quartino2013}
+\leavevmode\vadjust pre{\hypertarget{ref-Quartino2013}{}}%
 Quartino, María Liliana, Deregibus, D., Campana, G. L., Latorre, G. E.
 J., \& Momo, F. R. (2013). Evidence of {Macroalgal Colonization} on
 {Newly Ice-Free Areas} following {Glacial Retreat} in {Potter Cove}
@@ -2229,13 +2241,13 @@ J., \& Momo, F. R. (2013). Evidence of {Macroalgal Colonization} on
 e58223.
 doi:\href{https://doi.org/10.1371/journal.pone.0058223}{10.1371/journal.pone.0058223}
 
-\bibitem[\citeproctext]{ref-Raymond2011}
+\leavevmode\vadjust pre{\hypertarget{ref-Raymond2011}{}}%
 Raymond, B. (2011). \emph{A circumpolar pelagic regionalisation of the
 {Southern Ocean}. {CCAMLR WS-MPA}, {Brest}, {France}, 29
 {Aug}\textendash 2 {Sep} 2011. {Document WS-MPA-11}/6.
 {http://data.aad.gov.au/regionalisation}}.
 
-\bibitem[\citeproctext]{ref-Riccialdelli2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Riccialdelli2020}{}}%
 Riccialdelli, L., Becker, Y. A., Fioramonti, N. E., Torres, M., Bruno,
 D. O., Rey, A. R., \& Fernández, D. A. (2020). Trophic structure of
 southern marine ecosystems: A comparative isotopic analysis from the
@@ -2243,21 +2255,21 @@ southern marine ecosystems: A comparative isotopic analysis from the
 assumption. \emph{Marine Ecology Progress Series}, \emph{655}, 1--27.
 doi:\href{https://doi.org/10.3354/meps13524}{10.3354/meps13524}
 
-\bibitem[\citeproctext]{ref-Riccialdelli2013}
+\leavevmode\vadjust pre{\hypertarget{ref-Riccialdelli2013}{}}%
 Riccialdelli, L., Newsome, S. D., Dellabianca, N. A., Bastida, R.,
 Fogel, M. L., \& Goodall, R. N. P. (2013). Ontogenetic diet shift in
 {Commerson}'s dolphin ({Cephalorhynchus} commersonii commersonii) off
 {Tierra} del {Fuego}. \emph{Polar Biology}, \emph{36}(5), 617--627.
 doi:\href{https://doi.org/10.1007/s00300-013-1289-5}{10.1007/s00300-013-1289-5}
 
-\bibitem[\citeproctext]{ref-Rincon-Diaz2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Rincon-Diaz2021}{}}%
 Rincón-Díaz, M. P., Bovcon, N. D., Cochia, P. D., Góngora, M. E., \&
 Galván, D. E. (2021). Fish functional diversity as an indicator of
 resilience to industrial fishing in {Patagonia Argentina}. \emph{Journal
 of Fish Biology}, \emph{99}(5), 1650--1667.
 doi:\href{https://doi.org/10.1111/jfb.14873}{10.1111/jfb.14873}
 
-\bibitem[\citeproctext]{ref-Rodriguez2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Rodriguez2022}{}}%
 Rodriguez, I. D., Marina, T. I., Schloss, I. R., \& Saravia, L. A.
 (2022). Marine food webs are more complex but less stable in
 sub-{Antarctic} ({Beagle Channel}, {Argentina}) than in {Antarctic}
@@ -2265,39 +2277,39 @@ sub-{Antarctic} ({Beagle Channel}, {Argentina}) than in {Antarctic}
 Environmental Research}, \emph{174}, 105561.
 doi:\href{https://doi.org/10.1016/j.marenvres.2022.105561}{10.1016/j.marenvres.2022.105561}
 
-\bibitem[\citeproctext]{ref-Rowlands2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Rowlands2021}{}}%
 Rowlands, E., Galloway, T., Cole, M., Lewis, C., Peck, V., Thorpe, S.,
 \& Manno, C. (2021). The {Effects} of {Combined Ocean Acidification} and
 {Nanoplastic Exposures} on the {Embryonic Development} of {Antarctic
 Krill}. \emph{Frontiers in Marine Science}, \emph{8}.
 
-\bibitem[\citeproctext]{ref-Ruckamp2011}
+\leavevmode\vadjust pre{\hypertarget{ref-Ruckamp2011}{}}%
 Rückamp, M., Braun, M., Suckro, S., \& Blindow, N. (2011). Observed
 glacial changes on the {King George Island} ice cap, {Antarctica}, in
 the last decade. \emph{Global and Planetary Change}, \emph{79}(1-2),
 99--109.
 doi:\href{https://doi.org/10.1016/j.gloplacha.2011.06.009}{10.1016/j.gloplacha.2011.06.009}
 
-\bibitem[\citeproctext]{ref-RuibalNunez2020}
+\leavevmode\vadjust pre{\hypertarget{ref-RuibalNunez2020}{}}%
 Ruibal Nuñez, J. (2020). \emph{{Impacto ecológico de la actividad
 pesquera en las poblaciones de condrictios en el litoral de la Provincia
 de Chubut y Golfo San Jorge}} (PhD thesis). Universidad Nacional de Mar
 del Plata (UNMdP), {Argentina}.
 
-\bibitem[\citeproctext]{ref-Sahade2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Sahade2015}{}}%
 Sahade, R., Lagger, C., Torre, L., Momo, F., Monien, P., Schloss, I.,
 \ldots{} Abele, D. (2015). Climate change and glacier retreat drive
 shifts in an {Antarctic} benthic ecosystem. \emph{Science Advances},
 \emph{1}(10), e1500050.
 doi:\href{https://doi.org/10.1126/sciadv.1500050}{10.1126/sciadv.1500050}
 
-\bibitem[\citeproctext]{ref-Saunders2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Saunders2019}{}}%
 Saunders, R. A., Hill, S. L., Tarling, G. A., \& Murphy, E. J. (2019).
 Myctophid {Fish} ({Family Myctophidae}) {Are Central Consumers} in the
 {Food Web} of the {Scotia Sea} ({Southern Ocean}). \emph{Frontiers in
 Marine Science}, \emph{6}.
 
-\bibitem[\citeproctext]{ref-Schejter2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Schejter2021}{}}%
 Schejter, L., \& Albano, M. (2021). Benthic communities at the marine
 protected area {Namuncurá}/{Burdwood} bank, {SW Atlantic Ocean}:
 Detection of vulnerable marine ecosystems and contributions to the
@@ -2305,7 +2317,7 @@ assessment of the rezoning process. \emph{Polar Biology}, \emph{44}(10),
 2023--2037.
 doi:\href{https://doi.org/10.1007/s00300-021-02936-y}{10.1007/s00300-021-02936-y}
 
-\bibitem[\citeproctext]{ref-Schloss2012}
+\leavevmode\vadjust pre{\hypertarget{ref-Schloss2012}{}}%
 Schloss, I. R., Abele, D., Moreau, S., Demers, S., Bers, A. V.,
 González, O., \& Ferreyra, G. A. (2012). Response of phytoplankton
 dynamics to 19-year (1991\textendash 2009) climate trends in {Potter
@@ -2313,7 +2325,7 @@ Cove} ({Antarctica}). \emph{Journal of Marine Systems}, \emph{92}(1),
 53--66.
 doi:\href{https://doi.org/10.1016/j.jmarsys.2011.10.006}{10.1016/j.jmarsys.2011.10.006}
 
-\bibitem[\citeproctext]{ref-Schloss2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Schloss2023}{}}%
 Schloss, I. R., Pizarro, G., Cadaillon, A. M., Giesecke, R., Hernando,
 M. P., Almandoz, G. O., \ldots{} Ruiz, C. (2023). Alexandrium catenella
 dynamics and paralytic shellfish toxins distribution along the {Beagle
@@ -2321,7 +2333,7 @@ Channel} (southern {Patagonia}). \emph{Journal of Marine Systems},
 \emph{239}, 103856.
 doi:\href{https://doi.org/10.1016/j.jmarsys.2022.103856}{10.1016/j.jmarsys.2022.103856}
 
-\bibitem[\citeproctext]{ref-Schmidt2011}
+\leavevmode\vadjust pre{\hypertarget{ref-Schmidt2011}{}}%
 Schmidt, K., Atkinson, A., Steigenberger, S., Fielding, S., Lindsay, M.
 C. M., Pond, D. W., \ldots{} Achterberg, E. P. (2011). Seabed foraging
 by {Antarctic} krill: {Implications} for stock assessment,
@@ -2329,32 +2341,32 @@ bentho-pelagic coupling, and the vertical transfer of iron.
 \emph{Limnology and Oceanography}, \emph{56}(4), 1411--1428.
 doi:\href{https://doi.org/10.4319/lo.2011.56.4.1411}{10.4319/lo.2011.56.4.1411}
 
-\bibitem[\citeproctext]{ref-Seco2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Seco2021}{}}%
 Seco, J., Aparício, S., Brierley, A. S., Bustamante, P., Ceia, F. R.,
 Coelho, J. P., \ldots{} Xavier, J. C. (2021). Mercury biomagnification
 in a {Southern Ocean} food web. \emph{Environmental Pollution},
 \emph{275}, 116620.
 doi:\href{https://doi.org/10.1016/j.envpol.2021.116620}{10.1016/j.envpol.2021.116620}
 
-\bibitem[\citeproctext]{ref-Sgarlatta2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Sgarlatta2023}{}}%
 Sgarlatta, M. (2023). \emph{Mechanisms driving tropicalization of
 temperate reef fish assemblages} (Thesis). UNSW Sydney.
 doi:/\href{https://doi.org/10.26190/unsworks/25104}{10.26190/unsworks/25104}
 
-\bibitem[\citeproctext]{ref-Smale2008}
+\leavevmode\vadjust pre{\hypertarget{ref-Smale2008}{}}%
 Smale, Dan A., \& Barnes, D. K. A. (2008). Likely responses of the
 {Antarctic} benthos to climate-related changes in physical disturbance
 during the 21st century, based primarily on evidence from the {West
 Antarctic Peninsula} region. \emph{Ecography}, \emph{31}(3), 289--305.
 doi:\href{https://doi.org/10.1111/j.0906-7590.2008.05456.x}{10.1111/j.0906-7590.2008.05456.x}
 
-\bibitem[\citeproctext]{ref-Smale2008a}
+\leavevmode\vadjust pre{\hypertarget{ref-Smale2008a}{}}%
 Smale, Dan A., Brown, K. M., Barnes, D. K. A., Fraser, K. P. P., \&
 Clarke, A. (2008). Ice {Scour Disturbance} in {Antarctic Waters}.
 \emph{Science}, \emph{321}(5887), 371--371.
 doi:\href{https://doi.org/10.1126/science.1158647}{10.1126/science.1158647}
 
-\bibitem[\citeproctext]{ref-Soeffker2022}
+\leavevmode\vadjust pre{\hypertarget{ref-Soeffker2022}{}}%
 Soeffker, M., Hollyman, P. R., Collins, M. A., Hogg, O. T., Riley, A.,
 Laptikhovsky, V., \ldots{} Darby, C. (2022). Contrasting life-history
 traits of two toothfish ({Dissostichus} spp.) species at their range
@@ -2362,53 +2374,53 @@ edge around the {South Sandwich Islands}. \emph{Deep Sea Research Part
 II: Topical Studies in Oceanography}, \emph{201}, 105098.
 doi:\href{https://doi.org/10.1016/j.dsr2.2022.105098}{10.1016/j.dsr2.2022.105098}
 
-\bibitem[\citeproctext]{ref-Stouffer2011}
+\leavevmode\vadjust pre{\hypertarget{ref-Stouffer2011}{}}%
 Stouffer, D. B., \& Bascompte, J. (2011). Compartmentalization increases
 food-web persistence. \emph{Proceedings of the National Academy of
 Sciences}, \emph{108}(9), 3648--3652.
 doi:\href{https://doi.org/10.1073/pnas.1014353108}{10.1073/pnas.1014353108}
 
-\bibitem[\citeproctext]{ref-Tamini2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Tamini2023}{}}%
 Tamini, L. L., Dellacasa, R. F., Chavez, L. N., Marinao, C. J., Góngora,
 M. E., Crawford, R., \& Frere, E. (2023). Bird scaring lines reduce
 seabird mortality in mid-water and bottom trawlers in {Argentina}.
 \emph{ICES Journal of Marine Science}, fsad109.
 doi:\href{https://doi.org/10.1093/icesjms/fsad109}{10.1093/icesjms/fsad109}
 
-\bibitem[\citeproctext]{ref-Tarling2018}
+\leavevmode\vadjust pre{\hypertarget{ref-Tarling2018}{}}%
 Tarling, G. A., Ward, P., \& Thorpe, S. E. (2018). Spatial distributions
 of {Southern Ocean} mesozooplankton communities have been resilient to
 long-term surface warming. \emph{Global Change Biology}, \emph{24}(1),
 132--142.
 doi:\href{https://doi.org/10.1111/gcb.13834}{10.1111/gcb.13834}
 
-\bibitem[\citeproctext]{ref-Teixido2002}
+\leavevmode\vadjust pre{\hypertarget{ref-Teixido2002}{}}%
 Teixidó, N., Garrabou, J., \& Arntz, W. E. (2002). Spatial pattern
 quantification of {Antarctic} benthic communities using landscape
 indices. \emph{Marine Ecology Progress Series}, \emph{242}, 1--14.
 doi:\href{https://doi.org/10.3354/meps242001}{10.3354/meps242001}
 
-\bibitem[\citeproctext]{ref-Thompson2012}
+\leavevmode\vadjust pre{\hypertarget{ref-Thompson2012}{}}%
 Thompson, R. M., Brose, U., Dunne, J. A., Hall, R. O., Hladyz, S.,
 Kitching, R. L., \ldots{} Tylianakis, J. M. (2012). Food webs:
 Reconciling the structure and function of biodiversity. \emph{Trends in
 Ecology \& Evolution}, \emph{27}(12), 689--697.
 doi:\href{https://doi.org/10.1016/j.tree.2012.08.005}{10.1016/j.tree.2012.08.005}
 
-\bibitem[\citeproctext]{ref-Thompson2007}
+\leavevmode\vadjust pre{\hypertarget{ref-Thompson2007}{}}%
 Thompson, R. M., Hemberg, M., Starzomski, B. M., \& Shurin, J. B.
 (2007). Trophic {Levels} and {Trophic Tangles}: {The Prevalence} of
 {Omnivory} in {Real Food Webs}. \emph{Ecology}, \emph{88}(3), 612--617.
 doi:\href{https://doi.org/10.1890/05-1454}{10.1890/05-1454}
 
-\bibitem[\citeproctext]{ref-Trathan2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Trathan2023}{}}%
 Trathan, Philip N. (2023). The future of the {South Georgia} and {South
 Sandwich Islands} marine protected area in a changing environment: {The}
 choice between industrial fisheries, or ecosystem protection.
 \emph{Marine Policy}, \emph{155}, 105773.
 doi:\href{https://doi.org/10.1016/j.marpol.2023.105773}{10.1016/j.marpol.2023.105773}
 
-\bibitem[\citeproctext]{ref-Trathan2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Trathan2021}{}}%
 Trathan, P. N., Fielding, S., Hollyman, P. R., Murphy, E. J.,
 Warwick-Evans, V., \& Collins, M. A. (2021). Enhancing the ecosystem
 approach for the fishery for {Antarctic} krill within the complex,
@@ -2416,21 +2428,21 @@ variable, and changing ecosystem at {South Georgia}. \emph{ICES Journal
 of Marine Science}, \emph{78}(6), 2065--2081.
 doi:\href{https://doi.org/10.1093/icesjms/fsab092}{10.1093/icesjms/fsab092}
 
-\bibitem[\citeproctext]{ref-Turner2020}
+\leavevmode\vadjust pre{\hypertarget{ref-Turner2020}{}}%
 Turner, J., Guarino, M. V., Arnatt, J., Jena, B., Marshall, G. J.,
 Phillips, T., \ldots{} Cavanagh, R. (2020). Recent {Decrease} of {Summer
 Sea Ice} in the {Weddell Sea}, {Antarctica}. \emph{Geophysical Research
 Letters}, \emph{47}(11), e2020GL087127.
 doi:\href{https://doi.org/10.1029/2020GL087127}{10.1029/2020GL087127}
 
-\bibitem[\citeproctext]{ref-Verges2019}
+\leavevmode\vadjust pre{\hypertarget{ref-Verges2019}{}}%
 Vergés, A., McCosker, E., Mayer-Pinto, M., Coleman, M. A., Wernberg, T.,
 Ainsworth, T., \& Steinberg, P. D. (2019). Tropicalisation of temperate
 reefs: {Implications} for ecosystem functions and management actions.
 \emph{Functional Ecology}, \emph{33}(6), 1000--1013.
 doi:\href{https://doi.org/10.1111/1365-2435.13310}{10.1111/1365-2435.13310}
 
-\bibitem[\citeproctext]{ref-Verges2014}
+\leavevmode\vadjust pre{\hypertarget{ref-Verges2014}{}}%
 Vergés, A., Steinberg, P. D., Hay, M. E., Poore, A. G. B., Campbell, A.
 H., Ballesteros, E., \ldots{} Wilson, S. K. (2014). The tropicalization
 of temperate marine ecosystems: Climate-mediated changes in herbivory
@@ -2438,39 +2450,39 @@ and community phase shifts. \emph{Proceedings of the Royal Society B:
 Biological Sciences}, \emph{281}(1789), 20140846.
 doi:\href{https://doi.org/10.1098/rspb.2014.0846}{10.1098/rspb.2014.0846}
 
-\bibitem[\citeproctext]{ref-Vinuesa2005}
+\leavevmode\vadjust pre{\hypertarget{ref-Vinuesa2005}{}}%
 Vinuesa, J. H. (2005). Distribución de crustáceos decápodos y
 estomatópodos del golfo {San Jorge}, {Argentina}. \emph{Revista de
 Biología Marina y Oceanografía}, \emph{40}(1), 7--21.
 doi:\href{https://doi.org/10.4067/S0718-19572005000100002}{10.4067/S0718-19572005000100002}
 
-\bibitem[\citeproctext]{ref-Vinuesa2007}
+\leavevmode\vadjust pre{\hypertarget{ref-Vinuesa2007}{}}%
 Vinuesa, J. H., \& Varisco, M. (2007). Trophic ecology of the lobster
 krill {Munida} gregaria in {San Jorge Gulf}, {Argentina}.
 \emph{Investigaciones Marinas}, \emph{35}(2), 25--34.
 doi:\href{https://doi.org/10.4067/S0717-71782007000200003}{10.4067/S0717-71782007000200003}
 
-\bibitem[\citeproctext]{ref-Vucic-Pestic2011}
+\leavevmode\vadjust pre{\hypertarget{ref-Vucic-Pestic2011}{}}%
 Vucic-Pestic, O., Ehnes, R. B., Rall, B. C., \& Brose, U. (2011).
 Warming up the system: Higher predator feeding rates but lower energetic
 efficiencies. \emph{Global Change Biology}, \emph{17}(3), 1301--1310.
 doi:\href{https://doi.org/10.1111/j.1365-2486.2010.02329.x}{10.1111/j.1365-2486.2010.02329.x}
 
-\bibitem[\citeproctext]{ref-Ward2018}
+\leavevmode\vadjust pre{\hypertarget{ref-Ward2018}{}}%
 Ward, P., Tarling, G. A., \& Thorpe, S. E. (2018). Temporal changes in
 abundances of large calanoid copepods in the {Scotia Sea}: Comparing the
 1930s with contemporary times. \emph{Polar Biology}, \emph{41}(11),
 2297--2310.
 doi:\href{https://doi.org/10.1007/s00300-018-2369-3}{10.1007/s00300-018-2369-3}
 
-\bibitem[\citeproctext]{ref-Wege2021}
+\leavevmode\vadjust pre{\hypertarget{ref-Wege2021}{}}%
 Wege, M., Salas, L., \& LaRue, M. (2021). Ice matters: {Life-history}
 strategies of two {Antarctic} seals dictate climate change eventualities
 in the {Weddell Sea}. \emph{Global Change Biology}, \emph{27}(23),
 6252--6262.
 doi:\href{https://doi.org/10.1111/gcb.15828}{10.1111/gcb.15828}
 
-\bibitem[\citeproctext]{ref-Whitehouse2008}
+\leavevmode\vadjust pre{\hypertarget{ref-Whitehouse2008}{}}%
 Whitehouse, M. J., Meredith, M. P., Rothery, P., Atkinson, A., Ward, P.,
 \& Korb, R. E. (2008). Rapid warming of the ocean around {South
 Georgia}, {Southern Ocean}, during the 20th century: {Forcings},
@@ -2479,38 +2491,38 @@ Sea Research Part I: Oceanographic Research Papers}, \emph{55}(10),
 1218--1228.
 doi:\href{https://doi.org/10.1016/j.dsr.2008.06.002}{10.1016/j.dsr.2008.06.002}
 
-\bibitem[\citeproctext]{ref-Whitworth1980}
+\leavevmode\vadjust pre{\hypertarget{ref-Whitworth1980}{}}%
 Whitworth, T. (1980). Zonation and geostrophic flow of the {Antarctic}
 circumpolar current at {Drake Passage}. \emph{Deep Sea Research Part A.
 Oceanographic Research Papers}, \emph{27}(7), 497--507.
 doi:\href{https://doi.org/10.1016/0198-0149(80)90036-9}{10.1016/0198-0149(80)90036-9}
 
-\bibitem[\citeproctext]{ref-Williams2000}
+\leavevmode\vadjust pre{\hypertarget{ref-Williams2000}{}}%
 Williams, R. J., \& Martinez, N. D. (2000). Simple rules yield complex
 food webs. \emph{Nature}, \emph{404}(6774), 180--183.
 doi:\href{https://doi.org/10.1038/35004572}{10.1038/35004572}
 
-\bibitem[\citeproctext]{ref-Wood2015}
+\leavevmode\vadjust pre{\hypertarget{ref-Wood2015}{}}%
 Wood, S. A., Russell, R., Hanson, D., Williams, R. J., \& Dunne, J. A.
 (2015). Effects of spatial scale of sampling on food web structure.
 \emph{Ecology and Evolution}, \emph{5}(17), 3769--3782.
 doi:\href{https://doi.org/10.1002/ece3.1640}{10.1002/ece3.1640}
 
-\bibitem[\citeproctext]{ref-Woods2023}
+\leavevmode\vadjust pre{\hypertarget{ref-Woods2023}{}}%
 Woods, B. L., Van de Putte, A. P., Hindell, M. A., Raymond, B.,
 Saunders, R. A., Walters, A., \& Trebilco, R. (2023). Species
 distribution models describe spatial variability in mesopelagic fish
 abundance in the {Southern Ocean}. \emph{Frontiers in Marine Science},
 \emph{9}.
 
-\bibitem[\citeproctext]{ref-Wu2012}
+\leavevmode\vadjust pre{\hypertarget{ref-Wu2012}{}}%
 Wu, L., Cai, W., Zhang, L., Nakamura, H., Timmermann, A., Joyce, T.,
 \ldots{} Giese, B. (2012). Enhanced warming over the global subtropical
 western boundary currents. \emph{Nature Climate Change}, \emph{2}(3),
 161--166.
 doi:\href{https://doi.org/10.1038/nclimate1353}{10.1038/nclimate1353}
 
-\bibitem[\citeproctext]{ref-Yorio2009}
+\leavevmode\vadjust pre{\hypertarget{ref-Yorio2009}{}}%
 Yorio, P. (2009). Marine protected areas, spatial scales, and
 governance: Implications for the conservation of breeding seabirds.
 \emph{Conservation Letters}, \emph{2}(4), 171--178.
