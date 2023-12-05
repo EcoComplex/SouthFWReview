@@ -5,7 +5,7 @@ output:
     keep_tex: yes
   word_document: default
 bibliography: JAE_Review.bib
-csl: "journal-of-animal-ecology.csl"
+csl: "environmental-reviews.csl"
 documentclass: article
 geometry:
 - vmargin=1in
