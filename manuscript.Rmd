@@ -3,7 +3,6 @@ output:
   pdf_document:
     latex_engine: xelatex
     keep_tex: yes
-  word_document: default
 bibliography: JAE_Review.bib
 csl: "environmental-reviews.csl"
 documentclass: article
@@ -66,8 +65,7 @@ Keywords: anthropogenic stressors, environmental stressors, food webs, latitudin
 The application of a network perspective has emerged as a powerful tool to tackle the complexity of species interactions, facilitating a better understanding of the structure and functioning of ecosystems [@Belgrano2005; @Thompson2012]. Trophic networks (or food webs) allow identifying properties and key species that may be crucial for ecosystem stability, and hence important for ecosystem management and biodiversity conservation [@Thompson2012].
 There is a growing interest in understanding how ecological networks respond to environmental and anthropogenic stressors along geographical gradients [@Bauer2022; @Cirtwill2015]. Yet, only a few studies have described variation in food web structure along latitudinal gradients in marine ecosystems. The few that have come from the Global North [@Wood2015; @Kortsch2019; @Pecuchet2022], whereas no studies, nor meta-analyses, on geographical variation in marine food webs exist for the Global South (Southern Hemisphere).
 
-Here we review for the first time the state-of-the-art knowledge on stressor response of marine food webs along the southwest Atlantic to Antarctic gradient (45 - 78ºS, Figure 1). We focus on proven and expected changes in food webs driven by stressors in selected areas along this large-scale latitudinal gradient. We recruited food web experts from different marine systems of Argentina and the world (see co-authors’ list). Throughout the year 2023 we maintained regular discussion meetings, typically held every two or three weeks. The aim of this review is threefold: 1) describe the complexity and structure of marine food webs along the southwest Atlantic to Antarctic axis from a network perspective; 2) identify the ongoing environmental and anthropogenic stressors for each marine ecosystem containing the food webs; and 3) resume proven food web changes and elaborate hypotheses on how the identified stressors might affect food web features (e.g. energy flow, stability), combining information on node- and network-level properties. Finally, we suggest which additional data and analyses are needed to gain insights into the stressors’ effects on food web properties in the southwest Atlantic to Antarctic region.
-
+Here we review for the first time the state-of-the-art knowledge on stressor response of marine food webs along the southwest Atlantic to Antarctic gradient (45 - 78ºS, Figure 1). We focus on proven and expected changes in food webs driven by stressors in selected areas along this large-scale latitudinal gradient. We recruited food web experts from different marine systems of Argentina and the world (see co-authors’ list). Throughout the year 2023 we maintained regular discussion meetings, typically held every two or three weeks. The aim of this review is threefold: 1) describe the complexity and structure of marine food webs along the southwest Atlantic to Antarctic axis from a network perspective; 2) identify the ongoing environmental and anthropogenic stressors for each marine ecosystem containing the food webs; and 3) review proven food web changes and elaborate hypotheses on how the identified stressors might affect food web features (e.g. energy flow, stability), combining information on node- and network-level properties. Finally, we suggest which additional data and analyses are needed to gain insights into the stressors’ effects on food web properties in the southwest Atlantic to Antarctic region.
 
 ## 2. The structure of marine food webs in the Southwest Atlantic - Antarctic region
 
@@ -76,7 +74,6 @@ Together, the southwest and the Atlantic sector of the Southern Ocean comprise o
 Throughout this latitudinal gradient, many investigations have been carried out addressing the trophic ecology of specific species and prey-predator relationships [@Vinuesa2007; @Pasotti2015;  @Riccialdelli2020; @Saunders2019], but few studies have considered the complexity of the ecosystem in terms of a high resolution of species and their prey-predator interactions (but see @Jacob2011, @Marina2018, @Funes2022, @Lopez-Lopez2022, @Rodriguez2022, @Marinainrev). Neglecting this complexity might lead to a misunderstanding of the structure and functioning of the ecosystems, and ultimately reduce the ability to predict ecosystem responses to perturbations [@Montoya2009].
 
 In this review, we consider marine areas in the Southern hemisphere for which highly-resolved empirical food webs, in terms of species diversity and trophic interactions, have been previously described. These areas include: (1) San Jorge Gulf (45 - 47ºS, 65 - 68ºW), (2) Beagle Channel (~54ºS, 68ºW), (3) Burdwood Bank (~54ºS, 59ºW), (4) Scotia Sea (48 - 58ºS, 50ºW), (5) Potter Cove (62ºS, 58ºW, Antarctica), and (6) Weddell Sea (74 - 78ºS, 30ºW, Antarctica) (Figure 1). The geographic locations of these marine biomes span from temperate to Antarctic, and are exposed to both environmental (sea warming, glacial retreat) and anthropogenic (fishery, pollution) stressors.
-
 
 ![ Map of the study areas along the southwest Atlantic - Antarctic latitudinal gradient. The areas are marked with numbers from one to six. Smaller areas (1. San Jorge Gulf, 2. Beagle Channel, 3. Burdwood Bank, and 5. Potter Cove) are shown on the panels to the left, whereas the larger areas (4. North and South Scotia Sea, and 6. Weddell Sea) are marked with a red rectangle on the map. The map was drawn using the ‘marmap’ R package [@Pante2023]. Continental contour shapefiles were obtained from www.ign.gob.ar.](Figures/Map_final.jpg){width="6.27in"
 height="3.528in"}
@@ -98,7 +95,6 @@ The Potter Cove food web includes 110 nodes and 649 interactions, with an asymme
 
 Located between 74 and 78ºS, the high Antarctic Weddell Sea shelf spans approximately 450 km from East to West [@Jacob2011] (Figure 1). The water depth ranges from 200 to 500 m, with shallower regions being covered by continental ice that forms the coastline along the eastern and southern parts of the Weddell Sea. Within this shelf area, exists a complex three-dimensional benthic habitat characterized by substantial benthic biomasses and an intermediate to high diversity when compared to benthic boreal communities [@Teixido2002].
 The Weddell Sea food web exhibits a high level of network complexity, featuring the greatest number of nodes (490) and trophic interactions (16041) among the analyzed food webs in this review (Table 1). Its connectance (0.07) and other structural properties are intermediate compared to the other food webs. Recently, the interaction strengths of this food web were estimated, revealing the presence of numerous weak and few strong interactions, which is consistent with findings in other complex food webs [@Nilsson2016]. Notably, this asymmetric distribution of interaction strength is likely to promote community persistence.
-
 
 \newpage
 \footnotesize
@@ -196,7 +192,6 @@ Iceberg scouring is a major factor in the high biodiversity of benthic communiti
 
 Climate change is likely to cause early breakout of seasonal sea ice in parts of Antarctica, which will dramatically increase the amount of light reaching shallow seabed. This is predicted to result in ecological regime shifts, in which invertebrate-dominated communities are replaced by macroalgal beds [@Clark2015].-->
 
-
 ## 4. From species’ stressors to food web effects
 
 A major challenge in contemporary ecology lies in predicting the effects of stressors on complex multispecies systems, such as food webs. Network analysis has proved to be a powerful tool to tackle this issue, since it can capture the effects of individual and multiple stressors on communities and ecosystems [@Montoya2009; @OGorman2012; @Bruder2019].
@@ -219,7 +214,6 @@ But also the species' vulnerability to stressor effects might arise solely from 
 
 ![Conceptual diagram: from species’ stressors to food web effects. See text for explanation.](Figures/Figure2_StressorDiagram.png){width="6.27in"
 height="3.528in"}
-
 
 \newpage
 \scriptsize
@@ -381,7 +375,6 @@ activity.
 
 \normalsize
 
-
 ## 5. Gaps and future perspectives
 
 <!-- Update diet & biomass data -->
@@ -397,15 +390,12 @@ Regarding knowledge and data gaps on species and their stressors, especially the
 <!-- Multiple stressors -->
 Analyzing the impact of multiple stressors through observational studies is challenging [@Gutt2021]. This complexity arises partly because of potential for antagonistic effects, where impacts cancel each other out, or synergistic effects, where the combined impact is greater than the sum of individual effects [@Boyd2015; @Cote2016]. Moreover, these interactive effects are complicated to handle in the framework of complex food webs. The number of pathways through which a species may affect or be affected by other species, and through which stressors may permeate communities, increases exponentially with the number of species and interactions in a network [@Menge1995]. To tackle this complexity, @Beauchesne2021 developed a theory-grounded approach using motifs (i.e. groups of species that, when put together, construct whole food webs) to simplify food webs; a methodology that could be applied to our food web study cases.
 
-
 ## Conclusions
 
 We have reviewed the main environmental and anthropogenic stressors acting in six different areas along a large-scale latitudinal gradient, from temperate Atlantic to cold Antarctic ecosystems. Using a theoretical framework that combines species and food web level data, we suggest how warming effects may impact food web structure and functioning. These qualitative predictions are intended to serve as the basis for future studies in marine ecosystems of the Southern Hemisphere that aim at quantifying the magnitude of these stressors and how they are affecting quantitative food web properties, such as energy fluxes and stability. There is an urgent need to assess these changes using a holistic and quantitative framework where the magnitude of stressors and species interactions are taken into account.
 
-
 ## Acknowledgements
 
 This review is a product of the project “¿Cuáles son los efectos de los cambios ambientales antropogénicos en las interacciones tróficas de las comunidades de los ecosistemas marinos en el gradiente latitudinal Atlántico Sudoccidental - Antártida?”, funded by Consejo Nacional de Investigaciones Científicas (CONICET, code PIP 2022-2024 #0907).
-
 
 ## References
