@@ -38,6 +38,7 @@
 \usepackage{xcolor}
 \usepackage[vmargin=1in,hmargin=1in]{geometry}
 \usepackage{longtable,booktabs,array}
+\usepackage{multirow}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -118,8 +119,8 @@
 \begin{document}
 
 \section{The response of trophic interaction networks to multiple
-stressors in a marine latitudinal gradient of the Southern
-Hemisphere}\label{the-response-of-trophic-interaction-networks-to-multiple-stressors-in-a-marine-latitudinal-gradient-of-the-southern-hemisphere}
+stressors along a large-scale latitudinal range in the Southern
+Hemisphere}\label{the-response-of-trophic-interaction-networks-to-multiple-stressors-along-a-large-scale-latitudinal-range-in-the-southern-hemisphere}
 
 \subsection{Running Title: Marine stressors in the Southern
 Hemisphere}\label{running-title-marine-stressors-in-the-southern-hemisphere}
@@ -160,37 +161,34 @@ Investigaciones Científicas (CADIC-CONICET), Ushuaia, Argentina.
 \subsection{Abstract}\label{abstract}
 
 Ecological networks offer valuable insights into community structure,
-key species identification, and ecosystem management for biodiversity
-conservation. Understanding how these networks react to environmental
-and anthropogenic stressors, especially along geographical gradients, is
-of increasing interest. This review presents a pioneering analysis of
-stressor responses in marine food webs from the southwest Atlantic to
-the Antarctic (45 - 78ºS), encompassing areas such as San Jorge Gulf,
-Beagle Channel, Burdwood Bank, Scotia Sea, Potter Cove, and the Weddell
-Sea in Antarctica. Our objectives are to: 1) describe the structure of
-marine food webs along this axis using a network approach; 2) identify
-predominant environmental and anthropogenic stressors affecting each
-ecosystem; and 3) summarize observed food web changes and hypothesize on
-stressor impacts. Our collaborative team, comprising regional experts
-and global authorities on high-latitude marine food webs and stressor
-effects, ensures a comprehensive and credible literature review. We
-assessed the effects of stressors primarily at the species level, with
-notable exceptions like fisheries in San Jorge Gulf. Hypotheses for each
-study area were formulated considering: a) stressors; b) impacted
-parameters; c) node-level species properties; and d) network-level food
-web properties. Global warming emerges as the most common stressor
-across the gradient, except in the Beagle Channel and Burdwood Bank,
-where alien species introduction and fisheries are more influential,
-respectively. We offer specific hypotheses on how warming may affect
-food webs. Our findings highlight the benefits of a network approach in
-understanding and predicting stressor effects in Southern Hemisphere
-marine ecosystems. This approach provides a holistic understanding of
-ecological networks, enhances our ability to identify key species and
-interactions, and offers insights for ecosystem management and
-conservation in the face of various stressors.
+key species identification, and ecosystem management. Understanding how
+these networks respond to global change stressors is of increasing
+interest, especially along geographical gradients. This review
+summarizes potential stressor responses in marine food webs from the
+Southwest Atlantic to the Antarctic (45 - 78ºS), encompassing areas such
+as San Jorge Gulf, Beagle Channel, Burdwood Bank, Scotia Sea, Potter
+Cove, and the Weddell Sea in Antarctica. The objectives are: 1) to
+describe the structure of marine food webs along this latitudinal axis
+using a network approach; 2) to identify predominant global
+change-related stressors affecting each ecosystem; and 3) to summarize
+observed food web changes and hypothesize on stressor impacts. The
+effects of stressors were primarily reviewed at the species level.
+Alternative hypotheses for each study area were formulated considering:
+a) main stressors; b) impacted parameters; c) node-level species
+properties; and d) network-level food web properties. Global warming
+emerges as the most common stressor among the studied areas across the
+latitudinal gradient, except in the Beagle Channel and Burdwood Bank,
+where alien species introduction and fisheries are more influential. We
+offer a series of alternative hypotheses on how warming may affect the
+food webs. This review emphasizes the benefits of using a network
+approach to understand and predict stressor effects in Southern
+Hemisphere marine ecosystems. This approach provides a holistic
+understanding of ecosystems, which enhances our ability to identify key
+species and their interactions, offering insights for ecosystem
+management and conservation in the face of global change stressors.
 
-Keywords: anthropogenic stressors, environmental stressors, food webs,
-latitudinal gradient, Southern Hemisphere
+Keywords: stressors, global warming, food webs, latitudinal gradient,
+Southern Hemisphere
 
 \subsection{1. Introduction}\label{introduction}
 
@@ -206,63 +204,104 @@ environmental and anthropogenic stressors along geographical gradients
 (Cirtwill et al. 2015; Bauer et al. 2022). Yet, only a few studies have
 described variation in food web structure along latitudinal gradients in
 marine ecosystems. The few that have come from the Global North (Wood et
-al. 2015; Kortsch et al. 2019; Pecuchet et al. 2022), whereas no
+al. 2015; Kortsch et al. 2019; Pecuchet et al. 2020), whereas no
 studies, nor meta-analyses, on geographical variation in marine food
 webs exist for the Global South (Southern Hemisphere).
 
-Here we review for the first time the state-of-the-art knowledge on
-stressor response of marine food webs along the southwest Atlantic to
-Antarctic gradient (45 - 78ºS, Figure 1). We focus on proven and
-expected changes in food webs driven by stressors in selected areas
-along this large-scale latitudinal gradient. We recruited food web
-experts from different marine systems of Argentina and the world (see
-co-authors' list). Throughout the year 2023 we maintained regular
-discussion meetings, typically held every two or three weeks. The aim of
-this review is threefold: 1) describe the complexity and structure of
-marine food webs along the southwest Atlantic to Antarctic axis from a
-network perspective; 2) identify the ongoing environmental and
-anthropogenic stressors for each marine ecosystem containing the food
-webs; and 3) review proven food web changes and elaborate hypotheses on
-how the identified stressors might affect food web features (e.g.~energy
-flow, stability), combining information on node- and network-level
-properties. Finally, we suggest which additional data and analyses are
-needed to gain insights into the stressors' effects on food web
-properties in the southwest Atlantic to Antarctic region.
+Here we review for the first time stressor responses of marine food webs
+for areas located along a Southwest Atlantic to Antarctic gradient (45 -
+78ºS, Figure 1). We considered proven and expected changes in food webs
+driven by global change-related stressors in selected areas along this
+large-scale latitudinal range. The aim of this review is threefold: 1)
+describe the complexity and structure of marine food webs along the
+Southwest Atlantic to Antarctic axis from a network perspective; 2)
+identify the ongoing global change-related stressors for each marine
+ecosystem containing the food webs; and 3) review proven food web
+changes and elaborate on a series of alternative hypotheses on how the
+identified stressors might affect food web features (energy flow,
+stability and topology), combining information on node- and
+network-level properties. To identify the main stressors, we performed
+an exploratory and configurative review instead of a systematic review
+(Haddaway et al. 2015), because our objective was to formulate
+evidenced-based hypotheses rather than providing an exhaustive list of
+species-level stressors for each ecosystem. Finally, we suggest which
+additional data and analyses are needed to gain insights into the
+stressors' effects on food web properties in the Southwest Atlantic to
+Antarctic region.
 
-\subsection{2. The structure of marine food webs in the Southwest
-Atlantic - Antarctic
-region}\label{the-structure-of-marine-food-webs-in-the-southwest-atlantic---antarctic-region}
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-Together, the southwest and the Atlantic sector of the Southern Ocean
-comprise one of the most biologically productive regions of the world's
-oceans (Acha et al. 2004; Latorre et al. 2023). The referred region
-extends from San Jorge Gulf (45ºS) in the Patagonian shelf to the
-Weddell Sea (78ºS) in the Southern Ocean, and covers a well-connected
-oceanic latitudinal gradient (Matano et al. 2010; Guihou et al. 2020).
+\subsection{2. Assessment of the food web structure and stressors in the
+Southwest Atlantic - Antarctic
+region}\label{assessment-of-the-food-web-structure-and-stressors-in-the-southwest-atlantic---antarctic-region}
 
-Throughout this latitudinal gradient, many investigations have been
-carried out addressing the trophic ecology of specific species and
-prey-predator relationships (Vinuesa and Varisco 2007; Pasotti et al.
-2015; Saunders et al. 2019; Riccialdelli et al. 2020), but few studies
-have considered the complexity of the ecosystem in terms of a high
-resolution of species and their prey-predator interactions (but see
-Jacob et al. (2011), Marina et al. (2018), Funes et al. (2022),
-López-López et al. (2022), Rodriguez et al. (2022), Marina et al. (in
-rev.)). Neglecting this complexity might lead to a misunderstanding of
-the structure and functioning of the ecosystems, and ultimately reduce
-the ability to predict ecosystem responses to perturbations (Montoya et
-al. 2009).
+The Southwest and the Atlantic sectors of the Southern Ocean comprise
+one of the most biologically productive regions of the world's oceans
+(Acha et al. 2004; Latorre et al. 2023). The referred region extends
+from San Jorge Gulf (45ºS) in the Patagonian shelf to the Weddell Sea
+(78ºS) in the Southern Ocean and covers a well-connected oceanic area
+(Matano et al. 2010; Guihou et al. 2020).
 
-In this review, we consider marine areas in the Southern hemisphere for
-which highly-resolved empirical food webs, in terms of species diversity
-and trophic interactions, have been previously described. These areas
-include: (1) San Jorge Gulf (45 - 47ºS, 65 - 68ºW), (2) Beagle Channel
-(\textasciitilde54ºS, 68ºW), (3) Burdwood Bank (\textasciitilde54ºS,
-59ºW), (4) Scotia Sea (48 - 58ºS, 50ºW), (5) Potter Cove (62ºS, 58ºW,
-Antarctica), and (6) Weddell Sea (74 - 78ºS, 30ºW, Antarctica) (Figure
-1). The geographic locations of these marine biomes span from temperate
-to Antarctic, and are exposed to both environmental (sea warming,
-glacial retreat) and anthropogenic (fishery, pollution) stressors.
+Throughout this region, many studies address the ecology of
+predator-prey relationships but most of these studies are restricted to
+a few interacting species or certain components of the food web such as
+fish, crustaceans, and benthos (e.g., Vinuesa and Varisco (2007),
+Padovani et al. (2012), Pasotti et al. (2015), Riccialdelli et al.
+(2020), Saunders et al. (2019), Pasti et al. (2021), Cordone et al.
+(2022)). Only few studies consider the complexity of trophic
+interactions within highly resolved food webs containing hundreds of
+species, ranging from phytoplankton, zooplankton, benthos, fish,
+seabirds to whales (but see Jacob et al. (2011), Marina et al. (2018),
+Funes et al. (2022), López-López et al. (2022), Rodriguez et al. (2022),
+Marina et al. (in rev.)). Neglecting this complexity might lead to a
+misunderstanding of the structure and functioning of the ecosystems and
+ultimately reduce the ability to predict ecosystem responses to
+perturbations (Montoya et al. 2009).
+
+The Southwest Atlantic - Antarctic marine biota has been and is
+currently subjected to a variety of stressors (e.g., sea warming,
+glacial retreat, ice changes, acidification, species invasion,
+fisheries, and contamination). Here, we consider a stressor as a global
+change variable if it causes a quantifiable change, irrespective of its
+direction (increase or decrease), in a biological response (Orr et al.
+2020). This aligns with the framework established during the early years
+of the International Geosphere-Biosphere Programme (IGBP) for
+classifying driving forces. These driving forces are grouped into those
+that modify the composition of the Earth's fluid envelopes (e.g., sea
+warming, acidification), and those that originate as local processes but
+attain global importance due to their widespread impact (e.g., species
+invasion, fisheries) (Vitousek 1992; Sage 2020). Although it is
+well-known that multiple stressors act in concert at any given time
+(e.g., warming and fishery; acidification and contaminants) (Gutt et al.
+2021), to date stressor assessments have been performed individually.
+Moreover, the potential for interactive effects of two or more stressors
+(synergy or antagonism) (Côté et al. 2016) is almost unknown for the
+region (Rowlands et al. 2021).
+
+In this review, we included six large marine areas in the Southern
+Hemisphere for which highly-resolved empirical food webs in terms of
+species diversity and trophic interactions have been previously
+described: (1) San Jorge Gulf (\textasciitilde45 - 47ºS, 65 - 68ºW)
+(Funes et al. 2022), (2) Beagle Channel (\textasciitilde54ºS, 68ºW)
+(Rodriguez et al. 2022), (3) Burdwood Bank (\textasciitilde54ºS, 59ºW)
+(Marina et al. in rev.), (4) Scotia Sea (\textasciitilde48 - 58ºS, 50ºW)
+(López-López et al. 2022), (5) Potter Cove (62ºS, 58ºW, Antarctica)
+(Marina et al. 2018), and (6) Weddell Sea (74 - 78ºS, 30ºW, Antarctica)
+(Jacob et al. 2011; Marina et al. 2024) (Figure 1). The geographic
+locations of these marine biomes span from temperate Atlantic waters to
+Antarctic, and are exposed to global change stressors (e.g., sea
+warming, glacial retreat, fishery, pollution) (Sage 2020), of which some
+are locally more important, e.g., fisheries in the San Jorge Gulf or
+glacial retreat in the Antarctic.
+
+In the following subsections, we describe the complexity and structure
+of the mentioned marine food webs, identify the main stressors, the
+species (or trophic species), and the parameters affected. Table 1
+summarizes the properties of the marine food webs (number of nodes,
+trophic interactions, connectance, path length, mean trophic level, and
+omnivory); Table 2 provides a list of the main stressors affecting
+species inhabiting each area, considering: stressors' nature, species
+and parameter affected, and locality.
 
 \begin{figure}
 \centering
@@ -277,87 +316,323 @@ marked with a red rectangle on the map. The map was drawn using the
 were obtained from www.ign.gob.ar.}
 \end{figure}
 
-San Jorge Gulf is the northernmost study area considered in this review.
-It is a partially enclosed basin spanning approximately 34,000 km2 and
-\textasciitilde100 m of maximum depths, located from Cabo dos Bahias
-(44°55'S) to Cabo tres Puntas (47°06'S) (Figure 1). The shallower
-northern and southern ends of the Gulf (with depths \textasciitilde40 m)
-present two prominent frontal systems. These systems are the areas of
-highest productivity (Glembocki et al. 2015). The Gulf's productivity
-supports large invertebrate and vertebrate fisheries (Góngora et al.
-2012), as well as marine mammal and seabird populations (Yorio 2009).
-The San Jorge Gulf food web comprises 165 nodes and 1015 trophic
-interactions with a connectance of 0.04. The percentage of top predators
-is 16\%, 78\% of intermediate nodes and 6\% of basal nodes; 60\% of
-predators are omnivorous (Table 1). The most connected nodes are: the
-Argentine red shrimp Pleoticus muelleri, the squat lobster Gimothea
-gregaria, squids (Illex argentinus as dominant species) and Amphipoda.
-Notably, these nodes present mid-trophic positions in the food web (3.0,
-2.5, 3.6 and 2, respectively) (Funes et al. 2022).
+\subsubsection{2.1 San Jorge Gulf}\label{san-jorge-gulf}
 
-At a southern latitude, the Beagle Channel (54°52'S, 68°8'W) is an
-interoceanic passage located at the southernmost tip of South America,
-spanning 240 km in length and 5 km in width (\textasciitilde1200 km2),
-and a range depth of 0 - 140 m (Figure 1). It features complex
-coastlines, varying bathymetry, a prevailing west-to-east circulation
-pattern, and a significant longitudinal gradient of glacial freshwater
-discharge (Schloss et al. 2023). Bruno et al. (2023) suggests that
-locally produced suspended particulate organic matter (mostly composed
-by phytoplankton) and organic matter accumulated in the sediments
-(macroalgae-originated detritus) are the primary food sources for the
-marine ecosystem, as opposed to allochthonous materials. Beagle Channel
-food web includes 145 nodes and 1115 trophic interactions with a
-connectance of 0.05 (Table 1). The food web is suggested to have a
-wasp-waist structure, where the following species play a crucial role in
-the dynamics of the ecosystem: Fueguian sprat Sprattus fuegensis,
-longtail southern cod Patagonotothen ramsayi, black southern cod P.
-tessellata, frogmouth Cottoperca trigloides, and squat lobster Grimothea
-gregaria (Riccialdelli et al. 2020). Moreover, the squat lobster has
-been identified as a species responsible for linking modules and
-connecting the entire food web (Rodriguez et al. 2022).
+San Jorge Gulf is the northernmost study area considered in this review
+(Figure 1), located from Cabo dos Bahias (44°55'S) to Cabo tres Puntas
+(47°06'S). It is a partially enclosed basin spanning approximately
+34,000 km\^{}2 and \textasciitilde100 m of maximum depths. The gulf's
+productivity supports large invertebrate and vertebrate fisheries
+(Góngora et al. 2012), as well as marine mammal and seabird populations
+(Yorio 2009). Two prominent frontal systems meet in the shallower
+northern and southern ends of the gulf (with depths \textasciitilde40
+m), which are also the places of highest productivity (Glembocki et al.
+2015).
+
+The San Jorge Gulf food web contains 165 nodes (trophospecies) and 1015
+trophic interactions with a connectance of 0.04. The percentage of top
+predators is 16\%, 78\% of the nodes are intermediate and 6\% are basal;
+60\% of the consumers are omnivorous (Table 1). The most connected nodes
+are the Argentine red shrimp \emph{Pleoticus muelleri}, the squat
+lobster \emph{Gimothea gregaria}, squids (\emph{Illex argentinus} as
+dominant species), and Amphipoda. Notably, these nodes are positioned at
+mid-trophic levels in the food web (3, 2.5, 3.6, and 2, respectively)
+(Funes et al. 2022).
+
+The gulf is subject to several global change stressors (Table 2),
+especially fisheries (González-Zevallos and Yorio 2006, 2011; Galván et
+al. 2022). By discarding species, trawl fisheries add new trophic
+interactions to the food web which results in decreasing trait
+variability and stability of the system (Rincón-Díaz et al. 2021; Funes
+et al. 2022). Moreover, this has changed the availability of resources
+to some predators. For example, the Argentine hake \emph{Merluccius
+hubbsi}, one of the main bycatch species, has become a prey item of
+non-diving seabirds, like the kelp gull \emph{Larus dominicanus}
+(González-Zevallos and Yorio 2006) and reef fish (Funes et al. 2019).
+Although juveniles of \emph{M. hubbsi} is largely the main bycatch
+species, 29 cartilaginous and 69 bony local fish species were also
+registered as incidental catch between 2005 and 2014 (Bovcon et al.
+2013; Ruibal Nuñez 2020). This level of impact has triggered a shift in
+the functional diversity of fish assemblages in the gulf, homogenizing
+their trophic function (Rincón-Díaz et al. 2021), for example in the
+sites with the historical highest fishing activity, the fish assemblage
+experienced a relative increase in midwater fusiform species and lost
+variability in their depth range (Rincón-Díaz et al. 2021). Other
+functional changes were a decrease in the maximum sizes of individual
+fish, together with a drop in elasmobranch biomass and an increase in
+crustacean biomass (Funes 2020). The significant increase in crustacean
+biomass was mainly due to the increase in the Argentine red shrimp and
+the squat lobster (Funes 2020). These species have become the most
+important prey for the most abundant fish in the area, the Argentine
+hake and the narrownose smooth-hound \emph{Mustelus schmitti} (Belleggia
+et al. 2017; Pasti et al. 2021). However, since commercial fisheries
+ceased their activities in the San Jorge Gulf in 2015 (Annex I,
+Resolution CFP No 7/2018), the effects mentioned above from trawl
+fisheries on the structure and function of the ecosystem may have
+changed since then. Nowadays only small-scale trawling from artisanal
+fishery is practiced in the gulf. Sea warming is another important
+stressor in the San Jorge Gulf, because of the southward shifts of
+northern fish populations to the area (Galván et al. 2022). Signs of sea
+warming have been detected in the gulf and nearby regions. Anomalous
+bottom temperature increments of up to 2°C have been observed in the
+gulf since 2000 (Isla and Cortizo 2024), and a positive trend in sea
+surface temperature of 0.3°C/0.4°C per decade over a 30-year series
+(Saraceno et al. 2022; Risaro et al. 2022). Additionally, a positive
+trend in sea surface temperature (\textasciitilde0.5 °C increase in the
+last 20 years) has been reported for the Nuevo and San Jose Gulfs, both
+located close to and northward of the San Jorge Gulf (Williams and
+Nocera 2023). The region is especially prone to be affected by
+climate-driven shifts in species ranges because it is situated in the
+ecotone of two biogeographic provinces, the Argentine (30°S - 44°S) and
+the Magellanic (43°S - 55°S) (Balech and Ehrlich 2008). In addition to
+tropicalization from northern fish populations, alien species are also
+documented to affect demersal assemblages of fish and macroinvertebrates
+in the gulf (Galván et al. 2022). Finally, the gulf is exposed to urban
+and industrial pollution (Verga et al. 2020). In particular, there is an
+oil monobuoy from which oil manipulation and general oil transport along
+the Patagonian coast registered several oil spills and chronic oil
+discharges (García-Borboroglu et al. 2008). Other marine systems
+impacted by the oil spill have shown extraordinary mortality events for
+cetacean (Litz et al. 2014), sea turtles (Wallace et al. 2017), and
+important decrease in marine bird populations (Irons et al. 2000) sea
+otters (Garrott et al. 1993) and macroalgae (Southward and Southward
+1978), with cascading effects throughout the food web (Peterson 2001).
+
+\subsubsection{2.2 Beagle Channel}\label{beagle-channel}
+
+Located at a more southern latitude (\textasciitilde54ºS, 68ºW), the
+Beagle Channel (Figure 1) is an interoceanic passage at the southernmost
+tip of South America, spanning 240 km in length and 5 km in width
+(\textasciitilde1200 km\^{}2), with a depth range of 0 - 140 m. It
+features complex coastlines, varying bathymetry, a prevailing
+west-to-east circulation pattern, and a significant longitudinal
+gradient of glacial freshwater discharge (Schloss et al. 2023). Bruno et
+al. (2023) suggests that locally produced suspended particulate organic
+matter (mostly composed of phytoplankton) and organic matter accumulated
+in the sediments (macroalgae-originated detritus) are the primary food
+sources for the marine ecosystem, as opposed to allochthonous materials.
+
+The Beagle Channel food web includes 145 nodes and 1115 trophic
+interactions with a connectance of 0.05 (Table 1). This food web is
+hypothesized to have a wasp-waist structure (i.e., the structure and
+dynamics of the ecosystem are regulated primarily by mid-trophic level
+species), where the following species play a crucial role in the
+dynamics of the ecosystem: Fueguian sprat \emph{Sprattus fuegensis},
+longtail southern cod \emph{Patagonotothen ramsayi}, black southern cod
+\emph{P. tessellata}, frogmouth \emph{Cottoperca trigloides}, and squat
+lobster \emph{G. gregaria} (Riccialdelli et al. 2020). Moreover, the
+squat lobster has been identified as a species linking food web modules
+and connecting the entire food web (Rodriguez et al. 2022).
+
+A main local stressor in the Beagle Channel is the introduction of
+invasive species (Table 2). Salmonidae were introduced to Tierra del
+Fuego in the 1930s. Especially, the Chinook salmon \emph{Oncorhynchus
+tshawytscha} causes concern. The detection of this species in Tierra del
+Fuego dates back to April 2006, and its population has been expanding
+since then (Nardi et al. 2019). Being a top predator, the Chinook salmon
+can compete for resources with several native predators in the Beagle
+Channel (Correa and Gross 2008), but also prey on them. This is the case
+for Notothenioids (\emph{Eleginops maclovinus}, \emph{Patagonotothen
+tessellata}, \emph{P. cornucola}, \emph{P. sima}, \emph{Paranotothenia
+magellanica}, \emph{Harpagifer bispinis}), the Atherinidae
+\emph{Odontesthes smitti} and \emph{O. nigricans}, the Fuegian sprat,
+and larvae of king crabs (\emph{Lithodes antarcticus} and
+\emph{Paralomis granulosa}) (Fernández et al. 2010). Ciancio et al.
+(2008) observed that Chinook salmon primarily feeds on sprats in the
+Southern Patagonian Shelf Ecosystem area and display trophic levels
+comparable to those of intermediate-sized fish and cephalopod predator
+species, showing significant dietary overlap with the Magellanic penguin
+\emph{Spheniscus magellanicus}. Another potential competitor for Chinook
+salmon in the Beagle Channel, sharing a similar diet, is the native
+Commerson's dolphin \emph{Cephalorhynchus commersonii} (Riccialdelli et
+al. 2013). In the Beagle Channel, other stressors include contaminants
+like metals, perfluorinated compounds, hydrocarbons, and microplastics
+found in animal tissue (algae, mussel, fish, and guano) and sediments
+(Duarte et al. 2011; Llorca et al. 2012). Carbon and carbohydrate levels
+in Ushuaia Bay's (54°48′S, 68°18′W) surface sediments are similar to
+hypertrophic ecosystems (i.e., greater input of nutrients than an
+eutrophic situation), along with hydrocarbons and heavy metals linked to
+port and industrial activities (Gil et al. 2011; Commendatore et al.
+2012). Ferreira et al. (2021) showed that the black southern cod in
+Ushuaia Bay may be exposed to endocrine-disrupting compounds from urban
+and industrial pollution. Moreover, Pérez et al. (2020) and Ojeda et al.
+(2021) found microplastics in the Chilean mussel \emph{Mytilus
+chilensis} and the sea snail \emph{Nacella magellanica}, respectively.
+These studies link pollutants to port and industrial activities of
+Ushuaia; we therefore expect the area of the Beagle Channel closest to
+the city to be the most affected by contaminants. Contaminants
+potentially spread through the food web, magnifying the risk to higher
+trophic level taxa. In the Beagle Channel and Atlantic coast of Tierra
+del Fuego food webs mercury concentrations rose with benthivory, and
+higher mercury was found in phytoplankton and the squat lobster. This
+latter species connects pelagic and benthic habitats, so any disruption
+to them could disrupt the food web (Rodriguez et al. 2022). Dodino et
+al. (2022) found the highest mercury levels in Magellanic penguin
+feathers from offshore colonies in Tierra del Fuego. Recently, Ushuaia's
+kelp forests have also seen changes in composition along with a decrease
+in biodiversity as a result of urban pollution (Kaminsky et al. 2023).
+It is important to note that sea warming might be a less significant
+stressor in the Beagle Channel compared to the other areas, as global
+warming is melting glaciers and the influx of cold freshwater is
+actually slightly cooling the seawater (Saraceno et al. 2022).
+
+\subsubsection{2.3 Burdwood Bank}\label{burdwood-bank}
 
 The so-called Burdwood Bank ecosystem comprises Marine Protected Areas
-Namuncurá - Burdwood Bank I and II, meaning the shallow submarine
-plateau named Burdwood Bank with a 200 m isobath boundary, and a deep
-slope that reaches 4000 m in depth, respectively (Administración de
-Parques Nacionales 2022) (Figure 1). Physical features in the plateau
-are fairly stable, with salinity averaging 34 all year round and
-temperature ranging between 4 and 8ºC (Acha et al. 2004). The plateau is
-surrounded by steep flanks of up to 4000 m depth, protected by the
-Marine Protected Area Namuncurá - Burdwood Bank II (32,000 km2;
-\textasciitilde55º - 56ºS, \textasciitilde58º - 62ºW). Intense upwelling
-and mixing occur in relation to the slope, entraining deep nutrient-rich
-waters into the photic layer (Matano et al. 2019), and resulting in a
-fairly homogeneous water column both spatially and temporally (Matano et
-al. 2019). The Burdwood Bank food web comprises 379 nodes and 1788
-interactions, with a connectance of 0.01, and an asymmetric degree
-distribution (i.e.~most of the species have a relatively low number of
-interactions and few species concentrate most of them). Almost half of
-the consumers are omnivores (0.48), and the network displays a
-small-world pattern (Marina et al. in rev.) (Table 1).
+Namuncurá - Burdwood Bank I and II (\textasciitilde54ºS, 59ºW), meaning
+the shallow submarine plateau named Burdwood Bank with a 200 m isobath
+boundary, and a deep slope that reaches 4000 m in depth, respectively
+(Administración de Parques Nacionales 2022) (Figure 1). Physical
+features in the plateau are fairly stable, with salinity averaging 34
+all year round and temperature ranging between 4 and 8ºC (Acha et al.
+2004). The plateau is surrounded by steep flanks of up to 4000 m depth,
+protected by the Marine Protected Area Namuncurá - Burdwood Bank II
+(32,000 km\^{}2). Intense upwelling and mixing occur in relation to the
+slope, entraining deep nutrient-rich waters into the photic layer
+(Matano et al. 2019), and resulting in a fairly homogeneous water column
+both spatially and temporally (Matano et al. 2019).
 
-The Scotia Sea is a deep-sea basin, delimited by the Drake Passage to
-the West and by the island complex of the Scotia Arc to the North, East,
-and South, with an approximate extension of 1.5 x 106 km2 and a depth
-range of 0 - 3000 m (Murphy et al. 2006) (Figure 1). Its oceanography is
-dominated by the Antarctic Circumpolar Current, which is spatially
-structured by frontal systems (Whitworth 1980). The South Antarctic
-Circumpolar Current Front subdivides the Scotia Sea into two
-biogeographic regions: the Northern Scotia Sea is characterized by
-higher and more variable temperatures, and the Southern Scotia Sea by
-lower and more stable temperatures and influenced by seasonal sea ice
-(Raymond 2011). The analysis of the Northern and Southern Scotia Sea
-food webs shows that the former is relatively more complex than the
-latter: with higher species richness (218 vs 192) and interactions
-(10008 vs 7241) and a higher connection overall (0.21 vs 0.20). As
-expected from a more complex network, the path length is shorter in the
-Northern Scotia Sea food web. In the same sense, the Southern Scotia Sea
-network displays a greater proportion of omnivores and a lower mean
-trophic level (López-López et al. 2022) (Table 1).
+The Burdwood Bank food web comprises 379 nodes and 1788 interactions,
+with a connectance of 0.01, and an asymmetric degree distribution
+(i.e.~most of the species have a relatively low number of interactions
+and few species concentrate most of them). Almost half of the consumers
+are omnivores (48\%), and the network displays a small-world pattern
+(Marina et al. in rev.) (Table 1). This network pattern implies a rapid
+spread of a perturbation (e.g., contaminant, population fluctuation,
+local extinction) throughout the food web due to a short distance among
+species but, at the same time, a greater resistance caused by the
+confinement of perturbations mainly within subnetworks as a result of a
+high clustering coefficient (Bornatowski et al. 2017; Dormann et al.
+2017).
+
+The main stressors reported for the ecosystem of the Marine Protected
+Areas Namuncurá within Burdwood Bank I and II are related to human
+activities such as fisheries and contamination (Table 2). Several
+fisheries targeting demersal fish operate in the vicinity and within the
+Marine Protected Areas. The fishery of the Patagonian toothfish
+\emph{Dissostichus eleginoides} has gained prominence in recent years
+(Allega et al. 2020; Gorini et al. 2021). Although these are regulated
+by the Argentinean government, incidental bycatches do occur, where
+demersal fish of the genera \emph{Coelorinchus} and \emph{Macrourus},
+seabirds and benthic invertebrates (30+ taxa) are the most common
+bycatches (Gaitán and Marí 2016; Martínez et al. 2022). Noteworthy,
+among the invertebrates caught, eight species are indicator taxa of
+vulnerable marine ecosystems (Gaitán and Marí 2016; Schejter and Albano
+2021). However, independent assessments of these bycatches suggest no
+significant impact on the populations (Gaitán and Marí 2016; Martínez et
+al. 2022). Besides bycatches, seabirds are being affected by fisheries
+due to discards, altering their diet; the most frequently encountered
+species are black-browed albatross \emph{Thalassarche melanophris},
+Southern giant petrel \emph{Macronectes giganteus}, Cape petrel
+\emph{Daption capense}, Southern royal albatross \emph{Diomedea
+epomophora}, Northern giant petrel \emph{M. halli}, and white-chinned
+petrel \emph{Procellaria aequinoctialis} (Tamini et al. 2023).
+Nevertheless, there is a lack of knowledge considering their role in the
+ecosystem and the potential joint effect of both target fish and bycatch
+in a broader food web framework. Contaminants such as microplastics and
+mercury occur in the water column of the Burdwood Bank ecosystem (Cossi
+et al. 2021; Fioramonti et al. 2022; Di Mauro et al. 2022).
+Microplastics are distributed along the entire water column, from
+surface to deep waters (3-2450 m) (Di Mauro et al. 2022). More
+importantly, microplastics were found in soft tissues of benthic
+macroinvertebrates (sea stars \emph{Henricia obesa} and \emph{Odontaster
+penicillatus}) and benthopelagic fish (\emph{Patagonotothen guntheri}
+and \emph{P. ramsayi}), which not only incorporated the contaminant from
+the environment through their filter-feeding system but could also get
+it indirectly from prey organisms already containing plastics in their
+tissues (Cossi et al. 2021). Notably, one of the contaminated species is
+the longtail southern cod \emph{P. ramsayi}. This species is part of the
+core group of species that drive the ecosystem through the suggested
+wasp-waist control (Riccialdelli et al. 2020). Mercury transfer and
+biomagnification are occurring at a greater pace than near coastal areas
+such as the Beagle Channel (Fioramonti et al. 2022). The Fuegian sprat
+\emph{S. fuegensis}, a pelagic fish with a mid-trophic level in the food
+web, has the highest levels of mercury recorded (Fioramonti et al.
+2022). Considering the wasp-waist control of the Fuegian sprat in the
+food web (Riccialdelli et al. 2020), a rapid and widespread
+contamination to the top predators is expected (Fioramonti et al. 2022).
+Despite evidence of warming of surface, mid-water and bottom layers (100
+m) in Burdwood Bank (Franco et al. 2020a), studies on the oceanographic
+aspects of the system are lacking. Warming impacts on the species and
+trophic interactions in Burdwood Bank are also unknown.
+
+\subsubsection{2.4 Scotia Sea}\label{scotia-sea}
+
+The Scotia Sea is a deep-sea basin (\textasciitilde48 - 58ºS, 50ºW),
+delimited by the Drake Passage to the West and by the island complex of
+the Scotia Arc to the North, East, and South, with an approximate
+extension of 1.5 x 106 km\^{}2 and a depth range of 0 - 3000 m (Murphy
+et al. 2006) (Figure 1). Its oceanography is dominated by the Antarctic
+Circumpolar Current, which is spatially structured by frontal systems
+(Whitworth 1980). The South Antarctic Circumpolar Current Front
+subdivides the Scotia Sea into two biogeographic regions: the Northern
+Scotia Sea, characterized by higher and more variable temperatures, and
+the Southern Scotia Sea, characterized by lower and more stable
+temperatures and influenced by seasonal sea ice (Raymond 2011).
+
+Analysis of the Northern and Southern Scotia Sea food webs shows that
+the former is relatively more complex in terms of number of species and
+links than the latter: with more species richness (218 vs 192) and
+interactions (10008 vs 7241) and a slightly higher connectance (0.21 vs
+0.20). Mean path length is shorter in the Northern Scotia Sea food web,
+whereas the Southern Scotia Sea network displays a greater proportion of
+omnivores and a lower mean trophic level (López-López et al. 2022)
+(Table 1).
+
+The Scotia Sea is a vast and heterogenous oceanic region, where
+especially the zone around South Georgia island represent an area of
+interest, here referred to as `Northern Scotia Sea'. The majority of
+studies analyzing the stressors' effects come from this area (e.g.,
+Murphy et al. (2007); Whitehouse et al. (2008); Trathan (2023)) (Table
+2). The main stressor of the Scotia Sea is commercial fisheries. Krill
+fishery on \emph{Euphausia superba} not only impacts the targeted
+species, but also the many predators that depend on it as a food source
+(Hilborn et al. 2017). Yet, data currently available from monitoring of
+krill and its predators remain insufficient, hence identifying the
+potential fishery impacts on the ecosystem is difficult (Trathan et al.
+2021). Apart from krill fishery, two other commercial fisheries operate
+in the Scotia Sea, targeting Patagonian toothfish species \emph{D.
+eleginoides} and \emph{Dissostichus mawsoni}. The \emph{D. eleginoides}
+stock is linked to the stock at South Georgia (`Northern Scotia Sea')
+(Collins et al. 2010), while the \emph{D. mawsoni} stock is linked to
+the Antarctic continental shelf (`Southern Scotia Sea') (Soeffker et al.
+2022). Recently, Trathan (2023) has identified several concerns
+regarding aspects of these fisheries, highlighting that it is crucial to
+recognize ongoing changes such as the recovery of baleen whales and
+climate change. These factors increase uncertainty for fisheries
+managers, necessitating direct consideration in the management of
+harvested and dependent species.
+
+The Scotia Sea has experienced one of the largest levels of warming
+within the polar regions (Whitehouse et al. 2008). Together with the
+Southern Annular Mode anomalies, this has caused a long-term decrease in
+krill abundance; more pronounced in the northern than in the southern
+Scotia Sea (Murphy et al. 2007). Over the past 90 years, the Antarctic
+krill \emph{E. superba} also showed an increase in mean body length
+(Atkinson et al. 2019), likely altering predator-prey interactions.
+Moreover, it allows krill to reach colder feeding grounds near the
+seabed, with the potential to link krill to unexpected predators such as
+demersal fish (Schmidt et al. 2011). Because of warming, the krill
+distribution has shifted southward (Atkinson et al. 2019), changing the
+food web from a krill-based to a non-krill-based, where myctophid fish
+and squid are playing important roles as key species in a wasp-waist
+controlled system (Saunders et al. 2019). While the krill distribution
+has shifted southward, the most abundant calanoid copepods have
+maintained their distribution (Tarling et al. 2018). Mercury transfer
+and biomagnification are current processes occurring in the Scotia Sea,
+where the total concentration of contaminants increase with trophic
+level and are highest in notothenioid and myctophid fish (e.g.~\emph{D.
+eleginoides}, \emph{Gymnoscopelus nicholsi}), and seabirds (Seco et al.
+2021). During years of low Antarctic krill abundance, predators must
+deal with both the stress of reduced prey availability and the
+concurrent rise in mercury exposure (Seco et al. 2021).
+
+\subsubsection{2.5 Potter Cove
+(Antarctica)}\label{potter-cove-antarctica}
 
 In the Antarctic realm, Potter Cove is a \textasciitilde9 km2 fjord with
 a depth range of 0 - 200 m located at 25 de Mayo/King George Island
-(62°14'S, 58°38'W, South Shetland Islands) on the West Antarctic
+(62°S, 58°W) on the South Shetland Islands of the West Antarctic
 Peninsula (Figure 1). The cove, bordered by the Fourcade Glacier, is
 divided into three areas: a) the internal cove, a high
 glacier-influenced, soft sediment zone with a 50 m maximum depth; b) the
@@ -369,36 +644,144 @@ conditions due to photoperiod length seasonality. Sea ice often covers
 this area in winter (Schloss et al. 2012). With low phytoplankton
 biomass, macroalgae, and microphytobenthos are likely the primary food
 sources for secondary benthic production (Quartino and Boraso de Zaixso
-2008). The Potter Cove food web includes 110 nodes and 649 interactions,
-with an asymmetric degree distribution, and a connectance value of 0.05
-(Table 1). It presents a modular structure (groups of species interact
-more strongly with each other than with species belonging to other
-groups), that's positively associated with stability, since perturbation
-can be retained within modules (Rodriguez et al. 2022).
+2008).
+
+The Potter Cove food web includes 110 nodes and 649 interactions, and a
+connectance of 0.05 (Table 1). It presents an asymmetric degree
+distribution and a modular structure, i.e., groups of species interact
+more strongly with each other within modules than with species belonging
+to other modules (Rodriguez et al. 2022).
+
+Regional warming in the West Antarctic Peninsula recorded in the last
+half-century (Chown et al. 2022) has been one of the main stressors
+driving changes in Potter Cove (Table 2), a system highly dependent on
+glacier and sea ice dynamics (Deregibus et al. 2017). This has caused
+drastic environmental and biological transformations such as shifts in
+dominance within the benthic community (Schloss et al. 2012; Quartino et
+al. 2013; Sahade et al. 2015). In Potter Cove, there has been a
+decreasing trend in total sea ice cover since 1991 (Schloss et al.
+2012). Changes in the annual timing of landfast ice formation and the
+breakup of the sea ice cover has multiple effects on species (Michel et
+al. 2019). Warmer winters and springs result in earlier sea ice melt,
+causing an abrupt increase in the light available for benthic primary
+producers (Deregibus et al. 2020). Sea ice also mediates physical
+disturbances to the benthos by influencing sedimentation and iceberg
+scouring. These factors affect the production of macroalgae, albeit in
+opposite ways (Deregibus et al. 2017), and microphytobenthos (Hoffmann
+et al. 2019). On the other hand, sea ice is an important habitat for
+diatoms and their associated consumers, including copepods and the
+Antarctic krill (Flores et al. 2012), and thus important for
+bentho-pelagic nutrient and carbon cycling during winter. Additionally,
+a decrease in winter sea ice cover produces an increase in physical
+perturbation on benthic shallow communities in coastal shallows due to
+ice scouring (Deregibus et al. 2017). The glacier surrounding Potter
+Cove has been receding at an increasing rate since 1950 (Rückamp et al.
+2011), which has caused a massive discharge of sediment-laden meltwater
+(Meredith et al. 2018). Large quantities of suspended particles affect
+growth, survival, and reproduction of benthic species. This led to a
+major shift in the benthic community structure, from a filter
+feeders--ascidian domination to a mixed assemblage with scavengers and
+opportunistic species (Sahade et al. 2015), and the metabolic balance in
+benthos went from net autotrophy to heterotrophy (Braeckman et al.
+2021). Additionally, massive stranding events of the tunicate
+\emph{Salpa thompsoni} and the Antarctic krill linked to the presence of
+glacial meltwater have been reported (Fuentes et al. 2016). Rising
+temperatures leading to ice and glacial melting has also substantial
+impacts on pelagic primary productivity, since it reduces water
+salinity, affecting water column stratification, light penetration and
+nutrient availability for photosynthesis (Schloss et al. 2012). In
+Potter Cove, changes in biomass of most phytoplankton species have been
+observed under heat wave conditions, resulting in a shift from a
+microplankton to a nanoplankton dominated community (Antoni et al. 2020;
+Latorre et al. 2023). This means that in areas strongly affected by
+glacier melt, the planktonic food web is dominated by the microbial loop
+(i.e., ciliates and heterotrophic dinoflagellates preys upon
+nanophytoplankton, which are sequentially available prey for small
+omnivorous copepods), instead of being predominantly herbivorous (Garcia
+et al. 2016, 2019). In addition, phytoplankton species under these
+warming conditions showed a decrease in metabolic rate and in the
+quality of the fatty acid composition (Latorre et al. 2023).
+
+\subsubsection{2.6 Weddell Sea
+(Antarctica)}\label{weddell-sea-antarctica}
 
 Located between 74 and 78ºS, the high Antarctic Weddell Sea shelf spans
 approximately 450 km from East to West (Jacob et al. 2011) (Figure 1).
 The water depth ranges from 200 to 500 m, with shallower regions being
 covered by continental ice that forms the coastline along the eastern
-and southern parts of the Weddell Sea. Within this shelf area, exists a
-complex three-dimensional benthic habitat characterized by substantial
-benthic biomasses and an intermediate to high diversity when compared to
-benthic boreal communities (Teixidó et al. 2002). The Weddell Sea food
-web exhibits a high level of network complexity, featuring the greatest
-number of nodes (490) and trophic interactions (16041) among the
-analyzed food webs in this review (Table 1). Its connectance (0.07) and
-other structural properties are intermediate compared to the other food
-webs. Recently, the interaction strengths of this food web were
-estimated, revealing the presence of numerous weak and few strong
-interactions, which is consistent with findings in other complex food
-webs (Nilsson and McCann 2016). Notably, this asymmetric distribution of
-interaction strength is likely to promote community persistence.
+and southern parts of the Weddell Sea. The shelf area is characterized
+by a complex three-dimensional benthic habitat, substantial benthic
+biomasses, and an intermediate to high diversity (Teixidó et al. 2002).
+
+The Weddell Sea food web exhibits a high level of network complexity,
+featuring the greatest number of nodes (490) and trophic interactions
+(16041) among the marine food webs of the Southern Hemisphere (Table 1).
+Its connectance (0.07), mean trophic level (2.62) and omnivory (51\%)
+are intermediate compared to the other food webs (Table 1). Recently,
+the interaction strengths of this food web were estimated, revealing the
+presence of numerous weak and few strong interactions (Marina et al.
+2024).
+
+In the Weddell Sea, the main stressors are related to warming impacts
+(sea warming, sea ice extent, iceberg scouring) (Table 2), where sea
+warming has been substantial since the early 1980s (Turner et al. 2020).
+For example, in 2017, the mean temperature for February reached 1.45°C,
+the highest monthly mean ever recorded, i.e., 0.56°C above the
+climatological mean (Turner et al. 2020). Warming has caused spatial and
+temporal reductions in sea ice, impacting both pelagic and benthic
+communities (Constable et al. 2014; Gutt et al. 2021). Since the start
+of satellite imaging in 1978, sea ice extent has reached new record
+lows. Some of the most pronounced impacts of decreasing sea ice are
+negative changes in primary productivity (Atkinson et al. 2004) and
+declines of the Antarctic krill. Moreover, reduced sea ice cover allows
+increased access to krill by its predators (Kawaguchi et al. 2009),
+which further contributes to its decline. Some outcomes of the krill
+decline are reduced energy intake by higher trophic levels such as
+humpback whales \emph{Megaptera novaeangliae} Braithwaite et al. (2015)
+which rely heavily on krill for foraging, as well as reduced carbon
+export due to fewer fecal pellets (Pauli et al. 2021). Many higher
+trophic level species in the Weddell Sea are greatly impacted by sea ice
+reductions due to loss of habitat and food source availability, such as
+the Antarctic petrel \emph{Thalassoica antarctica} - one of the most
+abundant seabirds in the Weddell Sea (Orgeira et al. 2021). Other
+impacted sea bird species are the emperor penguin \emph{Aptenodytes
+forsteri}. Reductions in sea ice constrain its population as evidenced
+by recent observations in the Bellingshausen Sea region (Fretwell et al.
+2023). The Arctic tern \emph{Sterna paradisaea} spends the summer in the
+Weddell Sea exploiting krill swarms under receding ice edges. Thus,
+continued warming is expected to gradually erode the abundance and
+distribution of marine seabirds in the Weddell Sea (Orgeira et al.
+2021). Many marine mammals depend on for breeding and foraging such as
+the Weddell and Crabeater seals (\emph{Leptonychotes weddellii} and
+\emph{Lobodon carcinophagus}) (Wege et al. 2021) and the Humpback whale.
+Reduced sea ice can significantly affect the breeding success of seals
+(Wege et al. 2021) and body condition of whales (Turner et al. 2020).
+Notothenioid fish, with \emph{Pleuragramma antarcticum} being the most
+abundant species, confront numerous stressors such as sea warming, sea
+ice decline, and ocean acidification, posing significant threats to
+their survival. While certain species exhibit physiological plasticity
+to cope with increased oxygen demand, most notothenioid fish are
+stenothermal and incapable of adjusting their metabolic functioning
+(Mintenbeck et al. 2012). Projections suggest that the preferred thermal
+habitat of the Antarctic toothfish, \emph{Dissostichus mawsoni}, an
+important fish species in the Weddell Sea ecosystem, may contract over
+the next three decades, underscoring the potential impact of global
+warming on these species (Constable et al. 2014). Iceberg scouring is a
+major factor in driving the high biodiversity of benthic communities in
+the Weddell Sea (Gutt and Starmans 2001). Even at 600 m depths, iceberg
+scouring has a strong effect on the benthic environment, disrupting the
+upper layers of the seabed and removing macrofauna. This patchy
+disturbance and distribution pattern occurs roughly every 200 square
+meters on the Antarctic continental shelf. Global warming is predicted
+to increase iceberg scouring frequency (Gutt 2001; Smale et al. 2008),
+disrupting the environment (Smale and Barnes 2008) with the potential
+for tipping points (Gutt et al. 2015). \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 \newpage
 \footnotesize
 
 Table 1. Complexity and structure properties of the marine food webs
-considered in the present review. Refer to Table 2 for definition of
+considered in the present review. Refer to Table S2 for definition of
 properties. mean TL: mean trophic level. Food webs are ordered by
 increasing latitude.
 
@@ -451,394 +834,9 @@ Weddell Sea & 490 & 16041 & 0.07 & 2.19 & 2.62 & 0.51 & Jacob et al.
 
 \normalsize
 
-\subsection{3. Environmental and anthropogenic stressors in the
-Southwest Atlantic - Antarctic
-region}\label{environmental-and-anthropogenic-stressors-in-the-southwest-atlantic---antarctic-region}
-
-A stressor is any environmental or anthropogenic variable that causes a
-quantifiable change, irrespective of its direction (increase or
-decrease), in a biological response (Orr et al. 2020). In the light of
-this, the southwest Atlantic - Antarctic marine biota has been and is
-currently subjected to a variety of stressors (e.g.~sea warming, glacial
-retreat, ice changes, acidification, species invasion, fisheries, and
-contamination). Although it is well-known that multiple stressors act in
-concert at any given time (e.g.~warming and fishery; acidification and
-contaminants) (Gutt et al. 2021), to date stressor assessments have been
-performed individually. Moreover, the potential for interactive effects
-of two or more stressors (synergy or antagonism) (Côté et al. 2016) is
-almost unknown for the region (Rowlands et al. 2021).
-
-In the following subsections, we describe the main environmental and
-anthropogenic stressors, and the species (or trophic species) and
-parameters affected reported for the marine ecosystems that contain the
-food webs considered in this review. In Table S2 we provide an
-exhaustive list of all stressors affecting species inhabiting each area,
-considering: the type of stressor, species and parameter affected, and
-locality.
-
-\subsubsection{3.1 San Jorge Gulf}\label{san-jorge-gulf}
-
-San Jorge Gulf experienced several environmental and anthropogenic
-stressors (Table S2). Trawl fisheries discard several species and add
-new trophic interactions to the food web which resulted in a decrease in
-trait variability and the stability of the system (Rincón-Díaz et al.
-2021; Funes et al. 2022). Moreover, it changed the availability of prey
-to several predators. For example, Merluccius hubbsi one of the main
-bycatch species, became prey item to non-diving seabirds, like the kelp
-gull Larus dominicanus (González-Zevallos and Yorio 2006) and reef
-fishes (Funes et al. 2019). Although juveniles of M. hubbsi are largely
-the main bycatch item, 29 other cartilaginous and 69 bony local fish
-species were also registered as incidental catch between 2005 and 2014
-(Bovcon et al. 2013; Ruibal Nuñez 2020). This level of impact triggered
-a shift in the functional diversity of the assemblages homogenizing the
-trophic function of fishes (Rincón-Díaz et al. 2021). Other functional
-changes were a decrease in the maximum sizes of individual fish,
-together with a drop in elasmobranchs biomass and an increase in
-crustaceans biomass (Funes 2020). The significant increase in crustacean
-biomass was mostly due to the increase in Pleoticus muelleri and
-Grimothea gregaria populations (Funes 2020). These species rapidly
-became the most important prey for the most abundant fishes in the area:
-M. hubbsi and Mustelus schmitti (Pasti et al. 2021). However, the
-above-mentioned effects of trawl fisheries on the structure and function
-of the San Jorge Gulf community may have changed again, since the
-fisheries ceased activity in 2015 (Annex I, Resolution CFP No 7/2018),
-remaining a small trawling artisanal fishery.
-
-Sea warming is another important environmental stressor in the San Jorge
-Gulf, because of the southward shifts of northern fish populations to
-the Gulf (Galván et al. 2022). The San Jorge Gulf is especially prone to
-be affected by climate-driven shifts in species ranges, because it is
-located in the ecotone between two biogeographic provinces, the
-Argentine (30°S - 44°S) and the Magellanic (43°S - 55°S) (Balech and
-Ehrlich 2008). In addition to this tropicalization from northern fish
-populations, alien species are also documented to affect the demersal
-assemblage (fish and macroinvertebrates) in the Gulf (Galván et al.
-2022). Finally, San Jorge Gulf is exposed to urban and industrial
-pollution due to an oil monobuoy from which oil manipulation and general
-oil transport along the Patagonian coast registered several oil spills
-and chronic oil discharges (García-Borboroglu et al. 2008). Other marine
-systems impacted by oil spill showed an important decrease in marine
-bird populations (Irons et al. 2000), seals and macroalgae (e.g. Paine
-et al. (1996)), with examples of cascading effects throughout the food
-web (Peterson 2001).
-
-\subsubsection{3.2 Beagle Channel}\label{beagle-channel}
-
-A main anthropogenic stressor in the Beagle Channel is the introduction
-of invasive species (Table S2). Salmonidae were introduced to Tierra del
-Fuego in the 1930s. Especially Chinook salmon Oncorhynchus tshawytscha
-causes concern. The detection of Chinook salmon in Tierra del Fuego
-dates back to April 2006, and its population has been expanding since
-then (Nardi et al. 2019). Being a top predator Chinook salmon can
-compete with several native species in the Beagle Channel (Correa and
-Gross 2008), and prey over native species such as Notothenioids
-(Eleginops maclovinus, Patagonotothen tessellata, P. cornucola, P. sima,
-Paranotothenia magellanica, Harpagifer bispinis), the Atherinidae
-Odontesthes smitti and O. nigricans, the Fuegian sprat Sprattus
-fuegensis, and larvae of king crabs (Lithodes antarcticus and Paralomis
-granulosa) (Fernández et al. 2010). Ciancio et al. (2008) observed that
-Chinook salmon in the Southern Patagonian Shelf Ecosystem Area primarily
-feed on sprats and display trophic levels comparable to those of
-intermediate-sized fish and cephalopod predators species, showing
-significant dietary overlap with Magellanic penguins (Spheniscus
-magellanicus). Another potential competitor for Chinook salmon in the
-Beagle Channel is the Commerson's dolphin (Cephalorhynchus commersonii),
-which shares a similar diet (Riccialdelli et al. 2013).
-
-In the Beagle Channel, other anthropogenic stressors include
-contaminants like metals, perfluorinated compounds, hydrocarbons, and
-microplastics found in animal tissue and sediments. Some studies
-reported varying heavy metal levels in sea mussel tissues and sediments,
-indicating bioavailability differences (Duarte et al. 2011). Other
-research found similar carbon and carbohydrate levels in Ushuaia Bay's
-surface sediments to those in hypertrophic ecosystems, along with
-hydrocarbons and heavy metals linked to port and industrial activities
-(Gil et al. 2011). Commendatore et al. (2012) identified three distinct
-hydrocarbon accumulation zones in the Bay. Llorca et al. (2012) found
-high levels of perfluorinated compounds in algae, fish, and guano.
-Ferreira et al. (2021) showed that black southern cod in Ushuaia Bay may
-be exposed to endocrine-disrupting compounds from urban and industrial
-pollution. Pérez et al. (2020) and Ojeda et al. (2021) found
-microplastics in M. edulis chilensis and Nacella magellanica,
-respectively. These studies link pollutants to Ushuaia (54°48′S 68°18′W)
-and its port and industrial activities. We expect the Beagle Channel
-area closest to the city to be most affected. Contaminants can spread
-through the food web, magnifying the risk to higher-level organisms.
-Fioramonti et al. (2022) studied mercury transfer in three southwest
-Atlantic Ocean food webs and found biodilution in the Beagle Channel and
-Atlantic coast of Tierra del Fuego webs. However, mercury concentrations
-rose with benthivory in these webs, and higher mercury was found in
-phytoplankton and Grimothea gregaria. Squat lobsters connect pelagic and
-benthic habitats, so any disruption to them could disrupt the food web
-(Rodriguez et al. 2022). Dodino et al. (2022) found the highest mercury
-levels in Magellanic penguin feathers from offshore colonies in Tierra
-del Fuego. Recently, Ushuaia's kelp forests have seen a decrease in
-biodiversity and changes in macroalgae composition due to urban
-pollution (Kaminsky et al. in prep.).
-
-\subsubsection{3.3 Burdwood Bank}\label{burdwood-bank}
-
-The stressors reported for the ecosystem of the Marine Protected Areas
-Namuncurá within Burdwood Bank I and II are mostly anthropogenic; there
-is a lack of studies focusing on the environmental stressors that are
-known to be occurring at a regional scale (e.g.~sea surface warming,
-Franco et al. (2020)) (Table S2). Several fisheries targeting demersal
-fishes operate in the vicinity and within the ecosystem of the Marine
-Protected Areas (i.e.~Marine National Reserve management category). The
-Patagonian fisheries on the toothfish Dissostichus eleginoides has
-gained prominence in recent years (Allega et al. 2020; Gorini et al.
-2021). Although these are regulated by the Argentinean government,
-incidental catches do occur, where demersal fishes of the genera
-Coelorinchus and Macrourus, seabirds and benthic invertebrates (30+
-taxa) are the most common bycatches (Gaitán and Marí 2016; Martínez et
-al. 2022). Noteworthy, among the invertebrates caught, 8 species are
-indicator taxa of vulnerable marine ecosystems (Gaitán and Marí 2016;
-Schejter and Albano 2021). Independent assessments of these bycatches
-suggest no significant impact on the communities (Gaitán and Marí 2016;
-Martínez et al. 2022). Besides bycatch, species of seabirds are being
-affected by the fishery due to discards, altering its diet; the most
-frequently encountered species are Black-browed albatross Thalassarche
-melanophris, Southern giant petrel Macronectes giganteus, Cape petrel
-Daption capense, Southern royal albatross Diomedea epomophora, Northern
-giant petrel M. halli, and White-chinned petrel Procellaria
-aequinoctialis (Tamini et al. 2023). Nevertheless, there is a lack of
-knowledge considering the species' role in the ecosystem and the
-potential joint effect of both target fishes and bycatch in a broader
-food web framework.
-
-Anthropogenic contaminants such as microplastics and mercury are present
-in the water column of the Burdwood Bank ecosystem (Cossi et al. 2021;
-Fioramonti et al. 2022; Di Mauro et al. 2022). Microplastics are
-distributed all along the water column, from surface to deep waters
-(3-2450 m) (Di Mauro et al. 2022). More importantly, microplastics were
-found in soft tissues of benthic macroinvertebrates (sea stars Henricia
-obesa and Odontaster penicillatus) and benthopelagic fishes
-(Patagonotothen guntheri and P. ramsayi), which not only incorporated
-the contaminant from the environment through their filter-feeding system
-but could also get it indirectly from prey organisms already containing
-plastics in their tissues (Cossi et al. 2021). Notably, one of the
-contaminated species, the long tail southern cod Patagonotothen ramsayi,
-is part of the core group of species that drive the ecosystem through
-the suggested wasp-waist control (Riccialdelli et al. 2020). Mercury
-transfer and biomagnification are ongoing processes in the ecosystem,
-which are occurring at a greater pace than near coastal areas (Beagle
-Channel) (Fioramonti et al. 2022). It's important to note that the
-Fuegian sprat Sprattus fuegensis, a pelagic fish with a mid-trophic
-level in the food web, presented the highest levels of mercury
-(Fioramonti et al. 2022). Considering the wasp-waist control of the
-Fuegian sprat in the food web (Riccialdelli et al. 2020), a rapid and
-widespread contamination to the top predators is expected (Fioramonti et
-al. 2022).
-
-In recent years, licenses for seismic studies and exploration of
-hydrocarbon resources have been granted all along the northwestern limit
-of the Marine Protected Areas (Secretaría de Gobierno de Energía Res. Nº
-65/2018). Although effects from these types of surveys on marine mammals
-and seabirds are well-known for other regions of the world (Nowacek et
-al. 2015), there is no particular knowledge for this ecosystem. However,
-several documents warn of the potential negative effects this may have
-on the species inhabiting the Burdwood Bank area (Allega et al. 2019; de
-Haro et al. 2022).
-
-Despite evidence of warming at surface, mid-water and bottom layers (100
-m) in Burdwood Bank (Franco et al. 2020), specific studies on the
-oceanographic aspects of the system are lacking. In this sense, there is
-a big question mark about the environmental stressors impact on the
-species and trophic interactions in Burdwood Bank.
-
-\subsubsection{3.4 Scotia Sea}\label{scotia-sea}
-
-The Scotia Sea is a vast and heterogenous oceanic region, where
-especially the areas around South Georgia island represents an area of
-interest, here referred to as `Northern Scotia Sea'. The majority of
-studies analyzing the stressors' effects come from this area.
-
-The Scotia Sea has experienced one of the largest levels of warming
-within the polar regions (Whitehouse et al. 2008). Together with the
-Southern Annular Mode anomalies this has caused a long-term decrease in
-krill abundance; more pronounced in the northern than in the southern
-Scotia Sea (Murphy et al. 2007). Over the past 90 years, the krill also
-showed an increase in mean body length (Atkinson et al. 2019), which may
-also alter predator-prey interactions and allow reaching cooler feeding
-grounds near the seabed, with the potential to link krill to unexpected
-predators (Schmidt et al. 2011). Another consequence of the mentioned
-environmental stressors, is a change in krill distribution due to a
-southward contraction (Atkinson et al. 2019). It is noteworthy here,
-that the distributional shift has not affected all species inhabiting
-the Northern Scotia Sea, and most abundant calanoid copepods have
-maintained their distribution (Tarling et al. 2018). Considering the
-above, food web models of the Northern Scotia Sea have suggested shifts
-in the structure and functioning of the food web, from krill-based to
-non-krill-based, where myctophid fishes and squid are playing important
-roles (Saunders et al. 2019).
-
-The principal anthropogenic stressor of the Scotia Sea is commercial
-fisheries. Krill fishery not only stresses the targeted species, but
-also the many predators that depend on it as a food source (Hilborn et
-al. 2017). Yet, data currently available from monitoring of krill and
-its predators remain insufficient, hence identifying the potential
-fishery impacts on the ecosystem is difficult (Trathan et al. 2021).
-Apart from krill fishery, two other commercial fisheries operate in the
-Scotia Sea, targeting Patagonian toothfish species Dissostichus
-eleginoides and D. mawsoni. The D. eleginoides stock is linked to the
-stock at South Georgia (`Northern Scotia Sea') (Collins et al. 2010),
-while the D. mawsoni stock is linked to the Antarctic continental shelf
-(`Southern Scotia Sea') (Soeffker et al. 2022). Despite the fact that
-the mentioned fisheries are certified by the Marine Stewardship Council
-standards, Trathan (2023) identified several concerns regarding aspects
-of fisheries itself, other species' population status (i.e.~recovery of
-baleen whales), and environmental stressors (i.e.~sea warming), which
-could have synergistic effects on the food web structure and functioning
-that are still unknown.
-
-Mercury transfer and biomagnification are current processes occurring in
-the Scotia Sea, where the total concentration of contaminants increase
-with trophic level and are highest in notothenioid and myctophid fishes
-(e.g.~Dissostichus eleginoides, Gymnoscopelus nicholsi), and seabirds
-(Seco et al. 2021). During years of low Antarctic krill abundance,
-predators must deal with both the stress of reduced prey availability
-and the concurrent rise in mercury exposure (Seco et al. 2021).
-
-\subsubsection{3.5 Potter Cove
-(Antarctica)}\label{potter-cove-antarctica}
-
-Regional warming in the last half century has been one of the main
-factors driving changes in Potter Cove (Western Antarctic Peninsula)
-(Chown et al. 2022). Sudden environmental changes have occurred, such as
-sea surface temperature increase, salinity decrease, suspended
-particulate matter loading and chlorophyll-a increase, all linked to
-climatic cycles (Southern Annular Mode and El Niño Southern Oscillation)
-(Schloss et al. 2012). Particularly, sea warming has produced drastic
-environmental and biological transformations (e.g.~shifts in dominance
-of benthic community) in the Potter Cove ecosystem (Schloss et al. 2012;
-Quartino et al. 2013; Sahade et al. 2015), a system highly dependent on
-sea-ice dynamics (Table S2). In Potter Cove, total sea ice cover has
-decreased since 1991 (Schloss et al. 2012). Changes in the annual timing
-of landfast ice formation and breakup of the sea ice cover has multiple
-effects on species in the food web (Michel et al. 2019). Warmer winters
-and springs result in earlier sea-ice melt, causing an abrupt increase
-in the light available benthic primary producers (Deregibus et al.
-2020). Sea ice also mediates physical disturbances to the benthos by
-influencing sedimentation and iceberg scouring. These factors affect the
-production of macroalgae, albeit in opposite ways (Deregibus et al.
-2017), and microphytobenthos (Hoffmann et al. 2019). On the other hand,
-sea ice is an important habitat for diatoms and its associated
-consumers, including copepods and krill (Flores et al. 2012), and thus
-important for bentho-pelagic nutrient and carbon cycling during winter.
-Additionally, a decrease in winter sea ice cover produces an increase in
-physical perturbation on benthic shallow communities in coastal shallows
-due to ice scouring (Deregibus et al. 2017). The glacier surrounding
-Potter Cove has been receding at an increasing rate since 1950 (Rückamp
-et al. 2011), which has caused a massive discharge of sediment-laden
-meltwater (Meredith et al. 2018). Large quantities of suspended
-particles affect growth, survival and reproduction of benthic species.
-This had led to a major shift in the benthic community structure, from a
-filter feeders--ascidian domination to a mixed assemblage with
-scavengers and opportunistic species (Sahade et al. 2015), and the
-metabolic balance in benthos went from net autotrophy to heterotrophy
-(Braeckman et al. 2021). Additionally, massive stranding events of the
-tunicate Salpa thompsoni and the euphausiid Euphausia superba (krill)
-linked to the presence of glacial meltwater have been reported (Fuentes
-et al. 2016). Rising temperatures leading to ice and glacial melting has
-also substantial impacts on pelagic primary productivity, since it
-reduces water salinity, affecting water column stratification, light
-penetration and nutrient availability for photosynthesis (Schloss et al.
-2012). In Potter Cove, changes in biomass of most phytoplankton species
-have been observed under heat wave conditions, resulting in a shift from
-a microplankton to a nanoplankton dominated community (Antoni et al.
-2020; Latorre et al. 2023). This means that in areas strongly affected
-by glacier melt, the planktonic food web is dominated by the microbial
-loop (ciliates and heterotrophic dinoflagellates preys upon
-nanophytoplankton, which are sequentially available prey for small
-omnivorous copepods), instead of being predominantly herbivorous (Garcia
-et al. 2016, 2019). In addition, phytoplankton species under these
-warming conditions showed a decrease in metabolic rates and in the
-quality of the fatty acids composition (Latorre et al. 2023).
-
-\subsubsection{3.6 Weddell Sea
-(Antarctica)}\label{weddell-sea-antarctica}
-
-In the Weddell Sea several stressors have already been triggered by
-global warming effects (Table S2), from which spatial and temporal
-reduction in sea ice is suggested to be driving changes in pelagic and
-benthic communities (Constable et al. 2014; Gutt et al. 2021). Sea ice
-extent has reached new record lows since the satellite era began in
-1978. Sea warming has been substantial in recent years: in 2017 the mean
-temperature for February reached 1.45°C, the highest monthly mean ever
-recorded (0.56°C above the climatological mean) (Turner et al. 2020). In
-this context, it has been suggested that Antarctic krill Euphausia
-superba has already declined as a result of productivity changes caused
-by sea ice declines (Atkinson et al. 2004). Declining sea ice cover
-allows increased access to krill by predators (Kawaguchi et al. 2009),
-which further contributes to decreased krill abundances. This in turn
-can result in reduced carbon export due to decreased fecal pellets from
-krill (Pauli et al. 2021).
-
-On the other hand, sea ice loss increases light availability, triggering
-primary production by phytoplankton in the short-term (Pineda-Metz et
-al. 2020). Furthermore, a warmer and more stable water column with a
-shallow upper mixed layer, is expected to enhance the dominance of
-cryptophytes over diatoms which may favor salp populations over krill
-populations; thereby reducing the magnitude of energy transfer to higher
-trophic levels and the seabed (Isla 2023).
-
-Higher trophic level species are expected to respond differently to
-global warming in the Weddell Sea. In this regard, Notothenioid fishes
-(e.g.~Pleuragramma antarcticum) face multiple stressors (sea warming,
-sea ice decline, ocean acidification) that threaten their survival.
-While some species exhibit physiological plasticity to compensate for
-increased oxygen demand, most notothenioid fishes are stenothermal and
-unable to adjust their metabolic functioning (Mintenbeck et al. 2012).
-It is anticipated that the thermal habitat preferred by the Antarctic
-toothfish Dissostichus mawsoni could undergo contraction in the coming
-three decades (Constable et al. 2014), further emphasizing the potential
-impact of global warming effects on these species. Marine mammals,
-Weddell and crabeater seals (Leptonychotes weddellii and Lobodon
-carcinophagus), exhibit varying levels of sensitivity. The latter
-exhibits a preference for breeding in close proximity to krill swarms,
-and thus is particularly susceptible to reductions in sea ice
-concentrations and sea surface temperatures. Rescued sea ice can
-significantly affect their post- and future breeding foraging success
-(Wege et al. 2021). In addition, the Antarctic petrel Thalassoica
-antarctica, which is one of the most abundant seabirds in the area, is a
-sea ice dependent forager and breeder (Orgeira et al. 2021); therefore
-the loss of this habitat will degrade its foraging success and
-reproductive output over time. The snow petrel Pagodroma nivea also
-relies heavily on sea ice for foraging and its colonies in the Weddell
-Sea may be affected. The emperor penguin Aptenodytes forsteri uses sea
-ice for breeding; any reductions could constrain its populations, as
-evidenced by recent observations in the Bellingshausen Sea region
-(Fretwell et al. 2023). The Arctic tern Sterna paradisaea spends the
-summer in the Weddell Sea exploiting krill swarms under receding ice
-edges, then declines in ice cover may reduce prey availability and
-quality of molting habitats. Continued warming is thus expected to
-gradually erode the abundance and distribution of these `primary
-species' that dominate the avifauna of the Weddell Sea through loss of
-critical sea ice habitat (Orgeira et al. 2021). Variations in sea ice
-extent have implications for great whales, such as the Humpback whale
-Megaptera novaeangliae, since their primary prey resource is the
-Antarctic krill (Braithwaite et al. 2015). Decreased winter ice coverage
-results in reduced suitable habitat and lower krill abundance
-(Braithwaite et al. 2015), with flow-on effects for whale body condition
-observed historically in harvest data. With climate projections
-indicating ongoing sea ice losses, further threats to critical krill
-populations pose risks to the energy intake and reproductive success and
-long-term viability of humpback whale populations dependent on
-consistent Antarctic feeding (Pallin et al. 2023).
-
-Iceberg scouring is a major factor in the high biodiversity of benthic
-communities in the Weddell Sea (Gutt and Starmans 2001). Even at 600 m
-depths, iceberg scouring has a strong effect on the benthic environment,
-disrupting the upper layers of the seabed and removing macrofauna. This
-patchy disturbance and distribution pattern occurs roughly every 200
-square meters on the Antarctic continental shelf. Global warming is
-predicted to raise iceberg scouring frequency (Gutt 2001; Smale et al.
-2008), disrupting the environment (Smale and Barnes 2008). Gutt et al.
-(2015) expects tipping points are significant due to these effects and
-lack of knowledge.
-
-\subsection{4. From species' stressors to food web
-effects}\label{from-species-stressors-to-food-web-effects}
+\subsection{3. From species' stressors to food web effects: a
+qualitative
+approach}\label{from-species-stressors-to-food-web-effects-a-qualitative-approach}
 
 A major challenge in contemporary ecology lies in predicting the effects
 of stressors on complex multispecies systems, such as food webs. Network
@@ -847,24 +845,25 @@ can capture the effects of individual and multiple stressors on
 communities and ecosystems (Montoya et al. 2009; O'Gorman et al. 2012;
 Bruder et al. 2019).
 
-Environmental and anthropogenic stressor effects in the southwest and
-the Atlantic sector of the Southern Ocean have been mostly assessed
-individually and at the organism and/or population, i.e., at the node
-level (Table S2), with one exception: the effect of fisheries in the San
-Jorge Gulf food web (see section below for more details). To address the
-most plausible stressors effects on the selected food webs, given the
-current information, we built hypotheses for each study area. To this
-aim, we developed a theoretical framework considering the following: a)
-stressor(s), b) parameter(s) affected, c) node-level properties of the
-affected species, and d) network-level properties of the food web.
+Global change stressor effects in the Southwest and the Atlantic sector
+of the Southern Ocean have been mostly assessed individually and at the
+organism and/or population, i.e., at the node level (Table 2), with one
+exception: the effect of fisheries in the San Jorge Gulf food web (see
+section below for more details). To address the most plausible effects
+of the main stressors on the selected food webs, given the current
+information, we formulated a series of alternative hypotheses for each
+study area. To this aim, we developed a theoretical framework
+considering the following: a) stressor(s), b) parameter(s) affected, c)
+node-level properties of the affected species, and d) network-level
+properties of the food web.
 
 We considered that a stressor will affect one of the following species'
-characteristics or parameters: metabolism, biomass, distribution, and
-diet (Figure 2). `Metabolism' refers to any change related to metabolic
-rate, such as reproduction, hatching, larval development, growth and
-mortality, and contamination due to pollutants (e.g.~growth effect in
-filter-feeders due to sediment in water column in Potter Cove; endocrine
-disruption in fish due to urban pollutants in Beagle Channel). `Biomass'
+characteristics or parameters: metabolism, population biomass,
+distribution, and diet (Figure 2). `Metabolism' refers to any change
+related to metabolic rate, such as reproduction, hatching, larval
+development, growth and mortality (e.g.~growth effect in filter-feeders
+due to sediment in water column in Potter Cove; endocrine disruption in
+fish due to urban pollutants in Beagle Channel). `Population biomass'
 indicates an effect at the population level, where the density/abundance
 is being impacted (e.g.~abundance decreases in macrobenthos due to
 iceberg scouring in Weddell Sea). `Distribution' entails a change at the
@@ -887,104 +886,201 @@ a) connectance, b) path length, c) mean trophic level, and d) omnivory
 \centering
 \includegraphics[width=6.27in,height=3.528in]{Figures/Figure2_StressorDiagram.png}
 \caption{Conceptual diagram: from species' stressors to food web
-effects. See text for explanation.}
+effects. A stressor (e.g., global warming) will affect one of the
+following species' characteristics: metabolism, population biomass,
+distribution, and diet. `Metabolism' refers to any change related to
+metabolic rate, such as reproduction, hatching, larval development,
+growth and mortality, and contamination due to pollutants. `Population
+biomass' indicates an effect at the population level, where the
+density/abundance is being impacted. `Distribution' entails a change at
+the population level in the geographic space occupied by a species.
+`Diet' includes alterations in the prey items of a species at the
+population level. Next, we considered node- and network-level properties
+relevant to the hypothesized stressor effects on the food webs. At the
+node-level, we included: a) degree, b) trophic position, c) omnivory
+index, and d) relative abundance. At the network-level, we considered:
+a) connectance, b) path length, c) mean trophic level, and d) omnivory.
+Finally, we elaborate a series of competing hypotheses on how the
+identified stressors might affect food web features (stability, energy
+flow, topology), combining information on node- and network-level
+properties.}
 \end{figure}
 
 \newpage
+\begin{landscape}
 \scriptsize
 
-Table 2. Node and network-level properties used to build hypotheses on
-the stressors' effects.
+Table 2. Environmental and anthropogenic stressors reported for the
+study areas: San Jorge Gulf, Beagle Channel, Burdwood Bank, Scotia Sea
+(North and South), Potter Cove, and Weddell Sea. Stressor categories:
+sea warming; glacial retreat; sediment in the water column; iceberg
+scouring; sea ice extent; ocean acidification; ocean acidification +
+plastics; microplastics; mercury; urban \& industrial pollution;
+fishery; alien species. The species affected were considered at the node
+level, whereas effects were considered at the organism and population
+levels. Categories of affected parameters and variables: metabolism;
+biomass; distribution; diet (see text for explanation). ``Locality''
+indicates whether a stressor for a given species was reported for the
+study area (`In situ') or in another area (`Elsewhere').
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1963}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2617}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3925}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1495}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Property}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Definition}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Relevance for stressor effects}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Reference}
-\end{minipage} \\
-\midrule\noalign{}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\begin{longtable}{ L{2.1cm} L{2.5cm} L{4cm} L{2.5cm} L{2cm} L{3cm} }
+\hline
+\textbf{Study area} & \textbf{Stressor} & \textbf{Species affected} & \textbf{Parameter affected} & \textbf{Locality} & \textbf{Reference} \\
+\hline
 \endhead
-\bottomrule\noalign{}
+\endfoot
+\hline
 \endlastfoot
-\emph{Node-level} & & & \\
-Degree & Number of feeding interactions in which the species
-participates as prey and/or predator. & Perturbations to high-degree
-species may have more significant effects on the food web robustness to
-perturbations than low-degree species. & Dunne et al. (2002b); Jordán et
-al. (2007) \\
-Trophic position & Place in the food web relative to the basal resources
-that support the community. Classifies species in: basal, intermediate
-and top. & Perturbations on basal resources, intermediate species and
-top predators are expected to have large effects on the rest of their
-communities if ecosystem control is bottom-up, wasp-waist or top-down,
-respectively. & Williams and Martinez (2000); Thompson et al. (2007) \\
-Omnivory & Consumer resource use across trophic levels. & High-omnivore
-species (generalists) are more flexible than low-omnivore species to
-diet changes. & Thompson et al. (2007) \\
-Relative abundance & Species' density in proportion to the other species
-of the food web. & Perturbations on abundant (dominant) species are
-expected to have large effects on the stability and energy flux of the
-food and ecosystem, respectively. & Nilsson and McCann (2016) \\
-\emph{Network-level} & & & \\
-Conectance & Proportion of actual interactions among possible ones. &
-Estimator of community sensitivity to stressors. High connectance gives
-resistance and resilience to the food web. & Dunne et al. (2002a) \\
-Path length & Average distance, accounted by the number of interactions,
-between any pair of species. & Short distances enhance rapid and broad
-propagation of perturbations. & Albert and Barabási (2002) \\
-Mean TL & Average of all species' trophic position contained in the food
-web. & Influences the magnitude and efficiency of trophic transfer. A
-higher mean food chain length reflects increased energy availability and
-productivity. & Duffy et al. (2007); Olivier et al. (2019) \\
-Omnivory & Proportion of species that feed at different trophic levels.
-& It provides trophic flexibility to an ecosystem. Reduces probability
-of trophic cascades. & Kratina et al. (2012) \\
+
+\textbf{San Jorge Gulf} & & & & & \\
+& Sea warming & Fish assemblage \& its prey & Distribution & In situ &
+Galván et al. (2022) \\
+& Fishery & Demersal fish community & Biomass & In situ & Galván et al.
+(2022) \\
+& Fishery & Macroinvertebrates, fish and seabirds Di & et In & situ
+(\textbf{G?}) & onzalez-Zevallos2006; González-Zevallos and Yorio
+(2011); Yorio et al. (2017) \\
+& Alien species & Fish assemblage \& its prey & Distribution & In situ &
+Galván et al. (2022); Ciancio et al. (2010) \\
+& Urban \& industrial pollution & Seabirds \& benthic assemblage &
+Biomass & Elsewhere & Moore and Dwyer (1974); Buskey et al. (2016) \\
+\textbf{Beagle Channel} & & & & & \\
+& Urban \& industrial pollution & Macroalgae; Mytilus edulis chilensis,
+Patagonotothen tessellata & Metabolism & In situ & Giarratano and Amin
+(2010); Ferreira et al. (2021); Kaminsky et al. (2023) \\
+& Mercury & Phytoplankton, Zooplankton, \emph{Grimothea gregaria} &
+Metabolism & In situ & Fioramonti et al. (2022) \\
+& Microplastics & Mytilus edulis chilensis, Nacella magellanica &
+Metabolism & In situ & Pérez et al. (2020); Ojeda et al. (2021) \\
+& Alien species: Chinook salmon Oncorhynchus tshawytscha &
+Patagonotothen tessellata, Sprattus fuegensis & Diet/Biomass & In situ
+(the presence), Elsewhere (changes in prey biomass) & Fernández et al.
+(2010); Ciancio et al. (2008) \\
+\textbf{Burdwood Bank} & & & & & \\
+& Mercury & Dissostichus eleginoides, Sprattus fuegensis, Patagonotothen
+ramsayi, Cottoperca trigloides (fish) \& squids Me & tabolism In & situ
+(\textbf{F?}) & ioramonti2022 \\
+& Microplastics & Henricia obesa \& Odontaster penicillatus (sea stars);
+Patagonotothen guntheri \& P. ramsayi (fish) Me & tabolism In & situ
+(\textbf{C?}) & ossi2021; Pérez et al. (2021) \\
+& Fishery & Target: Dissostichus eleginoides. Bycatch: Macrourus sp.,
+Coelorinchus sp. (fish), Daption capense, Thalassarche melanophris,
+Macronectes giganteus, T. chrysostoma, Diomedea epomophora (seabirds),
+30+ spp macrobenthos Bi & omass El & sewhere (\textbf{G?}) & aitan2016;
+Martínez et al. (2022); Administración de Parques Nacionales (2022);
+Tamini et al. (2023) \\
+& Fishery & Thalassarche melanophris, Macronectes giganteus, Daption
+capense, Diomedea epomophora, M. halli, Procellaria aequinoctialis
+(seabirds) & Diet & Elsewhere & Tamini et al. (2023) \\
+\textbf{Scotia Sea, North \& South} & & & & & \\
+& Mercury & Krefftichthys anderssoni, Protomyctophum bolini, Electrona
+antarctica, Gymnoscopelus nicholsi, Gymnoscopelus braueri, Dissostichus
+eleginoides & Metabolism & In situ & Seco et al. (2021) \\
+& Ocean acidification + plastics & Euphausia superba, Limacina
+retroversa (Pteropoda) & Metabolism & In situ & Rowlands et al. (2021);
+Manno et al. (2022) \\
+& Sea warming & Euphausia superba & Metabolism & In situ & Murphy et al.
+(2007); Perry et al. (2020) \\
+& Sea warming & Euphausia superba & Distribution & In situ & Atkinson et
+al. (2019) \\
+& Fishery & Euphausia superba & Biomass & In situ & Trathan et al.
+(2021) \\
+\textbf{Potter Cove (Antarctica)} & & & & & \\
+& Sediment in water column & Microphytobenthos, macroalgae, benthic
+filter feeders (ascidians), pelagic filter feeders (krill, salps) &
+Metabolism & In situ & Sahade et al. (2015); Deregibus et al. (2016);
+Fuentes et al. (2016); Hoffmann et al. (2019) \\
+& Sea ice extent & Krill & Biomass & Elsewhere & Flores et al. (2012) \\
+& Sea ice extent & Benthic community (macroalgae, invertebrates) &
+Metabolism & Elsewhere & Clark et al. (2013); Campana et al. (2018) \\
+& Glacial retreat & Benthic community (macroalgae, invertebrates) &
+Biomass & In situ & Quartino et al. (2013); Lagger et al. (2017); Lagger
+et al. (2018) \\
+& Iceberg scouring & Benthic community & Biomass & In situ & Deregibus
+et al. (2017); Deregibus et al. (2023) \\
+& Sea warming & Phytoplankton & Metabolism, biomass & In situ & Antoni
+et al. (2020); Latorre et al. (2023) \\
+& Sea warming & Zooplankton & Metabolism, biomass, diet & In situ &
+Garcia et al. (2016); Garcia et al. (2019) \\
+& Sea warming & Fish & Metabolism & In situ, elsewhere & Strobel et al.
+(2013); Souza et al. (2018); Saravia et al. (2021) \\
+\textbf{Weddell Sea (Antarctica)} & & & & & \\
+& Iceberg scouring & Macrobentos & Biomass & In situ & Isla (2023); Gutt
+et al. (2015); Smale et al. (2008); Gutt et al. (1996) \\
+& Iceberg scouring & Hexactinellida sponges & Biomass & In situ & Gutt
+and Starmans (2001); Pineda-Metz et al. (2020); Gutt (2001); Gutt and
+Piepenburg (2003) \\
+& Ocean acidification & Primary producers / krill / foraminifera /
+flagellates & Metabolism & Elsewhere & Deppeler et al. (2020); Isla
+(2023); Gutt et al. (2015); Moy et al. (2009) \\
+& Ocean acidification & Euphausia superba, Pleuragramma antarcticum &
+Metabolism & In situ & Kawaguchi et al. (2010); Kawaguchi et al. (2013);
+Piñones and Fedorov (2016); Mintenbeck et al. (2012) \\
+& Sea warming & Large (diatoms) \& small (cryptophytes) phytoplankton,
+zooplankton (salps) & Metabolism & Elsewhere & Isla (2023); Gutt et al.
+(2015); Trebilco et al. (2020) \\
+& Sea warming & Euphausia superba, Nototheniid fish, Pleuragramma
+antarcticum Me & tabolism In & situ (\textbf{M?}) & eyer2017; Hill et
+al. (2013); Mintenbeck et al. (2012); Constable et al. (2014);
+Mintenbeck et al. (2012) \\
+& Sea ice extent & Phytoplankton, Lobodon carcinophaga, Hydrurga
+leptonyx, Leptonychotes weddellii, Ommataphoca rossii, Mirounga leonina,
+Arctocephalus gazella & Metabolism & In situ & Pineda-Metz et al.
+(2020); Wege et al. (2021); Siniff et al. (2008) \\
+& Sea ice extent & Euphausia superba, Pleuragramma antarcticum,
+Pagodroma nivea, Thalassoica antarctica, Pygoscelis adeliae & Metabolism
+& In situ & Orgeira et al. (2021); Braithwaite et al. (2015); Hill et
+al. (2013); Mintenbeck et al. (2012) \\
+& Sea ice extent & Megaptera novaeangliae & Metabolism & Elsewhere &
+Pallin et al. (2023) \\
+& Sea ice extent & Aptenodytes forsteri & Metabolism & Elsewhere &
+Orgeira et al. (2021) \\
 \end{longtable}
+
+\end{landscape}
 
 \normalsize
 
-\subsubsection{4.1 Main stressor effects in food webs in a southwest
-Atlantic - Antarctic
-gradient}\label{main-stressor-effects-in-food-webs-in-a-southwest-atlantic---antarctic-gradient}
+\subsubsection{3.1 Hypotheses on the main stressor effects in food webs
+in a southwest Atlantic - Antarctic
+gradient}\label{hypotheses-on-the-main-stressor-effects-in-food-webs-in-a-southwest-atlantic---antarctic-gradient}
 
-The most common stressor reported along the southwest Atlantic -
+The most common stressor reported along the Southwest Atlantic -
 Antarctic gradient is global warming, except for Beagle Channel and
 Burdwood Bank, which are more influenced by the introduction of an alien
-species and fisheries, respectively (section 3, Table 3). The main
+species and fisheries, respectively (Section 2, Table 2). The main
 characteristics of global warming in the region, and the most plausible
-drivers of change, are: sea warming, glacial retreat, elevated sediment
-input in the water column, and reduction of the sea ice extent. These
+drivers of change, are sea warming, glacial retreat, elevated sediment
+input to the water column, and reduction of the sea ice extent. These
 drivers act in different ways and magnitudes in the studied locations
 along the latitudinal gradient. Despite emphasizing global warming in
 this section, this does not mean that no other stressors act or interact
-with global warming in the study systems, potentially buffering the
-overall effect on the food web (e.g.~sea warming and fishery in San
-Jorge Gulf). Climate change has led to several well-documented impacts
-on marine species regarding distributional shifts induced by warming of
-marine currents (Wu et al. 2012; Poloczanska et al. 2013; Vergés et al.
-2019). Furthermore, warmer temperatures increase species metabolic rates
-(Brown et al. 2004). Changes in metabolic rates can subsequently
-translate into shifts in species traits (e.g.~body size, Vucic-Pestic et
-al. (2011); Klein et al. (2018)), biomass (Perry et al. 2020), and
-distribution (Kortsch et al. 2015). Alterations in the species body size
-and distributions have ripple effects on feeding interactions, for
-example, it can introduce new feeding interactions (Vergés et al. 2014;
-Pecuchet et al. 2020), modify existing ones, and shorten energy pathways
-(Bartley et al. 2019; O'Gorman et al. 2019), and reduce trophic
-efficiencies (Vucic-Pestic et al. 2011).
+with global warming in the study systems, potentially buffering or even
+amplifying the overall effect on the food web (e.g.~sea warming and
+fishery in San Jorge Gulf). Climate change has led to several
+well-documented impacts on marine species regarding distributional
+shifts induced by warming of marine currents (Wu et al. 2012;
+Poloczanska et al. 2013; Vergés et al. 2019). Furthermore, warmer
+temperatures increase species metabolic rates (Brown et al. 2004).
+Changes in metabolic rates can subsequently translate into shifts in
+species traits (e.g.~body size, Vucic-Pestic et al. (2011); Klein et al.
+(2018)), population biomass (Perry et al. 2020), and distribution
+(Kortsch et al. 2015). Alterations in the species body size and
+distributions have ripple effects on feeding interactions, for example,
+it can introduce new feeding interactions (Vergés et al. 2014; Pecuchet
+et al. 2020), modify existing ones, and shorten energy pathways (Bartley
+et al. 2019; O'Gorman et al. 2019), and reduce trophic efficiencies
+(Vucic-Pestic et al. 2011).
+
+\paragraph{3.1.1 San Jorge Gulf}\label{san-jorge-gulf-1}
 
 In recent years, several new fish (Galván et al. 2022) and
 macroinvertebrates species (Vinuesa 2005; López-Gappa 2022) were
-registered in Patagonia, mostly in San Jorge Gulf in relation to the
+registered in Patagonia, mostly in San Jorge Gulf concerning the
 southward range shift of warm-temperate species. This distributional
 change is driven by the tropicalization of temperate waters caused by
 sea warming (Vergés et al. 2014; Vergés et al. 2019). Because of its
@@ -996,7 +1092,7 @@ structure topologically, by increasing the number of species and
 interactions. Newcomers are, in general, mid-trophic level species with
 generalist diets, hence an increase in food web connectance may be
 expected (Bartley et al. 2019). In another temperate ecosystem, an
-increase in the number of fish species, led to an increase in functional
+increase in the number of fish species led to increases in functional
 diversity and predation rate (Sgarlatta 2023); consequences that may
 also be expected in San Jorge Gulf. Given the short path length of the
 San Jorge Gulf food web, the disturbances from the listed stressors are
@@ -1006,244 +1102,263 @@ driven by the range expansion of warm-temperate species is contrary to
 the process of homogenization and loss of functional diversity in the
 area driven by trawl fisheries (Rincón-Díaz et al. 2021).
 
-In the middle of the latitudinal gradient (considered in this study),
-the Scotia Sea has experienced one of the largest levels of sea warming
-of any polar region (Whitehouse et al. 2008; Atkinson et al. 2019).
+\paragraph{3.1.2 Scotia Sea}\label{scotia-sea-1}
+
+In the middle of the latitudinal gradient considered in this study, the
+Scotia Sea has experienced one of the largest levels of sea warming of
+any polar region (Whitehouse et al. 2008; Atkinson et al. 2019).
 López-López et al. (2022) suggested that the southward distributional
 shift of generalist predators from the northern towards southern Scotia
 Sea increases network connectance of the latter, while decreasing its
 modularity. The lower modularity may increase the probability of
 perturbations spreading through the network (Stouffer and Bascompte
-2011), which may be offset by increased connectance enhancing robustness
-to species loss (Dunne et al. 2002b). In the northern Scotia Sea around
-South Georgia Island, we suggest that the declining krill biomass driven
-by sea warming (Atkinson et al. 2019), ocean acidification and pollution
-synergy (Rowlands et al. 2021), will reduce the energy transfer to top
-predators like seabirds and marine mammals. However, this may be
-buffered since the dominant copepod species have maintained their
-distribution (Tarling et al. 2018), but most importantly, showed an
-abundance increase in recent decades likely due to reduced predation and
-competition for food (Ward et al. 2018). All this is significant for the
-structure of the food web given the central role of krill and copepods,
-characterized by high degree and mid-trophic position (Table S1).
-Overall, the food web's inherent resilience, marked by high connectance
-and omnivory, added to the potential compensation for the krill decrease
-due to a copepod increase, may buffer against structural changes (Table
-3).
+2011). In the northern Scotia Sea around South Georgia Island, we
+suggest that the declining krill biomass driven by sea warming (Atkinson
+et al. 2019), ocean acidification and pollution synergy (Rowlands et al.
+2021), will reduce the energy transfer to top predators like seabirds
+and marine mammals. However, this may be buffered because the dominant
+copepod species have maintained their distribution (Tarling et al.
+2018), but most importantly shown an abundance increase in recent
+decades likely due to reduced predation and competition for food (Ward
+et al. 2018). The potential compensation for the decrease in krill by
+increasing abundance of copepod may buffer against structural and
+functional changes in the food web (Table 3), since krill and copepod
+play similar (central) roles in the food web, characterized by a high
+degree and mid-trophic position.
 
-In Potter Cove, a fjord-like Antarctic ecosystem, the impacts of climate
-change affect many species within the food web. Potter Cove has recently
-experienced frequent events of marine heatwaves, i.e.~prolonged periods
-of anomalously high sea surface temperatures (Oliver et al. 2018;
-Latorre et al. 2023). This has led to decreases in biomasses of
-different planktonic functional groups (Garcia et al. 2019; Latorre et
-al. 2023). Given the relatively low abundance of phytoplankton,
-zooplankton's low degree, and the modular configuration of the food web,
-we hypothesize that changes in these nodes, due to increased sea
-temperatures, will be retained in the basal pelagic compartment of the
-food web and will not expand to higher trophic levels. Benthic primary
-producers in Potter Cove are being influence by the decrease in winter
-sea ice cover (higher light availability), the increased levels of
-sediments in the water column due to glacial melt run-off (lower light
-penetration) and the newly free-ice areas available for colonization
-associated to glacier retreat. The overall local effect of climate
-change on macroalgae is a net increase in their production (Deregibus et
-al. 2023). It has been proposed that larger diversity in primary
-producers can support a more diverse food web with more specialized
-consumers (Iken et al. 2023). We expect to see differential effects of
-climate change on hard and soft bottom associated food webs (Cordone et
-al. 2020). Given the high relative abundance and the high degree of the
-macroalgae functional group (Table S1), we expect a longer hard bottom
-food web, wider consumer trophic niches, and that it will become more
-stable as sea ice cover decreases and the glacier retreats due to global
-warming. In soft bottom areas of the Cove, multiple food web nodes are
-being affected by ongoing warming effects: decrease in net primary
-production of benthic microalgae (Hoffmann et al. 2019), and changes in
-the benthic community biomass, distribution and composition (Sahade et
-al. 2015; Pasotti et al. 2015). Given that the Potter Cove food web's
-present low connectance and omnivory, we suggest fragility and potential
-trophic cascade effects (Marina et al. 2018) with pronounced changes in
-energy fluxes (Table 3).
+\paragraph{3.1.3 Potter Cove
+(Antarctica)}\label{potter-cove-antarctica-1}
 
-The southernmost location of the latitudinal gradient is the Weddell
-Sea, where the main effect of global warming is the decrease in sea ice
-extent, with reported anomalies in the past summer seasons (Fretwell et
-al. 2023). Declining sea ice extent has reduced the abundance of krill
-(Atkinson et al. 2004; Flores et al. 2012), and produced an increase in
-phytoplankton productivity (Pinkerton et al. 2021; Isla 2023), altering
-the plankton community structure, and benefiting cryptophytes over
-diatoms (Lin et al. 2021). Moreover, habitat loss from sea ice decline
-will reduce the foraging success and breeding sites of seabirds (e.g.,
-snow petrel Pagodroma nivea and emperor penguin Aptenodytes forsteri),
-decreasing their biomassess and modifying their distributions. The
-projected rise in iceberg scouring is expected to significantly alter
-the biomass and community structure of macrobenthos, which in turn will
-impact mid-trophic level predators such as demersal fish (Gutt 2001;
-Mintenbeck et al. 2012). While we do not anticipate large-scale
-topological changes in the food web, local extinctions could lead to
-such changes, particularly affecting benthic species (Gutt and
-Piepenburg 2003). Given that the impacted species---whether individually
-like krill, or collectively like macrobenthos---present a mid-trophic
-position, high biomass and high degree (Table S1), we hypothesize that
-significant shifts in energy fluxes will occur (Table 3). Additionally,
-the food web's low proportion of omnivores suggests reduced system
-resilience (Table 1), increasing the likelihood of regime changes (Gutt
-et al. 2015).
+In Potter Cove, a fjord-like Antarctic ecosystem, the repercussions of
+climate change extend across numerous species. Noteworthy, these effects
+are non-uniform within the food web, manifesting differently across its
+various compartments (Cordone et al. 2020; Rodriguez et al. 2022).
+Potter Cove has recently experienced frequent events of marine
+heatwaves, i.e., prolonged periods of anomalously high sea surface
+temperature (Oliver et al. 2018; Latorre et al. 2023). This has led to
+decreases in biomasses of different planktonic functional groups (Garcia
+et al. 2019; Latorre et al. 2023). Given the relatively low abundance of
+phytoplankton and zooplankton's low mean degree, resulting in weak
+interaction strengths between these low trophic levels and higher ones
+(\textbf{Rodriguez2024?}), added to the modular configuration of the
+food web (Rodriguez et al. 2022), we hypothesize that changes in these
+nodes due to warming will be retained at the basal level of the pelagic
+compartment and will not expand to higher trophic levels. Benthic
+primary producers in Potter Cove are being influenced by the decrease in
+winter sea ice cover (higher light availability), the increased levels
+of sediments in the water column due to glacial melt run-off (lower
+light penetration) and the newly free-ice areas available for
+colonization associated to glacier retreat. The overall local effect of
+climate change on macroalgae is a net increase in their production
+(Deregibus et al. 2023). It has been proposed that larger diversity in
+primary producers can support a more diverse food web with more
+specialized consumers (Iken et al. 2023). Given the high relative
+abundance and the high degree of the macroalgae functional group (Table
+S1), we expect a longer hard bottom food web (i.e., number of
+interactions connecting low and high-trophic levels), wider consumer
+trophic niches, and a more stable benthic food web as sea ice cover
+decreases and glaciers retreat due to global warming. In soft bottom
+areas of the cove, multiple food web nodes are being affected by ongoing
+warming effects: decrease in net primary production of benthic
+microalgae (Hoffmann et al. 2019), and changes in the benthic community
+biomass, distribution and composition (Sahade et al. 2015; Pasotti et
+al. 2015). Given that the Potter Cove food web has low connectance and
+omnivory, we suggest fragility and potential trophic cascade effects
+(Marina et al. 2018), especially between species of the soft bottom
+compartment (Table 3). Overall, we anticipate significant shifts in
+energy fluxes, rather than alterations in the overall structure of the
+Potter Cove food web, with strengthening of connections within
+compartments.
 
-The two ecosystems in the subantarctic region, the Beagle Channel and
-Burdwood Bank, are more affected by other anthropogenic stressors than
-warming. Although these areas are being impacted by sea warming,
-potentially affecting vertebrate and invertebrate species (Franco et al.
-2020), to date no studies exist for Beagle Channel and Burdwood Bank
-ecosystems. In the Beagle Channel, the introduction of chinook salmon, a
-non-native species, poses a significant risk to the existing food web
-(Fernández et al. 2010). We hypothesize that chinook salmon's predation
-on Fuegian sprat and black southern cod will disrupt the established
-patterns of interaction within the food web. Both of these prey species
-are crucial for food web dynamics due to their mid-trophic positions and
-relatively high abundance (Table S1). Moreover, we expect that changes
-in the black southern cod population will have a more significant impact
-on the food web than changes in the Fuegian sprat population, as the
-black southern cod has a higher degree (Table S1). Overall, these
-disruptions could have far-reaching effects on the ecosystem. This is
-particularly concerning given the short path length of the food web,
-which means that changes can quickly propagate through the system,
-affecting many species and potentially destabilizing the entire network.
-This phenomenon is further heightened by the ecosystem's inherent
-vulnerability to changes at mid-trophic levels, often referred to as
-wasp-waist control (Table 3). In the Burdwood Bank region, fishing
-activities may be the main stressor causing shifts in the food web
-(Table S2). We hypothesize that a combination of factors will
-destabilize the already fragile ecosystem, characterized by low
-connectance and low omnivory (Table 1). These factors include a decline
-in the biomass of the Patagonian toothfish -a key, highly-connected
-species (Table S1)- as well as smaller changes in the biomass of four
-mid-level fish species, five top-level seabird species, and over 30
-types of benthic macroinvertebrates due to bycatch (Gaitán and Marí
-2016; Martínez et al. 2022; Tamini et al. 2023). Additionally,
-alterations in the diets of six seabird species, caused by discarded
-catch (Tamini et al. 2023), are expected to disrupt the energy flow and
-further reduce the stability of the food web (Table 3).
+\paragraph{3.1.4 Weddell Sea
+(Antarctica)}\label{weddell-sea-antarctica-1}
+
+In the southernmost food web, the Weddell Sea, the main effect of global
+warming is the decrease in sea ice extent, with reported anomalies in
+the past summer seasons (Fretwell et al. 2023). Declining sea ice extent
+has reduced the abundance of krill (Atkinson et al. 2004; Flores et al.
+2012), and produced an increase in phytoplankton productivity (Pinkerton
+et al. 2021; Isla 2023), altering the plankton community structure, and
+benefiting cryptophytes over diatoms (Lin et al. 2021). Moreover,
+habitat loss from sea ice decline will reduce the foraging success and
+breeding sites of seabirds (e.g., snow petrel \emph{P. nivea} and
+emperor penguin), decreasing their population biomassess and modifying
+their distributions. The projected rise in iceberg scouring is expected
+to significantly alter the biomass and community structure of
+macrobenthos, which in turn will impact mid-trophic level predators such
+as demersal fish (Gutt 2001; Mintenbeck et al. 2012). While we do not
+anticipate large-scale topological changes in the mean food web
+attributes, local extinctions could lead to such changes, particularly
+affecting benthic species (Gutt and Piepenburg 2003). Given that the
+impacted species---whether individually like krill, or collectively like
+macrobenthos and notothenioids (e.g., \emph{P. antarcticum})---present a
+mid-trophic position, high population biomasses and high degree (Table
+S1), we hypothesize that significant shifts in energy fluxes will occur
+(Table 3). Additionally, the food web's low proportion of omnivores
+suggests reduced system resilience (Table 1), increasing the likelihood
+of regime changes (Gutt et al. 2015).
+
+\paragraph{3.1.5 Beagle Channel and Burdwood
+Bank}\label{beagle-channel-and-burdwood-bank}
+
+The Beagle Channel and Burdwood Bank -the two ecosystems in the
+subantarctic region- are more affected by other stressors than warming.
+That said, there are impacts of warming in these ecosystems, especially
+affecting vertebrate and invertebrate species (Franco et al. 2020a), but
+generally studies addressing these impacts are lacking for the Beagle
+Channel and Burdwood Bank ecosystems. In the Beagle Channel, the
+introduction of chinook salmon, a non-native species, poses a
+significant risk to the existing food web (Fernández et al. 2010). We
+hypothesize that chinook salmon's predation on Fuegian sprat and black
+southern cod will disrupt the established patterns of interaction within
+the food web. Both of these prey species are crucial for food web
+dynamics due to their mid-trophic positions and relatively high
+abundance (Table S1). Moreover, we expect that changes in the black
+southern cod population will have a more significant impact on the food
+web than changes in the Fuegian sprat population, as the black southern
+cod has a higher degree (Table S1). Overall, these disruptions could
+have far-reaching effects on the ecosystem. This is particularly
+concerning given the short path length of the food web, which means that
+changes can quickly propagate through the system, affecting many species
+and potentially destabilizing the entire network. This phenomenon is
+further heightened by the ecosystem's inherent vulnerability to changes
+at mid-trophic levels, often referred to as wasp-waist control (Table
+3). In the Burdwood Bank region, fishing activities may be the main
+stressor causing shifts in the food web (Table 2). We hypothesize that a
+combination of factors will destabilize the already fragile ecosystem,
+characterized by low connectance and low omnivory (Table 1). These
+factors include a decline in the biomass of the Patagonian toothfish -a
+highly-connected, key species (Table S1)- as well as smaller changes in
+the population biomass of four mid trophic level fish species, five top
+trophic level seabird species, and over 30 types of benthic
+macroinvertebrates due to bycatch (Gaitán and Marí 2016; Martínez et al.
+2022; Tamini et al. 2023). Additionally, alterations in the diets of six
+seabird species, caused by discarded catch (Tamini et al. 2023), are
+expected to disrupt the energy flow and further reduce the stability of
+the food web (Table 3).
 
 \scriptsize
 
-Table 3. Summary of food web (FW) effects according to the main
-stressors reported for each study area. *Industrial trawl fishery ceased
-in 2015 remaining artisanal trawling activity.
+Table 3. Summary of hypothesized food web (FW) effects according to the
+main stressors reported for each study area. *Industrial trawl fishery
+ceased in 2015 remaining artisanal trawling activity.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3194}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2759}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2644}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2759}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1609}}@{}}
 \toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Study area}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Stressor}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Food web effects}
-\end{minipage} \\
-\midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\textbf{San Jorge Gulf} & & \\
+\multirow{2}{=}{\textbf{Study area}
+
+======================= \textbf{San Jorge Gulf}} &
+\multirow{2}{=}{\textbf{Stressor}
+
+======================} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.4368} + 2\tabcolsep}@{}}{%
+\multirow{2}{=}{\textbf{Hypothesis on food web effects} \textbar{}
+=======================+ \textbar{}}} \\
+ \\
 & Fishery* & ↑ FW connectance
 
 ↓ FW stability
 
-↓ functional diversity \\
+↓ functional diversity & \\
 & Sea warming & Shifts in FW topology
 
 ↑ FW connectance
 
-↑ functional diversity \\
-\textbf{Beagle Channel} & & \\
+↑ functional diversity & \\
+\textbf{Beagle Channel} & & & \\
 & Alien species & Shifts in FW topology
 
-↑ spread of perturbations \\
-\textbf{Burdwood Bank} & & \\
+↑ spread of perturbations & \\
+\textbf{Burdwood Bank} & & & \\
 & Fishery & Shifts in main energy fluxes
 
-↓ FW stability \\
-\textbf{Scotia Sea} & & \\
+↓ FW stability & \\
+\textbf{Scotia Sea} & & & \\
 & Sea warming & ↑ FW connectance
 
 ↓ FW modularity
 
 ↓ energy transfer to high TLs
 
-↑ spread of perturbation \\
-\textbf{Potter Cove (Antarctica)} & & \\
-& Sea warming & ↓ perturbation spreading \\
+↑ spread of perturbation & \\
+\textbf{Potter Cove (Antarctica)} & & & \\
+& Sea warming & ↓ perturbation spreading & \\
 & Sea ice decline + glacial retreat & Differential impacts, by
 substrate: hard (HS) or soft (SS)
 
 ↑ FW chain length \& ↑ trophic niches (HS)
 
-↑ FW fragility \& trophic cascades (SS) \\
-\textbf{Weddell Sea (Antarctica)} & & \\
+↑ FW fragility \& trophic cascades (SS) & \\
+\textbf{Weddell Sea (Antarctica)} & & & \\
 & Sea ice decline + iceberg scouring & Shifts in main energy fluxes
 
 ↑ likelihood of regime shifts
 
-↓ resilience \\
+↓ resilience & \\
 \end{longtable}
 
 \normalsize
 
-\subsection{5. Gaps and future
+\subsection{4. Gaps and future
 perspectives}\label{gaps-and-future-perspectives}
 
-In the selected study areas along the southwest Atlantic to Antarctic
-latitudinal gradient, several stressors may directly affect consumers'
-diets triggered by modified environmental conditions (sea warming,
-reduced sea ice extent) and new species (due to species' distributional
-shifts and introductions). Moreover, the population trends (biomasses
-and abundances) of important species are also changing (Funes 2020;
-Hindell et al. 2020; Woods et al. 2023) driving shifts in their roles as
-either predators or prey (e.g. Belleggia et al. (2017), Pasti et al.
-(2021)). These diet and biomass shifts should be investigated in order
-to generate reliable predictions of food web responses to multiple
-stressors in the southwest Atlantic - Antarctic region. One could argue
+In the selected study areas along the Southwest Atlantic to Antarctic
+latitudinal axis, several stressors may directly affect consumers' diets
+triggered by modified environmental conditions (sea warming, reduced sea
+ice extent) and new species (due to species' distributional shifts and
+introductions). Moreover, the population trends (biomasses and
+abundances) of important species are also changing (Funes 2020; Hindell
+et al. 2020; Woods et al. 2023) driving shifts in their roles as either
+predators or prey (e.g. Belleggia et al. (2017), Pasti et al. (2021)).
+These diet and population biomass shifts should be investigated to
+generate reliable predictions of food web responses to multiple
+stressors in the Southwest Atlantic - Antarctic region. One could argue
 that both shifts might increase the complexity of food webs in the short
 term by adding generalist predators or new prey (e.g., Cordone et al.
 (2023)) or by enabling discard consumption (e.g. Funes et al. (2022)).
 However, in the long term, both stressors may lead to the biological
 extinction of certain prey and competitors (e.g. Anton et al. (2019)) or
 a significant reduction in target and incidental catch species (e.g.
-Dulvy et al. (2014)), thereby promoting food web simplification.
+Dulvy et al. (2014)), thereby promoting food web simplification and
+decreases in robustness.
 
-Since this review deals with qualitative data of prey-predator
+Since this review deals with qualitative data of predator-prey
 interactions and stressor effects influencing them, adding quantitative
-data to the food webs (i.e.~interaction strength) and to the stressors
-(i.e.~magnitude) would lead to a better comprehension of how a given
+data to the food webs (e.g., interaction strength) and to the stressors
+(e.g., magnitude) would lead to a better understanding of how a given
 stressor acts on specific species which might translate into food web
 effects. In this context, it would be useful to develop quantitative
-food web models where the strength of interactions reflect energy fluxes
-among species (Nilsson and McCann 2016; Kortsch et al. 2021). Emerging
-methods such as bioenergetic food web modeling have been proposed in
-this regard and present promising ways to estimate shifts in species
-interactions within food webs as a response to stressors (Gellner et al.
-2023; Gauzens et al. n.d.). Shifts that can lead to changes in overall
-ecosystem functioning and stability.
+food web models where the strength of interactions reflects energy
+fluxes among species (Nilsson and McCann 2016; Kortsch et al. 2021).
+Emerging methods such as bioenergetic food web modeling have been
+proposed in this regard and present promising ways to estimate shifts in
+species interactions and energy fluxes within food webs as a response to
+stressors (Gellner et al. 2023; Gauzens et al. n.d.). Shifts that can
+lead to changes in overall ecosystem functioning and stability.
 
 Regarding knowledge and data gaps on species and their stressors,
 especially the Beagle Channel and Burdwood Bank are poorly sampled study
 regions. Almost no information exists on the impact of global warming
-effects (sea warming, glacial retreat, ocean acidification) on
-communities in these ecosystems, though warming of mid-water and bottom
-layers have been shown at a regional scale (Franco et al. 2020). Yet in
-Beagle Channel recent experimental studies have tested the tolerance of
-fishes to scenarios of sea warming and/or acidification suggesting
-potential metabolic impacts on species (Lattuca et al. 2018; Lattuca et
-al. 2023).
+(sea warming, glacial retreat, ocean acidification) on communities in
+these ecosystems, although warming of mid-water and bottom layers has
+been shown at a regional scale (Franco et al. 2020a). Yet, in Beagle
+Channel recent experimental studies have tested the tolerance of fish to
+scenarios of sea warming and/or acidification suggesting high
+vulnerability to projected climate-driven environmental conditions
+(Lattuca et al. 2018; Lattuca et al. 2023).
 
 Analyzing the impact of multiple stressors through observational studies
 is challenging (Gutt et al. 2021). This complexity arises partly because
-of potential for antagonistic effects, where impacts cancel each other
-out, or synergistic effects, where the combined impact is greater than
-the sum of individual effects (Boyd et al. 2015; Côté et al. 2016).
+of the potential for antagonistic effects, where impacts cancel each
+other out, or synergistic effects, where the combined impact is greater
+than the sum of individual effects (Boyd et al. 2015; Côté et al. 2016).
 Moreover, these interactive effects are complicated to handle in the
 framework of complex food webs. The number of pathways through which a
 species may affect or be affected by other species, and through which
@@ -1254,20 +1369,34 @@ approach using motifs (i.e.~groups of species that, when put together,
 construct whole food webs) to simplify food webs; a methodology that
 could be applied to our food web study cases.
 
-\subsection{Conclusions}\label{conclusions}
+In this review, we proposed a series of alternative hypotheses on how
+global stressors may affect food webs in the Southwest Atlantic to
+Southern Ocean. Despite being qualitative, this is a first important
+step in synthesizing food webs and stressor effects on food webs for
+this region. These qualitative assessments must be complemented with
+further investigations that test their validity. To achieve this, we
+suggest using a combination of observational data such as reported
+biomass changes and historic records of sea temperature for the region
+(e.g., Laptikhovsky et al. 2013; Funes et al. 2019; Franco et al. 2020b;
+Winter and Arkhipkin 2023), and food web modeling methods such as
+stressor-response matrices (Bracewell et al. (2019)) and flux modeling
+(e.g., Gauzens et al. (2019); Beauchesne et al. (2021); Polazzo et al.
+(2022)).
 
-We have reviewed the main environmental and anthropogenic stressors
-acting in six different areas along a large-scale latitudinal gradient,
-from temperate Atlantic to cold Antarctic ecosystems. Using a
-theoretical framework that combines species and food web level data, we
-suggest how warming effects may impact food web structure and
-functioning. These qualitative predictions are intended to serve as the
-basis for future studies in marine ecosystems of the Southern Hemisphere
-that aim at quantifying the magnitude of these stressors and how they
-are affecting quantitative food web properties, such as energy fluxes
-and stability. There is an urgent need to assess these changes using a
-holistic and quantitative framework where the magnitude of stressors and
-species interactions are taken into account.
+\subsection{5. Conclusions}\label{conclusions}
+
+We reviewed global change stressors acting in six different areas along
+a large-scale latitudinal gradient from temperate Atlantic to cold
+Antarctic ecosystems. Using a theoretical framework that combines
+species and food web-level data, we suggest how warming effects may
+impact food web structure and functioning. Besides there is an important
+amount of uncertainty, these qualitative predictions are intended to
+serve as the basis for future studies in marine ecosystems of the
+Southern Hemisphere that aim at quantifying the magnitude of these
+stressors and how they are affecting quantitative food web properties,
+such as energy fluxes and stability. There is an urgent need to assess
+these changes using a holistic and quantitative framework where the
+magnitude of stressors and species interactions are taken into account.
 
 \subsection{Acknowledgements}\label{acknowledgements}
 
@@ -1275,7 +1404,9 @@ This review is a product of the project ``¿Cuáles son los efectos de los
 cambios ambientales antropogénicos en las interacciones tróficas de las
 comunidades de los ecosistemas marinos en el gradiente latitudinal
 Atlántico Sudoccidental - Antártida?'', funded by Consejo Nacional de
-Investigaciones Científicas (CONICET, code PIP 2022-2024 \#0907).
+Investigaciones Científicas (CONICET, code PIP 2022-2024 \#0907),
+Argentina. S.K. gratefully acknowledges the support from the Walter and
+Andrée de Nottbeck Foundation, Finland.
 
 \subsection*{References}\label{references}
 \addcontentsline{toc}{subsection}{References}
@@ -1294,12 +1425,6 @@ Administración de Parques Nacionales. 2022. {Plan de gesti{ó}n AMP
 Namuncur{á} Banco Burdwood}. Direcci{ó}n Nacional de {Á}reas Marinas
 Protegidas (DNAMP), Argentina.
 
-\bibitem[\citeproctext]{ref-Albert2002}
-Albert, R., and Barabási, A.-L. 2002. Statistical mechanics of complex
-networks. Reviews of Modern Physics \textbf{74}(1): 47--97. American
-Physical Society.
-doi:\href{https://doi.org/10.1103/RevModPhys.74.47}{10.1103/RevModPhys.74.47}.
-
 \bibitem[\citeproctext]{ref-Allega2020}
 Allega, L., Braverman, M., Campodónico, S., Carozza, C.R., Cepeda, G.D.,
 Colonello, J.H., Derisio, C., Di Mauro, R., Firpo, C.A., Gaitán, E.,
@@ -1313,17 +1438,6 @@ a la exploraci{ó}n hidrocarbur{í}fera en la Zona Econ{ó}mica Exclusiva
 argentina y sus adyacencias}. Instituto Nacional de Investigaci{ó}n y
 Desarrollo Pesquero (INIDEP), Mar del Plata. {[}accessed 26 September
 2023{]}.
-
-\bibitem[\citeproctext]{ref-Allega2019}
-Allega, L., Braverman, M.S., Cabreira, A.G., Campodónico, S., Colonello,
-J.H., Derisio, C.M., Di Mauro, R.P., Gaitán, E.N., Hozbor, M., Irusta,
-G., Lutz, V.A., Marí, N., Militelli, M.I., Moriondo, P., Navarro, G.,
-Orlando, P., Pajaro, M., Prandoni García, N.I., Prosdocimi, L., Reta,
-R., Rico, R., Riestra, C.M., Segura, V., Schejter, L., Schiariti, A.,
-Souto, V., and Verón, E.M. 2019. {Estado del conocimiento biol{ó}gico
-pesquero de los principales recursos vivos y su ambiente, con relaci{ó}n
-a la exploraci{ó}n hidrocarbur{í}fera en la Zona Econ{ó}mica Exclusiva
-Argentina y adyacencias}. INIDEP. {[}accessed 10 August 2023{]}.
 
 \bibitem[\citeproctext]{ref-Anton2019}
 Anton, A., Geraldi, N.R., Lovelock, C.E., Apostolaki, E.T., Bennett, S.,
@@ -1392,6 +1506,13 @@ gregaria ({Fabricius}, 1793) by {Argentine} hake. Marine Ecology
 \textbf{38}(4): e12445.
 doi:\href{https://doi.org/10.1111/maec.12445}{10.1111/maec.12445}.
 
+\bibitem[\citeproctext]{ref-Bornatowski2017}
+Bornatowski, H., Barreto, R., Navia, A.F., and de Amorim, A.F. 2017.
+Topological redundancy and {``small-world''} patterns in a food web in a
+subtropical ecosystem of {Brazil}. Marine Ecology \textbf{38}(2):
+e12407.
+doi:\href{https://doi.org/10.1111/maec.12407}{10.1111/maec.12407}.
+
 \bibitem[\citeproctext]{ref-Bovcon2013}
 Bovcon, N.D., Góngora, M.E., Marinao, C., and González-Zevallos, D.
 2013. Composici{ó}n de las capturas y descartes generados en la pesca de
@@ -1408,6 +1529,14 @@ Biological ramifications of climate-change-mediated oceanic
 multi-stressors. Nature Climate Change \textbf{5}(1): 71--79. Nature
 Publishing Group.
 doi:\href{https://doi.org/10.1038/nclimate2441}{10.1038/nclimate2441}.
+
+\bibitem[\citeproctext]{ref-Bracewell2019}
+Bracewell, S., Verdonschot, R.C.M., Schäfer, R.B., Bush, A., Lapen,
+D.R., and Van den Brink, P.J. 2019. Qualifying the effects of single and
+multiple stressors on the food web structure of {Dutch} drainage ditches
+using a literature review and conceptual models. Science of The Total
+Environment \textbf{684}: 727--740.
+doi:\href{https://doi.org/10.1016/j.scitotenv.2019.03.497}{10.1016/j.scitotenv.2019.03.497}.
 
 \bibitem[\citeproctext]{ref-Braeckman2021}
 Braeckman, U., Pasotti, F., Hoffmann, R., Vázquez, S., Wulff, A.,
@@ -1443,11 +1572,33 @@ the first levels of the {Beagle Channel} food web. Journal of Marine
 Systems \textbf{239}: 103859.
 doi:\href{https://doi.org/10.1016/j.jmarsys.2023.103859}{10.1016/j.jmarsys.2023.103859}.
 
+\bibitem[\citeproctext]{ref-Buskey2016}
+Buskey, E.J., White, H.K., and Esbaugh, A.J. 2016. Impact of {Oil
+Spills} on {Marine Life} in the {Gulf} of {Mexico}: {EFFECTS ON
+PLANKTON}, {NEKTON}, {AND DEEP-SEA BENTHOS}. Oceanography
+\textbf{29}(3): 174--181. Oceanography Society. Available from
+\url{https://www.jstor.org/stable/24862719} {[}accessed 15 September
+2023{]}.
+
+\bibitem[\citeproctext]{ref-Campana2018}
+Campana, G.L., Zacher, K., Deregibus, D., Momo, F.R., Wiencke, C., and
+Quartino, M.L. 2018. Succession of {Antarctic} benthic algae ({Potter
+Cove}, {South Shetland Islands}): Structural patterns and glacial impact
+over a four-year period. Polar Biology \textbf{41}(2): 377--396.
+doi:\href{https://doi.org/10.1007/s00300-017-2197-x}{10.1007/s00300-017-2197-x}.
+
 \bibitem[\citeproctext]{ref-Chown2022}
 Chown, S.L., Leihy, R.I., Naish, T.R., Brooks, C.M., Convey, P., Henley,
 B.J., Mackintosh, A.N., Phillips, L.M., Kennicutt II, M.C., and Grant,
 S.M. 2022. Antarctic climate change and the environment: A decadal
 synopsis and recommendations for action.
+
+\bibitem[\citeproctext]{ref-Ciancio2010}
+Ciancio, J., Beauchamp, D.A., and Pascual, M. 2010. Marine effect of
+introduced salmonids: {Prey} consumption by exotic steelhead and
+anadromous brown trout in the {Patagonian Continental Shelf}. Limnology
+and Oceanography \textbf{55}(5): 2181--2192.
+doi:\href{https://doi.org/10.4319/lo.2010.55.5.2181}{10.4319/lo.2010.55.5.2181}.
 
 \bibitem[\citeproctext]{ref-Ciancio2008}
 Ciancio, J.E., Pascual, M.A., Botto, F., Frere, E., and Iribarne, O.
@@ -1462,6 +1613,12 @@ gradients in biotic niche breadth vary across ecosystem types.
 Proceedings of the Royal Society B: Biological Sciences
 \textbf{282}(1819): 20151589. Royal Society.
 doi:\href{https://doi.org/10.1098/rspb.2015.1589}{10.1098/rspb.2015.1589}.
+
+\bibitem[\citeproctext]{ref-Clark2013}
+Clark, G.F., Stark, J.S., Johnston, E.L., Runcie, J.W., Goldsworthy,
+P.M., Raymond, B., and Riddle, M.J. 2013. Light-driven tipping points in
+polar ecosystems. Global Change Biology \textbf{19}(12): 3749--3761.
+doi:\href{https://doi.org/10.1111/gcb.12337}{10.1111/gcb.12337}.
 
 \bibitem[\citeproctext]{ref-Collins2010}
 Collins, M.A., Brickle, P., Brown, J., and Belchier, M. 2010. Chapter
@@ -1501,6 +1658,14 @@ by green crab {Carcinus} maenas on the intertidal food web of a
 \textbf{713}: 97--115.
 doi:\href{https://doi.org/10.3354/meps14336}{10.3354/meps14336}.
 
+\bibitem[\citeproctext]{ref-Cordone2022}
+Cordone, G., Lozada, M., Vilacoba, E., Thalinger, B., Bigatti, G.,
+Lijtmaer, D.A., Steinke, D., and Galván, D.E. 2022. Metabarcoding,
+direct stomach observation and stable isotope analysis reveal a highly
+diverse diet for the invasive green crab in {Atlantic Patagonia}.
+Biological Invasions \textbf{24}(2): 505--526.
+doi:\href{https://doi.org/10.1007/s10530-021-02659-5}{10.1007/s10530-021-02659-5}.
+
 \bibitem[\citeproctext]{ref-Cordone2020}
 Cordone, G., Salinas, V., Marina, T.I., Doyle, S.R., Pasotti, F.,
 Saravia, L.A., and Momo, F.R. 2020. Green vs brown food web: {Effects}
@@ -1529,12 +1694,12 @@ the Royal Society B: Biological Sciences \textbf{283}(1824): 20152592.
 Royal Society.
 doi:\href{https://doi.org/10.1098/rspb.2015.2592}{10.1098/rspb.2015.2592}.
 
-\bibitem[\citeproctext]{ref-deHaro2022}
-de Haro, J.C., Perez Orsi, H., Cané, S., Di Pangracio, A., Falabella,
-V., and Sapoznikow, A. 2022. {Informe colaborativo sobre el Estado de
-situaci{ó}n. Riesgos e impactos de la prospecci{ó}n s{í}smica en el Mar
-Argentino}. Foro para la Conservaci{ó}n del Mar Patag{ó}nico y {Á}reas
-de Influencia.
+\bibitem[\citeproctext]{ref-Deppeler2020}
+Deppeler, S., Schulz, K.G., Hancock, A., Pascoe, P., McKinlay, J., and
+Davidson, A. 2020. Ocean acidification reduces growth and grazing impact
+of {Antarctic} heterotrophic nanoflagellates. Biogeosciences
+\textbf{17}(16): 4153--4171. Copernicus GmbH.
+doi:\href{https://doi.org/10.5194/bg-17-4153-2020}{10.5194/bg-17-4153-2020}.
 
 \bibitem[\citeproctext]{ref-Deregibus2023}
 Deregibus, D., Campana, G.L., Neder, C., Barnes, D.K.A., Zacher, K.,
@@ -1543,6 +1708,14 @@ macroalgal expansion and blue carbon gains with northern {Antarctic
 Peninsula} glacial retreat. Marine Environmental Research \textbf{189}:
 106056.
 doi:\href{https://doi.org/10.1016/j.marenvres.2023.106056}{10.1016/j.marenvres.2023.106056}.
+
+\bibitem[\citeproctext]{ref-Deregibus2016}
+Deregibus, D., Quartino, M.L., Campana, G.L., Momo, F.R., Wiencke, C.,
+and Zacher, K. 2016. Photosynthetic light requirements and vertical
+distribution of macroalgae in newly ice-free areas in {Potter Cove},
+{South Shetland Islands}, {Antarctica}. Polar Biology \textbf{39}(1):
+153--166.
+doi:\href{https://doi.org/10.1007/s00300-015-1679-y}{10.1007/s00300-015-1679-y}.
 
 \bibitem[\citeproctext]{ref-Deregibus2017}
 Deregibus, D., Quartino, M.L., Zacher, K., Campana, G.L., and Barnes,
@@ -1575,6 +1748,13 @@ factors in {Magellanic} penguins from {Tierra} del {Fuego}. Marine
 Pollution Bulletin \textbf{174}: 113184.
 doi:\href{https://doi.org/10.1016/j.marpolbul.2021.113184}{10.1016/j.marpolbul.2021.113184}.
 
+\bibitem[\citeproctext]{ref-Dormann2017}
+Dormann, C.F., Fründ, J., and Schaefer, H.M. 2017. Identifying {Causes}
+of {Patterns} in {Ecological Networks}: {Opportunities} and
+{Limitations}. Annual Review of Ecology, Evolution, and Systematics
+\textbf{48}: 559--584.
+doi:\href{https://doi.org/10.1146/annurev-ecolsys-110316-022928}{10.1146/annurev-ecolsys-110316-022928}.
+
 \bibitem[\citeproctext]{ref-Duarte2011}
 Duarte, C.A., Giarratano, E., Amin, O.A., and Comoglio, L.I. 2011. Heavy
 metal concentrations and biomarkers of oxidative stress in native
@@ -1582,13 +1762,6 @@ mussels ({Mytilus} edulis chilensis) from {Beagle Channel} coast
 ({Tierra} del {Fuego}, {Argentina}). Marine Pollution Bulletin
 \textbf{62}(8): 1895--1904.
 doi:\href{https://doi.org/10.1016/j.marpolbul.2011.05.031}{10.1016/j.marpolbul.2011.05.031}.
-
-\bibitem[\citeproctext]{ref-Duffy2007}
-Duffy, J.E., Cardinale, B.J., France, K.E., McIntyre, P.B., Thébault,
-E., and Loreau, M. 2007. The functional role of biodiversity in
-ecosystems: Incorporating trophic complexity. Ecology Letters
-\textbf{10}(6): 522--538.
-doi:\href{https://doi.org/10.1111/j.1461-0248.2007.01037.x}{10.1111/j.1461-0248.2007.01037.x}.
 
 \bibitem[\citeproctext]{ref-Dulvy2014}
 Dulvy, N.K., Fowler, S.L., Musick, J.A., Cavanagh, R.D., Kyne, P.M.,
@@ -1599,19 +1772,6 @@ Livingstone, S.R., Sanciangco, J.C., Stevens, J.D., Valenti, S., and
 White, W.T. 2014. Extinction risk and conservation of the world's sharks
 and rays. eLife \textbf{3}: e00590. eLife Sciences Publications, Ltd.
 doi:\href{https://doi.org/10.7554/eLife.00590}{10.7554/eLife.00590}.
-
-\bibitem[\citeproctext]{ref-Dunne2002}
-Dunne, J.A., Williams, R.J., and Martinez, N.D. 2002a. Network structure
-and biodiversity loss in food webs: Robustness increases with
-connectance. Ecology Letters \textbf{5}(4): 558--567.
-doi:\href{https://doi.org/10.1046/j.1461-0248.2002.00354.x}{10.1046/j.1461-0248.2002.00354.x}.
-
-\bibitem[\citeproctext]{ref-Dunne2002a}
-Dunne, J.A., Williams, R.J., and Martinez, N.D. 2002b. Food-web
-structure and network theory: {The} role of connectance and size.
-Proceedings of the National Academy of Sciences \textbf{99}(20):
-12917--12922. Proceedings of the National Academy of Sciences.
-doi:\href{https://doi.org/10.1073/pnas.192407699}{10.1073/pnas.192407699}.
 
 \bibitem[\citeproctext]{ref-Fernandez2010}
 Fernández, D.A., Ciancio, J., Ceballos, S.G., Riva-Rossi, C., and
@@ -1647,10 +1807,18 @@ Ecology Progress Series \textbf{458}: 1--19.
 doi:\href{https://doi.org/10.3354/meps09831}{10.3354/meps09831}.
 
 \bibitem[\citeproctext]{ref-Franco2020}
-Franco, B.C., Combes, V., and González Carman, V. 2020. Subsurface
+Franco, B.C., Combes, V., and González Carman, V. 2020a. Subsurface
 {Ocean Warming Hotspots} and {Potential Impacts} on {Marine Species}:
 {The Southwest South Atlantic Ocean Case Study}. Frontiers in Marine
 Science \textbf{7}. {[}accessed 10 August 2023{]}.
+
+\bibitem[\citeproctext]{ref-Franco2020a}
+Franco, B.C., Defeo, O., Piola, A.R., Barreiro, M., Yang, H., Ortega,
+L., Gianelli, I., Castello, J.P., Vera, C., Buratti, C., Pájaro, M.,
+Pezzi, L.P., and Möller, O.O. 2020b. Climate change impacts on the
+atmospheric circulation, ocean, and fisheries in the southwest {South
+Atlantic Ocean}: A review. Climatic Change \textbf{162}(4): 2359--2377.
+doi:\href{https://doi.org/10.1007/s10584-020-02783-6}{10.1007/s10584-020-02783-6}.
 
 \bibitem[\citeproctext]{ref-Fretwell2023}
 Fretwell, P.T., Boutet, A., and Ratcliffe, N. 2023. Record low 2022
@@ -1724,6 +1892,20 @@ Petroleum {Pollution} and {Penguins}: {Marine Conservation Tools} to
 {Reduce} the {Problem}. \emph{In} Marine {Pollution}: {New} research,
 Hofer, T.N. Nova Science Publishers Inc., New York, USA. pp. 339--356.
 
+\bibitem[\citeproctext]{ref-Garrott1993}
+Garrott, R.A., Eberhardt, L.L., and Burn, D.M. 1993. Mortality of {Sea
+Otters} in {Prince William Sound Following} the {Exxon Valdez Oil
+Spill}. Marine Mammal Science \textbf{9}(4): 343--359.
+doi:\href{https://doi.org/10.1111/j.1748-7692.1993.tb00468.x}{10.1111/j.1748-7692.1993.tb00468.x}.
+
+\bibitem[\citeproctext]{ref-Gauzens2019}
+Gauzens, B., Barnes, A., Giling, D.P., Hines, J., Jochum, M., Lefcheck,
+J.S., Rosenbaum, B., Wang, S., and Brose, U. 2019. Fluxweb: {An R}
+package to easily estimate energy fluxes in food webs. Methods in
+Ecology and Evolution \textbf{10}(2): 270--279. John Wiley \& Sons, Ltd
+(10.1111).
+doi:\href{https://doi.org/10.1111/2041-210X.13109}{10.1111/2041-210X.13109}.
+
 \bibitem[\citeproctext]{ref-Gauzens2023}
 Gauzens, B., Brose, U., Delmas, E., and Berti, E. (n.d.). {ATNr}:
 {Allometric Trophic Network} models in {R}. Methods in Ecology and
@@ -1736,6 +1918,12 @@ become more common when interactions are more biologically constrained.
 Proceedings of the National Academy of Sciences \textbf{120}(31):
 e2212061120. Proceedings of the National Academy of Sciences.
 doi:\href{https://doi.org/10.1073/pnas.2212061120}{10.1073/pnas.2212061120}.
+
+\bibitem[\citeproctext]{ref-Giarratano2010}
+Giarratano, E., and Amin, O.A. 2010. Heavy metals monitoring in the
+southernmost mussel farm of the world ({Beagle Channel}, {Argentina}).
+Ecotoxicology and Environmental Safety \textbf{73}(6): 1378--1384.
+doi:\href{https://doi.org/10.1016/j.ecoenv.2010.06.023}{10.1016/j.ecoenv.2010.06.023}.
 
 \bibitem[\citeproctext]{ref-Gil2011}
 Gil, M.N., Torres, A.I., Amin, O., and Esteves, J.L. 2011. Assessment of
@@ -1765,6 +1953,14 @@ incidental captures at the {Argentine} hake trawl fishery in the {Golfo
 San Jorge}, {Argentina}. Marine Ecology Progress Series \textbf{316}:
 175--183.
 doi:\href{https://doi.org/10.3354/meps316175}{10.3354/meps316175}.
+
+\bibitem[\citeproctext]{ref-Gonzalez-Zevallos2011}
+González-Zevallos, D., and Yorio, P. 2011. Consumption of discards and
+interactions between {Black-browed Albatrosses} ({Thalassarche}
+melanophrys) and {Kelp Gulls} ({Larus} dominicanus) at trawl fisheries
+in {Golfo San Jorge}, {Argentina}. Journal of Ornithology
+\textbf{152}(4): 827--838.
+doi:\href{https://doi.org/10.1007/s10336-011-0657-6}{10.1007/s10336-011-0657-6}.
 
 \bibitem[\citeproctext]{ref-Gorini2021}
 Gorini, F.L., Lukaszewicz, G., and Giussi, A.R. 2021. {Actualizaci{ó}n
@@ -1815,11 +2011,30 @@ benthic recolonisation patterns in the {Weddell Sea} ({Antarctica}).
 Polar Biology \textbf{24}(8): 615--619.
 doi:\href{https://doi.org/10.1007/s003000100263}{10.1007/s003000100263}.
 
+\bibitem[\citeproctext]{ref-Gutt1996}
+Gutt, J., Starmans, A., and Dieckmann, G. 1996. Impact of iceberg
+scouring on polar benthic habitats. Marine Ecology Progress Series
+\textbf{137}: 311--316.
+doi:\href{https://doi.org/10.3354/meps137311}{10.3354/meps137311}.
+
+\bibitem[\citeproctext]{ref-Haddaway2015}
+Haddaway, N.r., Woodcock, P., Macura, B., and Collins, A. 2015. {Making
+literature reviews more reliable through application of lessons from
+systematic reviews}. Conservation Biology \textbf{29}(6): 1596--1605.
+doi:\href{https://doi.org/10.1111/cobi.12541}{10.1111/cobi.12541}.
+
 \bibitem[\citeproctext]{ref-Hilborn2017}
 Hilborn, R., Amoroso, R.O., Bogazzi, E., Jensen, O.P., Parma, A.M.,
 Szuwalski, C., and Walters, C.J. 2017. When does fishing forage species
 affect their predators? Fisheries Research \textbf{191}: 211--221.
 doi:\href{https://doi.org/10.1016/j.fishres.2017.01.008}{10.1016/j.fishres.2017.01.008}.
+
+\bibitem[\citeproctext]{ref-Hill2013}
+Hill, S.L., Phillips, T., and Atkinson, A. 2013. Potential {Climate
+Change Effects} on the {Habitat} of {Antarctic Krill} in the {Weddell
+Quadrant} of the {Southern Ocean}. PLOS ONE \textbf{8}(8): e72246.
+Public Library of Science.
+doi:\href{https://doi.org/10.1371/journal.pone.0072246}{10.1371/journal.pone.0072246}.
 
 \bibitem[\citeproctext]{ref-Hindell2020}
 Hindell, M.A., Reisinger, R.R., Ropert-Coudert, Y., Hückstädt, L.A.,
@@ -1874,6 +2089,12 @@ Isla, E. 2023. Animal--{Energy Relationships} in a {Changing Ocean}:
 \textbf{12}(5): 659. Multidisciplinary Digital Publishing Institute.
 doi:\href{https://doi.org/10.3390/biology12050659}{10.3390/biology12050659}.
 
+\bibitem[\citeproctext]{ref-Isla2024}
+Isla, F.I., and Cortizo, L.C. 2024. Oil seeps from the {Patagonian}
+shelf: Their thermosteric fate. Marine \& Fishery Sciences (MAFIS)
+\textbf{37}(1): 233--240. Instituto Nacional de Investigaci{ó}n y
+Desarrollo Pesquero.
+
 \bibitem[\citeproctext]{ref-Jacob2011}
 Jacob, U., Thierry, A., Brose, U., Arntz, W.E., Berg, S., Brey, T.,
 Fetzer, I., Jonsson, T., Mintenbeck, K., Möllmann, C., Petchey, O.L.,
@@ -1890,16 +2111,26 @@ Philosophical Transactions of the Royal Society A: Mathematical,
 Physical and Engineering Sciences \textbf{376}(2122): 20170178.
 doi:\href{https://doi.org/10.1098/rsta.2017.0178}{10.1098/rsta.2017.0178}.
 
-\bibitem[\citeproctext]{ref-Jordan2007}
-Jordán, F., Benedek, Z., and Podani, J. 2007. Quantifying positional
-importance in food webs: {A} comparison of centrality indices.
-Ecological Modelling \textbf{205}(1): 270--275.
-doi:\href{https://doi.org/10.1016/j.ecolmodel.2007.02.032}{10.1016/j.ecolmodel.2007.02.032}.
+\bibitem[\citeproctext]{ref-Kaminsky2024}
+Kaminsky, J., Bagur, M., Schloss, I.R., Diodato, S., Rodríguez, M.,
+Buschmann, A.H., and Quartino, M.L. 2023. Giant kelp ({Macrocystis}
+pyrifera) morphological and reproductive strategies in two contrasting
+sub-{Antarctic} forests. Marine Biology \textbf{171}(1): 9.
+doi:\href{https://doi.org/10.1007/s00227-023-04341-x}{10.1007/s00227-023-04341-x}.
 
-\bibitem[\citeproctext]{ref-Kaminskyinprep}
-Kaminsky, J., Bagur, M., Boraso, A., Schloss, I.R., Buschmann, A.H., and
-Quartino, M.L. in prep. Kelp recruitment declines in a sub-{Antarctic}
-ecosystem with high sediment inputs and changes in the understory algae.
+\bibitem[\citeproctext]{ref-Kawaguchi2013}
+Kawaguchi, S., Ishida, A., King, R., Raymond, B., Waller, N., Constable,
+A., Nicol, S., Wakita, M., and Ishimatsu, A. 2013. Risk maps for
+{Antarctic} krill under projected {Southern Ocean} acidification. Nature
+Climate Change \textbf{3}(9): 843--847. Nature Publishing Group.
+doi:\href{https://doi.org/10.1038/nclimate1937}{10.1038/nclimate1937}.
+
+\bibitem[\citeproctext]{ref-Kawaguchi2010}
+Kawaguchi, S., Kurihara, H., King, R., Hale, L., Berli, T., Robinson,
+J.P., Ishida, A., Wakita, M., Virtue, P., Nicol, S., and Ishimatsu, A.
+2010. Will krill fare well under {Southern Ocean} acidification? Biology
+Letters \textbf{7}(2): 288--291. Royal Society.
+doi:\href{https://doi.org/10.1098/rsbl.2010.0777}{10.1098/rsbl.2010.0777}.
 
 \bibitem[\citeproctext]{ref-Kawaguchi2009}
 Kawaguchi, S., Nicol, S., and Press, A. 2009. Direct effects of climate
@@ -1935,11 +2166,25 @@ to poleward shifts of boreal generalists. Proceedings of the Royal
 Society B: Biological Sciences \textbf{282}(1814): 20151546.
 doi:\href{https://doi.org/10.1098/rspb.2015.1546}{10.1098/rspb.2015.1546}.
 
-\bibitem[\citeproctext]{ref-Kratina2012}
-Kratina, P., LeCraw, R.M., Ingram, T., and Anholt, B.R. 2012. Stability
-and persistence of food webs with omnivory: {Is} there a general
-pattern? Ecosphere \textbf{3}(6): art50.
-doi:\href{https://doi.org/10.1890/ES12-00121.1}{10.1890/ES12-00121.1}.
+\bibitem[\citeproctext]{ref-Lagger2018}
+Lagger, C., Nime, M., Torre, L., Servetto, N., Tatián, M., and Sahade,
+R. 2018. Climate change, glacier retreat and a new ice-free island offer
+new insights on {Antarctic} benthic responses. Ecography \textbf{41}(4):
+579--591.
+doi:\href{https://doi.org/10.1111/ecog.03018}{10.1111/ecog.03018}.
+
+\bibitem[\citeproctext]{ref-Lagger2017}
+Lagger, C., Servetto, N., Torre, L., and Sahade, R. 2017. Benthic
+colonization in newly ice-free soft-bottom areas in an {Antarctic}
+fjord. PLOS ONE \textbf{12}(11): e0186756. Public Library of Science.
+doi:\href{https://doi.org/10.1371/journal.pone.0186756}{10.1371/journal.pone.0186756}.
+
+\bibitem[\citeproctext]{ref-Laptikhovsky2013}
+Laptikhovsky, V., Arkhipkin, A., and Brickle, P. 2013. From small
+bycatch to main commercial species: {Explosion} of stocks of rock cod
+{Patagonotothen} ramsayi ({Regan}) in the {Southwest Atlantic}.
+Fisheries Research \textbf{147}: 399--403.
+doi:\href{https://doi.org/10.1016/j.fishres.2013.05.006}{10.1016/j.fishres.2013.05.006}.
 
 \bibitem[\citeproctext]{ref-Latorre2023}
 Latorre, M.P., Iachetti, C.M., Schloss, I.R., Antoni, J., Malits, A., De
@@ -1972,6 +2217,18 @@ extent along the {Western Antarctic Peninsula}. Nature Communications
 \textbf{12}(1): 4948. Nature Publishing Group.
 doi:\href{https://doi.org/10.1038/s41467-021-25235-w}{10.1038/s41467-021-25235-w}.
 
+\bibitem[\citeproctext]{ref-Litz2014}
+Litz, J.A., Baran, M.A., Bowen-Stevens, S.R., Carmichael, R.H.,
+Colegrove, K.M., Garrison, L.P., Fire, S.E., Fougeres, E.M., Hardy, R.,
+Holmes, S., Jones, W., Mase-Guthrie, B.E., Odell, D.K., Rosel, P.E.,
+Saliki, J.T., Shannon, D.K., Shippee, S.F., Smith, S.M., Stratton, E.M.,
+Tumlin, M.C., Whitehead, H.R., Worthy, G.A.J., and Rowles, T.K. 2014.
+Review of historical unusual mortality events ({UMEs}) in the {Gulf} of
+{Mexico} (1990-2009): Providing context for the multi-year northern
+{Gulf} of {Mexico} cetacean {UME} declared in 2010. Diseases of Aquatic
+Organisms \textbf{112}(2): 161--175.
+doi:\href{https://doi.org/10.3354/dao02807}{10.3354/dao02807}.
+
 \bibitem[\citeproctext]{ref-Llorca2012}
 Llorca, M., Farré, M., Tavano, M.S., Alonso, B., Koremblit, G., and
 Barceló, D. 2012. Fate of a broad spectrum of perfluorinated compounds
@@ -1994,6 +2251,13 @@ O'Gorman, E.J. 2022. Ecological {Networks} in the {Scotia Sea}:
 \textbf{25}(2): 457--470.
 doi:\href{https://doi.org/10.1007/s10021-021-00665-1}{10.1007/s10021-021-00665-1}.
 
+\bibitem[\citeproctext]{ref-Manno2022}
+Manno, C., Peck, V.L., Corsi, I., and Bergami, E. 2022. Under pressure:
+{Nanoplastics} as a further stressor for sub-{Antarctic} pteropods
+already tackling ocean acidification. Marine Pollution Bulletin
+\textbf{174}: 113176.
+doi:\href{https://doi.org/10.1016/j.marpolbul.2021.113176}{10.1016/j.marpolbul.2021.113176}.
+
 \bibitem[\citeproctext]{ref-Marina2018}
 Marina, T.I., Salinas, V., Cordone, G., Campana, G., Moreira, E.,
 Deregibus, D., Torre, L., Sahade, R., Tatián, M., Barrera Oro, E., De
@@ -2002,6 +2266,12 @@ Troch, M., Doyle, S., Quartino, M.L., Saravia, L.A., and Momo, F.R.
 structure and function. Estuarine, Coastal and Shelf Science
 \textbf{200}: 141--151.
 doi:\href{https://doi.org/10.1016/j.ecss.2017.10.015}{10.1016/j.ecss.2017.10.015}.
+
+\bibitem[\citeproctext]{ref-Marina2024}
+Marina, T.I., Saravia, L.A., and Kortsch, S. 2024. New insights into the
+{Weddell Sea} ecosystem applying a quantitative network approach. Ocean
+Science \textbf{20}(1): 141--153. Copernicus GmbH.
+doi:\href{https://doi.org/10.5194/os-20-141-2024}{10.5194/os-20-141-2024}.
 
 \bibitem[\citeproctext]{ref-Marinainrev}
 Marina, T.I., Schloss, I.R., Lovrich, G.A., Boy, C.C., Bruno, D.O.,
@@ -2066,6 +2336,18 @@ Press perturbations and indirect effects in real food webs. Ecology
 \textbf{90}(9): 2426--2433.
 doi:\href{https://doi.org/10.1890/08-0657.1}{10.1890/08-0657.1}.
 
+\bibitem[\citeproctext]{ref-Moore1974}
+Moore, S.F., and Dwyer, R.L. 1974. Effects of oil on marine organisms:
+{A} critical assessment of published data. Water Research
+\textbf{8}(10): 819--827.
+doi:\href{https://doi.org/10.1016/0043-1354(74)90028-1}{10.1016/0043-1354(74)90028-1}.
+
+\bibitem[\citeproctext]{ref-Moy2009}
+Moy, A.D., Howard, W.R., Bray, S.G., and Trull, T.W. 2009. Reduced
+calcification in modern {Southern Ocean} planktonic foraminifera. Nature
+Geoscience \textbf{2}(4): 276--280. Nature Publishing Group.
+doi:\href{https://doi.org/10.1038/ngeo460}{10.1038/ngeo460}.
+
 \bibitem[\citeproctext]{ref-Murphy2007}
 Murphy, E.J., Trathan, P.N., Watkins, J.L., Reid, K., Meredith, M.P.,
 Forcada, J., Thorpe, S.E., Johnston, N.M., and Rothery, P. 2007.
@@ -2099,13 +2381,6 @@ revisited---clarifying the role of energy flux for food web stability.
 Theoretical Ecology \textbf{9}(1): 59--71.
 doi:\href{https://doi.org/10.1007/s12080-015-0282-8}{10.1007/s12080-015-0282-8}.
 
-\bibitem[\citeproctext]{ref-Nowacek2015}
-Nowacek, D.P., Clark, C.W., Mann, D., Miller, P.J., Rosenbaum, H.C.,
-Golden, J.S., Jasny, M., Kraska, J., and Southall, B.L. 2015. Marine
-seismic surveys and ocean noise: Time for coordinated and prudent
-planning. Frontiers in Ecology and the Environment \textbf{13}(7):
-378--386. doi:\href{https://doi.org/10.1890/130286}{10.1890/130286}.
-
 \bibitem[\citeproctext]{ref-OGorman2012}
 O'Gorman, E.J., Fitch, J.E., and Crowe, T.P. 2012. Multiple
 anthropogenic stressors and the structural properties of food webs.
@@ -2136,13 +2411,6 @@ over the past century. Nature Communications \textbf{9}(1): 1324. Nature
 Publishing Group.
 doi:\href{https://doi.org/10.1038/s41467-018-03732-9}{10.1038/s41467-018-03732-9}.
 
-\bibitem[\citeproctext]{ref-Olivier2019}
-Olivier, P., Frelat, R., Bonsdorff, E., Kortsch, S., Kröncke, I.,
-Möllmann, C., Neumann, H., Sell, A.F., and Nordström, M.C. 2019.
-Exploring the temporal variability of a food web using long-term
-biomonitoring data. Ecography \textbf{42}(12): 2107--2121.
-doi:\href{https://doi.org/10.1111/ecog.04461}{10.1111/ecog.04461}.
-
 \bibitem[\citeproctext]{ref-Orgeira2021}
 Orgeira, J.L., Alvarez, F., and Salvó, C.S. 2021. The same pathway to
 the {Weddell Sea} birdlife, after 65 years: Similarities in the species
@@ -2160,12 +2428,12 @@ disciplines. Proceedings of the Royal Society B: Biological Sciences
 \textbf{287}(1926): 20200421. Royal Society.
 doi:\href{https://doi.org/10.1098/rspb.2020.0421}{10.1098/rspb.2020.0421}.
 
-\bibitem[\citeproctext]{ref-Paine1996}
-Paine, R.T., Ruesink, J.L., Sun, A., Soulanille, E.L., Wonham, M.J.,
-Harley, C.D.G., Brumbaugh, D.R., and Secord, D.L. 1996. {TROUBLE ON
-OILED WATERS}: {Lessons} from the {\emph{Exxon Valdez}} {Oil Spill}.
-Annual Review of Ecology and Systematics \textbf{27}(1): 197--235.
-doi:\href{https://doi.org/10.1146/annurev.ecolsys.27.1.197}{10.1146/annurev.ecolsys.27.1.197}.
+\bibitem[\citeproctext]{ref-Padovani2012}
+Padovani, L.N., Viñas, M.D., Sánchez, F., and Mianzan, H. 2012.
+Amphipod-supported food web: {Themisto} gaudichaudii, a key food
+resource for fishes in the southern {Patagonian Shelf}. Journal of Sea
+Research \textbf{67}(1): 85--90.
+doi:\href{https://doi.org/10.1016/j.seares.2011.10.007}{10.1016/j.seares.2011.10.007}.
 
 \bibitem[\citeproctext]{ref-Pallin2023}
 Pallin, L.J., Kellar, N.M., Steel, D., Botero-Acosta, N., Baker, C.S.,
@@ -2204,14 +2472,6 @@ contribute equally to the carbon flux at the {Antarctic Peninsula}.
 Nature Communications \textbf{12}(1): 7168. Nature Publishing Group.
 doi:\href{https://doi.org/10.1038/s41467-021-27436-9}{10.1038/s41467-021-27436-9}.
 
-\bibitem[\citeproctext]{ref-Pecuchet2022}
-Pecuchet, L., Jørgensen, L.L., Dolgov, A.V., Eriksen, E., Husson, B.,
-Skern-Mauritzen, M., and Primicerio, R. 2022. Spatio-temporal turnover
-and drivers of bentho-demersal community and food web structure in a
-high-latitude marine ecosystem. Diversity and Distributions
-\textbf{28}(12): 2503--2520.
-doi:\href{https://doi.org/10.1111/ddi.13580}{10.1111/ddi.13580}.
-
 \bibitem[\citeproctext]{ref-Pecuchet2020}
 Pecuchet, L., Lindegren, M., Kortsch, S., Całkiewicz, J., Jurgensone,
 I., Margonski, P., Otto, S.A., Putnis, I., Strāķe, S., and Nordström,
@@ -2219,6 +2479,13 @@ M.C. 2020. Spatio-temporal dynamics of multi-trophic communities reveal
 ecosystem-wide functional reorganization. Ecography \textbf{43}(2):
 197--208.
 doi:\href{https://doi.org/10.1111/ecog.04643}{10.1111/ecog.04643}.
+
+\bibitem[\citeproctext]{ref-Perez2021}
+Pérez, A.F., Ojeda, M., Cossi, P.F., Rimondino, G.N., Chiesa, I.L.,
+Fraysse, C., and Calcagno, J. 2021. {Micropl{á}sticos en organismos
+marinos de altas latitudes}. \emph{In} {I Jornadas de la Red
+Cient{í}fica Argentina para el estudio de los pl{á}sticos y sus impactos
+en el ambiente (SEPIA)}.
 
 \bibitem[\citeproctext]{ref-Perez2020}
 Pérez, A.F., Ojeda, M., Rimondino, G.N., Chiesa, I.L., Di Mauro, R.,
@@ -2252,6 +2519,19 @@ Pinkerton, M.H., Boyd, P.W., Deppeler, S., Hayward, A., Höfer, J., and
 Moreau, S. 2021. Evidence for the {Impact} of {Climate Change} on
 {Primary Producers} in the {Southern Ocean}. Frontiers in Ecology and
 Evolution \textbf{9}. {[}accessed 11 September 2023{]}.
+
+\bibitem[\citeproctext]{ref-Pinones2016}
+Piñones, A., and Fedorov, A.V. 2016. Projected changes of {Antarctic}
+krill habitat by the end of the 21st century. Geophysical Research
+Letters \textbf{43}(16): 8580--8589.
+doi:\href{https://doi.org/10.1002/2016GL069656}{10.1002/2016GL069656}.
+
+\bibitem[\citeproctext]{ref-Polazzo2022}
+Polazzo, F., Marina, T.I., Crettaz-Minaglia, M., and Rico, A. 2022. Food
+web rewiring drives long-term compositional differences and
+late-disturbance interactions at the community level. Proceedings of the
+National Academy of Sciences \textbf{119}(17): e2117364119.
+doi:\href{https://doi.org/10.1073/pnas.2117364119}{10.1073/pnas.2117364119}.
 
 \bibitem[\citeproctext]{ref-Poloczanska2013}
 Poloczanska, E.S., Brown, C.J., Sydeman, W.J., Kiessling, W., Schoeman,
@@ -2303,6 +2583,12 @@ resilience to industrial fishing in {Patagonia Argentina}. Journal of
 Fish Biology \textbf{99}(5): 1650--1667.
 doi:\href{https://doi.org/10.1111/jfb.14873}{10.1111/jfb.14873}.
 
+\bibitem[\citeproctext]{ref-Risaro2022}
+Risaro, D.B., Chidichimo, M.P., and Piola, A.R. 2022. Interannual
+{Variability} and {Trends} of {Sea Surface Temperature Around Southern
+South America}. Frontiers in Marine Science \textbf{9}. Frontiers.
+doi:\href{https://doi.org/10.3389/fmars.2022.829144}{10.3389/fmars.2022.829144}.
+
 \bibitem[\citeproctext]{ref-Rodriguez2022}
 Rodriguez, I.D., Marina, T.I., Schloss, I.R., and Saravia, L.A. 2022.
 Marine food webs are more complex but less stable in sub-{Antarctic}
@@ -2330,6 +2616,11 @@ las poblaciones de condrictios en el litoral de la Provincia de Chubut y
 Golfo San Jorge}. PhD thesis, Universidad Nacional de Mar del Plata
 (UNMdP), Argentina.
 
+\bibitem[\citeproctext]{ref-Sage2020}
+Sage, R.F. 2020. Global change biology: {A} primer. Global Change
+Biology \textbf{26}(1): 3--30.
+doi:\href{https://doi.org/10.1111/gcb.14893}{10.1111/gcb.14893}.
+
 \bibitem[\citeproctext]{ref-Sahade2015}
 Sahade, R., Lagger, C., Torre, L., Momo, F., Monien, P., Schloss, I.,
 Barnes, D.K.A., Servetto, N., Tarantelli, S., Tatián, M., Zamboni, N.,
@@ -2337,6 +2628,22 @@ and Abele, D. 2015. Climate change and glacier retreat drive shifts in
 an {Antarctic} benthic ecosystem. Science Advances \textbf{1}(10):
 e1500050. American Association for the Advancement of Science.
 doi:\href{https://doi.org/10.1126/sciadv.1500050}{10.1126/sciadv.1500050}.
+
+\bibitem[\citeproctext]{ref-Saraceno2022}
+Saraceno, M., Martín, J., Moreira, D., Pisoni, J.P., and Tonini, M.H.
+2022. Physical {Changes} in the {Patagonian Shelf}. \emph{In} Global
+{Change} in {Atlantic Coastal Patagonian Ecosystems}: {A Journey Through
+Time}. \emph{Edited by} E.W. Helbling, M.A. Narvarte, R.A. González, and
+V.E. Villafañe. Springer International Publishing, Cham. pp. 43--71.
+doi:\href{https://doi.org/10.1007/978-3-030-86676-1_3}{10.1007/978-3-030-86676-1\_3}.
+
+\bibitem[\citeproctext]{ref-Saravia2021}
+Saravia, J., Paschke, K., Oyarzún-Salazar, R., Cheng, C.-H.C., Navarro,
+J.M., and Vargas-Chacoff, L. 2021. Effects of warming rates on
+physiological and molecular components of response to {CTMax} heat
+stress in the {Antarctic} fish {Harpagifer} antarcticus. Journal of
+Thermal Biology \textbf{99}: 103021.
+doi:\href{https://doi.org/10.1016/j.jtherbio.2021.103021}{10.1016/j.jtherbio.2021.103021}.
 
 \bibitem[\citeproctext]{ref-Saunders2019}
 Saunders, R.A., Hill, S.L., Tarling, G.A., and Murphy, E.J. 2019.
@@ -2390,6 +2697,13 @@ Sgarlatta, M. 2023. Mechanisms driving tropicalization of temperate reef
 fish assemblages. Thesis, UNSW Sydney.
 doi:\href{https://doi.org/10.26190/unsworks/25104}{10.26190/unsworks/25104}.
 
+\bibitem[\citeproctext]{ref-Siniff2008}
+Siniff, D.B., Garrott, R.A., Rotella, J.J., Fraser, W.R., and Ainley,
+D.G. 2008. Opinion: {Projecting} the effects of environmental change on
+{Antarctic} seals. Antarctic Science \textbf{20}(5): 425--435. Cambridge
+University Press.
+doi:\href{https://doi.org/10.1017/S0954102008001351}{10.1017/S0954102008001351}.
+
 \bibitem[\citeproctext]{ref-Smale2008}
 Smale, D.A., and Barnes, D.K.A. 2008. Likely responses of the
 {Antarctic} benthos to climate-related changes in physical disturbance
@@ -2414,12 +2728,35 @@ Sandwich Islands}. Deep Sea Research Part II: Topical Studies in
 Oceanography \textbf{201}: 105098.
 doi:\href{https://doi.org/10.1016/j.dsr2.2022.105098}{10.1016/j.dsr2.2022.105098}.
 
+\bibitem[\citeproctext]{ref-Southward1978}
+Southward, A.J., and Southward, E.C. 1978. Recolonization of {Rocky
+Shores} in {Cornwall After Use} of {Toxic Dispersants} to {Clean Up} the
+{Torrey Canyon Spill}. Journal of the Fisheries Research Board of Canada
+\textbf{35}(5): 682--706. NRC Research Press.
+doi:\href{https://doi.org/10.1139/f78-120}{10.1139/f78-120}.
+
+\bibitem[\citeproctext]{ref-Souza2018}
+Souza, M.R.D.P. de, Herrerias, T., Zaleski, T., Forgati, M., Kandalski,
+P.K., Machado, C., Silva, D.T., Piechnik, C.A., Moura, M.O., and
+Donatti, L. 2018. Heat stress in the heart and muscle of the {Antarctic}
+fishes {Notothenia} rossii and {Notothenia} coriiceps: {Carbohydrate}
+metabolism and antioxidant defence. Biochimie \textbf{146}: 43--55.
+doi:\href{https://doi.org/10.1016/j.biochi.2017.11.010}{10.1016/j.biochi.2017.11.010}.
+
 \bibitem[\citeproctext]{ref-Stouffer2011}
 Stouffer, D.B., and Bascompte, J. 2011. Compartmentalization increases
 food-web persistence. Proceedings of the National Academy of Sciences
 \textbf{108}(9): 3648--3652. Proceedings of the National Academy of
 Sciences.
 doi:\href{https://doi.org/10.1073/pnas.1014353108}{10.1073/pnas.1014353108}.
+
+\bibitem[\citeproctext]{ref-Strobel2013}
+Strobel, A., Leo, E., Pörtner, H.O., and Mark, F.C. 2013. Elevated
+temperature and {PCO2} shift metabolic pathways in differentially
+oxidative tissues of {Notothenia} rossii. Comparative Biochemistry and
+Physiology Part B: Biochemistry and Molecular Biology \textbf{166}(1):
+48--57.
+doi:\href{https://doi.org/10.1016/j.cbpb.2013.06.006}{10.1016/j.cbpb.2013.06.006}.
 
 \bibitem[\citeproctext]{ref-Tamini2023}
 Tamini, L.L., Dellacasa, R.F., Chavez, L.N., Marinao, C.J., Góngora,
@@ -2449,12 +2786,6 @@ and function of biodiversity. Trends in Ecology \& Evolution
 \textbf{27}(12): 689--697. Elsevier.
 doi:\href{https://doi.org/10.1016/j.tree.2012.08.005}{10.1016/j.tree.2012.08.005}.
 
-\bibitem[\citeproctext]{ref-Thompson2007}
-Thompson, R.M., Hemberg, M., Starzomski, B.M., and Shurin, J.B. 2007.
-Trophic {Levels} and {Trophic Tangles}: {The Prevalence} of {Omnivory}
-in {Real Food Webs}. Ecology \textbf{88}(3): 612--617.
-doi:\href{https://doi.org/10.1890/05-1454}{10.1890/05-1454}.
-
 \bibitem[\citeproctext]{ref-Trathan2023}
 Trathan, P.N. 2023. The future of the {South Georgia} and {South
 Sandwich Islands} marine protected area in a changing environment: {The}
@@ -2470,6 +2801,13 @@ variable, and changing ecosystem at {South Georgia}. ICES Journal of
 Marine Science \textbf{78}(6): 2065--2081.
 doi:\href{https://doi.org/10.1093/icesjms/fsab092}{10.1093/icesjms/fsab092}.
 
+\bibitem[\citeproctext]{ref-Trebilco2020}
+Trebilco, R., Melbourne-Thomas, J., and Constable, A.J. 2020. The policy
+relevance of {Southern Ocean} food web structure: {Implications} of food
+web change for fisheries, conservation and carbon sequestration. Marine
+Policy \textbf{115}: 103832.
+doi:\href{https://doi.org/10.1016/j.marpol.2020.103832}{10.1016/j.marpol.2020.103832}.
+
 \bibitem[\citeproctext]{ref-Turner2020}
 Turner, J., Guarino, M.V., Arnatt, J., Jena, B., Marshall, G.J.,
 Phillips, T., Bajish, C.C., Clem, K., Wang, Z., Andersson, T., Murphy,
@@ -2477,6 +2815,13 @@ E.J., and Cavanagh, R. 2020. Recent {Decrease} of {Summer Sea Ice} in
 the {Weddell Sea}, {Antarctica}. Geophysical Research Letters
 \textbf{47}(11): e2020GL087127.
 doi:\href{https://doi.org/10.1029/2020GL087127}{10.1029/2020GL087127}.
+
+\bibitem[\citeproctext]{ref-Verga2020}
+Verga, R.N., Tolosano, J.A., Cazzaniga, N.J., and Gil, D.G. 2020.
+Assessment of seawater quality and bacteriological pollution of rocky
+shores in the central coast of {San Jorge Gulf} ({Patagonia},
+{Argentina}). Marine Pollution Bulletin \textbf{150}: 110749.
+doi:\href{https://doi.org/10.1016/j.marpolbul.2019.110749}{10.1016/j.marpolbul.2019.110749}.
 
 \bibitem[\citeproctext]{ref-Verges2019}
 Vergés, A., McCosker, E., Mayer-Pinto, M., Coleman, M.A., Wernberg, T.,
@@ -2510,11 +2855,24 @@ Investigaciones marinas \textbf{35}(2): 25--34. Escuela de Ciencias del
 Mar. Pontificia Universidad Cat{ó}lica de Valpara{í}so.
 doi:\href{https://doi.org/10.4067/S0717-71782007000200003}{10.4067/S0717-71782007000200003}.
 
+\bibitem[\citeproctext]{ref-Vitousek1992}
+Vitousek, P.M. 1992. Global {Environmental Change}: {An Introduction}.
+Annual Review of Ecology, Evolution and Systematics \textbf{23}(Volume
+23,): 1--14. Annual Reviews.
+doi:\href{https://doi.org/10.1146/annurev.es.23.110192.000245}{10.1146/annurev.es.23.110192.000245}.
+
 \bibitem[\citeproctext]{ref-Vucic-Pestic2011}
 Vucic-Pestic, O., Ehnes, R.B., Rall, B.C., and Brose, U. 2011. Warming
 up the system: Higher predator feeding rates but lower energetic
 efficiencies. Global Change Biology \textbf{17}(3): 1301--1310.
 doi:\href{https://doi.org/10.1111/j.1365-2486.2010.02329.x}{10.1111/j.1365-2486.2010.02329.x}.
+
+\bibitem[\citeproctext]{ref-Wallace2017}
+Wallace, B., Brosnan, T., McLamb, D., Rowles, T., Ruder, E., Schroeder,
+B., Schwacke, L., Stacy, B., Sullivan, L., Takeshita, R., and Wehner, D.
+2017. Effects of the {Deepwater Horizon} oil spill on protected marine
+species. Endangered Species Research \textbf{33}: 1--7.
+doi:\href{https://doi.org/10.3354/esr00789}{10.3354/esr00789}.
 
 \bibitem[\citeproctext]{ref-Ward2018}
 Ward, P., Tarling, G.A., and Thorpe, S.E. 2018. Temporal changes in
@@ -2543,10 +2901,19 @@ circumpolar current at {Drake Passage}. Deep Sea Research Part A.
 Oceanographic Research Papers \textbf{27}(7): 497--507.
 doi:\href{https://doi.org/10.1016/0198-0149(80)90036-9}{10.1016/0198-0149(80)90036-9}.
 
-\bibitem[\citeproctext]{ref-Williams2000}
-Williams, R.J., and Martinez, N.D. 2000. Simple rules yield complex food
-webs. Nature \textbf{404}(6774): 180--183. Nature Publishing Group.
-doi:\href{https://doi.org/10.1038/35004572}{10.1038/35004572}.
+\bibitem[\citeproctext]{ref-Williams2023}
+Williams, G.N., and Nocera, A.C. 2023. Bio-optical trends of waters
+around {Vald{é}s Biosphere Reserve}: {An} assessment of the temporal
+variability based on 20 years of ocean color satellite data. Marine
+Environmental Research \textbf{186}: 105923.
+doi:\href{https://doi.org/10.1016/j.marenvres.2023.105923}{10.1016/j.marenvres.2023.105923}.
+
+\bibitem[\citeproctext]{ref-Winter2023}
+Winter, A., and Arkhipkin, A. 2023. Opportunistic {Survey Analyses
+Reveal} a {Recent Decline} of {Skate} ({Rajiformes}) {Biomass} in
+{Falkland Islands Waters}. Fishes \textbf{8}(1): 24. Multidisciplinary
+Digital Publishing Institute.
+doi:\href{https://doi.org/10.3390/fishes8010024}{10.3390/fishes8010024}.
 
 \bibitem[\citeproctext]{ref-Wood2015}
 Wood, S.A., Russell, R., Hanson, D., Williams, R.J., and Dunne, J.A.
@@ -2574,6 +2941,13 @@ Yorio, P. 2009. Marine protected areas, spatial scales, and governance:
 Implications for the conservation of breeding seabirds. Conservation
 Letters \textbf{2}(4): 171--178.
 doi:\href{https://doi.org/10.1111/j.1755-263X.2009.00062.x}{10.1111/j.1755-263X.2009.00062.x}.
+
+\bibitem[\citeproctext]{ref-Yorio2017}
+Yorio, P., González-Zevallos, D., Gatto, A., Biagioni, O., and Castillo,
+J. 2017. Relevance of forage fish in the diet of {Magellanic} penguins
+breeding in northern {Patagonia}, {Argentina}. Marine Biology Research
+\textbf{13}(6): 603--617. Taylor \& Francis.
+doi:\href{https://doi.org/10.1080/17451000.2016.1273529}{10.1080/17451000.2016.1273529}.
 
 \end{CSLReferences}
 
