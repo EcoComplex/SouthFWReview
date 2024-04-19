@@ -2,7 +2,7 @@
 title: Supplementary Material for 'The response of trophic interaction networks to multiple stressors in a marine latitudinal gradient of the Southern Hemisphere'
 author: 
 bibliography: JAE_Review.bib
-csl: "journal-of-animal-ecology.csl"
+csl: "environmental-reviews.csl"
 output:
   pdf_document: 
     keep_tex: yes
