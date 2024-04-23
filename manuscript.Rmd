@@ -3,7 +3,6 @@ output:
   pdf_document:
     latex_engine: xelatex
     keep_tex: yes
-  word_document: default
 bibliography: JAE_Review.bib
 csl: "environmental-reviews.csl"
 documentclass: article
