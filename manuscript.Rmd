@@ -385,4 +385,15 @@ We reviewed global change stressors acting in six different areas along a large-
 
 This review is a product of the project “¿Cuáles son los efectos de los cambios ambientales antropogénicos en las interacciones tróficas de las comunidades de los ecosistemas marinos en el gradiente latitudinal Atlántico Sudoccidental - Antártida?”, funded by Consejo Nacional de Investigaciones Científicas (CONICET, code PIP 2022-2024 #0907), Argentina. S.K. gratefully acknowledges the support from the Walter and Andrée de Nottbeck Foundation, Finland.
 
+
+## Competing interests
+
+The authors declare there are no competing interests.
+
+## Data Availability
+
+All data used in this manuscript is publicly available and compiled on a 
+Github repository https://github.com/EcoComplex/SouthFWReview and Zenodo 
+https://zenodo.org/doi/10.5281/zenodo.11060734
+
 ## References
